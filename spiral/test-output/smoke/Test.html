@@ -1,0 +1,1870 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>273/8/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jun 03 07:23:55 EDT 2021</td>
+</tr>
+<tr><td>Total time:</td><td>1150 seconds (1150449 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDiscussionSenarios1.close_Open_Upcoming_Closed_Discussions()'><b>close_Open_Upcoming_Closed_Discussions</b><br>Test class: tests_critical_scenarios.CreateDiscussionSenarios1<br>Test method: close_Open_Upcoming_And_Closed_Discussions</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=91.0.4472.77)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.86&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65167}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 43699cb61bc765dacbe32639765...}
+Session ID: 43699cb61bc765dacbe32639765a8e22
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at page_critical_scenarios.DiscussionPage.click_Upcoming_Discussions_Dropdown_Arrow(DiscussionPage.java:1257)
+	at page_critical_scenarios.DiscussionPage.close_Open_Upcoming_And_Closed_Discussions(DiscussionPage.java:1289)
+	at tests_critical_scenarios.CreateDiscussionSenarios1.close_Open_Upcoming_Closed_Discussions(CreateDiscussionSenarios1.java:147)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1103959669", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1103959669'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=91.0.4472.77)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.86&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65167}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 43699cb61bc765dacbe32639765...}
+Session ID: 43699cb61bc765dacbe32639765a8e22
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at page_critical_scenarios.DiscussionPage.click_Upcoming_Discussions_Dropdown_Arrow(DiscussionPage.java:1257)
+	at page_critical_scenarios.DiscussionPage.close_Open_Upcoming_And_Closed_Discussions(DiscussionPage.java:1289)
+	at tests_critical_scenarios.CreateDiscussionSenarios1.close_Open_Upcoming_Closed_Discussions(CreateDiscussionSenarios1.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>18</td>
+<td>tests_critical_scenarios.CreateDiscussionSenarios1@3e57cd70</td></tr>
+<tr>
+<td title='tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.systemAdmin_Enable_Events_For_Workroom_Member()'><b>systemAdmin_Enable_Events_For_Workroom_Member</b><br>Test class: tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission<br>Test method: systemAdmin_Enable_Events_For_Workroom_Member</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for at least one condition to be valid: element to be clickable: By.xpath: //div[starts-with (@id,&apos;collapseWorkroom_&apos;)]//div[@class=&apos;row small-left&apos;]//label[contains(text(),&apos;Events&apos;)] (tried for 20 second(s) with 600 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.86&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at page_critical_scenarios.PermissionPage.verify_Events(PermissionPage.java:170)
+	at page_critical_scenarios.PermissionPage.systemAdmin_Enable_Events_For_Workroom_Member(PermissionPage.java:395)
+	at tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.systemAdmin_Enable_Events_For_Workroom_Member(SetUserWorkroomMemberNoEventPermission.java:90)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace254424591", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace254424591'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for at least one condition to be valid: element to be clickable: By.xpath: //div[starts-with (@id,&apos;collapseWorkroom_&apos;)]//div[@class=&apos;row small-left&apos;]//label[contains(text(),&apos;Events&apos;)] (tried for 20 second(s) with 600 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.86&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at page_critical_scenarios.PermissionPage.verify_Events(PermissionPage.java:170)
+	at page_critical_scenarios.PermissionPage.systemAdmin_Enable_Events_For_Workroom_Member(PermissionPage.java:395)
+	at tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.systemAdmin_Enable_Events_For_Workroom_Member(SetUserWorkroomMemberNoEventPermission.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>29</td>
+<td>tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission@4abdb505</td></tr>
+<tr>
+<td title='tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.systemAdmin_Restrict_User_Access_From_Events()'><b>systemAdmin_Restrict_User_Access_From_Events</b><br>Test class: tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission<br>Test method: systemAdmin_Restrict_User_Access_From_Events</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for at least one condition to be valid: element to be clickable: By.xpath: //div[starts-with (@id,&apos;collapseWorkroom_&apos;)]//div[@class=&apos;row small-left&apos;]//label[contains(text(),&apos;Events&apos;)] (tried for 20 second(s) with 600 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.86&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at page_critical_scenarios.PermissionPage.verify_Events(PermissionPage.java:170)
+	at page_critical_scenarios.PermissionPage.systemAdmin_Restrict_User_Access_From_Events(PermissionPage.java:262)
+	at tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.systemAdmin_Restrict_User_Access_From_Events(SetUserWorkroomMemberNoEventPermission.java:34)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace16127001", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace16127001'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for at least one condition to be valid: element to be clickable: By.xpath: //div[starts-with (@id,&apos;collapseWorkroom_&apos;)]//div[@class=&apos;row small-left&apos;]//label[contains(text(),&apos;Events&apos;)] (tried for 20 second(s) with 600 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.86&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at page_critical_scenarios.PermissionPage.verify_Events(PermissionPage.java:170)
+	at page_critical_scenarios.PermissionPage.systemAdmin_Restrict_User_Access_From_Events(PermissionPage.java:262)
+	at tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.systemAdmin_Restrict_User_Access_From_Events(SetUserWorkroomMemberNoEventPermission.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>32</td>
+<td>tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission@4abdb505</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateResourceLibraryFolderAddFile.user_Can_Delete_Folder()'><b>user_Can_Delete_Folder</b><br>Test class: tests_critical_scenarios.CreateResourceLibraryFolderAddFile<br>Test method: user_Can_Delete_Folder</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(),&apos;Libraries&apos;)]&quot;}
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.86&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53335}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: bc85f9ad1aace2d9421d75229c3...}
+Session ID: bc85f9ad1aace2d9421d75229c3d910f
+*** Element info: {Using=xpath, value=//span[contains(text(),&apos;Libraries&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1370)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1364)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at page_critical_scenarios.LibrariesPage.verify_Libraries(LibrariesPage.java:38)
+	at page_critical_scenarios.LibrariesPage.user_Can_Delete_Folder(LibrariesPage.java:251)
+	at tests_critical_scenarios.CreateResourceLibraryFolderAddFile.user_Can_Delete_Folder(CreateResourceLibraryFolderAddFile.java:65)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1527459921", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1527459921'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(),&apos;Libraries&apos;)]&quot;}
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.86&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53335}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: bc85f9ad1aace2d9421d75229c3...}
+Session ID: bc85f9ad1aace2d9421d75229c3d910f
+*** Element info: {Using=xpath, value=//span[contains(text(),&apos;Libraries&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1370)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1364)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at page_critical_scenarios.LibrariesPage.verify_Libraries(LibrariesPage.java:38)
+	at page_critical_scenarios.LibrariesPage.user_Can_Delete_Folder(LibrariesPage.java:251)
+	at tests_critical_scenarios.CreateResourceLibraryFolderAddFile.user_Can_Delete_Folder(CreateResourceLibraryFolderAddFile.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>12</td>
+<td>tests_critical_scenarios.CreateResourceLibraryFolderAddFile@6b9651f3</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateResourceLibraryFolderAddFile.verify_Folder_Deleted()'><b>verify_Folder_Deleted</b><br>Test class: tests_critical_scenarios.CreateResourceLibraryFolderAddFile<br>Test method: verify_Folder_Deleted</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=91.0.4472.77)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.86&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53335}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: bc85f9ad1aace2d9421d75229c3...}
+Session ID: bc85f9ad1aace2d9421d75229c3d910f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at page_critical_scenarios.LibrariesPage.click_CloseBtn(LibrariesPage.java:274)
+	at page_critical_scenarios.LibrariesPage.verify_Folder_Deleted(LibrariesPage.java:281)
+	at tests_critical_scenarios.CreateResourceLibraryFolderAddFile.verify_Folder_Deleted(CreateResourceLibraryFolderAddFile.java:73)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2062981058", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2062981058'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=91.0.4472.77)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.86&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53335}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: bc85f9ad1aace2d9421d75229c3...}
+Session ID: bc85f9ad1aace2d9421d75229c3d910f
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at page_critical_scenarios.LibrariesPage.click_CloseBtn(LibrariesPage.java:274)
+	at page_critical_scenarios.LibrariesPage.verify_Folder_Deleted(LibrariesPage.java:281)
+	at tests_critical_scenarios.CreateResourceLibraryFolderAddFile.verify_Folder_Deleted(CreateResourceLibraryFolderAddFile.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>13</td>
+<td>tests_critical_scenarios.CreateResourceLibraryFolderAddFile@6b9651f3</td></tr>
+<tr>
+<td title='tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.workroom_Admin_Not_See_Event_Due_To_Permissions()'><b>workroom_Admin_Not_See_Event_Due_To_Permissions</b><br>Test class: tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission<br>Test method: workroom_Admin_Not_See_Event_Due_To_Permissions</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for at least one condition to be valid: element to be clickable: By.xpath: //a[contains(text(),&apos;AutoBE&apos;)] (tried for 20 second(s) with 600 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.86&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at page_critical_scenarios.PermissionPage.verify_AutoBE(PermissionPage.java:338)
+	at page_critical_scenarios.PermissionPage.workroom_Admin_Not_See_Event_Due_To_Permissions(PermissionPage.java:361)
+	at tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.workroom_Admin_Not_See_Event_Due_To_Permissions(SetUserWorkroomMemberNoEventPermission.java:58)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1726985271", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1726985271'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for at least one condition to be valid: element to be clickable: By.xpath: //a[contains(text(),&apos;AutoBE&apos;)] (tried for 20 second(s) with 600 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.86&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at page_critical_scenarios.PermissionPage.verify_AutoBE(PermissionPage.java:338)
+	at page_critical_scenarios.PermissionPage.workroom_Admin_Not_See_Event_Due_To_Permissions(PermissionPage.java:361)
+	at tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.workroom_Admin_Not_See_Event_Due_To_Permissions(SetUserWorkroomMemberNoEventPermission.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>20</td>
+<td>tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission@4abdb505</td></tr>
+<tr>
+<td title='tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.workroom_Member_Open_Library_For_Workroom_Has_New_Book_Button()'><b>workroom_Member_Open_Library_For_Workroom_Has_New_Book_Button</b><br>Test class: tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission<br>Test method: workroom_Member_Open_Library_For_Workroom_Has_New_Book_Button</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for at least one condition to be valid: element to be clickable: By.xpath: //a[contains(text(),&apos;AutoBE&apos;)] (tried for 20 second(s) with 600 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.86&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at page_critical_scenarios.PermissionPage.verify_AutoBE(PermissionPage.java:338)
+	at page_critical_scenarios.PermissionPage.workroom_Member_Open_Library_For_Workroom_Has_New_Book_Button(PermissionPage.java:519)
+	at tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.workroom_Member_Open_Library_For_Workroom_Has_New_Book_Button(SetUserWorkroomMemberNoEventPermission.java:171)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1237556051", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1237556051'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for at least one condition to be valid: element to be clickable: By.xpath: //a[contains(text(),&apos;AutoBE&apos;)] (tried for 20 second(s) with 600 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.86&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at page_critical_scenarios.PermissionPage.verify_AutoBE(PermissionPage.java:338)
+	at page_critical_scenarios.PermissionPage.workroom_Member_Open_Library_For_Workroom_Has_New_Book_Button(PermissionPage.java:519)
+	at tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.workroom_Member_Open_Library_For_Workroom_Has_New_Book_Button(SetUserWorkroomMemberNoEventPermission.java:171)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>22</td>
+<td>tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission@4abdb505</td></tr>
+<tr>
+<td title='tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.workroom_Member_Sees_Event_Due_To_Permissions()'><b>workroom_Member_Sees_Event_Due_To_Permissions</b><br>Test class: tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission<br>Test method: workroom_Admin_Not_See_Event_Due_To_Permissions</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for at least one condition to be valid: element to be clickable: By.xpath: //a[contains(text(),&apos;AutoBE&apos;)] (tried for 20 second(s) with 600 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.86&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at page_critical_scenarios.PermissionPage.verify_AutoBE(PermissionPage.java:338)
+	at page_critical_scenarios.PermissionPage.workroom_Member_Sees_Event_Due_To_Permissions(PermissionPage.java:414)
+	at tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.workroom_Member_Sees_Event_Due_To_Permissions(SetUserWorkroomMemberNoEventPermission.java:114)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace268185424", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace268185424'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for at least one condition to be valid: element to be clickable: By.xpath: //a[contains(text(),&apos;AutoBE&apos;)] (tried for 20 second(s) with 600 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.86&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at page_critical_scenarios.PermissionPage.verify_AutoBE(PermissionPage.java:338)
+	at page_critical_scenarios.PermissionPage.workroom_Member_Sees_Event_Due_To_Permissions(PermissionPage.java:414)
+	at tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.workroom_Member_Sees_Event_Due_To_Permissions(SetUserWorkroomMemberNoEventPermission.java:114)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>20</td>
+<td>tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission@4abdb505</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.Workroom_Admin_Add_File_To_First_Catagory()'><b>Workroom_Admin_Add_File_To_First_Catagory</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: user_Add_File_To_First_Catagory</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@32d2fa64</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.Workroom_Admin_Add_First_Catagory_To_Book()'><b>Workroom_Admin_Add_First_Catagory_To_Book</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: user_Add_First_Catagory_To_Book</td>
+<td></td>
+<td>7</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@32d2fa64</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.Workroom_Admin_Add_Second_Catagory_To_Book()'><b>Workroom_Admin_Add_Second_Catagory_To_Book</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: user_Add_First_Catagory_To_Book</td>
+<td></td>
+<td>9</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@32d2fa64</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.Workroom_Admin_Can_Add_Agenda()'><b>Workroom_Admin_Can_Add_Agenda</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: user_Can_Add_Agenda</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@32d2fa64</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.Workroom_Admin_Can_Add_User_As_Secured_Category_User()'><b>Workroom_Admin_Can_Add_User_As_Secured_Category_User</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: Workroom_Admin_Can_Add_User_As_Secured_Category_User</td>
+<td></td>
+<td>9</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@32d2fa64</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.Workroom_Admin_Can_Create_New_Book_And_Add_Title()'><b>Workroom_Admin_Can_Create_New_Book_And_Add_Title</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: user_Can_Create_New_Book_And_Title</td>
+<td></td>
+<td>3</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@32d2fa64</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDiscussionSenarios1.Workroom_Admin_Can_Open_Library_Page_For_Workroom()'><b>Workroom_Admin_Can_Open_Library_Page_For_Workroom</b><br>Test class: tests_critical_scenarios.CreateDiscussionSenarios1<br>Test method: user_Can_Open_Library_Page_For_Workroom</td>
+<td></td>
+<td>7</td>
+<td>tests_critical_scenarios.CreateDiscussionSenarios1@3e57cd70</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.Workroom_Admin_Can_Open_Library_Page_For_Workroom()'><b>Workroom_Admin_Can_Open_Library_Page_For_Workroom</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: user_Can_Open_Library_Page_For_Workroom</td>
+<td></td>
+<td>9</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@32d2fa64</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.Workroom_Admin_Can_Open_Secured_Category()'><b>Workroom_Admin_Can_Open_Secured_Category</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: Workroom_Admin_Can_Open_Secured_Category</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@32d2fa64</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.Workroom_Admin_Click_Save_Continue_Btn()'><b>Workroom_Admin_Click_Save_Continue_Btn</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: click_Save_Continue_Btn</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@32d2fa64</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.Workroom_Admin_add_File_To_Second_Catagory()'><b>Workroom_Admin_add_File_To_Second_Catagory</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: Workroom_Admin_add_File_To_Second_Catagory</td>
+<td></td>
+<td>9</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@32d2fa64</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteBookTemplate.add_File_To_Second_Catagory()'><b>add_File_To_Second_Catagory</b><br>Test class: tests_critical_scenarios.CreateEditDeleteBookTemplate<br>Test method: add_File_To_Second_Catagory</td>
+<td></td>
+<td>9</td>
+<td>tests_critical_scenarios.CreateEditDeleteBookTemplate@587d1d39</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteHandbook.add_File_To_Second_Catagory()'><b>add_File_To_Second_Catagory</b><br>Test class: tests_critical_scenarios.CreateEditDeleteHandbook<br>Test method: add_File_To_Second_Catagory</td>
+<td></td>
+<td>9</td>
+<td>tests_critical_scenarios.CreateEditDeleteHandbook@58c1670b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreatePollQuestionAndDelete.add_Poll_Respondents()'><b>add_Poll_Respondents</b><br>Test class: tests_critical_scenarios.CreatePollQuestionAndDelete<br>Test method: Scenario - Add Workroom Poll Respondents.</td>
+<td></td>
+<td>13</td>
+<td>tests_critical_scenarios.CreatePollQuestionAndDelete@5bb21b69</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateSurveyQuestionsAndDelete.add_Survey_Respondents()'><b>add_Survey_Respondents</b><br>Test class: tests_critical_scenarios.CreateSurveyQuestionsAndDelete<br>Test method: Scenario - Add Workroom Survey Respondents.</td>
+<td></td>
+<td>11</td>
+<td>tests_critical_scenarios.CreateSurveyQuestionsAndDelete@38bc8ab5</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateTaskAndTaskGroup.add_Task_Group()'><b>add_Task_Group</b><br>Test class: tests_critical_scenarios.CreateTaskAndTaskGroup<br>Test method: Add Task Group.</td>
+<td></td>
+<td>19</td>
+<td>tests_critical_scenarios.CreateTaskAndTaskGroup@687080dc</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditCopyDeleteEvent.admin_Open_Workroom_AutoBE_Events()'><b>admin_Open_Workroom_AutoBE_Events</b><br>Test class: tests_critical_scenarios.CreateEditCopyDeleteEvent<br>Test method: admin_Open_Workroom_AutoBE_Events</td>
+<td></td>
+<td>7</td>
+<td>tests_critical_scenarios.CreateEditCopyDeleteEvent@9a7504c</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginEnglishWorkroomAdmin.admin_Opens_Site_Settings_Workrooms_And_Groups()'><b>admin_Opens_Site_Settings_Workrooms_And_Groups</b><br>Test class: tests_critical_scenarios.LoginEnglishWorkroomAdmin<br>Test method: admin_Opens_Site_Settings_Workrooms_And_Groups</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.LoginEnglishWorkroomAdmin@1500955a</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin.admin_Opens_Site_Settings_Workrooms_And_Groups()'><b>admin_Opens_Site_Settings_Workrooms_And_Groups</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin<br>Test method: admin_Opens_Site_Settings_Workrooms_And_Groups</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin@60285225</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginEnglishWorkroomAdmin.admin_Opens_Site_Settings_Workrooms_And_Groups_Agian()'><b>admin_Opens_Site_Settings_Workrooms_And_Groups_Agian</b><br>Test class: tests_critical_scenarios.LoginEnglishWorkroomAdmin<br>Test method: admin_Opens_Site_Settings_Workrooms_And_Groups_Agian</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.LoginEnglishWorkroomAdmin@1500955a</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin.admin_Opens_Site_Settings_Workrooms_And_Groups_Agian()'><b>admin_Opens_Site_Settings_Workrooms_And_Groups_Agian</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin<br>Test method: admin_Opens_Site_Settings_Workrooms_And_Groups_Agian</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin@60285225</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDiscussionSenarios1.archive_Discussion()'><b>archive_Discussion</b><br>Test class: tests_critical_scenarios.CreateDiscussionSenarios1<br>Test method: archive_Discussion</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreateDiscussionSenarios1@3e57cd70</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.autoDirector_Close_And_Logout()'><b>autoDirector_Close_And_Logout</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: make_Book_Visible</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@32d2fa64</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.autoUser_login()'><b>autoUser_login</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: Login UserName Password.</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@32d2fa64</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateMessageWorkroom.autoUser_login()'><b>autoUser_login</b><br>Test class: tests_critical_scenarios.CreateMessageWorkroom<br>Test method: Login UserName Password.</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateMessageWorkroom@6b57696f</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditCopyDeleteEvent.autoUser_login()'><b>autoUser_login</b><br>Test class: tests_critical_scenarios.CreateEditCopyDeleteEvent<br>Test method: Scenario Login AutoUser UserName Password.</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateEditCopyDeleteEvent@9a7504c</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.autoUser_login()'><b>autoUser_login</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: Login UserName Password.</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@436e852b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteBookTemplate.autoUser_login()'><b>autoUser_login</b><br>Test class: tests_critical_scenarios.CreateEditDeleteBookTemplate<br>Test method: Login UserName Password.</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateEditDeleteBookTemplate@587d1d39</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteHandbook.autoUser_login()'><b>autoUser_login</b><br>Test class: tests_critical_scenarios.CreateEditDeleteHandbook<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreateEditDeleteHandbook@58c1670b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.autoUser_login_2nd_Time()'><b>autoUser_login_2nd_Time</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: Login UserName Password.</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@32d2fa64</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginEnglishWorkroomAdmin.automation_Tester_Login_English()'><b>automation_Tester_Login_English</b><br>Test class: tests_critical_scenarios.LoginEnglishWorkroomAdmin<br>Test method: systemAdmin_Login_Spanish</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.LoginEnglishWorkroomAdmin@1500955a</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin.automation_Tester_Login_English()'><b>automation_Tester_Login_English</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin<br>Test method: systemAdmin_Login_Spanish</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin@60285225</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteHandbook.build_Handbook()'><b>build_Handbook</b><br>Test class: tests_critical_scenarios.CreateEditDeleteHandbook<br>Test method: build_Handbook</td>
+<td></td>
+<td>22</td>
+<td>tests_critical_scenarios.CreateEditDeleteHandbook@58c1670b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreatePollQuestionAndDelete.build_Poll_Make_Visible()'><b>build_Poll_Make_Visible</b><br>Test class: tests_critical_scenarios.CreatePollQuestionAndDelete<br>Test method: Scenario - Build Poll and Make Visible.</td>
+<td></td>
+<td>8</td>
+<td>tests_critical_scenarios.CreatePollQuestionAndDelete@5bb21b69</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateSurveyQuestionsAndDelete.build_Survey_Make_Visible()'><b>build_Survey_Make_Visible</b><br>Test class: tests_critical_scenarios.CreateSurveyQuestionsAndDelete<br>Test method: Scenario - Build Survey and Make Visible.</td>
+<td></td>
+<td>13</td>
+<td>tests_critical_scenarios.CreateSurveyQuestionsAndDelete@38bc8ab5</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.create_Book_Add_Title_A()'><b>create_Book_Add_Title_A</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: create_Book_Add_Title_A</td>
+<td></td>
+<td>3</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@436e852b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateSurveyQuestionsAndDelete.create_CheckBox_Question()'><b>create_CheckBox_Question</b><br>Test class: tests_critical_scenarios.CreateSurveyQuestionsAndDelete<br>Test method:  Scenario Create Workroom Survey All Questions.</td>
+<td></td>
+<td>14</td>
+<td>tests_critical_scenarios.CreateSurveyQuestionsAndDelete@38bc8ab5</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDiscussionSenarios1.create_Discussion_MainTopic()'><b>create_Discussion_MainTopic</b><br>Test class: tests_critical_scenarios.CreateDiscussionSenarios1<br>Test method: Create_Discussion_MainTopic</td>
+<td></td>
+<td>8</td>
+<td>tests_critical_scenarios.CreateDiscussionSenarios1@3e57cd70</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateSurveyQuestionsAndDelete.create_DropdownList_Question()'><b>create_DropdownList_Question</b><br>Test class: tests_critical_scenarios.CreateSurveyQuestionsAndDelete<br>Test method:  Scenario Create Workroom Survey All Questions.</td>
+<td></td>
+<td>12</td>
+<td>tests_critical_scenarios.CreateSurveyQuestionsAndDelete@38bc8ab5</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateSurveyQuestionsAndDelete.create_Heading_Question()'><b>create_Heading_Question</b><br>Test class: tests_critical_scenarios.CreateSurveyQuestionsAndDelete<br>Test method:  Scenario Create Workroom Survey All Questions.</td>
+<td></td>
+<td>8</td>
+<td>tests_critical_scenarios.CreateSurveyQuestionsAndDelete@38bc8ab5</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateSurveyQuestionsAndDelete.create_Linear_Scale()'><b>create_Linear_Scale</b><br>Test class: tests_critical_scenarios.CreateSurveyQuestionsAndDelete<br>Test method:  Scenario Create Workroom Survey All Questions.</td>
+<td></td>
+<td>12</td>
+<td>tests_critical_scenarios.CreateSurveyQuestionsAndDelete@38bc8ab5</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.create_New_Event_A()'><b>create_New_Event_A</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: create_New_Event_A</td>
+<td></td>
+<td>16</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@436e852b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDiscussionSenarios1.create_Open_Discussion_Current_Date_AssignUsers()'><b>create_Open_Discussion_Current_Date_AssignUsers</b><br>Test class: tests_critical_scenarios.CreateDiscussionSenarios1<br>Test method: create_Open_Discussion_AssignUsers</td>
+<td></td>
+<td>18</td>
+<td>tests_critical_scenarios.CreateDiscussionSenarios1@3e57cd70</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateSurveyQuestionsAndDelete.create_Paragraph_Question()'><b>create_Paragraph_Question</b><br>Test class: tests_critical_scenarios.CreateSurveyQuestionsAndDelete<br>Test method:  Scenario Create Workroom Survey All Questions.</td>
+<td></td>
+<td>7</td>
+<td>tests_critical_scenarios.CreateSurveyQuestionsAndDelete@38bc8ab5</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreatePollQuestionAndDelete.create_Poll()'><b>create_Poll</b><br>Test class: tests_critical_scenarios.CreatePollQuestionAndDelete<br>Test method: Scenario - Create Workroom Poll.</td>
+<td></td>
+<td>12</td>
+<td>tests_critical_scenarios.CreatePollQuestionAndDelete@5bb21b69</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreatePollQuestionAndDelete.create_Poll_Question()'><b>create_Poll_Question</b><br>Test class: tests_critical_scenarios.CreatePollQuestionAndDelete<br>Test method: Scenario - Create Workroom Poll Question.</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreatePollQuestionAndDelete@5bb21b69</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateSurveyQuestionsAndDelete.create_RadioButtons_Question()'><b>create_RadioButtons_Question</b><br>Test class: tests_critical_scenarios.CreateSurveyQuestionsAndDelete<br>Test method:  Scenario Create Workroom Survey All Questions.</td>
+<td></td>
+<td>12</td>
+<td>tests_critical_scenarios.CreateSurveyQuestionsAndDelete@38bc8ab5</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateSurveyQuestionsAndDelete.create_Survey()'><b>create_Survey</b><br>Test class: tests_critical_scenarios.CreateSurveyQuestionsAndDelete<br>Test method:  Scenario Create Workroom Survey.</td>
+<td></td>
+<td>16</td>
+<td>tests_critical_scenarios.CreateSurveyQuestionsAndDelete@38bc8ab5</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateTaskAndTaskGroup.create_Task_Add_Users()'><b>create_Task_Add_Users</b><br>Test class: tests_critical_scenarios.CreateTaskAndTaskGroup<br>Test method: Create Task Add Users.</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreateTaskAndTaskGroup@687080dc</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateTaskAndTaskGroup.create_Task_AttachFile()'><b>create_Task_AttachFile</b><br>Test class: tests_critical_scenarios.CreateTaskAndTaskGroup<br>Test method: Create_Task_AttachFile.</td>
+<td></td>
+<td>3</td>
+<td>tests_critical_scenarios.CreateTaskAndTaskGroup@687080dc</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateTaskAndTaskGroup.create_Task_FillForm()'><b>create_Task_FillForm</b><br>Test class: tests_critical_scenarios.CreateTaskAndTaskGroup<br>Test method: Create Task FillForm.</td>
+<td></td>
+<td>8</td>
+<td>tests_critical_scenarios.CreateTaskAndTaskGroup@687080dc</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateTaskAndTaskGroup.create_Task_LinkGroup()'><b>create_Task_LinkGroup</b><br>Test class: tests_critical_scenarios.CreateTaskAndTaskGroup<br>Test method: Create Task Link Group.</td>
+<td></td>
+<td>7</td>
+<td>tests_critical_scenarios.CreateTaskAndTaskGroup@687080dc</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateSurveyQuestionsAndDelete.create_TextField_Question()'><b>create_TextField_Question</b><br>Test class: tests_critical_scenarios.CreateSurveyQuestionsAndDelete<br>Test method:  Scenario Create Workroom Survey All Questions.</td>
+<td></td>
+<td>8</td>
+<td>tests_critical_scenarios.CreateSurveyQuestionsAndDelete@38bc8ab5</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDiscussionSenarios1.create_Topic_Reply_And_Attachment()'><b>create_Topic_Reply_And_Attachment</b><br>Test class: tests_critical_scenarios.CreateDiscussionSenarios1<br>Test method: create_Topic_Reply_And_Attachment</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.CreateDiscussionSenarios1@3e57cd70</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDiscussionSenarios1.create_Upcoming_Discussion_Future_Date()'><b>create_Upcoming_Discussion_Future_Date</b><br>Test class: tests_critical_scenarios.CreateDiscussionSenarios1<br>Test method: Create Upcoming Discussion Future Date.</td>
+<td></td>
+<td>26</td>
+<td>tests_critical_scenarios.CreateDiscussionSenarios1@3e57cd70</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateWorkgroupAttachWorkroom.deactivate_Workgroup()'><b>deactivate_Workgroup</b><br>Test class: tests_critical_scenarios.CreateWorkgroupAttachWorkroom<br>Test method: deactivate_Workgroup</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreateWorkgroupAttachWorkroom@23d2a7e8</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.delete_Book()'><b>delete_Book</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: delete_Book</td>
+<td></td>
+<td>9</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@436e852b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDiscussionSenarios1.delete_Discussion_Topic()'><b>delete_Discussion_Topic</b><br>Test class: tests_critical_scenarios.CreateDiscussionSenarios1<br>Test method: delete_Discussion_Topic</td>
+<td></td>
+<td>17</td>
+<td>tests_critical_scenarios.CreateDiscussionSenarios1@3e57cd70</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteBookTemplate.delete_Edited_Book_Template()'><b>delete_Edited_Book_Template</b><br>Test class: tests_critical_scenarios.CreateEditDeleteBookTemplate<br>Test method: delete_Edited_Book_Template</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreateEditDeleteBookTemplate@587d1d39</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteHandbook.delete_Edited_Handbook()'><b>delete_Edited_Handbook</b><br>Test class: tests_critical_scenarios.CreateEditDeleteHandbook<br>Test method: delete_Edited_Handbook</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.CreateEditDeleteHandbook@58c1670b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteBookScannedPDF.delete_Edited_Scanned_Book()'><b>delete_Edited_Scanned_Book</b><br>Test class: tests_critical_scenarios.CreateEditDeleteBookScannedPDF<br>Test method: delete_Edited_Scanned_Book</td>
+<td></td>
+<td>7</td>
+<td>tests_critical_scenarios.CreateEditDeleteBookScannedPDF@2c039ac6</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.delete_Event_Verify_Deleted()'><b>delete_Event_Verify_Deleted</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: delete_Event_Verify_Deleted</td>
+<td></td>
+<td>11</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@436e852b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateTaskAndTaskGroup.delete_Group()'><b>delete_Group</b><br>Test class: tests_critical_scenarios.CreateTaskAndTaskGroup<br>Test method: Delete Group.</td>
+<td></td>
+<td>18</td>
+<td>tests_critical_scenarios.CreateTaskAndTaskGroup@687080dc</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreatePollQuestionAndDelete.delete_Poll()'><b>delete_Poll</b><br>Test class: tests_critical_scenarios.CreatePollQuestionAndDelete<br>Test method: Scenario - Delete Poll.</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.CreatePollQuestionAndDelete@5bb21b69</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDiscussionSenarios1.delete_Reply_To_Discussion_Topic()'><b>delete_Reply_To_Discussion_Topic</b><br>Test class: tests_critical_scenarios.CreateDiscussionSenarios1<br>Test method: delete_Reply_To_Discussion_Topic</td>
+<td></td>
+<td>18</td>
+<td>tests_critical_scenarios.CreateDiscussionSenarios1@3e57cd70</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateSurveyQuestionsAndDelete.delete_Survey()'><b>delete_Survey</b><br>Test class: tests_critical_scenarios.CreateSurveyQuestionsAndDelete<br>Test method: Scenario - Build Survey and Make Visible.</td>
+<td></td>
+<td>8</td>
+<td>tests_critical_scenarios.CreateSurveyQuestionsAndDelete@38bc8ab5</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateTaskAndTaskGroup.delete_Task()'><b>delete_Task</b><br>Test class: tests_critical_scenarios.CreateTaskAndTaskGroup<br>Test method: Delete Task.</td>
+<td></td>
+<td>8</td>
+<td>tests_critical_scenarios.CreateTaskAndTaskGroup@687080dc</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateWorkgroupAttachWorkroom.delete_Workroom()'><b>delete_Workroom</b><br>Test class: tests_critical_scenarios.CreateWorkgroupAttachWorkroom<br>Test method: delete_Workgroup</td>
+<td></td>
+<td>7</td>
+<td>tests_critical_scenarios.CreateWorkgroupAttachWorkroom@23d2a7e8</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDiscussionSenarios1.discussion_Search_4_Reply()'><b>discussion_Search_4_Reply</b><br>Test class: tests_critical_scenarios.CreateDiscussionSenarios1<br>Test method: discussion_Search_4_Reply</td>
+<td></td>
+<td>11</td>
+<td>tests_critical_scenarios.CreateDiscussionSenarios1@3e57cd70</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteBookTemplate.edit_Book_Template()'><b>edit_Book_Template</b><br>Test class: tests_critical_scenarios.CreateEditDeleteBookTemplate<br>Test method: edit_Book_Template</td>
+<td></td>
+<td>22</td>
+<td>tests_critical_scenarios.CreateEditDeleteBookTemplate@587d1d39</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDiscussionSenarios1.edit_Discussion_Topic()'><b>edit_Discussion_Topic</b><br>Test class: tests_critical_scenarios.CreateDiscussionSenarios1<br>Test method: edit_Discussion_Topic</td>
+<td></td>
+<td>16</td>
+<td>tests_critical_scenarios.CreateDiscussionSenarios1@3e57cd70</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDiscussionSenarios1.edit_Discussion_Topic_Reply()'><b>edit_Discussion_Topic_Reply</b><br>Test class: tests_critical_scenarios.CreateDiscussionSenarios1<br>Test method: edit_Discussion_Topic_Reply</td>
+<td></td>
+<td>18</td>
+<td>tests_critical_scenarios.CreateDiscussionSenarios1@3e57cd70</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteHandbook.edit_Handbook()'><b>edit_Handbook</b><br>Test class: tests_critical_scenarios.CreateEditDeleteHandbook<br>Test method: edit_Handbook</td>
+<td></td>
+<td>41</td>
+<td>tests_critical_scenarios.CreateEditDeleteHandbook@58c1670b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteBookScannedPDF.edit_Scanned_Book()'><b>edit_Scanned_Book</b><br>Test class: tests_critical_scenarios.CreateEditDeleteBookScannedPDF<br>Test method: edit_Scanned_Book</td>
+<td></td>
+<td>48</td>
+<td>tests_critical_scenarios.CreateEditDeleteBookScannedPDF@2c039ac6</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateTaskAndTaskGroup.edit_Task()'><b>edit_Task</b><br>Test class: tests_critical_scenarios.CreateTaskAndTaskGroup<br>Test method: Edit Task.</td>
+<td></td>
+<td>20</td>
+<td>tests_critical_scenarios.CreateTaskAndTaskGroup@687080dc</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDiscussionSenarios1.login()'><b>login</b><br>Test class: tests_critical_scenarios.CreateDiscussionSenarios1<br>Test method: Login Scenario with valid username and password.</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.CreateDiscussionSenarios1@3e57cd70</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateTaskAndTaskGroup.login()'><b>login</b><br>Test class: tests_critical_scenarios.CreateTaskAndTaskGroup<br>Test method: Login Scenario with valid username and password.</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.CreateTaskAndTaskGroup@687080dc</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreatePollQuestionAndDelete.login()'><b>login</b><br>Test class: tests_critical_scenarios.CreatePollQuestionAndDelete<br>Test method: Scenario Login Username and Password.</td>
+<td></td>
+<td>7</td>
+<td>tests_critical_scenarios.CreatePollQuestionAndDelete@5bb21b69</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateSurveyQuestionsAndDelete.login()'><b>login</b><br>Test class: tests_critical_scenarios.CreateSurveyQuestionsAndDelete<br>Test method: Login Scenario with valid username and password.</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreateSurveyQuestionsAndDelete@38bc8ab5</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.loginBE_WorkroomAdmin()'><b>loginBE_WorkroomAdmin</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: loginBE_WorkroomAdmin</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@32d2fa64</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.make_Book_Visible()'><b>make_Book_Visible</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: make_Book_Visible</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@32d2fa64</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.make_Book_Visible()'><b>make_Book_Visible</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: make_Book_A_Visible</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@436e852b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteHandbook.make_Handbook_Visible()'><b>make_Handbook_Visible</b><br>Test class: tests_critical_scenarios.CreateEditDeleteHandbook<br>Test method: make_Handbook_Visible</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateEditDeleteHandbook@58c1670b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteBookScannedPDF.make_Scanned_Book_Visible()'><b>make_Scanned_Book_Visible</b><br>Test class: tests_critical_scenarios.CreateEditDeleteBookScannedPDF<br>Test method: make_Scanned_Book_Visible</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateEditDeleteBookScannedPDF@2c039ac6</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginEnglishWorkroomAdmin.navigate_To_English_Language()'><b>navigate_To_English_Language</b><br>Test class: tests_critical_scenarios.LoginEnglishWorkroomAdmin<br>Test method: navigate_To_English_Language</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.LoginEnglishWorkroomAdmin@1500955a</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginEnglishSystemAdmin.navigate_To_English_Language()'><b>navigate_To_English_Language</b><br>Test class: tests_critical_scenarios.LoginEnglishSystemAdmin<br>Test method: navigate_To_English_Language</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.LoginEnglishSystemAdmin@7ce6a65d</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDeleteWorkgroup.navigate_To_Workgroups_Tab()'><b>navigate_To_Workgroups_Tab</b><br>Test class: tests_critical_scenarios.CreateDeleteWorkgroup<br>Test method: navigate_To_Workgroups_Tab</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateDeleteWorkgroup@27808f31</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteBookTemplate.open_Book_From_Templates_Page()'><b>open_Book_From_Templates_Page</b><br>Test class: tests_critical_scenarios.CreateEditDeleteBookTemplate<br>Test method: open_Book_From_Templates_Page</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.CreateEditDeleteBookTemplate@587d1d39</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteBookTemplate.open_Library_Page_for_Workroom()'><b>open_Library_Page_for_Workroom</b><br>Test class: tests_critical_scenarios.CreateEditDeleteBookTemplate<br>Test method: open_Library_Page_for_Workroom</td>
+<td></td>
+<td>7</td>
+<td>tests_critical_scenarios.CreateEditDeleteBookTemplate@587d1d39</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginEnglishWorkroomAdmin.open_User_Profile_Automation_Tester()'><b>open_User_Profile_Automation_Tester</b><br>Test class: tests_critical_scenarios.LoginEnglishWorkroomAdmin<br>Test method: open_User_Profile_Automation_Tester</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.LoginEnglishWorkroomAdmin@1500955a</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageNonAdmin.open_User_Profile_NonAdmin()'><b>open_User_Profile_NonAdmin</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageNonAdmin<br>Test method: open_User_Profile_NonAdmin</td>
+<td></td>
+<td>7</td>
+<td>tests_critical_scenarios.LoginForeignLanguageNonAdmin@e874448</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageNonAdmin.open_User_Profile_NonAdmin_Spanish()'><b>open_User_Profile_NonAdmin_Spanish</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageNonAdmin<br>Test method: open_User_Profile_NonAdmin_Spanish</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.LoginForeignLanguageNonAdmin@e874448</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageSystemAdmin.open_User_Profile_SystemAdmin()'><b>open_User_Profile_SystemAdmin</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageSystemAdmin<br>Test method: open_User_Profile_SystemAdmin</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.LoginForeignLanguageSystemAdmin@29b5cd00</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginEnglishSystemAdmin.open_User_Profile_SystemAdminEng()'><b>open_User_Profile_SystemAdminEng</b><br>Test class: tests_critical_scenarios.LoginEnglishSystemAdmin<br>Test method: open_User_Profile_SystemAdminEng</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.LoginEnglishSystemAdmin@7ce6a65d</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageSystemAdmin.open_User_Profile_SystemAdmin_Spanish()'><b>open_User_Profile_SystemAdmin_Spanish</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageSystemAdmin<br>Test method: open_User_Profile_SystemAdmin_Spanish</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.LoginForeignLanguageSystemAdmin@29b5cd00</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin.open_User_Profile_WorkroomAdmin()'><b>open_User_Profile_WorkroomAdmin</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin<br>Test method: open_User_Profile_WorkroomAdmin</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin@60285225</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin.open_User_Profile_WorkroomAdmin_Spanish()'><b>open_User_Profile_WorkroomAdmin_Spanish</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin<br>Test method: open_User_Profile_WorkroomAdmin_Spanish</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin@60285225</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDiscussionSenarios1.restore_Archived_Discussion()'><b>restore_Archived_Discussion</b><br>Test class: tests_critical_scenarios.CreateDiscussionSenarios1<br>Test method: restore_Archived_Discussion</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreateDiscussionSenarios1@3e57cd70</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin.select_Foreign_Language_English()'><b>select_Foreign_Language_English</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin<br>Test method: select_Foreign_Language_English</td>
+<td></td>
+<td>9</td>
+<td>tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin@60285225</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageNonAdmin.select_Foreign_Language_English()'><b>select_Foreign_Language_English</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageNonAdmin<br>Test method: select_Foreign_Language_English</td>
+<td></td>
+<td>10</td>
+<td>tests_critical_scenarios.LoginForeignLanguageNonAdmin@e874448</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageSystemAdmin.select_Foreign_Language_English()'><b>select_Foreign_Language_English</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageSystemAdmin<br>Test method: select_Foreign_Language_English</td>
+<td></td>
+<td>10</td>
+<td>tests_critical_scenarios.LoginForeignLanguageSystemAdmin@29b5cd00</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin.select_Foreign_Language_Spanish()'><b>select_Foreign_Language_Spanish</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin<br>Test method: select_Foreign_Language_Spanish</td>
+<td></td>
+<td>9</td>
+<td>tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin@60285225</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageNonAdmin.select_Foreign_Language_Spanish()'><b>select_Foreign_Language_Spanish</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageNonAdmin<br>Test method: select_Foreign_Language_Spanish</td>
+<td></td>
+<td>10</td>
+<td>tests_critical_scenarios.LoginForeignLanguageNonAdmin@e874448</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageSystemAdmin.select_Foreign_Language_Spanish()'><b>select_Foreign_Language_Spanish</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageSystemAdmin<br>Test method: select_Foreign_Language_Spanish</td>
+<td></td>
+<td>10</td>
+<td>tests_critical_scenarios.LoginForeignLanguageSystemAdmin@29b5cd00</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginEnglishWorkroomAdmin.set_User_Back_As_Workroom_Member()'><b>set_User_Back_As_Workroom_Member</b><br>Test class: tests_critical_scenarios.LoginEnglishWorkroomAdmin<br>Test method: systemAdmin_Set_User_As_Workroom_Member</td>
+<td></td>
+<td>12</td>
+<td>tests_critical_scenarios.LoginEnglishWorkroomAdmin@1500955a</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin.set_User_Back_As_Workroom_Member()'><b>set_User_Back_As_Workroom_Member</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin<br>Test method: systemAdmin_Set_User_As_Workroom_Member</td>
+<td></td>
+<td>12</td>
+<td>tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin@60285225</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin.steve_System_Logout_Spanish()'><b>steve_System_Logout_Spanish</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin<br>Test method: steve_System_Logout</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin@60285225</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageNonAdmin.steve_System_Logout_Spanish()'><b>steve_System_Logout_Spanish</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageNonAdmin<br>Test method: steve_System_Logout</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.LoginForeignLanguageNonAdmin@e874448</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageSystemAdmin.steve_System_Logout_Spanish()'><b>steve_System_Logout_Spanish</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageSystemAdmin<br>Test method: steve_System_Logout</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.LoginForeignLanguageSystemAdmin@29b5cd00</td></tr>
+<tr>
+<td title='tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.systemAdmin_Can_Login_To_BoardEffect_2nd_Time()'><b>systemAdmin_Can_Login_To_BoardEffect_2nd_Time</b><br>Test class: tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission<br>Test method: systemAdmin_Can_Login_To_BoardEffect_2nd_Time</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission@4abdb505</td></tr>
+<tr>
+<td title='tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.systemAdmin_Can_Login_To_BoardEffect_3rd_Time()'><b>systemAdmin_Can_Login_To_BoardEffect_3rd_Time</b><br>Test class: tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission<br>Test method: systemAdmin_Can_Login_To_BoardEffect_2nd_Time</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission@4abdb505</td></tr>
+<tr>
+<td title='tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.systemAdmin_Can_Login_To_BoardEffect_4th_Time()'><b>systemAdmin_Can_Login_To_BoardEffect_4th_Time</b><br>Test class: tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission<br>Test method: systemAdmin_Can_Login_To_BoardEffect_4th_Time</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission@4abdb505</td></tr>
+<tr>
+<td title='tests_critical_scenarios.ResetUserPassword.systemAdmin_Can_Sign_Out()'><b>systemAdmin_Can_Sign_Out</b><br>Test class: tests_critical_scenarios.ResetUserPassword<br>Test method: systemAdmin_Can_Sign_Out</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.ResetUserPassword@7a9273a8</td></tr>
+<tr>
+<td title='tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.systemAdmin_Close_And_Logout()'><b>systemAdmin_Close_And_Logout</b><br>Test class: tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission<br>Test method: systemAdmin_Close_And_Logout</td>
+<td></td>
+<td>8</td>
+<td>tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission@4abdb505</td></tr>
+<tr>
+<td title='tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.systemAdmin_Close_And_Logout_2nd_Time()'><b>systemAdmin_Close_And_Logout_2nd_Time</b><br>Test class: tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission<br>Test method: systemAdmin_Close_And_Logout</td>
+<td></td>
+<td>8</td>
+<td>tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission@4abdb505</td></tr>
+<tr>
+<td title='tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.systemAdmin_Close_And_Logout_Agian_2nd_Time()'><b>systemAdmin_Close_And_Logout_Agian_2nd_Time</b><br>Test class: tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission<br>Test method: systemAdmin_Close_And_Logout_2nd_Time</td>
+<td></td>
+<td>8</td>
+<td>tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission@4abdb505</td></tr>
+<tr>
+<td title='tests_critical_scenarios.ResetUserPassword.systemAdmin_Close_Profile_And_Logout()'><b>systemAdmin_Close_Profile_And_Logout</b><br>Test class: tests_critical_scenarios.ResetUserPassword<br>Test method: systemAdmin_Close_Profile_And_Logout</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.ResetUserPassword@7a9273a8</td></tr>
+<tr>
+<td title='tests_critical_scenarios.ResetUserPassword.systemAdmin_Login_2nd_Time()'><b>systemAdmin_Login_2nd_Time</b><br>Test class: tests_critical_scenarios.ResetUserPassword<br>Test method: systemAdmin_Login_2nd_Time</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.ResetUserPassword@7a9273a8</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageNonAdmin.systemAdmin_Login_English()'><b>systemAdmin_Login_English</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageNonAdmin<br>Test method: systemAdmin_Login_Spanish</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.LoginForeignLanguageNonAdmin@e874448</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageSystemAdmin.systemAdmin_Login_English()'><b>systemAdmin_Login_English</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageSystemAdmin<br>Test method: systemAdmin_Login_Spanish</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.LoginForeignLanguageSystemAdmin@29b5cd00</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageNonAdmin.systemAdmin_Login_Spanish()'><b>systemAdmin_Login_Spanish</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageNonAdmin<br>Test method: systemAdmin_Login_Spanish</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.LoginForeignLanguageNonAdmin@e874448</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageSystemAdmin.systemAdmin_Login_Spanish()'><b>systemAdmin_Login_Spanish</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageSystemAdmin<br>Test method: systemAdmin_Login_Spanish</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.LoginForeignLanguageSystemAdmin@29b5cd00</td></tr>
+<tr>
+<td title='tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings()'><b>systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings</b><br>Test class: tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission<br>Test method: user_Open_Settings_Then_Workroom_And_Group_Settings</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission@4abdb505</td></tr>
+<tr>
+<td title='tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_2nd_Time()'><b>systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_2nd_Time</b><br>Test class: tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission<br>Test method: systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_2nd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission@4abdb505</td></tr>
+<tr>
+<td title='tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_3rd_Time()'><b>systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_3rd_Time</b><br>Test class: tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission<br>Test method: systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_3rd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission@4abdb505</td></tr>
+<tr>
+<td title='tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_4th_Time()'><b>systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_4th_Time</b><br>Test class: tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission<br>Test method: systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_4th_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission@4abdb505</td></tr>
+<tr>
+<td title='tests_critical_scenarios.ResetUserPassword.systemAdmin_Opens_Directory_Search_For_User()'><b>systemAdmin_Opens_Directory_Search_For_User</b><br>Test class: tests_critical_scenarios.ResetUserPassword<br>Test method: user opens setting form and open workroom & group settings</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.ResetUserPassword@7a9273a8</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginEnglishWorkroomAdmin.systemAdmin_Set_User_As_Workroom_Admin()'><b>systemAdmin_Set_User_As_Workroom_Admin</b><br>Test class: tests_critical_scenarios.LoginEnglishWorkroomAdmin<br>Test method: systemAdmin_Set_User_As_Workroom_Admin</td>
+<td></td>
+<td>13</td>
+<td>tests_critical_scenarios.LoginEnglishWorkroomAdmin@1500955a</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin.systemAdmin_Set_User_As_Workroom_Admin()'><b>systemAdmin_Set_User_As_Workroom_Admin</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin<br>Test method: systemAdmin_Set_User_As_Workroom_Admin</td>
+<td></td>
+<td>13</td>
+<td>tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin@60285225</td></tr>
+<tr>
+<td title='tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.systemAdmin_Set_User_As_Workroom_Admin()'><b>systemAdmin_Set_User_As_Workroom_Admin</b><br>Test class: tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission<br>Test method: systemAdmin_Set_User_As_Workroom_Admin</td>
+<td></td>
+<td>18</td>
+<td>tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission@4abdb505</td></tr>
+<tr>
+<td title='tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.systemAdmin_Set_User_As_Workroom_Member()'><b>systemAdmin_Set_User_As_Workroom_Member</b><br>Test class: tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission<br>Test method: systemAdmin_Set_User_As_Workroom_Member</td>
+<td></td>
+<td>12</td>
+<td>tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission@4abdb505</td></tr>
+<tr>
+<td title='tests_critical_scenarios.ResetUserPassword.systemAdmin_Update_User_Password()'><b>systemAdmin_Update_User_Password</b><br>Test class: tests_critical_scenarios.ResetUserPassword<br>Test method: systemAdmin_Update_User_Password</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.ResetUserPassword@7a9273a8</td></tr>
+<tr>
+<td title='tests_critical_scenarios.ResetUserPassword.systemAdmin_Update_User_Password_Back_To_Original()'><b>systemAdmin_Update_User_Password_Back_To_Original</b><br>Test class: tests_critical_scenarios.ResetUserPassword<br>Test method: systemAdmin_Update_User_Password_Back_To_Original</td>
+<td></td>
+<td>12</td>
+<td>tests_critical_scenarios.ResetUserPassword@7a9273a8</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginEnglishWorkroomAdmin.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_critical_scenarios.LoginEnglishWorkroomAdmin<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.LoginEnglishWorkroomAdmin@1500955a</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin@60285225</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookUploadMyOwnBook.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_critical_scenarios.CreateBookUploadMyOwnBook<br>Test method: Login UserName Password.</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateBookUploadMyOwnBook@1d8d30f7</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDeleteWorkgroup.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_critical_scenarios.CreateDeleteWorkgroup<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreateDeleteWorkgroup@27808f31</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDeleteWorkroom.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_critical_scenarios.CreateDeleteWorkroom<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateDeleteWorkroom@37d31475</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginEnglishSystemAdmin.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_critical_scenarios.LoginEnglishSystemAdmin<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.LoginEnglishSystemAdmin@7ce6a65d</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageNonAdmin.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageNonAdmin<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.LoginForeignLanguageNonAdmin@e874448</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageSystemAdmin.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageSystemAdmin<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.LoginForeignLanguageSystemAdmin@29b5cd00</td></tr>
+<tr>
+<td title='tests_critical_scenarios.ResetUserPassword.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_critical_scenarios.ResetUserPassword<br>Test method: LoginLogoutPage</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.ResetUserPassword@7a9273a8</td></tr>
+<tr>
+<td title='tests_critical_scenarios.RunAttendanceReport.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_critical_scenarios.RunAttendanceReport<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.RunAttendanceReport@26a7b76d</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateResourceLibraryFolderAddFile.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_critical_scenarios.CreateResourceLibraryFolderAddFile<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>7</td>
+<td>tests_critical_scenarios.CreateResourceLibraryFolderAddFile@6b9651f3</td></tr>
+<tr>
+<td title='tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission<br>Test method: Login UserName Password.</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission@4abdb505</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateWorkgroupAttachWorkroom.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_critical_scenarios.CreateWorkgroupAttachWorkroom<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateWorkgroupAttachWorkroom@23d2a7e8</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteBookScannedPDF.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_critical_scenarios.CreateEditDeleteBookScannedPDF<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.CreateEditDeleteBookScannedPDF@2c039ac6</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginEnglishWorkroomAdmin.system_Admin_Logout()'><b>system_Admin_Logout</b><br>Test class: tests_critical_scenarios.LoginEnglishWorkroomAdmin<br>Test method: steve_System_Logout</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.LoginEnglishWorkroomAdmin@1500955a</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin.system_Admin_Logout()'><b>system_Admin_Logout</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin<br>Test method: steve_System_Logout</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin@60285225</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginEnglishSystemAdmin.system_Admin_Logout()'><b>system_Admin_Logout</b><br>Test class: tests_critical_scenarios.LoginEnglishSystemAdmin<br>Test method: steve_System_Logout</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.LoginEnglishSystemAdmin@7ce6a65d</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageNonAdmin.system_Admin_Logout()'><b>system_Admin_Logout</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageNonAdmin<br>Test method: steve_System_Logout</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.LoginForeignLanguageNonAdmin@e874448</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageSystemAdmin.system_Admin_Logout()'><b>system_Admin_Logout</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageSystemAdmin<br>Test method: steve_System_Logout</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.LoginForeignLanguageSystemAdmin@29b5cd00</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginEnglishWorkroomAdmin.system_Admin_Logout_2nd_Time()'><b>system_Admin_Logout_2nd_Time</b><br>Test class: tests_critical_scenarios.LoginEnglishWorkroomAdmin<br>Test method: system_Admin_Logout_2nd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.LoginEnglishWorkroomAdmin@1500955a</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteHandbook.user_Add_Agenda_To_HandBook()'><b>user_Add_Agenda_To_HandBook</b><br>Test class: tests_critical_scenarios.CreateEditDeleteHandbook<br>Test method: user_Add_Agenda_To_HandBook</td>
+<td></td>
+<td>1</td>
+<td>tests_critical_scenarios.CreateEditDeleteHandbook@58c1670b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteBookTemplate.user_Add_Agenda_To_Template()'><b>user_Add_Agenda_To_Template</b><br>Test class: tests_critical_scenarios.CreateEditDeleteBookTemplate<br>Test method: user_Add_Agenda_To_Template</td>
+<td></td>
+<td>1</td>
+<td>tests_critical_scenarios.CreateEditDeleteBookTemplate@587d1d39</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteBookScannedPDF.user_Add_Agenda_To_Template()'><b>user_Add_Agenda_To_Template</b><br>Test class: tests_critical_scenarios.CreateEditDeleteBookScannedPDF<br>Test method: user_Add_Agenda_To_Template</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.CreateEditDeleteBookScannedPDF@2c039ac6</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteHandbook.user_Add_CoverPage_To_HandBook()'><b>user_Add_CoverPage_To_HandBook</b><br>Test class: tests_critical_scenarios.CreateEditDeleteHandbook<br>Test method: user_Add_CoverPage_To_HandBook</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateEditDeleteHandbook@58c1670b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteBookTemplate.user_Add_Coverpage_To_Book_Template()'><b>user_Add_Coverpage_To_Book_Template</b><br>Test class: tests_critical_scenarios.CreateEditDeleteBookTemplate<br>Test method: user_Add_Coverpage_To_Book_Template</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateEditDeleteBookTemplate@587d1d39</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.user_Add_File_To_First_Catagory()'><b>user_Add_File_To_First_Catagory</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: user_Add_File_To_First_Catagory</td>
+<td></td>
+<td>8</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@436e852b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteBookTemplate.user_Add_File_To_First_Catagory()'><b>user_Add_File_To_First_Catagory</b><br>Test class: tests_critical_scenarios.CreateEditDeleteBookTemplate<br>Test method: user_Add_File_To_First_Catagory</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.CreateEditDeleteBookTemplate@587d1d39</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteHandbook.user_Add_File_To_First_Catagory()'><b>user_Add_File_To_First_Catagory</b><br>Test class: tests_critical_scenarios.CreateEditDeleteHandbook<br>Test method: user_Add_File_To_First_Catagory</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.CreateEditDeleteHandbook@58c1670b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.user_Add_First_Catagory_To_Book()'><b>user_Add_First_Catagory_To_Book</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: user_Add_First_Catagory_To_Book</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@436e852b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteBookTemplate.user_Add_First_Catagory_To_Book_Template()'><b>user_Add_First_Catagory_To_Book_Template</b><br>Test class: tests_critical_scenarios.CreateEditDeleteBookTemplate<br>Test method: user_Add_First_Catagory_To_Book_Template</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreateEditDeleteBookTemplate@587d1d39</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteHandbook.user_Add_First_Catagory_To_HandBook()'><b>user_Add_First_Catagory_To_HandBook</b><br>Test class: tests_critical_scenarios.CreateEditDeleteHandbook<br>Test method: user_Add_First_Catagory_To_HandBook</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreateEditDeleteHandbook@58c1670b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteBookScannedPDF.user_Add_First_Catagory_To_Scanned_Book()'><b>user_Add_First_Catagory_To_Scanned_Book</b><br>Test class: tests_critical_scenarios.CreateEditDeleteBookScannedPDF<br>Test method: user_Add_File_To_First_Catagory</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreateEditDeleteBookScannedPDF@2c039ac6</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteBookScannedPDF.user_Add_Scanned_Book_To_New_Catagory()'><b>user_Add_Scanned_Book_To_New_Catagory</b><br>Test class: tests_critical_scenarios.CreateEditDeleteBookScannedPDF<br>Test method: user_Add_Scanned_Book_To_New_Catagory</td>
+<td></td>
+<td>7</td>
+<td>tests_critical_scenarios.CreateEditDeleteBookScannedPDF@2c039ac6</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteBookTemplate.user_Add_Second_Catagory_To_Handbook()'><b>user_Add_Second_Catagory_To_Handbook</b><br>Test class: tests_critical_scenarios.CreateEditDeleteBookTemplate<br>Test method: user_Add_Second_Catagory</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateEditDeleteBookTemplate@587d1d39</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteHandbook.user_Add_Second_Catagory_To_Handbook()'><b>user_Add_Second_Catagory_To_Handbook</b><br>Test class: tests_critical_scenarios.CreateEditDeleteHandbook<br>Test method: user_Add_Second_Catagory</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateEditDeleteHandbook@58c1670b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.user_Can_Add_Agenda()'><b>user_Can_Add_Agenda</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: user_Can_Add_Agenda</td>
+<td></td>
+<td>1</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@436e852b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteBookScannedPDF.user_Can_Add_CoverPage()'><b>user_Can_Add_CoverPage</b><br>Test class: tests_critical_scenarios.CreateEditDeleteBookScannedPDF<br>Test method: user_Can_Add_CoverPage</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreateEditDeleteBookScannedPDF@2c039ac6</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.user_Can_Add_Cover_Page()'><b>user_Can_Add_Cover_Page</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: user_Can_Add_Cover_Page</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@436e852b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateMessageWorkroom.user_Can_Add_Manual_Email_To_List()'><b>user_Can_Add_Manual_Email_To_List</b><br>Test class: tests_critical_scenarios.CreateMessageWorkroom<br>Test method: user_Can_Add_Manual_Email_To_List</td>
+<td></td>
+<td>1</td>
+<td>tests_critical_scenarios.CreateMessageWorkroom@6b57696f</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateResourceLibraryFolderAddFile.user_Can_Add_Resource_File_To_Folder()'><b>user_Can_Add_Resource_File_To_Folder</b><br>Test class: tests_critical_scenarios.CreateResourceLibraryFolderAddFile<br>Test method: user_Can_Add_Resource_File_To_Folder</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateResourceLibraryFolderAddFile@6b9651f3</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.user_Can_Attach_Book_To_Event()'><b>user_Can_Attach_Book_To_Event</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: user_Can_Attach_Book_To_Event</td>
+<td></td>
+<td>10</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@436e852b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.user_Can_Attach_Resource_To_Event_And_Save()'><b>user_Can_Attach_Resource_To_Event_And_Save</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: user_Can_Attach_Resource_To_Event_And_Save</td>
+<td></td>
+<td>11</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@436e852b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.user_Can_Build_Book()'><b>user_Can_Build_Book</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: user_Can_Build_Book</td>
+<td></td>
+<td>24</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@32d2fa64</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.user_Can_Build_Book()'><b>user_Can_Build_Book</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: user_Can_Build_Book</td>
+<td></td>
+<td>22</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@436e852b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteBookScannedPDF.user_Can_Build_Book()'><b>user_Can_Build_Book</b><br>Test class: tests_critical_scenarios.CreateEditDeleteBookScannedPDF<br>Test method: user_Can_Build_Book</td>
+<td></td>
+<td>14</td>
+<td>tests_critical_scenarios.CreateEditDeleteBookScannedPDF@2c039ac6</td></tr>
+<tr>
+<td title='tests_critical_scenarios.RunAttendanceReport.user_Can_Configure_Attendence_Report()'><b>user_Can_Configure_Attendence_Report</b><br>Test class: tests_critical_scenarios.RunAttendanceReport<br>Test method: user_Can_Configure_Attendence_Report</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.RunAttendanceReport@26a7b76d</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditCopyDeleteEvent.user_Can_Copy_Event()'><b>user_Can_Copy_Event</b><br>Test class: tests_critical_scenarios.CreateEditCopyDeleteEvent<br>Test method: user_Can_Copy_Event</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.CreateEditCopyDeleteEvent@9a7504c</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookUploadMyOwnBook.user_Can_Create_New_Book()'><b>user_Can_Create_New_Book</b><br>Test class: tests_critical_scenarios.CreateBookUploadMyOwnBook<br>Test method: user_Can_Create_New_Book</td>
+<td></td>
+<td>3</td>
+<td>tests_critical_scenarios.CreateBookUploadMyOwnBook@1d8d30f7</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteBookScannedPDF.user_Can_Create_New_Book_Add_Title()'><b>user_Can_Create_New_Book_Add_Title</b><br>Test class: tests_critical_scenarios.CreateEditDeleteBookScannedPDF<br>Test method: user_Can_Create_New_Book_Add_Title</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateEditDeleteBookScannedPDF@2c039ac6</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditCopyDeleteEvent.user_Can_Create_New_Event()'><b>user_Can_Create_New_Event</b><br>Test class: tests_critical_scenarios.CreateEditCopyDeleteEvent<br>Test method: user_Can_Create_New_Event</td>
+<td></td>
+<td>15</td>
+<td>tests_critical_scenarios.CreateEditCopyDeleteEvent@9a7504c</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDeleteWorkgroup.user_Can_Create_New_Group()'><b>user_Can_Create_New_Group</b><br>Test class: tests_critical_scenarios.CreateDeleteWorkgroup<br>Test method: user_Can_Create_New_Group</td>
+<td></td>
+<td>10</td>
+<td>tests_critical_scenarios.CreateDeleteWorkgroup@27808f31</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateWorkgroupAttachWorkroom.user_Can_Create_New_Group()'><b>user_Can_Create_New_Group</b><br>Test class: tests_critical_scenarios.CreateWorkgroupAttachWorkroom<br>Test method: user_Can_Create_New_Group</td>
+<td></td>
+<td>8</td>
+<td>tests_critical_scenarios.CreateWorkgroupAttachWorkroom@23d2a7e8</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteHandbook.user_Can_Create_New_Handbook()'><b>user_Can_Create_New_Handbook</b><br>Test class: tests_critical_scenarios.CreateEditDeleteHandbook<br>Test method: user_Can_Create_New_Handbook</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateEditDeleteHandbook@58c1670b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateResourceLibraryFolderAddFile.user_Can_Create_New_Resource_Library_Folder()'><b>user_Can_Create_New_Resource_Library_Folder</b><br>Test class: tests_critical_scenarios.CreateResourceLibraryFolderAddFile<br>Test method: user_Can_Create_New_Resource_Library_Folder</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateResourceLibraryFolderAddFile@6b9651f3</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDeleteWorkroom.user_Can_Create_New_Workroom()'><b>user_Can_Create_New_Workroom</b><br>Test class: tests_critical_scenarios.CreateDeleteWorkroom<br>Test method: user_Can_Create_New_Workroom</td>
+<td></td>
+<td>9</td>
+<td>tests_critical_scenarios.CreateDeleteWorkroom@37d31475</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDeleteWorkroom.user_Can_Deactivate_Workroom()'><b>user_Can_Deactivate_Workroom</b><br>Test class: tests_critical_scenarios.CreateDeleteWorkroom<br>Test method: user_Can_Deactivate_Workroom</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreateDeleteWorkroom@37d31475</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.user_Can_Delete_Book()'><b>user_Can_Delete_Book</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: user_Can_Delete_Book</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@32d2fa64</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookUploadMyOwnBook.user_Can_Delete_Book()'><b>user_Can_Delete_Book</b><br>Test class: tests_critical_scenarios.CreateBookUploadMyOwnBook<br>Test method: user_Can_Delete_Book</td>
+<td></td>
+<td>13</td>
+<td>tests_critical_scenarios.CreateBookUploadMyOwnBook@1d8d30f7</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditCopyDeleteEvent.user_Can_Delete_Copied_Event()'><b>user_Can_Delete_Copied_Event</b><br>Test class: tests_critical_scenarios.CreateEditCopyDeleteEvent<br>Test method: user_Can_Delete_Copied_Event</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.CreateEditCopyDeleteEvent@9a7504c</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateResourceLibraryFolderAddFile.user_Can_Delete_File()'><b>user_Can_Delete_File</b><br>Test class: tests_critical_scenarios.CreateResourceLibraryFolderAddFile<br>Test method: user_Can_Delete_File</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateResourceLibraryFolderAddFile@6b9651f3</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDeleteWorkgroup.user_Can_Delete_New_Group()'><b>user_Can_Delete_New_Group</b><br>Test class: tests_critical_scenarios.CreateDeleteWorkgroup<br>Test method: user_Can_Delete_New_Group</td>
+<td></td>
+<td>15</td>
+<td>tests_critical_scenarios.CreateDeleteWorkgroup@27808f31</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDeleteWorkroom.user_Can_Delete_Workroom()'><b>user_Can_Delete_Workroom</b><br>Test class: tests_critical_scenarios.CreateDeleteWorkroom<br>Test method: user_Can_Delete_Workroom</td>
+<td></td>
+<td>11</td>
+<td>tests_critical_scenarios.CreateDeleteWorkroom@37d31475</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditCopyDeleteEvent.user_Can_Edit_Event()'><b>user_Can_Edit_Event</b><br>Test class: tests_critical_scenarios.CreateEditCopyDeleteEvent<br>Test method: user_Can_Edit_Event</td>
+<td></td>
+<td>10</td>
+<td>tests_critical_scenarios.CreateEditCopyDeleteEvent@9a7504c</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookUploadMyOwnBook.user_Can_Make_Upload_Book_Visible()'><b>user_Can_Make_Upload_Book_Visible</b><br>Test class: tests_critical_scenarios.CreateBookUploadMyOwnBook<br>Test method: user_Can_Make_Upload_Book_Visible</td>
+<td></td>
+<td>1</td>
+<td>tests_critical_scenarios.CreateBookUploadMyOwnBook@1d8d30f7</td></tr>
+<tr>
+<td title='tests_critical_scenarios.RunAttendanceReport.user_Can_Open_Attendance_Menu()'><b>user_Can_Open_Attendance_Menu</b><br>Test class: tests_critical_scenarios.RunAttendanceReport<br>Test method: user_Can_Open_Attendance_Menu</td>
+<td></td>
+<td>1</td>
+<td>tests_critical_scenarios.RunAttendanceReport@26a7b76d</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginEnglishWorkroomAdmin.user_Can_Open_Directory()'><b>user_Can_Open_Directory</b><br>Test class: tests_critical_scenarios.LoginEnglishWorkroomAdmin<br>Test method: user_Can_Open_Directory</td>
+<td></td>
+<td>1</td>
+<td>tests_critical_scenarios.LoginEnglishWorkroomAdmin@1500955a</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin.user_Can_Open_Directory()'><b>user_Can_Open_Directory</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin<br>Test method: user_Can_Open_Directory</td>
+<td></td>
+<td>1</td>
+<td>tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin@60285225</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginEnglishSystemAdmin.user_Can_Open_Directory()'><b>user_Can_Open_Directory</b><br>Test class: tests_critical_scenarios.LoginEnglishSystemAdmin<br>Test method: user_Can_Open_Directory</td>
+<td></td>
+<td>1</td>
+<td>tests_critical_scenarios.LoginEnglishSystemAdmin@7ce6a65d</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageNonAdmin.user_Can_Open_Directory()'><b>user_Can_Open_Directory</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageNonAdmin<br>Test method: user_Can_Open_Directory</td>
+<td></td>
+<td>1</td>
+<td>tests_critical_scenarios.LoginForeignLanguageNonAdmin@e874448</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageSystemAdmin.user_Can_Open_Directory()'><b>user_Can_Open_Directory</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageSystemAdmin<br>Test method: user_Can_Open_Directory</td>
+<td></td>
+<td>1</td>
+<td>tests_critical_scenarios.LoginForeignLanguageSystemAdmin@29b5cd00</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin.user_Can_Open_Directory_Spanish()'><b>user_Can_Open_Directory_Spanish</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin<br>Test method: user_Can_Open_Directory_Spanish</td>
+<td></td>
+<td>1</td>
+<td>tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin@60285225</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageNonAdmin.user_Can_Open_Directory_Spanish()'><b>user_Can_Open_Directory_Spanish</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageNonAdmin<br>Test method: user_Can_Open_Directory_Spanish</td>
+<td></td>
+<td>1</td>
+<td>tests_critical_scenarios.LoginForeignLanguageNonAdmin@e874448</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageSystemAdmin.user_Can_Open_Directory_Spanish()'><b>user_Can_Open_Directory_Spanish</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageSystemAdmin<br>Test method: user_Can_Open_Directory_Spanish</td>
+<td></td>
+<td>1</td>
+<td>tests_critical_scenarios.LoginForeignLanguageSystemAdmin@29b5cd00</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateResourceLibraryFolderAddFile.user_Can_Open_Libraries_Form()'><b>user_Can_Open_Libraries_Form</b><br>Test class: tests_critical_scenarios.CreateResourceLibraryFolderAddFile<br>Test method: user opens setting form and open workroom & group settings</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.CreateResourceLibraryFolderAddFile@6b9651f3</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.user_Can_Open_Library_Page_For_Workroom()'><b>user_Can_Open_Library_Page_For_Workroom</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: user_Can_Open_Library_Page_For_Workroom</td>
+<td></td>
+<td>7</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@436e852b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookUploadMyOwnBook.user_Can_Open_Library_Page_For_Workroom()'><b>user_Can_Open_Library_Page_For_Workroom</b><br>Test class: tests_critical_scenarios.CreateBookUploadMyOwnBook<br>Test method: user_Can_Open_Library_Page_For_Workroom</td>
+<td></td>
+<td>7</td>
+<td>tests_critical_scenarios.CreateBookUploadMyOwnBook@1d8d30f7</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateResourceLibraryFolderAddFile.user_Can_Open_Resource_Library_Folder()'><b>user_Can_Open_Resource_Library_Folder</b><br>Test class: tests_critical_scenarios.CreateResourceLibraryFolderAddFile<br>Test method: user_Can_Open_Resource_Library_Folder</td>
+<td></td>
+<td>3</td>
+<td>tests_critical_scenarios.CreateResourceLibraryFolderAddFile@6b9651f3</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateMessageWorkroom.user_Can_Remove_User_From_List()'><b>user_Can_Remove_User_From_List</b><br>Test class: tests_critical_scenarios.CreateMessageWorkroom<br>Test method: user_Can_Remove_User_From_List</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreateMessageWorkroom@6b57696f</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.user_Can_Save_Book_And_Continue()'><b>user_Can_Save_Book_And_Continue</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: user_Can_Add_Agenda</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@436e852b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteBookScannedPDF.user_Can_Save_Scanned_Book()'><b>user_Can_Save_Scanned_Book</b><br>Test class: tests_critical_scenarios.CreateEditDeleteBookScannedPDF<br>Test method: user_Can_Save_Scanned_Book</td>
+<td></td>
+<td>3</td>
+<td>tests_critical_scenarios.CreateEditDeleteBookScannedPDF@2c039ac6</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookUploadMyOwnBook.user_Can_Upload_New_Book()'><b>user_Can_Upload_New_Book</b><br>Test class: tests_critical_scenarios.CreateBookUploadMyOwnBook<br>Test method: user_Can_Upload_New_Book</td>
+<td></td>
+<td>8</td>
+<td>tests_critical_scenarios.CreateBookUploadMyOwnBook@1d8d30f7</td></tr>
+<tr>
+<td title='tests_critical_scenarios.RunAttendanceReport.user_Can_Verify_Filter_Change()'><b>user_Can_Verify_Filter_Change</b><br>Test class: tests_critical_scenarios.RunAttendanceReport<br>Test method: user_Can_Verify_Filter_Change</td>
+<td></td>
+<td>0</td>
+<td>tests_critical_scenarios.RunAttendanceReport@26a7b76d</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.user_Click_Attach_Create_And_Click_Resource_Tab()'><b>user_Click_Attach_Create_And_Click_Resource_Tab</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: user_Click_Attach_Create_And_Click_Resource_Tab</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@436e852b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteBookTemplate.user_Create_New_BookTemplate()'><b>user_Create_New_BookTemplate</b><br>Test class: tests_critical_scenarios.CreateEditDeleteBookTemplate<br>Test method: user_Create_New_BookTemplate</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreateEditDeleteBookTemplate@587d1d39</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditCopyDeleteEvent.user_Delete_Event()'><b>user_Delete_Event</b><br>Test class: tests_critical_scenarios.CreateEditCopyDeleteEvent<br>Test method: user_Delete_Event</td>
+<td></td>
+<td>19</td>
+<td>tests_critical_scenarios.CreateEditCopyDeleteEvent@9a7504c</td></tr>
+<tr>
+<td title='tests_critical_scenarios.RunAttendanceReport.user_Generate_And_Download_Excel_Report()'><b>user_Generate_And_Download_Excel_Report</b><br>Test class: tests_critical_scenarios.RunAttendanceReport<br>Test method: user_Generate_And_Download_Excel_Report</td>
+<td></td>
+<td>10</td>
+<td>tests_critical_scenarios.RunAttendanceReport@26a7b76d</td></tr>
+<tr>
+<td title='tests_critical_scenarios.RunAttendanceReport.user_Generate_And_Download_PDF_Report()'><b>user_Generate_And_Download_PDF_Report</b><br>Test class: tests_critical_scenarios.RunAttendanceReport<br>Test method: user_Generate_And_Download_PDF_Report</td>
+<td></td>
+<td>12</td>
+<td>tests_critical_scenarios.RunAttendanceReport@26a7b76d</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteBookScannedPDF.user_Open_Library_Page_For_Workroom()'><b>user_Open_Library_Page_For_Workroom</b><br>Test class: tests_critical_scenarios.CreateEditDeleteBookScannedPDF<br>Test method: user_Open_Library_Page_For_Workroom</td>
+<td></td>
+<td>7</td>
+<td>tests_critical_scenarios.CreateEditDeleteBookScannedPDF@2c039ac6</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateMessageWorkroom.user_Open_Message_Workroom_Window()'><b>user_Open_Message_Workroom_Window</b><br>Test class: tests_critical_scenarios.CreateMessageWorkroom<br>Test method: user_Open_Message_Workroom_Window</td>
+<td></td>
+<td>1</td>
+<td>tests_critical_scenarios.CreateMessageWorkroom@6b57696f</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateMessageWorkroom.user_Open_Workroom()'><b>user_Open_Workroom</b><br>Test class: tests_critical_scenarios.CreateMessageWorkroom<br>Test method: user_Open_Workroom</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateMessageWorkroom@6b57696f</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteHandbook.user_Opens_Library_Page_For_Workroom()'><b>user_Opens_Library_Page_For_Workroom</b><br>Test class: tests_critical_scenarios.CreateEditDeleteHandbook<br>Test method: user can open library page for workroom</td>
+<td></td>
+<td>7</td>
+<td>tests_critical_scenarios.CreateEditDeleteHandbook@58c1670b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteBookScannedPDF.user_Opens_Meeting_Book_Viewer_And_Scroll()'><b>user_Opens_Meeting_Book_Viewer_And_Scroll</b><br>Test class: tests_critical_scenarios.CreateEditDeleteBookScannedPDF<br>Test method: user_Opens_Meeting_Book_Viewer_And_Scroll</td>
+<td></td>
+<td>21</td>
+<td>tests_critical_scenarios.CreateEditDeleteBookScannedPDF@2c039ac6</td></tr>
+<tr>
+<td title='tests_critical_scenarios.RunAttendanceReport.user_Opens_Settings_Form_Open_Reports()'><b>user_Opens_Settings_Form_Open_Reports</b><br>Test class: tests_critical_scenarios.RunAttendanceReport<br>Test method: user opens setting form and open workroom & group settings</td>
+<td></td>
+<td>3</td>
+<td>tests_critical_scenarios.RunAttendanceReport@26a7b76d</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDeleteWorkgroup.user_Opens_Settings_Opens_Workroom_And_Group_Settings()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings</b><br>Test class: tests_critical_scenarios.CreateDeleteWorkgroup<br>Test method: admin_opens_Site_Settings_Workrooms_And_Groups</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.CreateDeleteWorkgroup@27808f31</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDeleteWorkroom.user_Opens_Settings_Opens_Workroom_And_Group_Settings()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings</b><br>Test class: tests_critical_scenarios.CreateDeleteWorkroom<br>Test method: user opens setting form and open workroom & group settings</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.CreateDeleteWorkroom@37d31475</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateWorkgroupAttachWorkroom.user_Opens_Settings_Opens_Workroom_And_Group_Settings()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings</b><br>Test class: tests_critical_scenarios.CreateWorkgroupAttachWorkroom<br>Test method: user opens setting form and open workroom & group settings</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.CreateWorkgroupAttachWorkroom@23d2a7e8</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDeleteWorkgroup.user_Opens_Settings_Opens_Workroom_And_Group_Settings_Again()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings_Again</b><br>Test class: tests_critical_scenarios.CreateDeleteWorkgroup<br>Test method: user_Opens_Settings_Opens_Workroom_And_Group_Settings_Again</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.CreateDeleteWorkgroup@27808f31</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDeleteWorkroom.user_Opens_Settings_Opens_Workroom_And_Group_Settings_Again()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings_Again</b><br>Test class: tests_critical_scenarios.CreateDeleteWorkroom<br>Test method: user_Opens_Settings_Opens_Workroom_And_Group_Settings_Again</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreateDeleteWorkroom@37d31475</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateMessageWorkroom.user_Populate_Email_Form_Send_Message()'><b>user_Populate_Email_Form_Send_Message</b><br>Test class: tests_critical_scenarios.CreateMessageWorkroom<br>Test method: user_Populate_Email_Form_Send_Message</td>
+<td></td>
+<td>0</td>
+<td>tests_critical_scenarios.CreateMessageWorkroom@6b57696f</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteBookTemplate.user_Save_Book_Template()'><b>user_Save_Book_Template</b><br>Test class: tests_critical_scenarios.CreateEditDeleteBookTemplate<br>Test method: user_Save_Book_Template</td>
+<td></td>
+<td>3</td>
+<td>tests_critical_scenarios.CreateEditDeleteBookTemplate@587d1d39</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteHandbook.user_Save_HandBook()'><b>user_Save_HandBook</b><br>Test class: tests_critical_scenarios.CreateEditDeleteHandbook<br>Test method: user_Save_HandBook</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateEditDeleteHandbook@58c1670b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateWorkgroupAttachWorkroom.user_attach_workgroup_to_workroom()'><b>user_attach_workgroup_to_workroom</b><br>Test class: tests_critical_scenarios.CreateWorkgroupAttachWorkroom<br>Test method: user_attach_workgroup_to_workroom</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.CreateWorkgroupAttachWorkroom@23d2a7e8</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageSystemAdmin.verify_Atlas_Left_Nav_Bar()'><b>verify_Atlas_Left_Nav_Bar</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageSystemAdmin<br>Test method: verify_Atlas_Left_Nav_Bar</td>
+<td></td>
+<td>0</td>
+<td>tests_critical_scenarios.LoginForeignLanguageSystemAdmin@29b5cd00</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.verify_Book_And_Resource_Tabs_Appear_On_Event_Card()'><b>verify_Book_And_Resource_Tabs_Appear_On_Event_Card</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: verify_Book_And_Resource_Tabs_Appear_On_Event_Card</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@436e852b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.verify_Book_And_Resource_Tabs_Appear_On_Event_Details()'><b>verify_Book_And_Resource_Tabs_Appear_On_Event_Details</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: verify_Book_And_Resource_Tabs_Appear_On_Event_Details</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@436e852b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.verify_Book_Deleted()'><b>verify_Book_Deleted</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: verify_Book_Deleted</td>
+<td></td>
+<td>8</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@32d2fa64</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.verify_Book_Deleted()'><b>verify_Book_Deleted</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: verify_Book_Deleted</td>
+<td></td>
+<td>8</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@436e852b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookUploadMyOwnBook.verify_Book_Deleted()'><b>verify_Book_Deleted</b><br>Test class: tests_critical_scenarios.CreateBookUploadMyOwnBook<br>Test method: verify_Book_Deleted</td>
+<td></td>
+<td>10</td>
+<td>tests_critical_scenarios.CreateBookUploadMyOwnBook@1d8d30f7</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteBookTemplate.verify_Edited_Book_Template_Deleted()'><b>verify_Edited_Book_Template_Deleted</b><br>Test class: tests_critical_scenarios.CreateEditDeleteBookTemplate<br>Test method: verify_Edited_Book_Template_Deleted</td>
+<td></td>
+<td>11</td>
+<td>tests_critical_scenarios.CreateEditDeleteBookTemplate@587d1d39</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteBookScannedPDF.verify_Edited_Scanned_Book_Deleted()'><b>verify_Edited_Scanned_Book_Deleted</b><br>Test class: tests_critical_scenarios.CreateEditDeleteBookScannedPDF<br>Test method: verify_Scanned_Book_Deleted</td>
+<td></td>
+<td>8</td>
+<td>tests_critical_scenarios.CreateEditDeleteBookScannedPDF@2c039ac6</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateMessageWorkroom.verify_Email_Sent_Verification_Messages()'><b>verify_Email_Sent_Verification_Messages</b><br>Test class: tests_critical_scenarios.CreateMessageWorkroom<br>Test method: verify_Email_Sent_Message</td>
+<td></td>
+<td>8</td>
+<td>tests_critical_scenarios.CreateMessageWorkroom@6b57696f</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageNonAdmin.verify_English_Welcome_Message()'><b>verify_English_Welcome_Message</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageNonAdmin<br>Test method: verify_Spanish_Welcome_Message</td>
+<td></td>
+<td>0</td>
+<td>tests_critical_scenarios.LoginForeignLanguageNonAdmin@e874448</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDeleteWorkgroup.verify_Group_Deleted()'><b>verify_Group_Deleted</b><br>Test class: tests_critical_scenarios.CreateDeleteWorkgroup<br>Test method: verify_Group_Deleted</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreateDeleteWorkgroup@27808f31</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateWorkgroupAttachWorkroom.verify_Group_Deleted()'><b>verify_Group_Deleted</b><br>Test class: tests_critical_scenarios.CreateWorkgroupAttachWorkroom<br>Test method: verify_Group_Deleted</td>
+<td></td>
+<td>12</td>
+<td>tests_critical_scenarios.CreateWorkgroupAttachWorkroom@23d2a7e8</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateEditDeleteHandbook.verify_Handbook_Deleted()'><b>verify_Handbook_Deleted</b><br>Test class: tests_critical_scenarios.CreateEditDeleteHandbook<br>Test method: verify_handbook_Deleted</td>
+<td></td>
+<td>11</td>
+<td>tests_critical_scenarios.CreateEditDeleteHandbook@58c1670b</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateTaskAndTaskGroup.verify_Task_Group_And_Task_Created()'><b>verify_Task_Group_And_Task_Created</b><br>Test class: tests_critical_scenarios.CreateTaskAndTaskGroup<br>Test method: verify_Task_Group_And_Task_Created.</td>
+<td></td>
+<td>1</td>
+<td>tests_critical_scenarios.CreateTaskAndTaskGroup@687080dc</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateWorkgroupAttachWorkroom.verify_Workroom_Attached()'><b>verify_Workroom_Attached</b><br>Test class: tests_critical_scenarios.CreateWorkgroupAttachWorkroom<br>Test method: verify_Workroom_Attached</td>
+<td></td>
+<td>8</td>
+<td>tests_critical_scenarios.CreateWorkgroupAttachWorkroom@23d2a7e8</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDeleteWorkroom.verify_Workroom_Deleted()'><b>verify_Workroom_Deleted</b><br>Test class: tests_critical_scenarios.CreateDeleteWorkroom<br>Test method: verify_Workroom_Deleted</td>
+<td></td>
+<td>9</td>
+<td>tests_critical_scenarios.CreateDeleteWorkroom@37d31475</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDiscussionSenarios1.verify_restored_Archived_Discussion()'><b>verify_restored_Archived_Discussion</b><br>Test class: tests_critical_scenarios.CreateDiscussionSenarios1<br>Test method: verify_restored_Archived_Discussion</td>
+<td></td>
+<td>0</td>
+<td>tests_critical_scenarios.CreateDiscussionSenarios1@3e57cd70</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginEnglishWorkroomAdmin.workroomAdminEng_Login()'><b>workroomAdminEng_Login</b><br>Test class: tests_critical_scenarios.LoginEnglishWorkroomAdmin<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.LoginEnglishWorkroomAdmin@1500955a</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.workroomAdmin_Close_And_Logout()'><b>workroomAdmin_Close_And_Logout</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: make_Book_Visible</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@32d2fa64</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.workroomAdmin_Close_And_Logout_2nd_Time()'><b>workroomAdmin_Close_And_Logout_2nd_Time</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: make_Book_Visible</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@32d2fa64</td></tr>
+<tr>
+<td title='tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin.workroomAdmin_Login_Spanish()'><b>workroomAdmin_Login_Spanish</b><br>Test class: tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin<br>Test method: systemAdmin_Login_Spanish</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin@60285225</td></tr>
+<tr>
+<td title='tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.workroom_Member_Can_Logout()'><b>workroom_Member_Can_Logout</b><br>Test class: tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission<br>Test method: workroom_User_Can_Logout</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission@4abdb505</td></tr>
+<tr>
+<td title='tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.workroom_Member_Can_Logout_2nd_Time()'><b>workroom_Member_Can_Logout_2nd_Time</b><br>Test class: tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission<br>Test method: workroom_User_Can_Logout</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission@4abdb505</td></tr>
+<tr>
+<td title='tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.workroom_Member_Can_Logout_3rd_Time()'><b>workroom_Member_Can_Logout_3rd_Time</b><br>Test class: tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission<br>Test method: workroom_Member_Can_Logout_3rd_Time</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission@4abdb505</td></tr>
+<tr>
+<td title='tests_critical_scenarios.ResetUserPassword.workroom_Member_Close_Profile_And_Logout()'><b>workroom_Member_Close_Profile_And_Logout</b><br>Test class: tests_critical_scenarios.ResetUserPassword<br>Test method: systemAdmin_Close_Profile_And_Logout</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.ResetUserPassword@7a9273a8</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Login_To_BoardEffect()'><b>workroom_Member_Login_To_BoardEffect</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: workroom_Member_Login_To_BoardEffect</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@32d2fa64</td></tr>
+<tr>
+<td title='tests_critical_scenarios.ResetUserPassword.workroom_Member_Login_To_BoardEffect()'><b>workroom_Member_Login_To_BoardEffect</b><br>Test class: tests_critical_scenarios.ResetUserPassword<br>Test method: workroom_Member_Login_To_BoardEffect</td>
+<td></td>
+<td>1</td>
+<td>tests_critical_scenarios.ResetUserPassword@7a9273a8</td></tr>
+<tr>
+<td title='tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.workroom_Member_Login_To_BoardEffect()'><b>workroom_Member_Login_To_BoardEffect</b><br>Test class: tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission<br>Test method: workroom_Member_Login_To_BoardEffect</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission@4abdb505</td></tr>
+<tr>
+<td title='tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.workroom_Member_Login_To_BoardEffect_2nd_Time()'><b>workroom_Member_Login_To_BoardEffect_2nd_Time</b><br>Test class: tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission<br>Test method: workroom_Member_Login_To_BoardEffect</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission@4abdb505</td></tr>
+<tr>
+<td title='tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission.workroom_Member_Login_To_BoardEffect_3rd_Time()'><b>workroom_Member_Login_To_BoardEffect_3rd_Time</b><br>Test class: tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission<br>Test method: workroom_Member_Login_To_BoardEffect_3rd_Time</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission@4abdb505</td></tr>
+<tr>
+<td title='tests_critical_scenarios.ResetUserPassword.workroom_Member_Login_To_BoardEffect_Orginal_Password()'><b>workroom_Member_Login_To_BoardEffect_Orginal_Password</b><br>Test class: tests_critical_scenarios.ResetUserPassword<br>Test method: workroom_Member_Login_To_BoardEffect_Orginal_Password</td>
+<td></td>
+<td>1</td>
+<td>tests_critical_scenarios.ResetUserPassword@7a9273a8</td></tr>
+<tr>
+<td title='tests_critical_scenarios.ResetUserPassword.workroom_Member_Login_With_Updated_Password()'><b>workroom_Member_Login_With_Updated_Password</b><br>Test class: tests_critical_scenarios.ResetUserPassword<br>Test method: workroom_Member_Login_With_Updated_Password</td>
+<td></td>
+<td>1</td>
+<td>tests_critical_scenarios.ResetUserPassword@7a9273a8</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_NewCatagory_And_NewCatagory2_Is_Displayed()'><b>workroom_Member_NewCatagory_And_NewCatagory2_Is_Displayed</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: workroom_Member_Navigate_To_Book_Secured_Category_Is_Displayed</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@32d2fa64</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Open_Library_Page_For_Workroom_2nd_Time()'><b>workroom_Member_Open_Library_Page_For_Workroom_2nd_Time</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: workroom_Member_Open_Library_Page_For_Workroom</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@32d2fa64</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Open_Library_Page_For_Workroom_3rd_Time()'><b>workroom_Member_Open_Library_Page_For_Workroom_3rd_Time</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: workroom_Member_Open_Library_Page_For_Workroom_3rd_Time</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@32d2fa64</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Open_Workroom_AutoBE_Library_Page()'><b>workroom_Member_Open_Workroom_AutoBE_Library_Page</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: workroom_Member_Open_Workroom_AutoBE_Library_Page</td>
+<td></td>
+<td>9</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@32d2fa64</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Secured_Category_Not_Displayed()'><b>workroom_Member_Secured_Category_Not_Displayed</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: workroom_Member_Navigate_To_Book_Secured_Category_Not_Displayed</td>
+<td></td>
+<td>9</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@32d2fa64</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Sees_New_Category_2_Present()'><b>workroom_Member_Sees_New_Category_2_Present</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: workroom_Member_Verify_New_Category_2_Present</td>
+<td></td>
+<td>0</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@32d2fa64</td></tr>
+</table><p>
+</body>
+</html>

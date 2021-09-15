@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Regression Chorme]" parallel="tests">
+  <test thread-count="4" name="BoardMemberViewWorkroomViewOnlyFile(failed)" parallel="tests">
+    <classes>
+      <class name="tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile">
+        <methods>
+          <include name="navigate_To_Boardmember_Workroom_2nd_Time"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="auto_Director_Can_Logout"/>
+          <include name="boardmember_Opens_Meeting_Book_Viewer_And_Scroll"/>
+          <include name="user_Can_Delete_Boardmember_View_Only_Folder"/>
+          <include name="navigate_To_Boardmember_Workroom_3rd_Time"/>
+          <include name="verify_Folder_Deleted"/>
+          <include name="catureStatus"/>
+          <include name="system_Admin_Can_Login"/>
+          <include name="register"/>
+        </methods>
+      </class> <!-- tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile -->
+    </classes>
+  </test> <!-- BoardMemberViewWorkroomViewOnlyFile(failed) -->
+</suite> <!-- Failed suite [Regression Chorme] -->

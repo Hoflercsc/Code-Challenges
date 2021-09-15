@@ -1,0 +1,259 @@
+<html>
+<head>
+<title>TestNG:  BoardMemberCantSeeSecuredFile</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>BoardMemberCantSeeSecuredFile</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>18/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jun 09 15:45:27 EDT 2021</td>
+</tr>
+<tr><td>Total time:</td><td>85 seconds (85950 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.add_Security_BoardMember_Folder()'><b>add_Security_BoardMember_Folder</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: add_Security_BoardMember_Folder</td>
+<td></td>
+<td>9</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.add_Security_To_File_Board_member()'><b>add_Security_To_File_Board_member</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: add_Security_To_File_Board_member</td>
+<td></td>
+<td>7</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.autoDirector_Login()'><b>autoDirector_Login</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: autoDirector_Login</td>
+<td></td>
+<td>4</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.autoUser1Staging_Login()'><b>autoUser1Staging_Login</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: autoUser1Stagingr_Login</td>
+<td></td>
+<td>4</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.delete_Resource_Library_Folder_2()'><b>delete_Resource_Library_Folder_2</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: delete_Resource_Library_Folder_2</td>
+<td></td>
+<td>5</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.home_Page_Redirect()'><b>home_Page_Redirect</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: home_Page_Redirect</td>
+<td></td>
+<td>3</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.home_Page_Redirect()'><b>home_Page_Redirect</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: home_Page_Redirect</td>
+<td></td>
+<td>1</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.navigate_Back_To_Workroom()'><b>navigate_Back_To_Workroom</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: navigate_Back_To_Workroom</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.navigate_Back_To_Workroom()'><b>navigate_Back_To_Workroom</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: navigate_Back_To_Workroom</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.navigate_Back_To_Workroom_BoardMember()'><b>navigate_Back_To_Workroom_BoardMember</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: navigate_Back_To_Workroom_BoardMember</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.systemAdmin_Login()'><b>systemAdmin_Login</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: systemAdmin_Login</td>
+<td></td>
+<td>4</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.systemAdmin_Login()'><b>systemAdmin_Login</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: systemAdmin_Login</td>
+<td></td>
+<td>4</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>5</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>6</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.user_Can_Add_File_To_Library_Folder_2()'><b>user_Can_Add_File_To_Library_Folder_2</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: user_Can_Add_File_To_Library_Folder_2</td>
+<td></td>
+<td>8</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.user_Can_Create_2nd_Resource_Library_Folder()'><b>user_Can_Create_2nd_Resource_Library_Folder</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: user_Can_Create_2nd_Resource_Library_Folder</td>
+<td></td>
+<td>5</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.user_Can_Create_2nd_Resource_Library_Folder()'><b>user_Can_Create_2nd_Resource_Library_Folder</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: user_Can_Create_2nd_Resource_Library_Folder</td>
+<td></td>
+<td>4</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.user_Can_Logout()'><b>user_Can_Logout</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.user_Can_Logout()'><b>user_Can_Logout</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.user_Can_Logout_()'><b>user_Can_Logout_</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>4</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.user_Can_Logout_()'><b>user_Can_Logout_</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.user_Can_Open_Libraries_Form()'><b>user_Can_Open_Libraries_Form</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: user_Can_Open_Libraries_Form</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.user_Can_Open_Libraries_Form()'><b>user_Can_Open_Libraries_Form</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: user_Can_Open_Libraries_Form</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.user_Can_Open_Libraries_Form_2nd_Time()'><b>user_Can_Open_Libraries_Form_2nd_Time</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: user_Can_Open_Libraries_Form_2nd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.user_Can_Open_Libraries_Form_3rd_Time()'><b>user_Can_Open_Libraries_Form_3rd_Time</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: user_Can_Open_Libraries_Form_3rd_Time</td>
+<td></td>
+<td>1</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.user_Can_Open_Libraries_Form_3rd_Time()'><b>user_Can_Open_Libraries_Form_3rd_Time</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: user_Can_Open_Libraries_Form_3rd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.user_Can_Open_Libraries_Form_4th_Time()'><b>user_Can_Open_Libraries_Form_4th_Time</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: user_Can_Open_Libraries_Form_4th_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.user_Can_Open_Libraries_Form_4th_Time()'><b>user_Can_Open_Libraries_Form_4th_Time</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: user_Can_Open_Libraries_Form_4th_Time</td>
+<td></td>
+<td>1</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.user_Delete_Resource_Library_Folder_3()'><b>user_Delete_Resource_Library_Folder_3</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: user_Delete_Resource_Library_Folder_3</td>
+<td></td>
+<td>5</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.verify_BoardMember_Folders_Present()'><b>verify_BoardMember_Folders_Present</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: verify_BoardMember_Folders_Present</td>
+<td></td>
+<td>0</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.verify_BoardMember_Folders_Present()'><b>verify_BoardMember_Folders_Present</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: verify_BoardMember_Folders_Present</td>
+<td></td>
+<td>1</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.verify_BoardMember_Folders_Present_2nd_Time()'><b>verify_BoardMember_Folders_Present_2nd_Time</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: verify_BoardMember_Folders_Present_2nd_Time</td>
+<td></td>
+<td>0</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.verify_File_Not_In_New_Library_Folder_2()'><b>verify_File_Not_In_New_Library_Folder_2</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: verify_File_Not_In_New_Library_Folder_2</td>
+<td></td>
+<td>9</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.verify_Resource_Library_Folder_2_NOT_Present()'><b>verify_Resource_Library_Folder_2_NOT_Present</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: verify_Resource_Library_Folder_2_NOT_Present</td>
+<td></td>
+<td>5</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.verify_Resource_Library_Folder_3_NOT_Present()'><b>verify_Resource_Library_Folder_3_NOT_Present</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: verify_Resource_Library_Folder_3_NOT_Present</td>
+<td></td>
+<td>5</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.verify_Secured_Folder_Not_Present()'><b>verify_Secured_Folder_Not_Present</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: verify_Secured_Folder_Not_Present</td>
+<td></td>
+<td>5</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@1500955a</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Smoke]" parallel="tests">
+  <test thread-count="4" name="Test 24(failed)" parallel="tests">
+    <classes>
+      <class name="tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin">
+        <methods>
+          <include name="user_Can_Open_Directory"/>
+          <include name="select_Foreign_Language_Spanish"/>
+          <include name="set_User_Back_As_Workroom_Member"/>
+          <include name="tearDown"/>
+          <include name="catureStatus"/>
+          <include name="system_Admin_Logout"/>
+          <include name="open_User_Profile_WorkroomAdmin_Spanish"/>
+          <include name="register"/>
+          <include name="workroomAdmin_Login_Spanish"/>
+          <include name="setUp"/>
+          <include name="select_Foreign_Language_English"/>
+          <include name="automation_Tester_Login_English"/>
+          <include name="open_User_Profile_WorkroomAdmin"/>
+          <include name="steve_System_Logout_Spanish"/>
+          <include name="systemAdmin_Set_User_As_Workroom_Admin"/>
+          <include name="user_Can_Open_Directory_Spanish"/>
+        </methods>
+      </class> <!-- tests_critical_scenarios.LoginForeignLanguageWorkroomAdmin -->
+    </classes>
+  </test> <!-- Test 24(failed) -->
+</suite> <!-- Failed suite [Smoke] -->

@@ -1,0 +1,517 @@
+<html>
+<head>
+<title>TestNG:  CreateBookSecuredCategory</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>CreateBookSecuredCategory</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>25/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jun 03 10:42:10 EDT 2021</td>
+</tr>
+<tr><td>Total time:</td><td>172 seconds (172925 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.user_Can_Delete_Book()'><b>user_Can_Delete_Book</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: user_Can_Delete_Book</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(),&apos;Delete&apos;)]&quot;}
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.86&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56583}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: e4383aca8bf8456e4b2ef6d9f9e...}
+Session ID: e4383aca8bf8456e4b2ef6d9f9e51d6e
+*** Element info: {Using=xpath, value=//span[contains(text(),&apos;Delete&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1370)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1364)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at page_critical_scenarios.SecuredCategoryPage.verify_Delete_Option_Inside(SecuredCategoryPage.java:878)
+	at page_critical_scenarios.SecuredCategoryPage.delete_Book_Secured_Category(SecuredCategoryPage.java:916)
+	at tests_critical_scenarios.CreateBookSecuredCategory.user_Can_Delete_Book(CreateBookSecuredCategory.java:246)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1473353597", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1473353597'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(),&apos;Delete&apos;)]&quot;}
+  (Session info: chrome=91.0.4472.77)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.86&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56583}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: e4383aca8bf8456e4b2ef6d9f9e...}
+Session ID: e4383aca8bf8456e4b2ef6d9f9e51d6e
+*** Element info: {Using=xpath, value=//span[contains(text(),&apos;Delete&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1370)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1364)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at page_critical_scenarios.SecuredCategoryPage.verify_Delete_Option_Inside(SecuredCategoryPage.java:878)
+	at page_critical_scenarios.SecuredCategoryPage.delete_Book_Secured_Category(SecuredCategoryPage.java:916)
+	at tests_critical_scenarios.CreateBookSecuredCategory.user_Can_Delete_Book(CreateBookSecuredCategory.java:246)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>6</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@670b40af</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.verify_Book_Deleted()'><b>verify_Book_Deleted</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: verify_Book_Deleted</td>
+<td><div><pre>java.lang.AssertionError: did not expect to find [true] but found [false]
+	at page_critical_scenarios.SecuredCategoryPage.verify_Book_NOT_Displayed(SecuredCategoryPage.java:929)
+	at page_critical_scenarios.SecuredCategoryPage.verify_Book_Deleted(SecuredCategoryPage.java:937)
+	at tests_critical_scenarios.CreateBookSecuredCategory.verify_Book_Deleted(CreateBookSecuredCategory.java:255)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1067461098", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1067461098'><pre>java.lang.AssertionError: did not expect to find [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at page_critical_scenarios.SecuredCategoryPage.verify_Book_NOT_Displayed(SecuredCategoryPage.java:929)
+	at page_critical_scenarios.SecuredCategoryPage.verify_Book_Deleted(SecuredCategoryPage.java:937)
+	at tests_critical_scenarios.CreateBookSecuredCategory.verify_Book_Deleted(CreateBookSecuredCategory.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@670b40af</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.Workroom_Admin_Add_File_To_First_Catagory()'><b>Workroom_Admin_Add_File_To_First_Catagory</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: user_Add_File_To_First_Catagory</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@670b40af</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.Workroom_Admin_Add_First_Catagory_To_Book()'><b>Workroom_Admin_Add_First_Catagory_To_Book</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: user_Add_First_Catagory_To_Book</td>
+<td></td>
+<td>7</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@670b40af</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.Workroom_Admin_Add_Second_Catagory_To_Book()'><b>Workroom_Admin_Add_Second_Catagory_To_Book</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: user_Add_First_Catagory_To_Book</td>
+<td></td>
+<td>7</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@670b40af</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.Workroom_Admin_Can_Add_Agenda()'><b>Workroom_Admin_Can_Add_Agenda</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: user_Can_Add_Agenda</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@670b40af</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.Workroom_Admin_Can_Add_User_As_Secured_Category_User()'><b>Workroom_Admin_Can_Add_User_As_Secured_Category_User</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: Workroom_Admin_Can_Add_User_As_Secured_Category_User</td>
+<td></td>
+<td>9</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@670b40af</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.Workroom_Admin_Can_Create_New_Book_And_Add_Title()'><b>Workroom_Admin_Can_Create_New_Book_And_Add_Title</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: user_Can_Create_New_Book_And_Title</td>
+<td></td>
+<td>3</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@670b40af</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.Workroom_Admin_Can_Open_Library_Page_For_Workroom()'><b>Workroom_Admin_Can_Open_Library_Page_For_Workroom</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: user_Can_Open_Library_Page_For_Workroom</td>
+<td></td>
+<td>8</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@670b40af</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.Workroom_Admin_Can_Open_Secured_Category()'><b>Workroom_Admin_Can_Open_Secured_Category</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: Workroom_Admin_Can_Open_Secured_Category</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@670b40af</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.Workroom_Admin_Click_Save_Continue_Btn()'><b>Workroom_Admin_Click_Save_Continue_Btn</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: click_Save_Continue_Btn</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@670b40af</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.Workroom_Admin_add_File_To_Second_Catagory()'><b>Workroom_Admin_add_File_To_Second_Catagory</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: Workroom_Admin_add_File_To_Second_Catagory</td>
+<td></td>
+<td>9</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@670b40af</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.autoDirector_Close_And_Logout()'><b>autoDirector_Close_And_Logout</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: make_Book_Visible</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@670b40af</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.autoUser_login()'><b>autoUser_login</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: Login UserName Password.</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@cb51256</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.autoUser_login()'><b>autoUser_login</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: Login UserName Password.</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@670b40af</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.autoUser_login_2nd_Time()'><b>autoUser_login_2nd_Time</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: Login UserName Password.</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@670b40af</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.create_Book_Add_Title_A()'><b>create_Book_Add_Title_A</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: create_Book_Add_Title_A</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@cb51256</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.create_New_Event_A()'><b>create_New_Event_A</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: create_New_Event_A</td>
+<td></td>
+<td>16</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@cb51256</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.delete_Book()'><b>delete_Book</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: delete_Book</td>
+<td></td>
+<td>10</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@cb51256</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.delete_Event_Verify_Deleted()'><b>delete_Event_Verify_Deleted</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: delete_Event_Verify_Deleted</td>
+<td></td>
+<td>11</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@cb51256</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.loginBE_WorkroomAdmin()'><b>loginBE_WorkroomAdmin</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: loginBE_WorkroomAdmin</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@670b40af</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.make_Book_Visible()'><b>make_Book_Visible</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: make_Book_A_Visible</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@cb51256</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.make_Book_Visible()'><b>make_Book_Visible</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: make_Book_Visible</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@670b40af</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDeleteWorkgroup.navigate_To_Workgroups_Tab()'><b>navigate_To_Workgroups_Tab</b><br>Test class: tests_critical_scenarios.CreateDeleteWorkgroup<br>Test method: navigate_To_Workgroups_Tab</td>
+<td></td>
+<td>3</td>
+<td>tests_critical_scenarios.CreateDeleteWorkgroup@1500955a</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDeleteWorkroom.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_critical_scenarios.CreateDeleteWorkroom<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.CreateDeleteWorkroom@86be70a</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDeleteWorkgroup.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_critical_scenarios.CreateDeleteWorkgroup<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.CreateDeleteWorkgroup@1500955a</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.user_Add_File_To_First_Catagory()'><b>user_Add_File_To_First_Catagory</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: user_Add_File_To_First_Catagory</td>
+<td></td>
+<td>8</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@cb51256</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.user_Add_First_Catagory_To_Book()'><b>user_Add_First_Catagory_To_Book</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: user_Add_First_Catagory_To_Book</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@cb51256</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.user_Can_Add_Agenda()'><b>user_Can_Add_Agenda</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: user_Can_Add_Agenda</td>
+<td></td>
+<td>1</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@cb51256</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.user_Can_Add_Cover_Page()'><b>user_Can_Add_Cover_Page</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: user_Can_Add_Cover_Page</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@cb51256</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.user_Can_Attach_Book_To_Event()'><b>user_Can_Attach_Book_To_Event</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: user_Can_Attach_Book_To_Event</td>
+<td></td>
+<td>11</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@cb51256</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.user_Can_Attach_Resource_To_Event_And_Save()'><b>user_Can_Attach_Resource_To_Event_And_Save</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: user_Can_Attach_Resource_To_Event_And_Save</td>
+<td></td>
+<td>11</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@cb51256</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.user_Can_Build_Book()'><b>user_Can_Build_Book</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: user_Can_Build_Book</td>
+<td></td>
+<td>26</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@cb51256</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.user_Can_Build_Book()'><b>user_Can_Build_Book</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: user_Can_Build_Book</td>
+<td></td>
+<td>25</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@670b40af</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDeleteWorkgroup.user_Can_Create_New_Group()'><b>user_Can_Create_New_Group</b><br>Test class: tests_critical_scenarios.CreateDeleteWorkgroup<br>Test method: user_Can_Create_New_Group</td>
+<td></td>
+<td>10</td>
+<td>tests_critical_scenarios.CreateDeleteWorkgroup@1500955a</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDeleteWorkroom.user_Can_Create_New_Workroom()'><b>user_Can_Create_New_Workroom</b><br>Test class: tests_critical_scenarios.CreateDeleteWorkroom<br>Test method: user_Can_Create_New_Workroom</td>
+<td></td>
+<td>9</td>
+<td>tests_critical_scenarios.CreateDeleteWorkroom@86be70a</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDeleteWorkroom.user_Can_Deactivate_Workroom()'><b>user_Can_Deactivate_Workroom</b><br>Test class: tests_critical_scenarios.CreateDeleteWorkroom<br>Test method: user_Can_Deactivate_Workroom</td>
+<td></td>
+<td>8</td>
+<td>tests_critical_scenarios.CreateDeleteWorkroom@86be70a</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDeleteWorkgroup.user_Can_Delete_New_Group()'><b>user_Can_Delete_New_Group</b><br>Test class: tests_critical_scenarios.CreateDeleteWorkgroup<br>Test method: user_Can_Delete_New_Group</td>
+<td></td>
+<td>13</td>
+<td>tests_critical_scenarios.CreateDeleteWorkgroup@1500955a</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDeleteWorkroom.user_Can_Delete_Workroom()'><b>user_Can_Delete_Workroom</b><br>Test class: tests_critical_scenarios.CreateDeleteWorkroom<br>Test method: user_Can_Delete_Workroom</td>
+<td></td>
+<td>11</td>
+<td>tests_critical_scenarios.CreateDeleteWorkroom@86be70a</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.user_Can_Open_Library_Page_For_Workroom()'><b>user_Can_Open_Library_Page_For_Workroom</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: user_Can_Open_Library_Page_For_Workroom</td>
+<td></td>
+<td>7</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@cb51256</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.user_Can_Save_Book_And_Continue()'><b>user_Can_Save_Book_And_Continue</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: user_Can_Add_Agenda</td>
+<td></td>
+<td>3</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@cb51256</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.user_Click_Attach_Create_And_Click_Resource_Tab()'><b>user_Click_Attach_Create_And_Click_Resource_Tab</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: user_Click_Attach_Create_And_Click_Resource_Tab</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@cb51256</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDeleteWorkroom.user_Opens_Settings_Opens_Workroom_And_Group_Settings()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings</b><br>Test class: tests_critical_scenarios.CreateDeleteWorkroom<br>Test method: user opens setting form and open workroom & group settings</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.CreateDeleteWorkroom@86be70a</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDeleteWorkgroup.user_Opens_Settings_Opens_Workroom_And_Group_Settings()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings</b><br>Test class: tests_critical_scenarios.CreateDeleteWorkgroup<br>Test method: admin_opens_Site_Settings_Workrooms_And_Groups</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.CreateDeleteWorkgroup@1500955a</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDeleteWorkroom.user_Opens_Settings_Opens_Workroom_And_Group_Settings_Again()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings_Again</b><br>Test class: tests_critical_scenarios.CreateDeleteWorkroom<br>Test method: user_Opens_Settings_Opens_Workroom_And_Group_Settings_Again</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.CreateDeleteWorkroom@86be70a</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDeleteWorkgroup.user_Opens_Settings_Opens_Workroom_And_Group_Settings_Again()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings_Again</b><br>Test class: tests_critical_scenarios.CreateDeleteWorkgroup<br>Test method: user_Opens_Settings_Opens_Workroom_And_Group_Settings_Again</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.CreateDeleteWorkgroup@1500955a</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.verify_Book_And_Resource_Tabs_Appear_On_Event_Card()'><b>verify_Book_And_Resource_Tabs_Appear_On_Event_Card</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: verify_Book_And_Resource_Tabs_Appear_On_Event_Card</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@cb51256</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.verify_Book_And_Resource_Tabs_Appear_On_Event_Details()'><b>verify_Book_And_Resource_Tabs_Appear_On_Event_Details</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: verify_Book_And_Resource_Tabs_Appear_On_Event_Details</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@cb51256</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.verify_Book_Deleted()'><b>verify_Book_Deleted</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: verify_Book_Deleted</td>
+<td></td>
+<td>8</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@cb51256</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDeleteWorkgroup.verify_Group_Deleted()'><b>verify_Group_Deleted</b><br>Test class: tests_critical_scenarios.CreateDeleteWorkgroup<br>Test method: verify_Group_Deleted</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreateDeleteWorkgroup@1500955a</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateDeleteWorkroom.verify_Workroom_Deleted()'><b>verify_Workroom_Deleted</b><br>Test class: tests_critical_scenarios.CreateDeleteWorkroom<br>Test method: verify_Workroom_Deleted</td>
+<td></td>
+<td>10</td>
+<td>tests_critical_scenarios.CreateDeleteWorkroom@86be70a</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.workroomAdmin_Close_And_Logout()'><b>workroomAdmin_Close_And_Logout</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: make_Book_Visible</td>
+<td></td>
+<td>3</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@670b40af</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.workroomAdmin_Close_And_Logout_2nd_Time()'><b>workroomAdmin_Close_And_Logout_2nd_Time</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: make_Book_Visible</td>
+<td></td>
+<td>2</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@670b40af</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Login_To_BoardEffect()'><b>workroom_Member_Login_To_BoardEffect</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: workroom_Member_Login_To_BoardEffect</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@670b40af</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_NewCatagory_And_NewCatagory2_Is_Displayed()'><b>workroom_Member_NewCatagory_And_NewCatagory2_Is_Displayed</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: workroom_Member_Navigate_To_Book_Secured_Category_Is_Displayed</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@670b40af</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Open_Library_Page_For_Workroom_2nd_Time()'><b>workroom_Member_Open_Library_Page_For_Workroom_2nd_Time</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: workroom_Member_Open_Library_Page_For_Workroom</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@670b40af</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Open_Library_Page_For_Workroom_3rd_Time()'><b>workroom_Member_Open_Library_Page_For_Workroom_3rd_Time</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: workroom_Member_Open_Library_Page_For_Workroom_3rd_Time</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@670b40af</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Open_Workroom_AutoBE_Library_Page()'><b>workroom_Member_Open_Workroom_AutoBE_Library_Page</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: workroom_Member_Open_Workroom_AutoBE_Library_Page</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@670b40af</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Secured_Category_Not_Displayed()'><b>workroom_Member_Secured_Category_Not_Displayed</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: workroom_Member_Navigate_To_Book_Secured_Category_Not_Displayed</td>
+<td></td>
+<td>9</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@670b40af</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Sees_New_Category_2_Present()'><b>workroom_Member_Sees_New_Category_2_Present</b><br>Test class: tests_critical_scenarios.CreateBookSecuredCategory<br>Test method: workroom_Member_Verify_New_Category_2_Present</td>
+<td></td>
+<td>0</td>
+<td>tests_critical_scenarios.CreateBookSecuredCategory@670b40af</td></tr>
+</table><p>
+</body>
+</html>

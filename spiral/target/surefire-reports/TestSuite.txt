@@ -1,0 +1,192 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 279, Failures: 17, Errors: 0, Skipped: 0, Time elapsed: 499.045 s <<< FAILURE! - in TestSuite
+tests_critical_scenarios.CreateMessageWorkroom.verify_Email_Sent_Verification_Messages  Time elapsed: 0.403 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'This message was sent to the following recipients:')]"}
+  (Session info: chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CLT-WIN-11717', ip: '172.23.74.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55824}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: aaa17de57cace841d22d7b8a20d...}
+Session ID: aaa17de57cace841d22d7b8a20da18eb
+*** Element info: {Using=xpath, value=//p[contains(text(),'This message was sent to the following recipients:')]}
+	at tests_critical_scenarios.CreateMessageWorkroom.verify_Email_Sent_Verification_Messages(CreateMessageWorkroom.java:65)
+
+tests_critical_scenarios.CreateBookSecuredCategory.user_Can_Build_Book  Time elapsed: 2.268 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for at least one condition to be valid: element to be clickable: By.xpath: //button[contains(text(),'Done')] (tried for 20 second(s) with 600 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CLT-WIN-11717', ip: '172.23.74.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: unknown
+	at tests_critical_scenarios.CreateBookSecuredCategory.user_Can_Build_Book(CreateBookSecuredCategory.java:120)
+
+tests_critical_scenarios.CreateBookSecuredCategory.make_Book_Visible  Time elapsed: 1.982 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='primary-action-btn btn-sidebar be-blue'][contains(text(),'Edit Book')]"}
+  (Session info: chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CLT-WIN-11717', ip: '172.23.74.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}
+Session ID: 1bd51b21327d49a31b8d0d6de5ec5024
+*** Element info: {Using=xpath, value=//a[@class='primary-action-btn btn-sidebar be-blue'][contains(text(),'Edit Book')]}
+	at tests_critical_scenarios.CreateBookSecuredCategory.make_Book_Visible(CreateBookSecuredCategory.java:129)
+
+tests_critical_scenarios.CreateBookSecuredCategory.workroomAdmin_Close_And_Logout  Time elapsed: 0.28 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a title="Sign Out" href="/logout">...</a> is not clickable at point (128, 503). Other element would receive the click: <div class="modal fade no-clear in" data-backdrop="static" data-keyboard="false" id="publishing" style="z-index: 1051; display: block; padding-right: 17px;">...</div>
+  (Session info: chrome=91.0.4472.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CLT-WIN-11717', ip: '172.23.74.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}
+Session ID: 1bd51b21327d49a31b8d0d6de5ec5024
+	at tests_critical_scenarios.CreateBookSecuredCategory.workroomAdmin_Close_And_Logout(CreateBookSecuredCategory.java:138)
+
+tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Login_To_BoardEffect  Time elapsed: 1.269 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for at least one condition to be valid: element to be clickable: By.xpath: id("login_login") (tried for 10 second(s) with 500 milliseconds interval)
+	at tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Login_To_BoardEffect(CreateBookSecuredCategory.java:147)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"id("login_login")"}
+  (Session info: chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CLT-WIN-11717', ip: '172.23.74.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}
+Session ID: 1bd51b21327d49a31b8d0d6de5ec5024
+*** Element info: {Using=xpath, value=id("login_login")}
+	at tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Login_To_BoardEffect(CreateBookSecuredCategory.java:147)
+
+tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Open_Workroom_AutoBE_Library_Page  Time elapsed: 1.583 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <li class="active collapsed" id="workroom-leftnav-toggle">...</li> is not clickable at point (125, 170). Other element would receive the click: <div class="modal fade no-clear in" data-backdrop="static" data-keyboard="false" id="publishing" style="z-index: 1051; display: block; padding-right: 17px;">...</div>
+  (Session info: chrome=91.0.4472.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CLT-WIN-11717', ip: '172.23.74.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}
+Session ID: 1bd51b21327d49a31b8d0d6de5ec5024
+	at tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Open_Workroom_AutoBE_Library_Page(CreateBookSecuredCategory.java:156)
+
+tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Secured_Category_Not_Displayed  Time elapsed: 1.543 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <li class="active">...</li> is not clickable at point (699, 163). Other element would receive the click: <div class="modal-body center">...</div>
+  (Session info: chrome=91.0.4472.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CLT-WIN-11717', ip: '172.23.74.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}
+Session ID: 1bd51b21327d49a31b8d0d6de5ec5024
+	at tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Secured_Category_Not_Displayed(CreateBookSecuredCategory.java:165)
+
+tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Sees_New_Category_2_Present  Time elapsed: 0.129 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Sees_New_Category_2_Present(CreateBookSecuredCategory.java:174)
+
+tests_critical_scenarios.CreateBookSecuredCategory.autoDirector_Close_And_Logout  Time elapsed: 0.12 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a title="Sign Out" href="/logout">...</a> is not clickable at point (128, 503). Other element would receive the click: <div class="modal fade no-clear in" data-backdrop="static" data-keyboard="false" id="publishing" style="z-index: 1051; display: block; padding-right: 17px;">...</div>
+  (Session info: chrome=91.0.4472.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CLT-WIN-11717', ip: '172.23.74.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}
+Session ID: 1bd51b21327d49a31b8d0d6de5ec5024
+	at tests_critical_scenarios.CreateBookSecuredCategory.autoDirector_Close_And_Logout(CreateBookSecuredCategory.java:183)
+
+tests_critical_scenarios.CreateBookSecuredCategory.loginBE_WorkroomAdmin  Time elapsed: 2.756 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for at least one condition to be valid: element to be clickable: By.xpath: id("login_login") (tried for 10 second(s) with 500 milliseconds interval)
+	at tests_critical_scenarios.CreateBookSecuredCategory.loginBE_WorkroomAdmin(CreateBookSecuredCategory.java:192)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"id("login_login")"}
+  (Session info: chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CLT-WIN-11717', ip: '172.23.74.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}
+Session ID: 1bd51b21327d49a31b8d0d6de5ec5024
+*** Element info: {Using=xpath, value=id("login_login")}
+	at tests_critical_scenarios.CreateBookSecuredCategory.loginBE_WorkroomAdmin(CreateBookSecuredCategory.java:192)
+
+tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Open_Library_Page_For_Workroom_2nd_Time  Time elapsed: 1.196 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <li class="active collapsed" id="workroom-leftnav-toggle">...</li> is not clickable at point (125, 170). Other element would receive the click: <div class="modal fade no-clear in" data-backdrop="static" data-keyboard="false" id="publishing" style="z-index: 1051; display: block; padding-right: 17px;">...</div>
+  (Session info: chrome=91.0.4472.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CLT-WIN-11717', ip: '172.23.74.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}
+Session ID: 1bd51b21327d49a31b8d0d6de5ec5024
+	at tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Open_Library_Page_For_Workroom_2nd_Time(CreateBookSecuredCategory.java:201)
+
+tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_NewCatagory_And_NewCatagory2_Is_Displayed  Time elapsed: 4.729 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <li class="active">...</li> is not clickable at point (699, 163). Other element would receive the click: <div class="modal-body center">...</div>
+  (Session info: chrome=91.0.4472.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CLT-WIN-11717', ip: '172.23.74.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}
+Session ID: 1bd51b21327d49a31b8d0d6de5ec5024
+	at tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_NewCatagory_And_NewCatagory2_Is_Displayed(CreateBookSecuredCategory.java:210)
+
+tests_critical_scenarios.CreateBookSecuredCategory.workroomAdmin_Close_And_Logout_2nd_Time  Time elapsed: 0.446 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a title="Sign Out" href="/logout">...</a> is not clickable at point (128, 503). Other element would receive the click: <div class="modal fade no-clear in" data-backdrop="static" data-keyboard="false" id="publishing" style="z-index: 1051; display: block; padding-right: 17px;">...</div>
+  (Session info: chrome=91.0.4472.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CLT-WIN-11717', ip: '172.23.74.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}
+Session ID: 1bd51b21327d49a31b8d0d6de5ec5024
+	at tests_critical_scenarios.CreateBookSecuredCategory.workroomAdmin_Close_And_Logout_2nd_Time(CreateBookSecuredCategory.java:219)
+
+tests_critical_scenarios.CreateBookSecuredCategory.autoUser_login_2nd_Time  Time elapsed: 0.356 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for at least one condition to be valid: element to be clickable: By.xpath: id("login_login") (tried for 10 second(s) with 500 milliseconds interval)
+	at tests_critical_scenarios.CreateBookSecuredCategory.autoUser_login_2nd_Time(CreateBookSecuredCategory.java:228)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"id("login_login")"}
+  (Session info: chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CLT-WIN-11717', ip: '172.23.74.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}
+Session ID: 1bd51b21327d49a31b8d0d6de5ec5024
+*** Element info: {Using=xpath, value=id("login_login")}
+	at tests_critical_scenarios.CreateBookSecuredCategory.autoUser_login_2nd_Time(CreateBookSecuredCategory.java:228)
+
+tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Open_Library_Page_For_Workroom_3rd_Time  Time elapsed: 1.118 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <li class="active collapsed" id="workroom-leftnav-toggle">...</li> is not clickable at point (125, 170). Other element would receive the click: <div class="modal fade no-clear in" data-backdrop="static" data-keyboard="false" id="publishing" style="z-index: 1051; display: block; padding-right: 17px;">...</div>
+  (Session info: chrome=91.0.4472.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CLT-WIN-11717', ip: '172.23.74.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}
+Session ID: 1bd51b21327d49a31b8d0d6de5ec5024
+	at tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Open_Library_Page_For_Workroom_3rd_Time(CreateBookSecuredCategory.java:237)
+
+tests_critical_scenarios.CreateBookSecuredCategory.user_Can_Delete_Book  Time elapsed: 2.905 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Book Secured Category')]/following::div[@class='dropdown header-actions']"}
+  (Session info: chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CLT-WIN-11717', ip: '172.23.74.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}
+Session ID: 1bd51b21327d49a31b8d0d6de5ec5024
+*** Element info: {Using=xpath, value=//*[contains(text(),'Book Secured Category')]/following::div[@class='dropdown header-actions']}
+	at tests_critical_scenarios.CreateBookSecuredCategory.user_Can_Delete_Book(CreateBookSecuredCategory.java:246)
+
+tests_critical_scenarios.CreateBookSecuredCategory.verify_Book_Deleted  Time elapsed: 3.564 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at tests_critical_scenarios.CreateBookSecuredCategory.verify_Book_Deleted(CreateBookSecuredCategory.java:255)
+

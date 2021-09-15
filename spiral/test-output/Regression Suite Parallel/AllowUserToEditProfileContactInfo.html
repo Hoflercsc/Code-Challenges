@@ -1,0 +1,599 @@
+<html>
+<head>
+<title>TestNG:  AllowUserToEditProfileContactInfo</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>AllowUserToEditProfileContactInfo</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>23/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jun 23 15:56:44 EDT 2021</td>
+</tr>
+<tr><td>Total time:</td><td>260 seconds (260504 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.AutoUser2_Verify_Contact_Info_Saved()'><b>AutoUser2_Verify_Contact_Info_Saved</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: AutoUser2_Verify_Contact_Info_Saved</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.add_Auto_Director_2_To_A_Workroom()'><b>add_Auto_Director_2_To_A_Workroom</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: add_Auto_Director_2_To_A_Workroom</td>
+<td></td>
+<td>24</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.AddEditDeleteOfficerRole.add_Officer_Role()'><b>add_Officer_Role</b><br>Test class: tests_settings.AddEditDeleteOfficerRole<br>Test method: add_Officer_Role</td>
+<td></td>
+<td>9</td>
+<td>tests_settings.AddEditDeleteOfficerRole@2a556333</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.add_Test_2_User_To_A_Workroom()'><b>add_Test_2_User_To_A_Workroom</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: add_Test_2_User_To_A_Workroom</td>
+<td></td>
+<td>15</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.AddEditDeleteOfficerRole.admin_Opens_Site_Settings_Manage_Users()'><b>admin_Opens_Site_Settings_Manage_Users</b><br>Test class: tests_settings.AddEditDeleteOfficerRole<br>Test method: admin_Opens_Site_Settings_Manage_Users</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.AddEditDeleteOfficerRole@2a556333</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.auto_Director2_Can_Login()'><b>auto_Director2_Can_Login</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: auto_Director2_Can_Login</td>
+<td></td>
+<td>8</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToAddFilesToWorkroom.auto_Director_Can_Login()'><b>auto_Director_Can_Login</b><br>Test class: tests_settings.AllowUserToAddFilesToWorkroom<br>Test method: auto_Director_Can_Login</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.AllowUserToAddFilesToWorkroom@cb51256</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.auto_Director_Can_Logout()'><b>auto_Director_Can_Logout</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>8</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToAddFilesToWorkroom.auto_Director_Can_Logout()'><b>auto_Director_Can_Logout</b><br>Test class: tests_settings.AllowUserToAddFilesToWorkroom<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>8</td>
+<td>tests_settings.AllowUserToAddFilesToWorkroom@cb51256</td></tr>
+<tr>
+<td title='tests_settings.ChangePasswordSettings.back_To_Original_Password_Settings()'><b>back_To_Original_Password_Settings</b><br>Test class: tests_settings.ChangePasswordSettings<br>Test method: back_To_Original_Password_Settings</td>
+<td></td>
+<td>9</td>
+<td>tests_settings.ChangePasswordSettings@371a67ec</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFields.create_Custom_Field_Group()'><b>create_Custom_Field_Group</b><br>Test class: tests_settings.CreateEditDeleteCustomFields<br>Test method: create_Custom_Field_Group</td>
+<td></td>
+<td>9</td>
+<td>tests_settings.CreateEditDeleteCustomFields@4eb7f003</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFieldGroup.create_Custom_Field_Group()'><b>create_Custom_Field_Group</b><br>Test class: tests_settings.CreateEditDeleteCustomFieldGroup<br>Test method: create_Custom_Field_Group</td>
+<td></td>
+<td>9</td>
+<td>tests_settings.CreateEditDeleteCustomFieldGroup@77f99a05</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteEventCategory.create_Event_Category()'><b>create_Event_Category</b><br>Test class: tests_settings.CreateEditDeleteEventCategory<br>Test method: create_Event_Category</td>
+<td></td>
+<td>28</td>
+<td>tests_settings.CreateEditDeleteEventCategory@491cc5c9</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteEventCategory.delete_Category_One()'><b>delete_Category_One</b><br>Test class: tests_settings.CreateEditDeleteEventCategory<br>Test method: delete_Category_One</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.CreateEditDeleteEventCategory@491cc5c9</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFields.delete_Custom_Field_Group()'><b>delete_Custom_Field_Group</b><br>Test class: tests_settings.CreateEditDeleteCustomFields<br>Test method: delete_Custom_Field_Group</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.CreateEditDeleteCustomFields@4eb7f003</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFieldGroup.delete_Custom_Field_Group()'><b>delete_Custom_Field_Group</b><br>Test class: tests_settings.CreateEditDeleteCustomFieldGroup<br>Test method: delete_Custom_Field</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.CreateEditDeleteCustomFieldGroup@77f99a05</td></tr>
+<tr>
+<td title='tests_settings.AddEditDeleteOfficerRole.delete_Officer_Role()'><b>delete_Officer_Role</b><br>Test class: tests_settings.AddEditDeleteOfficerRole<br>Test method: delete_Officer_Role</td>
+<td></td>
+<td>13</td>
+<td>tests_settings.AddEditDeleteOfficerRole@2a556333</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteEventCategory.edit_Created_Category()'><b>edit_Created_Category</b><br>Test class: tests_settings.CreateEditDeleteEventCategory<br>Test method: edit_Created_Category</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.CreateEditDeleteEventCategory@491cc5c9</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFieldGroup.edit_Custom_Field()'><b>edit_Custom_Field</b><br>Test class: tests_settings.CreateEditDeleteCustomFieldGroup<br>Test method: create_Custom_Field</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.CreateEditDeleteCustomFieldGroup@77f99a05</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFields.edit_Custom_Field_Group()'><b>edit_Custom_Field_Group</b><br>Test class: tests_settings.CreateEditDeleteCustomFields<br>Test method: edit_Custom_Field_Group</td>
+<td></td>
+<td>8</td>
+<td>tests_settings.CreateEditDeleteCustomFields@4eb7f003</td></tr>
+<tr>
+<td title='tests_settings.AddEditDeleteOfficerRole.edit_Officer_Role()'><b>edit_Officer_Role</b><br>Test class: tests_settings.AddEditDeleteOfficerRole<br>Test method: edit_Officer_Role</td>
+<td></td>
+<td>10</td>
+<td>tests_settings.AddEditDeleteOfficerRole@2a556333</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.edit_With_New_Contact_Information()'><b>edit_With_New_Contact_Information</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: verify_Contact_Info_Saved_2nd_Time</td>
+<td></td>
+<td>17</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.edit_With_Old_Contact_Information_AutoUser2()'><b>edit_With_Old_Contact_Information_AutoUser2</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: edit_With_Old_Contact_Information_AutoUser2</td>
+<td></td>
+<td>18</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.ChangePasswordSettings.home_Page_Redirect()'><b>home_Page_Redirect</b><br>Test class: tests_settings.ChangePasswordSettings<br>Test method: home_Page_Redirect</td>
+<td></td>
+<td>57</td>
+<td>tests_settings.ChangePasswordSettings@371a67ec</td></tr>
+<tr>
+<td title='tests_settings.ChangePasswordSettings.loginBE_SystemAdmin()'><b>loginBE_SystemAdmin</b><br>Test class: tests_settings.ChangePasswordSettings<br>Test method: Login AutoUser UserName Password.</td>
+<td></td>
+<td>8</td>
+<td>tests_settings.ChangePasswordSettings@371a67ec</td></tr>
+<tr>
+<td title='tests_settings.ChangePasswordSettings.loginBE_SystemAdmin_()'><b>loginBE_SystemAdmin_</b><br>Test class: tests_settings.ChangePasswordSettings<br>Test method: Login AutoUser UserName Password.</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.ChangePasswordSettings@371a67ec</td></tr>
+<tr>
+<td title='tests_settings.ChangePasswordSettings.modify_Password_For_Password_Settings_1()'><b>modify_Password_For_Password_Settings_1</b><br>Test class: tests_settings.ChangePasswordSettings<br>Test method: modify_Password_For_Password_Settings_1</td>
+<td></td>
+<td>12</td>
+<td>tests_settings.ChangePasswordSettings@371a67ec</td></tr>
+<tr>
+<td title='tests_settings.ChangePasswordSettings.modify_Password_For_Password_Settings_2()'><b>modify_Password_For_Password_Settings_2</b><br>Test class: tests_settings.ChangePasswordSettings<br>Test method: modify_Password_For_Password_Settings_2</td>
+<td></td>
+<td>11</td>
+<td>tests_settings.ChangePasswordSettings@371a67ec</td></tr>
+<tr>
+<td title='tests_settings.ChangePasswordSettings.modify_Password_Settings()'><b>modify_Password_Settings</b><br>Test class: tests_settings.ChangePasswordSettings<br>Test method: modify_Password_Settings</td>
+<td></td>
+<td>11</td>
+<td>tests_settings.ChangePasswordSettings@371a67ec</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.open_Edit_User_Profile()'><b>open_Edit_User_Profile</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: open_Edit_User_Profile</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.open_Edit_User_Profile_2nd_Time()'><b>open_Edit_User_Profile_2nd_Time</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: open_Edit_User_Profile_2nd_Time</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteEventCategory.open_Event_Settings()'><b>open_Event_Settings</b><br>Test class: tests_settings.CreateEditDeleteEventCategory<br>Test method: open_Event_Settings</td>
+<td></td>
+<td>2</td>
+<td>tests_settings.CreateEditDeleteEventCategory@491cc5c9</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteEventCategory.open_Event_Settings_2nd_Time()'><b>open_Event_Settings_2nd_Time</b><br>Test class: tests_settings.CreateEditDeleteEventCategory<br>Test method: open_Event_Settings_2nd_Time</td>
+<td></td>
+<td>1</td>
+<td>tests_settings.CreateEditDeleteEventCategory@491cc5c9</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteEventCategory.open_Event_Settings_3rd_Time()'><b>open_Event_Settings_3rd_Time</b><br>Test class: tests_settings.CreateEditDeleteEventCategory<br>Test method: open_Event_Settings_3rd_Time</td>
+<td></td>
+<td>1</td>
+<td>tests_settings.CreateEditDeleteEventCategory@491cc5c9</td></tr>
+<tr>
+<td title='tests_settings.AddEditDeleteOfficerRole.open_Settings_Manage_Users_2nd_Time()'><b>open_Settings_Manage_Users_2nd_Time</b><br>Test class: tests_settings.AddEditDeleteOfficerRole<br>Test method: open_Settings_Manage_Users_2nd_Time</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.AddEditDeleteOfficerRole@2a556333</td></tr>
+<tr>
+<td title='tests_settings.AddEditDeleteOfficerRole.open_Settings_Manage_Users_3rd_Time()'><b>open_Settings_Manage_Users_3rd_Time</b><br>Test class: tests_settings.AddEditDeleteOfficerRole<br>Test method: open_Settings_Manage_Users_3rd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.AddEditDeleteOfficerRole@2a556333</td></tr>
+<tr>
+<td title='tests_settings.AddEditDeleteOfficerRole.open_Settings_Manage_Users_4th_Time()'><b>open_Settings_Manage_Users_4th_Time</b><br>Test class: tests_settings.AddEditDeleteOfficerRole<br>Test method: open_Settings_Manage_Users_4th_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.AddEditDeleteOfficerRole@2a556333</td></tr>
+<tr>
+<td title='tests_settings.ChangePasswordSettings.open_Settings_Security_Summary()'><b>open_Settings_Security_Summary</b><br>Test class: tests_settings.ChangePasswordSettings<br>Test method: open_Settings_Security_Summary</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.ChangePasswordSettings@371a67ec</td></tr>
+<tr>
+<td title='tests_settings.ChangePasswordSettings.open_Settings_Security_Summary_Agian()'><b>open_Settings_Security_Summary_Agian</b><br>Test class: tests_settings.ChangePasswordSettings<br>Test method: open_Settings_Security_Summary_Agian</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.ChangePasswordSettings@371a67ec</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.open_View_User_Profile()'><b>open_View_User_Profile</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: open_View_User_Profile</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.remove_Auto_Director_2_From_A_Workroom()'><b>remove_Auto_Director_2_From_A_Workroom</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: remove_Auto_Director_2_From_A_Workroom</td>
+<td></td>
+<td>16</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.remove_Test_Reset_2_From_A_Workroom()'><b>remove_Test_Reset_2_From_A_Workroom</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: remove_Test_Reset_2_From_A_Workroom</td>
+<td></td>
+<td>17</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.systemAdmin_Disables_User_As_Workroom_Admin()'><b>systemAdmin_Disables_User_As_Workroom_Admin</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: systemAdmin_Disables_User_As_Workroom_Admin</td>
+<td></td>
+<td>14</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings()'><b>systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: user_Open_Settings_Then_Workroom_And_Group_Settings</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToAddFilesToWorkroom.systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings()'><b>systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings</b><br>Test class: tests_settings.AllowUserToAddFilesToWorkroom<br>Test method: user_Open_Settings_Then_Workroom_And_Group_Settings</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.AllowUserToAddFilesToWorkroom@cb51256</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings()'><b>systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: user_Open_Settings_Then_Workroom_And_Group_Settings</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_2nd_Time()'><b>systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_2nd_Time</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_2nd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_2nd_Time()'><b>systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_2nd_Time</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: user_Open_Settings_Then_Workroom_And_Group_Settings</td>
+<td></td>
+<td>2</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_3rd_Time()'><b>systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_3rd_Time</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_3rd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_4th_Time()'><b>systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_4th_Time</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_4th_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.systemAdmin_Set_User_As_Workroom_Admin()'><b>systemAdmin_Set_User_As_Workroom_Admin</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: systemAdmin_Set_User_As_Workroom_Admin</td>
+<td></td>
+<td>18</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.AddEditDeleteOfficerRole.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_settings.AddEditDeleteOfficerRole<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>14</td>
+<td>tests_settings.AddEditDeleteOfficerRole@2a556333</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFields.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_settings.CreateEditDeleteCustomFields<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>13</td>
+<td>tests_settings.CreateEditDeleteCustomFields@4eb7f003</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFieldGroup.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_settings.CreateEditDeleteCustomFieldGroup<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>14</td>
+<td>tests_settings.CreateEditDeleteCustomFieldGroup@77f99a05</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.system_Admin_Can_Login()'><b>system_Admin_Can_Login</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: test_User_Can_Login</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToAddFilesToWorkroom.system_Admin_Can_Login()'><b>system_Admin_Can_Login</b><br>Test class: tests_settings.AllowUserToAddFilesToWorkroom<br>Test method: test_User_Can_Login</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.AllowUserToAddFilesToWorkroom@cb51256</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToAddFilesToWorkroom.system_Admin_Can_Logout()'><b>system_Admin_Can_Logout</b><br>Test class: tests_settings.AllowUserToAddFilesToWorkroom<br>Test method: system_Admin</td>
+<td></td>
+<td>34</td>
+<td>tests_settings.AllowUserToAddFilesToWorkroom@cb51256</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteEventCategory.system_Admin_Login()'><b>system_Admin_Login</b><br>Test class: tests_settings.CreateEditDeleteEventCategory<br>Test method: system_Admin_Login.</td>
+<td></td>
+<td>12</td>
+<td>tests_settings.CreateEditDeleteEventCategory@491cc5c9</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.system_Admin_Login()'><b>system_Admin_Login</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: system_Admin_Login.</td>
+<td></td>
+<td>13</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToAddFilesToWorkroom.system_Admin_Login()'><b>system_Admin_Login</b><br>Test class: tests_settings.AllowUserToAddFilesToWorkroom<br>Test method: system_Admin_Login.</td>
+<td></td>
+<td>14</td>
+<td>tests_settings.AllowUserToAddFilesToWorkroom@cb51256</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.system_Admin_Login()'><b>system_Admin_Login</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: system_Admin_Login.</td>
+<td></td>
+<td>14</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.system_Admin_Login_2nd_Time()'><b>system_Admin_Login_2nd_Time</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: system_Admin_Login_2nd_Time</td>
+<td></td>
+<td>9</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.test_User_Can_Login()'><b>test_User_Can_Login</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: test_User_Can_Login</td>
+<td></td>
+<td>11</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.test_User_Can_Logout()'><b>test_User_Can_Logout</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>13</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.test_User_Can_Logout()'><b>test_User_Can_Logout</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: test_User_Can_Logout</td>
+<td></td>
+<td>10</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.test_User_Login()'><b>test_User_Login</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: test_User_Login.</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToAddFilesToWorkroom.user_Can_Add_File_To_Workroom()'><b>user_Can_Add_File_To_Workroom</b><br>Test class: tests_settings.AllowUserToAddFilesToWorkroom<br>Test method: user_Can_Add_File_To_Workroom</td>
+<td></td>
+<td>11</td>
+<td>tests_settings.AllowUserToAddFilesToWorkroom@cb51256</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToAddFilesToWorkroom.user_Can_Delete_Word_Document()'><b>user_Can_Delete_Word_Document</b><br>Test class: tests_settings.AllowUserToAddFilesToWorkroom<br>Test method: user_Can_Delete_Word_Document</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.AllowUserToAddFilesToWorkroom@cb51256</td></tr>
+<tr>
+<td title='tests_settings.ChangePasswordSettings.user_Can_Login()'><b>user_Can_Login</b><br>Test class: tests_settings.ChangePasswordSettings<br>Test method: user_Can_Login</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.ChangePasswordSettings@371a67ec</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.user_Can_Logout()'><b>user_Can_Logout</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>30</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.user_Can_Logout()'><b>user_Can_Logout</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>9</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.ChangePasswordSettings.user_Can_Logout()'><b>user_Can_Logout</b><br>Test class: tests_settings.ChangePasswordSettings<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>15</td>
+<td>tests_settings.ChangePasswordSettings@371a67ec</td></tr>
+<tr>
+<td title='tests_settings.ChangePasswordSettings.user_Can_Logout_Again()'><b>user_Can_Logout_Again</b><br>Test class: tests_settings.ChangePasswordSettings<br>Test method: user_Can_Logout_Again</td>
+<td></td>
+<td>9</td>
+<td>tests_settings.ChangePasswordSettings@371a67ec</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteEventCategory.user_Can_Open_Directory_2nd_Time()'><b>user_Can_Open_Directory_2nd_Time</b><br>Test class: tests_settings.CreateEditDeleteEventCategory<br>Test method: user_Can_Open_Settings</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.CreateEditDeleteEventCategory@491cc5c9</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.user_Can_Open_Directory_2nd_Time()'><b>user_Can_Open_Directory_2nd_Time</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: user_Can_Open_Directory</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.user_Can_Open_Directory_2nd_Time_()'><b>user_Can_Open_Directory_2nd_Time_</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: user_Can_Open_Dirctory_2nd_Time</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteEventCategory.user_Can_Open_Directory_3rd_Time()'><b>user_Can_Open_Directory_3rd_Time</b><br>Test class: tests_settings.CreateEditDeleteEventCategory<br>Test method: user_Can_Open_Directory_3rd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_settings.CreateEditDeleteEventCategory@491cc5c9</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.user_Can_Open_Directory_3rd_Time()'><b>user_Can_Open_Directory_3rd_Time</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: user_Can_Open_Directory_3rd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToAddFilesToWorkroom.user_Can_Open_Other_Files()'><b>user_Can_Open_Other_Files</b><br>Test class: tests_settings.AllowUserToAddFilesToWorkroom<br>Test method: user_Can_Open_Other_Files</td>
+<td></td>
+<td>11</td>
+<td>tests_settings.AllowUserToAddFilesToWorkroom@cb51256</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToAddFilesToWorkroom.user_Can_Open_Other_Files_2nd_time()'><b>user_Can_Open_Other_Files_2nd_time</b><br>Test class: tests_settings.AllowUserToAddFilesToWorkroom<br>Test method: user_Can_Open_Other_Files_2nd_time</td>
+<td></td>
+<td>10</td>
+<td>tests_settings.AllowUserToAddFilesToWorkroom@cb51256</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToAddFilesToWorkroom.user_Can_Open_Other_Files_3rd_time()'><b>user_Can_Open_Other_Files_3rd_time</b><br>Test class: tests_settings.AllowUserToAddFilesToWorkroom<br>Test method: user_Can_Open_Other_Files_3rd_time</td>
+<td></td>
+<td>8</td>
+<td>tests_settings.AllowUserToAddFilesToWorkroom@cb51256</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteEventCategory.user_Can_Open_Settings()'><b>user_Can_Open_Settings</b><br>Test class: tests_settings.CreateEditDeleteEventCategory<br>Test method: user_Can_Open_Settings</td>
+<td></td>
+<td>2</td>
+<td>tests_settings.CreateEditDeleteEventCategory@491cc5c9</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToAddFilesToWorkroom.user_Can_Verify_File_Added()'><b>user_Can_Verify_File_Added</b><br>Test class: tests_settings.AllowUserToAddFilesToWorkroom<br>Test method: user_Can_Verify_File_Added</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.AllowUserToAddFilesToWorkroom@cb51256</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToAddFilesToWorkroom.user_Can_Verify_File_Deleted()'><b>user_Can_Verify_File_Deleted</b><br>Test class: tests_settings.AllowUserToAddFilesToWorkroom<br>Test method: user_Can_Verify_File_Deleted</td>
+<td></td>
+<td>13</td>
+<td>tests_settings.AllowUserToAddFilesToWorkroom@cb51256</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFields.user_Opens_Settings_Opens_Workroom_And_Group_Settings()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings</b><br>Test class: tests_settings.CreateEditDeleteCustomFields<br>Test method: user opens setting form and open workroom & group settings</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.CreateEditDeleteCustomFields@4eb7f003</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFieldGroup.user_Opens_Settings_Opens_Workroom_And_Group_Settings()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings</b><br>Test class: tests_settings.CreateEditDeleteCustomFieldGroup<br>Test method: user opens setting form and open workroom & group settings</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.CreateEditDeleteCustomFieldGroup@77f99a05</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFields.user_Opens_Settings_Opens_Workroom_And_Group_Settings_2nd_Time()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings_2nd_Time</b><br>Test class: tests_settings.CreateEditDeleteCustomFields<br>Test method: user_Opens_Settings_Opens_Workroom_And_Group_Settings_2nd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.CreateEditDeleteCustomFields@4eb7f003</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFieldGroup.user_Opens_Settings_Opens_Workroom_And_Group_Settings_2nd_Time()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings_2nd_Time</b><br>Test class: tests_settings.CreateEditDeleteCustomFieldGroup<br>Test method: user_Opens_Settings_Opens_Workroom_And_Group_Settings_2nd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.CreateEditDeleteCustomFieldGroup@77f99a05</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFields.user_Opens_Settings_Opens_Workroom_And_Group_Settings_3rd_Time()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings_3rd_Time</b><br>Test class: tests_settings.CreateEditDeleteCustomFields<br>Test method: user_Opens_Settings_Opens_Workroom_And_Group_Settings_3rd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_settings.CreateEditDeleteCustomFields@4eb7f003</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFieldGroup.user_Opens_Settings_Opens_Workroom_And_Group_Settings_3rd_Time()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings_3rd_Time</b><br>Test class: tests_settings.CreateEditDeleteCustomFieldGroup<br>Test method: user_Opens_Settings_Opens_Workroom_And_Group_Settings_3rd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.CreateEditDeleteCustomFieldGroup@77f99a05</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFields.user_Opens_Settings_Opens_Workroom_And_Group_Settings_4th_Time()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings_4th_Time</b><br>Test class: tests_settings.CreateEditDeleteCustomFields<br>Test method: user_Opens_Settings_Opens_Workroom_And_Group_Settings_4th_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.CreateEditDeleteCustomFields@4eb7f003</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFieldGroup.user_Opens_Settings_Opens_Workroom_And_Group_Settings_4th_Time()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings_4th_Time</b><br>Test class: tests_settings.CreateEditDeleteCustomFieldGroup<br>Test method: user_Opens_Settings_Opens_Workroom_And_Group_Settings_4th_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.CreateEditDeleteCustomFieldGroup@77f99a05</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.user_Verify_Comics_Workroom()'><b>user_Verify_Comics_Workroom</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: user_Verify_Comics_Workroom</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.user_Verify_Comics_Workroom_Again()'><b>user_Verify_Comics_Workroom_Again</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: user_Verify_Comics_Workroom_Again</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToAddFilesToWorkroom.verify_Add_Files_Disable_For_Workroom_For_User()'><b>verify_Add_Files_Disable_For_Workroom_For_User</b><br>Test class: tests_settings.AllowUserToAddFilesToWorkroom<br>Test method: verify_Add_Files_Disable_For_Workroom_For_User</td>
+<td></td>
+<td>15</td>
+<td>tests_settings.AllowUserToAddFilesToWorkroom@cb51256</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteEventCategory.verify_Category_Not_Present()'><b>verify_Category_Not_Present</b><br>Test class: tests_settings.CreateEditDeleteEventCategory<br>Test method: verify_Category_Not_Present</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.CreateEditDeleteEventCategory@491cc5c9</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFields.verify_Custom_Field_Group_Deleted()'><b>verify_Custom_Field_Group_Deleted</b><br>Test class: tests_settings.CreateEditDeleteCustomFields<br>Test method: verify_Custom_Field_Group_Deleted</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.CreateEditDeleteCustomFields@4eb7f003</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFieldGroup.verify_Custom_Field_Group_Deleted()'><b>verify_Custom_Field_Group_Deleted</b><br>Test class: tests_settings.CreateEditDeleteCustomFieldGroup<br>Test method: verify_Custom_Field_Group_Deleted</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.CreateEditDeleteCustomFieldGroup@77f99a05</td></tr>
+<tr>
+<td title='tests_settings.AddEditDeleteOfficerRole.verify_New_Role_Deleted()'><b>verify_New_Role_Deleted</b><br>Test class: tests_settings.AddEditDeleteOfficerRole<br>Test method: verify_New_Role_Deleted</td>
+<td></td>
+<td>8</td>
+<td>tests_settings.AddEditDeleteOfficerRole@2a556333</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.verify_Old_Contact_Info_Auto_User_2_Saved()'><b>verify_Old_Contact_Info_Auto_User_2_Saved</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: verify_Old_Contact_Info_Auto_User_2_Saved</td>
+<td></td>
+<td>1</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.workroom_Admin_Can_Login()'><b>workroom_Admin_Can_Login</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: workroom_Admin_Can_Login</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.workroom_Admin_Can_Login_2nd_Time()'><b>workroom_Admin_Can_Login_2nd_Time</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: workroom_Admin_Can_Login_2nd_Time</td>
+<td></td>
+<td>8</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.workroom_Admin_Can_Logout()'><b>workroom_Admin_Can_Logout</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: workroom_Admin_Can_Logout</td>
+<td></td>
+<td>11</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.workroom_Admin_Can_Logout_3rd_Time()'><b>workroom_Admin_Can_Logout_3rd_Time</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: workroom_Admin_Can_Logout_3rd_Time</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+</table><p>
+</body>
+</html>

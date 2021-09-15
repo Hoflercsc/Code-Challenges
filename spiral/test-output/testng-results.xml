@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="9842" started-at="2021-09-09T19:16:25 EDT" finished-at="2021-09-09T19:16:35 EDT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="9842" started-at="2021-09-09T19:16:25 EDT" finished-at="2021-09-09T19:16:35 EDT">
+      <class name="tests_google.SearchForDucks">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests_google.SearchForDucks@4b553d26]" name="setUp" is-config="true" duration-ms="4509" started-at="2021-09-09T19:16:25 EDT" finished-at="2021-09-09T19:16:30 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="register(java.lang.reflect.Method)[pri:0, instance:tests_google.SearchForDucks@4b553d26]" name="register" is-config="true" duration-ms="4" started-at="2021-09-09T19:16:30 EDT" finished-at="2021-09-09T19:16:30 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests_google.SearchForDucks.Search() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="Search()[pri:1, instance:tests_google.SearchForDucks@4b553d26]" name="Search" duration-ms="3380" started-at="2021-09-09T19:16:30 EDT" description="Search" finished-at="2021-09-09T19:16:33 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search -->
+        <test-method status="PASS" signature="catureStatus(org.testng.ITestResult)[pri:0, instance:tests_google.SearchForDucks@4b553d26]" name="catureStatus" is-config="true" duration-ms="10" started-at="2021-09-09T19:16:33 EDT" finished-at="2021-09-09T19:16:33 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Search status=SUCCESS method=SearchForDucks.Search()[pri:1, instance:tests_google.SearchForDucks@4b553d26] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- catureStatus -->
+        <test-method status="PASS" signature="register(java.lang.reflect.Method)[pri:0, instance:tests_google.SearchForDucks@4b553d26]" name="register" is-config="true" duration-ms="0" started-at="2021-09-09T19:16:33 EDT" finished-at="2021-09-09T19:16:33 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests_google.SearchForDucks.verifyDataInSearchField() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="verifyDataInSearchField()[pri:2, instance:tests_google.SearchForDucks@4b553d26]" name="verifyDataInSearchField" duration-ms="99" started-at="2021-09-09T19:16:33 EDT" description="verifyDataInSearchField" finished-at="2021-09-09T19:16:33 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDataInSearchField -->
+        <test-method status="PASS" signature="catureStatus(org.testng.ITestResult)[pri:0, instance:tests_google.SearchForDucks@4b553d26]" name="catureStatus" is-config="true" duration-ms="1" started-at="2021-09-09T19:16:33 EDT" finished-at="2021-09-09T19:16:33 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDataInSearchField status=SUCCESS method=SearchForDucks.verifyDataInSearchField()[pri:2, instance:tests_google.SearchForDucks@4b553d26] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- catureStatus -->
+        <test-method status="PASS" signature="register(java.lang.reflect.Method)[pri:0, instance:tests_google.SearchForDucks@4b553d26]" name="register" is-config="true" duration-ms="0" started-at="2021-09-09T19:16:33 EDT" finished-at="2021-09-09T19:16:33 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests_google.SearchForDucks.verifyOfficalDuckSiteHeadings() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="verifyOfficalDuckSiteHeadings()[pri:3, instance:tests_google.SearchForDucks@4b553d26]" name="verifyOfficalDuckSiteHeadings" duration-ms="65" started-at="2021-09-09T19:16:33 EDT" description="verifyOfficalDuckSiteHeadings" finished-at="2021-09-09T19:16:33 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOfficalDuckSiteHeadings -->
+        <test-method status="PASS" signature="catureStatus(org.testng.ITestResult)[pri:0, instance:tests_google.SearchForDucks@4b553d26]" name="catureStatus" is-config="true" duration-ms="1" started-at="2021-09-09T19:16:33 EDT" finished-at="2021-09-09T19:16:33 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyOfficalDuckSiteHeadings status=SUCCESS method=SearchForDucks.verifyOfficalDuckSiteHeadings()[pri:3, instance:tests_google.SearchForDucks@4b553d26] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- catureStatus -->
+        <test-method status="PASS" signature="register(java.lang.reflect.Method)[pri:0, instance:tests_google.SearchForDucks@4b553d26]" name="register" is-config="true" duration-ms="1" started-at="2021-09-09T19:16:33 EDT" finished-at="2021-09-09T19:16:33 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests_google.SearchForDucks.additionVerification() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method status="PASS" signature="additionVerification()[pri:4, instance:tests_google.SearchForDucks@4b553d26]" name="additionVerification" duration-ms="545" started-at="2021-09-09T19:16:33 EDT" description="additionVerification" finished-at="2021-09-09T19:16:34 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- additionVerification -->
+        <test-method status="PASS" signature="catureStatus(org.testng.ITestResult)[pri:0, instance:tests_google.SearchForDucks@4b553d26]" name="catureStatus" is-config="true" duration-ms="0" started-at="2021-09-09T19:16:34 EDT" finished-at="2021-09-09T19:16:34 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=additionVerification status=SUCCESS method=SearchForDucks.additionVerification()[pri:4, instance:tests_google.SearchForDucks@4b553d26] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- catureStatus -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests_google.SearchForDucks@4b553d26]" name="tearDown" is-config="true" duration-ms="1182" started-at="2021-09-09T19:16:34 EDT" finished-at="2021-09-09T19:16:35 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests_google.SearchForDucks -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,1471 @@
+<html>
+<head>
+<title>TestNG:  AddSecurityToFolder</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>AddSecurityToFolder</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/8/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jun 16 12:25:45 EDT 2021</td>
+</tr>
+<tr><td>Total time:</td><td>89 seconds (89061 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFolder.autoDirector_login()'><b>autoDirector_login</b><br>Test class: tests_resource_library.AddSecurityToFolder<br>Test method: autodirector_login</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for at least one condition to be valid: element to be clickable: By.xpath: id(&quot;login_login&quot;) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at page_common_functions.LoginLogoutPage.verify_Username_Field(LoginLogoutPage.java:32)
+	at page_common_functions.LoginLogoutPage.login_BE(LoginLogoutPage.java:66)
+	at tests_resource_library.AddSecurityToFolder.autoDirector_login(AddSecurityToFolder.java:66)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;id(&quot;login_login&quot;)&quot;}
+  (Session info: chrome=91.0.4472.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.254&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50929}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 7e8d983b6573c7365b05d6cdb35...}
+Session ID: 7e8d983b6573c7365b05d6cdb3585302
+*** Element info: {Using=xpath, value=id(&quot;login_login&quot;)}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1370)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1364)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 26 more
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1972374516", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1972374516'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for at least one condition to be valid: element to be clickable: By.xpath: id(&quot;login_login&quot;) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at page_common_functions.LoginLogoutPage.verify_Username_Field(LoginLogoutPage.java:32)
+	at page_common_functions.LoginLogoutPage.login_BE(LoginLogoutPage.java:66)
+	at tests_resource_library.AddSecurityToFolder.autoDirector_login(AddSecurityToFolder.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;id(&quot;login_login&quot;)&quot;}
+  (Session info: chrome=91.0.4472.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.254&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50929}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 7e8d983b6573c7365b05d6cdb35...}
+Session ID: 7e8d983b6573c7365b05d6cdb3585302
+*** Element info: {Using=xpath, value=id(&quot;login_login&quot;)}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1370)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1364)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 26 more
+</pre></div></td>
+<td>10</td>
+<td>tests_resource_library.AddSecurityToFolder@371a67ec</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.systemAdmin_Login_Again()'><b>systemAdmin_Login_Again</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: systemAdmin_Login_Again</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for at least one condition to be valid: element to be clickable: By.xpath: id(&quot;login_login&quot;) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at page_common_functions.LoginLogoutPage.verify_Username_Field(LoginLogoutPage.java:32)
+	at page_common_functions.LoginLogoutPage.login_BE(LoginLogoutPage.java:66)
+	at tests_resource_library.AddSecurityToFile.systemAdmin_Login_Again(AddSecurityToFile.java:105)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;id(&quot;login_login&quot;)&quot;}
+  (Session info: chrome=91.0.4472.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.254&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64771}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: c8814c4d8a38ef44358e9b38559...}
+Session ID: c8814c4d8a38ef44358e9b385593ae63
+*** Element info: {Using=xpath, value=id(&quot;login_login&quot;)}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1370)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1364)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 26 more
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace65514329", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace65514329'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for at least one condition to be valid: element to be clickable: By.xpath: id(&quot;login_login&quot;) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at page_common_functions.LoginLogoutPage.verify_Username_Field(LoginLogoutPage.java:32)
+	at page_common_functions.LoginLogoutPage.login_BE(LoginLogoutPage.java:66)
+	at tests_resource_library.AddSecurityToFile.systemAdmin_Login_Again(AddSecurityToFile.java:105)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;id(&quot;login_login&quot;)&quot;}
+  (Session info: chrome=91.0.4472.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.254&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64771}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: c8814c4d8a38ef44358e9b38559...}
+Session ID: c8814c4d8a38ef44358e9b385593ae63
+*** Element info: {Using=xpath, value=id(&quot;login_login&quot;)}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1370)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1364)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 26 more
+</pre></div></td>
+<td>11</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFolder.systemAdmin_Login_Again()'><b>systemAdmin_Login_Again</b><br>Test class: tests_resource_library.AddSecurityToFolder<br>Test method: systemAdmin_Login_Again</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for at least one condition to be valid: element to be clickable: By.xpath: id(&quot;login_login&quot;) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at page_common_functions.LoginLogoutPage.verify_Username_Field(LoginLogoutPage.java:32)
+	at page_common_functions.LoginLogoutPage.login_BE(LoginLogoutPage.java:66)
+	at tests_resource_library.AddSecurityToFolder.systemAdmin_Login_Again(AddSecurityToFolder.java:98)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;id(&quot;login_login&quot;)&quot;}
+  (Session info: chrome=91.0.4472.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.254&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50929}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 7e8d983b6573c7365b05d6cdb35...}
+Session ID: 7e8d983b6573c7365b05d6cdb3585302
+*** Element info: {Using=xpath, value=id(&quot;login_login&quot;)}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1370)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1364)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 26 more
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1941397579", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1941397579'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for at least one condition to be valid: element to be clickable: By.xpath: id(&quot;login_login&quot;) (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at page_common_functions.LoginLogoutPage.verify_Username_Field(LoginLogoutPage.java:32)
+	at page_common_functions.LoginLogoutPage.login_BE(LoginLogoutPage.java:66)
+	at tests_resource_library.AddSecurityToFolder.systemAdmin_Login_Again(AddSecurityToFolder.java:98)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;id(&quot;login_login&quot;)&quot;}
+  (Session info: chrome=91.0.4472.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.254&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50929}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 7e8d983b6573c7365b05d6cdb35...}
+Session ID: 7e8d983b6573c7365b05d6cdb3585302
+*** Element info: {Using=xpath, value=id(&quot;login_login&quot;)}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1370)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1364)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 26 more
+</pre></div></td>
+<td>10</td>
+<td>tests_resource_library.AddSecurityToFolder@371a67ec</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFolder.user_Can_Add_Security_To_Folder_7()'><b>user_Can_Add_Security_To_Folder_7</b><br>Test class: tests_resource_library.AddSecurityToFolder<br>Test method: user_Can_Add_Security_To_Folder_7</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for at least one condition to be valid: element to be clickable: By.xpath: //*[starts-with(@id,&apos;resource_&apos;)]/td/div/ul/li/a[contains(.,&apos;Security&apos;)] (tried for 20 second(s) with 600 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.254&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at page_resource_library.MoveResourceFolderPage.verify_Security_Option_2B(MoveResourceFolderPage.java:2227)
+	at page_resource_library.MoveResourceFolderPage.user_Can_Add_Security_To_Folder_7(MoveResourceFolderPage.java:1521)
+	at tests_resource_library.AddSecurityToFolder.user_Can_Add_Security_To_Folder_7(AddSecurityToFolder.java:49)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace680929049", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace680929049'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for at least one condition to be valid: element to be clickable: By.xpath: //*[starts-with(@id,&apos;resource_&apos;)]/td/div/ul/li/a[contains(.,&apos;Security&apos;)] (tried for 20 second(s) with 600 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.254&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at page_resource_library.MoveResourceFolderPage.verify_Security_Option_2B(MoveResourceFolderPage.java:2227)
+	at page_resource_library.MoveResourceFolderPage.user_Can_Add_Security_To_Folder_7(MoveResourceFolderPage.java:1521)
+	at tests_resource_library.AddSecurityToFolder.user_Can_Add_Security_To_Folder_7(AddSecurityToFolder.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>21</td>
+<td>tests_resource_library.AddSecurityToFolder@371a67ec</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFolder.user_Can_Logout()'><b>user_Can_Logout</b><br>Test class: tests_resource_library.AddSecurityToFolder<br>Test method: user_Can_Logout</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a title=&quot;Sign Out&quot; href=&quot;/logout&quot;&gt;...&lt;/a&gt; is not clickable at point (128, 503). Other element would receive the click: &lt;a class=&quot; break-name&quot; data-remote=&quot;true&quot; href=&quot;/workrooms/5762/resources&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=91.0.4472.106)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.254&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50929}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 7e8d983b6573c7365b05d6cdb35...}
+Session ID: 7e8d983b6573c7365b05d6cdb3585302
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at page_common_functions.AtlasNavBar.click_Sign_Out(AtlasNavBar.java:830)
+	at page_common_functions.AtlasNavBar.user_Can_Sign_Out(AtlasNavBar.java:835)
+	at tests_resource_library.AddSecurityToFolder.user_Can_Logout(AddSecurityToFolder.java:58)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1285081302", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1285081302'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a title=&quot;Sign Out&quot; href=&quot;/logout&quot;&gt;...&lt;/a&gt; is not clickable at point (128, 503). Other element would receive the click: &lt;a class=&quot; break-name&quot; data-remote=&quot;true&quot; href=&quot;/workrooms/5762/resources&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=91.0.4472.106)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.254&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50929}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 7e8d983b6573c7365b05d6cdb35...}
+Session ID: 7e8d983b6573c7365b05d6cdb3585302
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at page_common_functions.AtlasNavBar.click_Sign_Out(AtlasNavBar.java:830)
+	at page_common_functions.AtlasNavBar.user_Can_Sign_Out(AtlasNavBar.java:835)
+	at tests_resource_library.AddSecurityToFolder.user_Can_Logout(AddSecurityToFolder.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>1</td>
+<td>tests_resource_library.AddSecurityToFolder@371a67ec</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.user_Can_Logout_AutoDirector()'><b>user_Can_Logout_AutoDirector</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: user_Can_Logout_AutoDirector</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a title=&quot;Sign Out&quot; href=&quot;/logout&quot;&gt;...&lt;/a&gt; is not clickable at point (128, 447). Other element would receive the click: &lt;a class=&quot;&quot; data-remote=&quot;true&quot; href=&quot;https://automation-ozzie.boardeffect.com/resources/private_folder/109551&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=91.0.4472.106)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.254&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64771}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: c8814c4d8a38ef44358e9b38559...}
+Session ID: c8814c4d8a38ef44358e9b385593ae63
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at page_common_functions.AtlasNavBar.click_Sign_Out(AtlasNavBar.java:830)
+	at page_common_functions.AtlasNavBar.user_Can_Sign_Out(AtlasNavBar.java:835)
+	at tests_resource_library.AddSecurityToFile.user_Can_Logout_AutoDirector(AddSecurityToFile.java:97)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1563735342", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1563735342'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a title=&quot;Sign Out&quot; href=&quot;/logout&quot;&gt;...&lt;/a&gt; is not clickable at point (128, 447). Other element would receive the click: &lt;a class=&quot;&quot; data-remote=&quot;true&quot; href=&quot;https://automation-ozzie.boardeffect.com/resources/private_folder/109551&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=91.0.4472.106)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.254&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64771}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: c8814c4d8a38ef44358e9b38559...}
+Session ID: c8814c4d8a38ef44358e9b385593ae63
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at page_common_functions.AtlasNavBar.click_Sign_Out(AtlasNavBar.java:830)
+	at page_common_functions.AtlasNavBar.user_Can_Sign_Out(AtlasNavBar.java:835)
+	at tests_resource_library.AddSecurityToFile.user_Can_Logout_AutoDirector(AddSecurityToFile.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>1</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFolder.user_Can_Logout_AutoDirector()'><b>user_Can_Logout_AutoDirector</b><br>Test class: tests_resource_library.AddSecurityToFolder<br>Test method: user_Can_Logout_AutoDirector</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a title=&quot;Sign Out&quot; href=&quot;/logout&quot;&gt;...&lt;/a&gt; is not clickable at point (128, 503). Other element would receive the click: &lt;a class=&quot; break-name&quot; data-remote=&quot;true&quot; href=&quot;/workrooms/5762/resources&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=91.0.4472.106)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.254&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50929}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 7e8d983b6573c7365b05d6cdb35...}
+Session ID: 7e8d983b6573c7365b05d6cdb3585302
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at page_common_functions.AtlasNavBar.click_Sign_Out(AtlasNavBar.java:830)
+	at page_common_functions.AtlasNavBar.user_Can_Sign_Out(AtlasNavBar.java:835)
+	at tests_resource_library.AddSecurityToFolder.user_Can_Logout_AutoDirector(AddSecurityToFolder.java:90)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1321753468", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1321753468'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a title=&quot;Sign Out&quot; href=&quot;/logout&quot;&gt;...&lt;/a&gt; is not clickable at point (128, 503). Other element would receive the click: &lt;a class=&quot; break-name&quot; data-remote=&quot;true&quot; href=&quot;/workrooms/5762/resources&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=91.0.4472.106)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.254&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50929}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 7e8d983b6573c7365b05d6cdb35...}
+Session ID: 7e8d983b6573c7365b05d6cdb3585302
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at page_common_functions.AtlasNavBar.click_Sign_Out(AtlasNavBar.java:830)
+	at page_common_functions.AtlasNavBar.user_Can_Sign_Out(AtlasNavBar.java:835)
+	at tests_resource_library.AddSecurityToFolder.user_Can_Logout_AutoDirector(AddSecurityToFolder.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>1</td>
+<td>tests_resource_library.AddSecurityToFolder@371a67ec</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.user_Can_Open_Libraries_Form_3rd_Time()'><b>user_Can_Open_Libraries_Form_3rd_Time</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: user_Can_Open_Libraries_Form_3rd_Time</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&apos;new-folder&apos;]&quot;}
+  (Session info: chrome=91.0.4472.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.254&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64771}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: c8814c4d8a38ef44358e9b38559...}
+Session ID: c8814c4d8a38ef44358e9b385593ae63
+*** Element info: {Using=xpath, value=//a[@class=&apos;new-folder&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1370)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1364)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at page_common_functions.AtlasNavBar.verify_New_Folder_Btn(AtlasNavBar.java:359)
+	at page_common_functions.AtlasNavBar.user_Open_Resource_Library(AtlasNavBar.java:380)
+	at tests_resource_library.AddSecurityToFile.user_Can_Open_Libraries_Form_3rd_Time(AddSecurityToFile.java:113)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1774894044", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1774894044'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&apos;new-folder&apos;]&quot;}
+  (Session info: chrome=91.0.4472.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.254&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64771}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: c8814c4d8a38ef44358e9b38559...}
+Session ID: c8814c4d8a38ef44358e9b385593ae63
+*** Element info: {Using=xpath, value=//a[@class=&apos;new-folder&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1370)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1364)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at page_common_functions.AtlasNavBar.verify_New_Folder_Btn(AtlasNavBar.java:359)
+	at page_common_functions.AtlasNavBar.user_Open_Resource_Library(AtlasNavBar.java:380)
+	at tests_resource_library.AddSecurityToFile.user_Can_Open_Libraries_Form_3rd_Time(AddSecurityToFile.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>7</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.user_Can_Open_Libraries_Form_4th_Time()'><b>user_Can_Open_Libraries_Form_4th_Time</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: user_Can_Open_Libraries_Form_4th_Time</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&apos;new-folder&apos;]&quot;}
+  (Session info: chrome=91.0.4472.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.254&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64771}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: c8814c4d8a38ef44358e9b38559...}
+Session ID: c8814c4d8a38ef44358e9b385593ae63
+*** Element info: {Using=xpath, value=//a[@class=&apos;new-folder&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1370)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1364)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at page_common_functions.AtlasNavBar.verify_New_Folder_Btn(AtlasNavBar.java:359)
+	at page_common_functions.AtlasNavBar.user_Open_Resource_Library(AtlasNavBar.java:380)
+	at tests_resource_library.AddSecurityToFile.user_Can_Open_Libraries_Form_4th_Time(AddSecurityToFile.java:130)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2033558205", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2033558205'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&apos;new-folder&apos;]&quot;}
+  (Session info: chrome=91.0.4472.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.254&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64771}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: c8814c4d8a38ef44358e9b38559...}
+Session ID: c8814c4d8a38ef44358e9b385593ae63
+*** Element info: {Using=xpath, value=//a[@class=&apos;new-folder&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1370)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1364)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at page_common_functions.AtlasNavBar.verify_New_Folder_Btn(AtlasNavBar.java:359)
+	at page_common_functions.AtlasNavBar.user_Open_Resource_Library(AtlasNavBar.java:380)
+	at tests_resource_library.AddSecurityToFile.user_Can_Open_Libraries_Form_4th_Time(AddSecurityToFile.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>6</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.user_Can_Open_Libraries_In_AutoDirector()'><b>user_Can_Open_Libraries_In_AutoDirector</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: user_Can_Open_Libraries_In_AutoDirector</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&apos;new-folder&apos;]&quot;}
+  (Session info: chrome=91.0.4472.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.254&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64771}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: c8814c4d8a38ef44358e9b38559...}
+Session ID: c8814c4d8a38ef44358e9b385593ae63
+*** Element info: {Using=xpath, value=//a[@class=&apos;new-folder&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1370)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1364)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at page_common_functions.AtlasNavBar.verify_New_Folder_Btn(AtlasNavBar.java:359)
+	at page_common_functions.AtlasNavBar.user_Open_Resource_Library(AtlasNavBar.java:380)
+	at tests_resource_library.AddSecurityToFile.user_Can_Open_Libraries_In_AutoDirector(AddSecurityToFile.java:81)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace976856011", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace976856011'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&apos;new-folder&apos;]&quot;}
+  (Session info: chrome=91.0.4472.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.254&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64771}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: c8814c4d8a38ef44358e9b38559...}
+Session ID: c8814c4d8a38ef44358e9b385593ae63
+*** Element info: {Using=xpath, value=//a[@class=&apos;new-folder&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1370)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1364)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at page_common_functions.AtlasNavBar.verify_New_Folder_Btn(AtlasNavBar.java:359)
+	at page_common_functions.AtlasNavBar.user_Open_Resource_Library(AtlasNavBar.java:380)
+	at tests_resource_library.AddSecurityToFile.user_Can_Open_Libraries_In_AutoDirector(AddSecurityToFile.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>6</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFolder.user_Delete_Folder_2()'><b>user_Delete_Folder_2</b><br>Test class: tests_resource_library.AddSecurityToFolder<br>Test method: user_Delete_Folder_2</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[normalize-space(text()) =&apos;New Library Folder 8&apos;]/following::div[@class=&apos;btn-group small open&apos;]//child::a[contains(text(),&apos;Delete&apos;)]&quot;}
+  (Session info: chrome=91.0.4472.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.254&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50929}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 7e8d983b6573c7365b05d6cdb35...}
+Session ID: 7e8d983b6573c7365b05d6cdb3585302
+*** Element info: {Using=xpath, value=//*[normalize-space(text()) =&apos;New Library Folder 8&apos;]/following::div[@class=&apos;btn-group small open&apos;]//child::a[contains(text(),&apos;Delete&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at page_resource_library.MoveResourceFolderPage.click_Resource_Library_Folder_7_Delete_Option(MoveResourceFolderPage.java:2865)
+	at page_resource_library.MoveResourceFolderPage.delete_Resource_Library_Folder_7(MoveResourceFolderPage.java:3206)
+	at tests_resource_library.AddSecurityToFolder.user_Delete_Folder_2(AddSecurityToFolder.java:114)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1590979604", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1590979604'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[normalize-space(text()) =&apos;New Library Folder 8&apos;]/following::div[@class=&apos;btn-group small open&apos;]//child::a[contains(text(),&apos;Delete&apos;)]&quot;}
+  (Session info: chrome=91.0.4472.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.254&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50929}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 7e8d983b6573c7365b05d6cdb35...}
+Session ID: 7e8d983b6573c7365b05d6cdb3585302
+*** Element info: {Using=xpath, value=//*[normalize-space(text()) =&apos;New Library Folder 8&apos;]/following::div[@class=&apos;btn-group small open&apos;]//child::a[contains(text(),&apos;Delete&apos;)]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at page_resource_library.MoveResourceFolderPage.click_Resource_Library_Folder_7_Delete_Option(MoveResourceFolderPage.java:2865)
+	at page_resource_library.MoveResourceFolderPage.delete_Resource_Library_Folder_7(MoveResourceFolderPage.java:3206)
+	at tests_resource_library.AddSecurityToFolder.user_Delete_Folder_2(AddSecurityToFolder.java:114)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>6</td>
+<td>tests_resource_library.AddSecurityToFolder@371a67ec</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.user_Delete_Resource_Library_Folder_6()'><b>user_Delete_Resource_Library_Folder_6</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: user_Delete_Resource_Library_Folder_6</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//*[normalize-space(text()) =&apos;New Library Folder 6&apos;]/following::button[@class=&apos;btn btn-default btn-xs dropdown-toggle&apos;])[1]&quot;}
+  (Session info: chrome=91.0.4472.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.254&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64771}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: c8814c4d8a38ef44358e9b38559...}
+Session ID: c8814c4d8a38ef44358e9b385593ae63
+*** Element info: {Using=xpath, value=(//*[normalize-space(text()) =&apos;New Library Folder 6&apos;]/following::button[@class=&apos;btn btn-default btn-xs dropdown-toggle&apos;])[1]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1370)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1364)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at page_resource_library.MoveResourceFolderPage.verify_Resource_Library_Folder_6_Dropdown(MoveResourceFolderPage.java:2722)
+	at page_resource_library.MoveResourceFolderPage.user_Delete_Resource_Library_Folder_6(MoveResourceFolderPage.java:3189)
+	at tests_resource_library.AddSecurityToFile.user_Delete_Resource_Library_Folder_6(AddSecurityToFile.java:121)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1464566604", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1464566604'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//*[normalize-space(text()) =&apos;New Library Folder 6&apos;]/following::button[@class=&apos;btn btn-default btn-xs dropdown-toggle&apos;])[1]&quot;}
+  (Session info: chrome=91.0.4472.106)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.254&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.106, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64771}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: c8814c4d8a38ef44358e9b38559...}
+Session ID: c8814c4d8a38ef44358e9b385593ae63
+*** Element info: {Using=xpath, value=(//*[normalize-space(text()) =&apos;New Library Folder 6&apos;]/following::button[@class=&apos;btn btn-default btn-xs dropdown-toggle&apos;])[1]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1370)
+	at org.openqa.selenium.support.ui.ExpectedConditions$47.apply(ExpectedConditions.java:1364)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at page_resource_library.MoveResourceFolderPage.verify_Resource_Library_Folder_6_Dropdown(MoveResourceFolderPage.java:2722)
+	at page_resource_library.MoveResourceFolderPage.user_Delete_Resource_Library_Folder_6(MoveResourceFolderPage.java:3189)
+	at tests_resource_library.AddSecurityToFile.user_Delete_Resource_Library_Folder_6(AddSecurityToFile.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>5</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.verify_File_Not_In_Library_Folder_6()'><b>verify_File_Not_In_Library_Folder_6</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: verify_File_Not_In_Library_Folder_6</td>
+<td><div><pre>java.lang.AssertionError: did not expect to find [true] but found [false]
+	at page_resource_library.MoveResourceFolderPage.verify_File_Not_Present_In_Library_Folder(MoveResourceFolderPage.java:2943)
+	at page_resource_library.MoveResourceFolderPage.verify_File_Not_In_Library_Folder_6(MoveResourceFolderPage.java:2975)
+	at tests_resource_library.AddSecurityToFile.verify_File_Not_In_Library_Folder_6(AddSecurityToFile.java:89)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace247842130", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace247842130'><pre>java.lang.AssertionError: did not expect to find [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at page_resource_library.MoveResourceFolderPage.verify_File_Not_Present_In_Library_Folder(MoveResourceFolderPage.java:2943)
+	at page_resource_library.MoveResourceFolderPage.verify_File_Not_In_Library_Folder_6(MoveResourceFolderPage.java:2975)
+	at tests_resource_library.AddSecurityToFile.verify_File_Not_In_Library_Folder_6(AddSecurityToFile.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>2</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFolder.verify_Resource_Library_Folder_7_NOT_Present()'><b>verify_Resource_Library_Folder_7_NOT_Present</b><br>Test class: tests_resource_library.AddSecurityToFolder<br>Test method: verify_Folder_Not_Present</td>
+<td><div><pre>java.lang.AssertionError: did not expect to find [true] but found [false]
+	at page_resource_library.MoveResourceFolderPage.verify_Resource_Library_Folder_7_NOT_Present(MoveResourceFolderPage.java:3284)
+	at tests_resource_library.AddSecurityToFolder.verify_Resource_Library_Folder_7_NOT_Present(AddSecurityToFolder.java:82)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace594239248", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace594239248'><pre>java.lang.AssertionError: did not expect to find [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at page_resource_library.MoveResourceFolderPage.verify_Resource_Library_Folder_7_NOT_Present(MoveResourceFolderPage.java:3284)
+	at tests_resource_library.AddSecurityToFolder.verify_Resource_Library_Folder_7_NOT_Present(AddSecurityToFolder.java:82)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>tests_resource_library.AddSecurityToFolder@371a67ec</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFolder.verify_Resource_Library_Folder_7_NOT_Present_Again()'><b>verify_Resource_Library_Folder_7_NOT_Present_Again</b><br>Test class: tests_resource_library.AddSecurityToFolder<br>Test method: verify_Resource_Library_Folder_7_NOT_Present_Again</td>
+<td><div><pre>java.lang.AssertionError: did not expect to find [true] but found [false]
+	at page_resource_library.MoveResourceFolderPage.verify_Resource_Library_Folder_7_NOT_Present(MoveResourceFolderPage.java:3284)
+	at tests_resource_library.AddSecurityToFolder.verify_Resource_Library_Folder_7_NOT_Present_Again(AddSecurityToFolder.java:131)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace942631958", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace942631958'><pre>java.lang.AssertionError: did not expect to find [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at page_resource_library.MoveResourceFolderPage.verify_Resource_Library_Folder_7_NOT_Present(MoveResourceFolderPage.java:3284)
+	at tests_resource_library.AddSecurityToFolder.verify_Resource_Library_Folder_7_NOT_Present_Again(AddSecurityToFolder.java:131)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>tests_resource_library.AddSecurityToFolder@371a67ec</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests_resource_library.AddFileToPrivateFolder.add_File_To_Private_Folder()'><b>add_File_To_Private_Folder</b><br>Test class: tests_resource_library.AddFileToPrivateFolder<br>Test method: Resource-Library >> Add-File-To-Private-Folder</td>
+<td></td>
+<td>11</td>
+<td>tests_resource_library.AddFileToPrivateFolder@1500955a</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.autoDirector_login()'><b>autoDirector_login</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: autodirector_login</td>
+<td></td>
+<td>4</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>10</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+<tr>
+<td title='tests_resource_library.AddFileToPrivateFolder.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_resource_library.AddFileToPrivateFolder<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>9</td>
+<td>tests_resource_library.AddFileToPrivateFolder@1500955a</td></tr>
+<tr>
+<td title='tests_resource_library.AddApproversToFile.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_resource_library.AddApproversToFile<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>10</td>
+<td>tests_resource_library.AddApproversToFile@2a556333</td></tr>
+<tr>
+<td title='tests_resource_library.AddNewFilesViaUpload.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_resource_library.AddNewFilesViaUpload<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>7</td>
+<td>tests_resource_library.AddNewFilesViaUpload@cb51256</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFolder.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_resource_library.AddSecurityToFolder<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.AddSecurityToFolder@371a67ec</td></tr>
+<tr>
+<td title='tests_resource_library.AddApproversToFile.user_Can_Add_File_Folder_4()'><b>user_Can_Add_File_Folder_4</b><br>Test class: tests_resource_library.AddApproversToFile<br>Test method: user_Can_Add_File_Folder_4</td>
+<td></td>
+<td>8</td>
+<td>tests_resource_library.AddApproversToFile@2a556333</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.user_Can_Add_File_Folder_6()'><b>user_Can_Add_File_Folder_6</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: user_Can_Add_File_Folder_6</td>
+<td></td>
+<td>8</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+<tr>
+<td title='tests_resource_library.AddNewFilesViaUpload.user_Can_Add_Multiple_Files_To_Folder_5()'><b>user_Can_Add_Multiple_Files_To_Folder_5</b><br>Test class: tests_resource_library.AddNewFilesViaUpload<br>Test method: user_Can_Add_Multiple_Files_To_Folder_5</td>
+<td></td>
+<td>22</td>
+<td>tests_resource_library.AddNewFilesViaUpload@cb51256</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.user_Can_Add_Security_To_File()'><b>user_Can_Add_Security_To_File</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: user_Can_Add_Security_To_File</td>
+<td></td>
+<td>7</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+<tr>
+<td title='tests_resource_library.AddApproversToFile.user_Can_Add_Security_To_File()'><b>user_Can_Add_Security_To_File</b><br>Test class: tests_resource_library.AddApproversToFile<br>Test method: user_Can_Add_Security_To_File</td>
+<td></td>
+<td>12</td>
+<td>tests_resource_library.AddApproversToFile@2a556333</td></tr>
+<tr>
+<td title='tests_resource_library.AddApproversToFile.user_Can_Create_2nd_Resource_Library_Folder()'><b>user_Can_Create_2nd_Resource_Library_Folder</b><br>Test class: tests_resource_library.AddApproversToFile<br>Test method: user_Can_Create_2nd_Resource_Library_Folder</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.AddApproversToFile@2a556333</td></tr>
+<tr>
+<td title='tests_resource_library.AddNewFilesViaUpload.user_Can_Create_New_Resource_Library_Folder()'><b>user_Can_Create_New_Resource_Library_Folder</b><br>Test class: tests_resource_library.AddNewFilesViaUpload<br>Test method: user_Can_Create_New_Resource_Library_Folder</td>
+<td></td>
+<td>6</td>
+<td>tests_resource_library.AddNewFilesViaUpload@cb51256</td></tr>
+<tr>
+<td title='tests_resource_library.AddFileToPrivateFolder.user_Can_Delete_Private_Folder_File()'><b>user_Can_Delete_Private_Folder_File</b><br>Test class: tests_resource_library.AddFileToPrivateFolder<br>Test method: user_Can_Delete_Private_Folder_File</td>
+<td></td>
+<td>10</td>
+<td>tests_resource_library.AddFileToPrivateFolder@1500955a</td></tr>
+<tr>
+<td title='tests_resource_library.AddNewFilesViaUpload.user_Can_Delete_Resource_Library_Folder_5()'><b>user_Can_Delete_Resource_Library_Folder_5</b><br>Test class: tests_resource_library.AddNewFilesViaUpload<br>Test method: user_Can_Delete_Resource_Library_Folder_5</td>
+<td></td>
+<td>9</td>
+<td>tests_resource_library.AddNewFilesViaUpload@cb51256</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.user_Can_Logout()'><b>user_Can_Logout</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>4</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.user_Can_Open_Libraries_Form()'><b>user_Can_Open_Libraries_Form</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: user_Can_Open_Libraries_Form</td>
+<td></td>
+<td>4</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+<tr>
+<td title='tests_resource_library.AddFileToPrivateFolder.user_Can_Open_Libraries_Form()'><b>user_Can_Open_Libraries_Form</b><br>Test class: tests_resource_library.AddFileToPrivateFolder<br>Test method: user_Can_Open_Libraries_Form</td>
+<td></td>
+<td>4</td>
+<td>tests_resource_library.AddFileToPrivateFolder@1500955a</td></tr>
+<tr>
+<td title='tests_resource_library.AddApproversToFile.user_Can_Open_Libraries_Form()'><b>user_Can_Open_Libraries_Form</b><br>Test class: tests_resource_library.AddApproversToFile<br>Test method: user_Can_Open_Libraries_Form</td>
+<td></td>
+<td>4</td>
+<td>tests_resource_library.AddApproversToFile@2a556333</td></tr>
+<tr>
+<td title='tests_resource_library.AddNewFilesViaUpload.user_Can_Open_Libraries_Form()'><b>user_Can_Open_Libraries_Form</b><br>Test class: tests_resource_library.AddNewFilesViaUpload<br>Test method: user_Can_Open_Libraries_Form</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.AddNewFilesViaUpload@cb51256</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFolder.user_Can_Open_Libraries_Form()'><b>user_Can_Open_Libraries_Form</b><br>Test class: tests_resource_library.AddSecurityToFolder<br>Test method: user_Can_Open_Libraries_Form</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.AddSecurityToFolder@371a67ec</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.user_Can_Open_Libraries_Form_2nd_Time()'><b>user_Can_Open_Libraries_Form_2nd_Time</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: user_Can_Open_Libraries_Form_2nd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+<tr>
+<td title='tests_resource_library.AddApproversToFile.user_Can_Open_Libraries_Form_2nd_Time()'><b>user_Can_Open_Libraries_Form_2nd_Time</b><br>Test class: tests_resource_library.AddApproversToFile<br>Test method: user_Can_Open_Libraries_Form_2nd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_resource_library.AddApproversToFile@2a556333</td></tr>
+<tr>
+<td title='tests_resource_library.AddNewFilesViaUpload.user_Can_Open_Libraries_Form_2nd_Time()'><b>user_Can_Open_Libraries_Form_2nd_Time</b><br>Test class: tests_resource_library.AddNewFilesViaUpload<br>Test method: user_Can_Open_Libraries_Form_2nd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_resource_library.AddNewFilesViaUpload@cb51256</td></tr>
+<tr>
+<td title='tests_resource_library.AddFileToPrivateFolder.user_Can_Open_Libraries_Form_2nd_Time()'><b>user_Can_Open_Libraries_Form_2nd_Time</b><br>Test class: tests_resource_library.AddFileToPrivateFolder<br>Test method: user_Can_Open_Libraries_Form_2nd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_resource_library.AddFileToPrivateFolder@1500955a</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFolder.user_Can_Open_Libraries_Form_2nd_Time()'><b>user_Can_Open_Libraries_Form_2nd_Time</b><br>Test class: tests_resource_library.AddSecurityToFolder<br>Test method: user_Can_Open_Libraries_Form_2nd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.AddSecurityToFolder@371a67ec</td></tr>
+<tr>
+<td title='tests_resource_library.AddFileToPrivateFolder.user_Can_Open_Libraries_Form_3rd_Time()'><b>user_Can_Open_Libraries_Form_3rd_Time</b><br>Test class: tests_resource_library.AddFileToPrivateFolder<br>Test method: user_Can_Open_Libraries_Form_3rd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_resource_library.AddFileToPrivateFolder@1500955a</td></tr>
+<tr>
+<td title='tests_resource_library.AddApproversToFile.user_Can_Open_Libraries_Form_3rd_Time()'><b>user_Can_Open_Libraries_Form_3rd_Time</b><br>Test class: tests_resource_library.AddApproversToFile<br>Test method: user_Can_Open_Libraries_Form_3rd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_resource_library.AddApproversToFile@2a556333</td></tr>
+<tr>
+<td title='tests_resource_library.AddNewFilesViaUpload.user_Can_Open_Libraries_Form_3rd_Time()'><b>user_Can_Open_Libraries_Form_3rd_Time</b><br>Test class: tests_resource_library.AddNewFilesViaUpload<br>Test method: user_Can_Open_Libraries_Form_3rd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_resource_library.AddNewFilesViaUpload@cb51256</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFolder.user_Can_Open_Libraries_Form_3rd_Time()'><b>user_Can_Open_Libraries_Form_3rd_Time</b><br>Test class: tests_resource_library.AddSecurityToFolder<br>Test method: user_Can_Open_Libraries_Form_3rd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_resource_library.AddSecurityToFolder@371a67ec</td></tr>
+<tr>
+<td title='tests_resource_library.AddApproversToFile.user_Can_Open_Libraries_Form_4th_Time()'><b>user_Can_Open_Libraries_Form_4th_Time</b><br>Test class: tests_resource_library.AddApproversToFile<br>Test method: user_Can_Open_Libraries_Form_4th_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.AddApproversToFile@2a556333</td></tr>
+<tr>
+<td title='tests_resource_library.AddNewFilesViaUpload.user_Can_Open_Libraries_Form_4th_Time()'><b>user_Can_Open_Libraries_Form_4th_Time</b><br>Test class: tests_resource_library.AddNewFilesViaUpload<br>Test method: user_Can_Open_Libraries_Form_4th_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_resource_library.AddNewFilesViaUpload@cb51256</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFolder.user_Can_Open_Libraries_Form_4th_Time()'><b>user_Can_Open_Libraries_Form_4th_Time</b><br>Test class: tests_resource_library.AddSecurityToFolder<br>Test method: user_Can_Open_Libraries_Form_4th_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.AddSecurityToFolder@371a67ec</td></tr>
+<tr>
+<td title='tests_resource_library.AddApproversToFile.user_Can_Open_Libraries_Form_5th_Time()'><b>user_Can_Open_Libraries_Form_5th_Time</b><br>Test class: tests_resource_library.AddApproversToFile<br>Test method: user_Can_Open_Libraries_Form_5th_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_resource_library.AddApproversToFile@2a556333</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFolder.user_Can_Open_Libraries_In_AutoDirector()'><b>user_Can_Open_Libraries_In_AutoDirector</b><br>Test class: tests_resource_library.AddSecurityToFolder<br>Test method: user_Can_Open_Libraries_In_AutoDirector</td>
+<td></td>
+<td>2</td>
+<td>tests_resource_library.AddSecurityToFolder@371a67ec</td></tr>
+<tr>
+<td title='tests_resource_library.AddApproversToFile.user_Can_Verify_Approvers_Added_To_New_Folder_4()'><b>user_Can_Verify_Approvers_Added_To_New_Folder_4</b><br>Test class: tests_resource_library.AddApproversToFile<br>Test method: user_Can_Verify_Approvers_Added_To_New_Folder_4</td>
+<td></td>
+<td>6</td>
+<td>tests_resource_library.AddApproversToFile@2a556333</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.user_Create_Resource_Library_Folder_6()'><b>user_Create_Resource_Library_Folder_6</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: user_Create_Resource_Library_Folder_6</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFolder.user_Create_Resource_Library_Folder_7()'><b>user_Create_Resource_Library_Folder_7</b><br>Test class: tests_resource_library.AddSecurityToFolder<br>Test method: user_Create_Resource_Library_Folder_7</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.AddSecurityToFolder@371a67ec</td></tr>
+<tr>
+<td title='tests_resource_library.AddApproversToFile.user_Delete_Folder_2()'><b>user_Delete_Folder_2</b><br>Test class: tests_resource_library.AddApproversToFile<br>Test method: user_Delete_Folder_4</td>
+<td></td>
+<td>6</td>
+<td>tests_resource_library.AddApproversToFile@2a556333</td></tr>
+<tr>
+<td title='tests_resource_library.AddFileToPrivateFolder.verify_File_Not_Present()'><b>verify_File_Not_Present</b><br>Test class: tests_resource_library.AddFileToPrivateFolder<br>Test method: verify_File_Not_Present</td>
+<td></td>
+<td>6</td>
+<td>tests_resource_library.AddFileToPrivateFolder@1500955a</td></tr>
+<tr>
+<td title='tests_resource_library.AddApproversToFile.verify_Folder_Deleted()'><b>verify_Folder_Deleted</b><br>Test class: tests_resource_library.AddApproversToFile<br>Test method: verify_Folder_Deleted</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.AddApproversToFile@2a556333</td></tr>
+<tr>
+<td title='tests_resource_library.AddNewFilesViaUpload.verify_Resource_Library_Folder_5_NOT_Present()'><b>verify_Resource_Library_Folder_5_NOT_Present</b><br>Test class: tests_resource_library.AddNewFilesViaUpload<br>Test method: verify_Resource_Library_Folder_5_NOT_Present</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.AddNewFilesViaUpload@cb51256</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.verify_Resource_Library_Folder_6_NOT_Present()'><b>verify_Resource_Library_Folder_6_NOT_Present</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: verify_Resource_Library_Folder_6_NOT_Present</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+</table><p>
+</body>
+</html>

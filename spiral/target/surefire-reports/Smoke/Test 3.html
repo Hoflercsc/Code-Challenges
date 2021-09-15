@@ -1,0 +1,174 @@
+<html>
+<head>
+<title>TestNG:  Test 3</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test 3</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>19/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jun 28 14:12:37 EDT 2021</td>
+</tr>
+<tr><td>Total time:</td><td>273 seconds (273957 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.autoUser_login()'><b>autoUser_login</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: Login UserName Password.</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@f2f2cc1</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.create_Book_Add_Title_A()'><b>create_Book_Add_Title_A</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: create_Book_Add_Title_A</td>
+<td></td>
+<td>9</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@f2f2cc1</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.create_New_Event_A()'><b>create_New_Event_A</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: create_New_Event_A</td>
+<td></td>
+<td>26</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@f2f2cc1</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.delete_Book()'><b>delete_Book</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: delete_Book</td>
+<td></td>
+<td>15</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@f2f2cc1</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.delete_Event_Verify_Deleted()'><b>delete_Event_Verify_Deleted</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: delete_Event_Verify_Deleted</td>
+<td></td>
+<td>16</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@f2f2cc1</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.make_Book_Visible()'><b>make_Book_Visible</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: make_Book_A_Visible</td>
+<td></td>
+<td>7</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@f2f2cc1</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.user_Add_File_To_First_Catagory()'><b>user_Add_File_To_First_Catagory</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: user_Add_File_To_First_Catagory</td>
+<td></td>
+<td>10</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@f2f2cc1</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.user_Add_First_Catagory_To_Book()'><b>user_Add_First_Catagory_To_Book</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: user_Add_First_Catagory_To_Book</td>
+<td></td>
+<td>8</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@f2f2cc1</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.user_Can_Add_Agenda()'><b>user_Can_Add_Agenda</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: user_Can_Add_Agenda</td>
+<td></td>
+<td>1</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@f2f2cc1</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.user_Can_Add_Cover_Page()'><b>user_Can_Add_Cover_Page</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: user_Can_Add_Cover_Page</td>
+<td></td>
+<td>13</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@f2f2cc1</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.user_Can_Attach_Book_To_Event()'><b>user_Can_Attach_Book_To_Event</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: user_Can_Attach_Book_To_Event</td>
+<td></td>
+<td>10</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@f2f2cc1</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.user_Can_Attach_Resource_To_Event_And_Save()'><b>user_Can_Attach_Resource_To_Event_And_Save</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: user_Can_Attach_Resource_To_Event_And_Save</td>
+<td></td>
+<td>15</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@f2f2cc1</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.user_Can_Build_Book()'><b>user_Can_Build_Book</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: user_Can_Build_Book</td>
+<td></td>
+<td>27</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@f2f2cc1</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.user_Can_Open_Library_Page_For_Workroom()'><b>user_Can_Open_Library_Page_For_Workroom</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: user_Can_Open_Library_Page_For_Workroom</td>
+<td></td>
+<td>11</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@f2f2cc1</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.user_Can_Save_Book_And_Continue()'><b>user_Can_Save_Book_And_Continue</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: user_Can_Add_Agenda</td>
+<td></td>
+<td>4</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@f2f2cc1</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.user_Click_Attach_Create_And_Click_Resource_Tab()'><b>user_Click_Attach_Create_And_Click_Resource_Tab</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: user_Click_Attach_Create_And_Click_Resource_Tab</td>
+<td></td>
+<td>7</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@f2f2cc1</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.verify_Book_A_Deleted()'><b>verify_Book_A_Deleted</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: verify_Book_Deleted</td>
+<td></td>
+<td>8</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@f2f2cc1</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.verify_Book_And_Resource_Tabs_Appear_On_Event_Card()'><b>verify_Book_And_Resource_Tabs_Appear_On_Event_Card</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: verify_Book_And_Resource_Tabs_Appear_On_Event_Card</td>
+<td></td>
+<td>5</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@f2f2cc1</td></tr>
+<tr>
+<td title='tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource.verify_Book_And_Resource_Tabs_Appear_On_Event_Details()'><b>verify_Book_And_Resource_Tabs_Appear_On_Event_Details</b><br>Test class: tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource<br>Test method: verify_Book_And_Resource_Tabs_Appear_On_Event_Details</td>
+<td></td>
+<td>6</td>
+<td>tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource@f2f2cc1</td></tr>
+</table><p>
+</body>
+</html>

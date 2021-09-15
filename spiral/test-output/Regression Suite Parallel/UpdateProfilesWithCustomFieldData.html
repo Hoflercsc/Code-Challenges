@@ -1,0 +1,1969 @@
+<html>
+<head>
+<title>TestNG:  UpdateProfilesWithCustomFieldData</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>UpdateProfilesWithCustomFieldData</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>13/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jun 23 16:31:01 EDT 2021</td>
+</tr>
+<tr><td>Total time:</td><td>86 seconds (86070 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.AutoUser2_Verify_Contact_Info_Saved()'><b>AutoUser2_Verify_Contact_Info_Saved</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: AutoUser2_Verify_Contact_Info_Saved</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.SetUserToViewOnlyBooks.Auto_Director_Can_Logout()'><b>Auto_Director_Can_Logout</b><br>Test class: tests_settings.SetUserToViewOnlyBooks<br>Test method: Auto_Director_Can_Logout</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.SetUserToViewOnlyBooks@17211155</td></tr>
+<tr>
+<td title='tests_settings.SetUserHiddenInWorkroom.Auto_Director_Login()'><b>Auto_Director_Login</b><br>Test class: tests_settings.SetUserHiddenInWorkroom<br>Test method: Auto_Director_Login.</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.SetUserHiddenInWorkroom@2e3fc542</td></tr>
+<tr>
+<td title='tests_settings.SetUserVisibleInWorkroom.Auto_Director_Login()'><b>Auto_Director_Login</b><br>Test class: tests_settings.SetUserVisibleInWorkroom<br>Test method: Auto_Director_Login.</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.SetUserVisibleInWorkroom@587c290d</td></tr>
+<tr>
+<td title='tests_settings.SetUserToViewOnlyBooks.Auto_Director_Opens_Library_Page_For_Workroom()'><b>Auto_Director_Opens_Library_Page_For_Workroom</b><br>Test class: tests_settings.SetUserToViewOnlyBooks<br>Test method: Auto_Director_Opens_Library_Page_For_Workroom</td>
+<td></td>
+<td>8</td>
+<td>tests_settings.SetUserToViewOnlyBooks@17211155</td></tr>
+<tr>
+<td title='tests_settings.DeactivateMessagingForUser.Open_Auto_User_3_Profile_Set_Permissions()'><b>Open_Auto_User_3_Profile_Set_Permissions</b><br>Test class: tests_settings.DeactivateMessagingForUser<br>Test method: Open_Auto_User_3_Profile_Set_Permissions</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.DeactivateMessagingForUser@7a30d1e6</td></tr>
+<tr>
+<td title='tests_settings.SetUserToMobileOnly.Open_User_Profile()'><b>Open_User_Profile</b><br>Test class: tests_settings.SetUserToMobileOnly<br>Test method: directory_with_officer_role</td>
+<td></td>
+<td>8</td>
+<td>tests_settings.SetUserToMobileOnly@df27fae</td></tr>
+<tr>
+<td title='tests_settings.SetUserToSystemAdministrator.Open_User_Profile()'><b>Open_User_Profile</b><br>Test class: tests_settings.SetUserToSystemAdministrator<br>Test method: directory_with_officer_role</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.SetUserToSystemAdministrator@31f924f5</td></tr>
+<tr>
+<td title='tests_settings.SetUserToMobileOnly.Open_User_Profile_2nd_Time()'><b>Open_User_Profile_2nd_Time</b><br>Test class: tests_settings.SetUserToMobileOnly<br>Test method: Open_User_Profile_2nd_Time</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.SetUserToMobileOnly@df27fae</td></tr>
+<tr>
+<td title='tests_settings.SetUserToSystemAdministrator.Open_User_Profile_2nd_Time()'><b>Open_User_Profile_2nd_Time</b><br>Test class: tests_settings.SetUserToSystemAdministrator<br>Test method: Open_User_Profile_2nd_Time</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.SetUserToSystemAdministrator@31f924f5</td></tr>
+<tr>
+<td title='tests_settings.SetUserToVisible.Open_User_Test_User_Profile()'><b>Open_User_Test_User_Profile</b><br>Test class: tests_settings.SetUserToVisible<br>Test method: directory_with_officer_role</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.SetUserToVisible@52525845</td></tr>
+<tr>
+<td title='tests_settings.SetUserToDisablePrivateDirectory.Wanda_Martin_Can_Logout()'><b>Wanda_Martin_Can_Logout</b><br>Test class: tests_settings.SetUserToDisablePrivateDirectory<br>Test method: Wanda_Martin_Can_Logout</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.SetUserToDisablePrivateDirectory@2eda0940</td></tr>
+<tr>
+<td title='tests_settings.SetUserToEnablePrivateDirectory.Wanda_Martin_Can_Logout()'><b>Wanda_Martin_Can_Logout</b><br>Test class: tests_settings.SetUserToEnablePrivateDirectory<br>Test method: Wanda_Martin_Can_Logout</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.SetUserToEnablePrivateDirectory@4d1b0d2a</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.add_Auto_Director_2_To_A_Workroom()'><b>add_Auto_Director_2_To_A_Workroom</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: add_Auto_Director_2_To_A_Workroom</td>
+<td></td>
+<td>19</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.AddEditDeleteOfficerRole.add_Officer_Role()'><b>add_Officer_Role</b><br>Test class: tests_settings.AddEditDeleteOfficerRole<br>Test method: add_Officer_Role</td>
+<td></td>
+<td>8</td>
+<td>tests_settings.AddEditDeleteOfficerRole@2a556333</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.add_Test_2_User_To_A_Workroom()'><b>add_Test_2_User_To_A_Workroom</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: add_Test_2_User_To_A_Workroom</td>
+<td></td>
+<td>18</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.AddEditDeleteOfficerRole.admin_Opens_Site_Settings_Manage_Users()'><b>admin_Opens_Site_Settings_Manage_Users</b><br>Test class: tests_settings.AddEditDeleteOfficerRole<br>Test method: admin_Opens_Site_Settings_Manage_Users</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.AddEditDeleteOfficerRole@2a556333</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomAccessToEventsLibraryCollaborate.autoDirector_Can_Login()'><b>autoDirector_Can_Login</b><br>Test class: tests_settings.SetWorkroomAccessToEventsLibraryCollaborate<br>Test method: autoDirector_Can_Login</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.SetWorkroomAccessToEventsLibraryCollaborate@44a3ec6b</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomAccessToEventsLibraryCollaborate.autoDirector_Can_Login_Agaim()'><b>autoDirector_Can_Login_Agaim</b><br>Test class: tests_settings.SetWorkroomAccessToEventsLibraryCollaborate<br>Test method: autoDirector_Can_Login_Agaim</td>
+<td></td>
+<td>8</td>
+<td>tests_settings.SetWorkroomAccessToEventsLibraryCollaborate@44a3ec6b</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomAccessToEventsLibraryCollaborate.autoDirector_Can_Logout()'><b>autoDirector_Can_Logout</b><br>Test class: tests_settings.SetWorkroomAccessToEventsLibraryCollaborate<br>Test method: autoDirector_Can_Logout</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.SetWorkroomAccessToEventsLibraryCollaborate@44a3ec6b</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomToViewOnlyBooks.autoDirector_Can_Logout()'><b>autoDirector_Can_Logout</b><br>Test class: tests_settings.SetWorkroomToViewOnlyBooks<br>Test method: autoDirector_Can_Logout</td>
+<td></td>
+<td>2</td>
+<td>tests_settings.SetWorkroomToViewOnlyBooks@4bb4de6a</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomToViewOnlyBooks.autoUser22_Can_Login()'><b>autoUser22_Can_Login</b><br>Test class: tests_settings.SetWorkroomToViewOnlyBooks<br>Test method: autoUser22_Can_Login</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.SetWorkroomToViewOnlyBooks@4bb4de6a</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.auto_Director2_Can_Login()'><b>auto_Director2_Can_Login</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: auto_Director2_Can_Login</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToAddFilesToWorkroom.auto_Director_Can_Login()'><b>auto_Director_Can_Login</b><br>Test class: tests_settings.AllowUserToAddFilesToWorkroom<br>Test method: auto_Director_Can_Login</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.AllowUserToAddFilesToWorkroom@cb51256</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.auto_Director_Can_Logout()'><b>auto_Director_Can_Logout</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>10</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToAddFilesToWorkroom.auto_Director_Can_Logout()'><b>auto_Director_Can_Logout</b><br>Test class: tests_settings.AllowUserToAddFilesToWorkroom<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.AllowUserToAddFilesToWorkroom@cb51256</td></tr>
+<tr>
+<td title='tests_settings.ChangePasswordSettings.back_To_Original_Password_Settings()'><b>back_To_Original_Password_Settings</b><br>Test class: tests_settings.ChangePasswordSettings<br>Test method: back_To_Original_Password_Settings</td>
+<td></td>
+<td>9</td>
+<td>tests_settings.ChangePasswordSettings@371a67ec</td></tr>
+<tr>
+<td title='tests_settings.SetUserToViewOnlyBooks.click_Meeting_Book_Viewer_And_Scroll()'><b>click_Meeting_Book_Viewer_And_Scroll</b><br>Test class: tests_settings.SetUserToViewOnlyBooks<br>Test method: click_Meeting_Book_Viewer_And_Scroll</td>
+<td></td>
+<td>19</td>
+<td>tests_settings.SetUserToViewOnlyBooks@17211155</td></tr>
+<tr>
+<td title='tests_settings.DeactivateMessagingForUser.click_To_Activate_Deactivate_Messaging()'><b>click_To_Activate_Deactivate_Messaging</b><br>Test class: tests_settings.DeactivateMessagingForUser<br>Test method: click_To_Deactivate_Messaging</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.DeactivateMessagingForUser@7a30d1e6</td></tr>
+<tr>
+<td title='tests_settings.DeactivateMessagingForUser.click_To_Deactivate_Messaging()'><b>click_To_Deactivate_Messaging</b><br>Test class: tests_settings.DeactivateMessagingForUser<br>Test method: activate_Messaging</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.DeactivateMessagingForUser@7a30d1e6</td></tr>
+<tr>
+<td title='tests_settings.TermInfoWithEverythingSettings.configure_TermInfo_with_Officer_Role_Settings()'><b>configure_TermInfo_with_Officer_Role_Settings</b><br>Test class: tests_settings.TermInfoWithEverythingSettings<br>Test method: configure_TermInfo_with_Officer_Role_Settings</td>
+<td></td>
+<td>23</td>
+<td>tests_settings.TermInfoWithEverythingSettings@6483f5ae</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFieldGroup.create_Custom_Field_Group()'><b>create_Custom_Field_Group</b><br>Test class: tests_settings.CreateEditDeleteCustomFieldGroup<br>Test method: create_Custom_Field_Group</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.CreateEditDeleteCustomFieldGroup@77f99a05</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFields.create_Custom_Field_Group()'><b>create_Custom_Field_Group</b><br>Test class: tests_settings.CreateEditDeleteCustomFields<br>Test method: create_Custom_Field_Group</td>
+<td></td>
+<td>11</td>
+<td>tests_settings.CreateEditDeleteCustomFields@4eb7f003</td></tr>
+<tr>
+<td title='tests_settings.UpdateProfilesWithCustomFieldData.create_Custom_Field_Group()'><b>create_Custom_Field_Group</b><br>Test class: tests_settings.UpdateProfilesWithCustomFieldData<br>Test method: create_Custom_Field_Group</td>
+<td></td>
+<td>9</td>
+<td>tests_settings.UpdateProfilesWithCustomFieldData@27fe3806</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteEventCategory.create_Event_Category()'><b>create_Event_Category</b><br>Test class: tests_settings.CreateEditDeleteEventCategory<br>Test method: create_Event_Category</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.CreateEditDeleteEventCategory@491cc5c9</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteUserCategory.create_User_Category()'><b>create_User_Category</b><br>Test class: tests_settings.CreateEditDeleteUserCategory<br>Test method: create_User_Category</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.CreateEditDeleteUserCategory@7cbd213e</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteEventCategory.delete_Category_One()'><b>delete_Category_One</b><br>Test class: tests_settings.CreateEditDeleteEventCategory<br>Test method: delete_Category_One</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.CreateEditDeleteEventCategory@491cc5c9</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFieldGroup.delete_Custom_Field_Group()'><b>delete_Custom_Field_Group</b><br>Test class: tests_settings.CreateEditDeleteCustomFieldGroup<br>Test method: delete_Custom_Field</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.CreateEditDeleteCustomFieldGroup@77f99a05</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFields.delete_Custom_Field_Group()'><b>delete_Custom_Field_Group</b><br>Test class: tests_settings.CreateEditDeleteCustomFields<br>Test method: delete_Custom_Field_Group</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.CreateEditDeleteCustomFields@4eb7f003</td></tr>
+<tr>
+<td title='tests_settings.UpdateProfilesWithCustomFieldData.delete_Custom_Field_Group()'><b>delete_Custom_Field_Group</b><br>Test class: tests_settings.UpdateProfilesWithCustomFieldData<br>Test method: delete_Custom_Field_Group</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.UpdateProfilesWithCustomFieldData@27fe3806</td></tr>
+<tr>
+<td title='tests_settings.SetUserToViewOnlyBooks.delete_Meeting_Book_1()'><b>delete_Meeting_Book_1</b><br>Test class: tests_settings.SetUserToViewOnlyBooks<br>Test method: delete_Meeting_Book_1</td>
+<td></td>
+<td>8</td>
+<td>tests_settings.SetUserToViewOnlyBooks@17211155</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomToViewOnlyBooks.delete_Meeting_Book_2()'><b>delete_Meeting_Book_2</b><br>Test class: tests_settings.SetWorkroomToViewOnlyBooks<br>Test method: delete_Meeting_Book_2</td>
+<td></td>
+<td>11</td>
+<td>tests_settings.SetWorkroomToViewOnlyBooks@4bb4de6a</td></tr>
+<tr>
+<td title='tests_settings.AddEditDeleteOfficerRole.delete_Officer_Role()'><b>delete_Officer_Role</b><br>Test class: tests_settings.AddEditDeleteOfficerRole<br>Test method: delete_Officer_Role</td>
+<td></td>
+<td>12</td>
+<td>tests_settings.AddEditDeleteOfficerRole@2a556333</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomToViewOnlyBooks.disable_Comics_Workroom_To_View_Only_Books()'><b>disable_Comics_Workroom_To_View_Only_Books</b><br>Test class: tests_settings.SetWorkroomToViewOnlyBooks<br>Test method: disable_Comics_Workroom_To_View_Only_Books</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.SetWorkroomToViewOnlyBooks@4bb4de6a</td></tr>
+<tr>
+<td title='tests_settings.EnableDisableDisclaimer.disable_Disclaimer_Option()'><b>disable_Disclaimer_Option</b><br>Test class: tests_settings.EnableDisableDisclaimer<br>Test method: disable_Disclaimer_Option</td>
+<td></td>
+<td>16</td>
+<td>tests_settings.EnableDisableDisclaimer@1fc2b765</td></tr>
+<tr>
+<td title='tests_settings.SetUserToSystemAdministrator.disable_User_As_System_Administrator()'><b>disable_User_As_System_Administrator</b><br>Test class: tests_settings.SetUserToSystemAdministrator<br>Test method: disable_User_As_System_Administrator</td>
+<td></td>
+<td>8</td>
+<td>tests_settings.SetUserToSystemAdministrator@31f924f5</td></tr>
+<tr>
+<td title='tests_settings.SetUserAccessToManageFiles.disable_User_To_Mobile_Only()'><b>disable_User_To_Mobile_Only</b><br>Test class: tests_settings.SetUserAccessToManageFiles<br>Test method: disable_User_To_Mobile_Only</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.SetUserAccessToManageFiles@42607a4f</td></tr>
+<tr>
+<td title='tests_settings.SetUserToMobileOnly.disable_User_To_Mobile_Only()'><b>disable_User_To_Mobile_Only</b><br>Test class: tests_settings.SetUserToMobileOnly<br>Test method: disable_User_To_Mobile_Only</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.SetUserToMobileOnly@df27fae</td></tr>
+<tr>
+<td title='tests_settings.SetUserToViewOnlyBooks.disable_User_To_View_Only_Books()'><b>disable_User_To_View_Only_Books</b><br>Test class: tests_settings.SetUserToViewOnlyBooks<br>Test method: disable_User_To_View_Only_Books</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.SetUserToViewOnlyBooks@17211155</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomAccessToEventsLibraryCollaborate.disable_Workroom_Access_To_Events_Library_Collaborate()'><b>disable_Workroom_Access_To_Events_Library_Collaborate</b><br>Test class: tests_settings.SetWorkroomAccessToEventsLibraryCollaborate<br>Test method: disable_Workroom_Access_To_Events_Library_Discussions_Collaborate</td>
+<td></td>
+<td>11</td>
+<td>tests_settings.SetWorkroomAccessToEventsLibraryCollaborate@44a3ec6b</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteEventCategory.edit_Created_Category()'><b>edit_Created_Category</b><br>Test class: tests_settings.CreateEditDeleteEventCategory<br>Test method: edit_Created_Category</td>
+<td></td>
+<td>8</td>
+<td>tests_settings.CreateEditDeleteEventCategory@491cc5c9</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFieldGroup.edit_Custom_Field()'><b>edit_Custom_Field</b><br>Test class: tests_settings.CreateEditDeleteCustomFieldGroup<br>Test method: create_Custom_Field</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.CreateEditDeleteCustomFieldGroup@77f99a05</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFields.edit_Custom_Field_Group()'><b>edit_Custom_Field_Group</b><br>Test class: tests_settings.CreateEditDeleteCustomFields<br>Test method: edit_Custom_Field_Group</td>
+<td></td>
+<td>9</td>
+<td>tests_settings.CreateEditDeleteCustomFields@4eb7f003</td></tr>
+<tr>
+<td title='tests_settings.AddEditDeleteOfficerRole.edit_Officer_Role()'><b>edit_Officer_Role</b><br>Test class: tests_settings.AddEditDeleteOfficerRole<br>Test method: edit_Officer_Role</td>
+<td></td>
+<td>11</td>
+<td>tests_settings.AddEditDeleteOfficerRole@2a556333</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.edit_With_New_Contact_Information()'><b>edit_With_New_Contact_Information</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: verify_Contact_Info_Saved_2nd_Time</td>
+<td></td>
+<td>14</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.edit_With_Old_Contact_Information_AutoUser2()'><b>edit_With_Old_Contact_Information_AutoUser2</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: edit_With_Old_Contact_Information_AutoUser2</td>
+<td></td>
+<td>12</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomToViewOnlyBooks.enable_Comics_Workroom_To_View_Only_Books()'><b>enable_Comics_Workroom_To_View_Only_Books</b><br>Test class: tests_settings.SetWorkroomToViewOnlyBooks<br>Test method: enable_Comics_Workroom_To_View_Only_Books</td>
+<td></td>
+<td>10</td>
+<td>tests_settings.SetWorkroomToViewOnlyBooks@4bb4de6a</td></tr>
+<tr>
+<td title='tests_settings.EnableDisableDisclaimer.enable_Disclaimer_Option()'><b>enable_Disclaimer_Option</b><br>Test class: tests_settings.EnableDisableDisclaimer<br>Test method: enable_Disclaimer_Option</td>
+<td></td>
+<td>14</td>
+<td>tests_settings.EnableDisableDisclaimer@1fc2b765</td></tr>
+<tr>
+<td title='tests_settings.SetUserToSystemAdministrator.enable_User_As_System_Administrator()'><b>enable_User_As_System_Administrator</b><br>Test class: tests_settings.SetUserToSystemAdministrator<br>Test method: enable_User_As_System_Administrator</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.SetUserToSystemAdministrator@31f924f5</td></tr>
+<tr>
+<td title='tests_settings.SetUserAccessToManageFiles.enable_User_To_Manage_Files()'><b>enable_User_To_Manage_Files</b><br>Test class: tests_settings.SetUserAccessToManageFiles<br>Test method: enable_User_To_Manage_Files</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.SetUserAccessToManageFiles@42607a4f</td></tr>
+<tr>
+<td title='tests_settings.SetUserToMobileOnly.enable_User_To_Mobile_Only()'><b>enable_User_To_Mobile_Only</b><br>Test class: tests_settings.SetUserToMobileOnly<br>Test method: enable_User_As_System_Administrator</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.SetUserToMobileOnly@df27fae</td></tr>
+<tr>
+<td title='tests_settings.SetUserToViewOnlyBooks.enable_User_To_View_Only_Books()'><b>enable_User_To_View_Only_Books</b><br>Test class: tests_settings.SetUserToViewOnlyBooks<br>Test method: enable_User_To_View_Only_Books</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.SetUserToViewOnlyBooks@17211155</td></tr>
+<tr>
+<td title='tests_settings.RestrictWorkroomForUser.enable_Workroom_Access()'><b>enable_Workroom_Access</b><br>Test class: tests_settings.RestrictWorkroomForUser<br>Test method: enable_Workroom_Access</td>
+<td></td>
+<td>13</td>
+<td>tests_settings.RestrictWorkroomForUser@2de8284b</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomAccessToEventsLibraryCollaborate.enable_Workroom_Access_To_Events_Library_Collaborate()'><b>enable_Workroom_Access_To_Events_Library_Collaborate</b><br>Test class: tests_settings.SetWorkroomAccessToEventsLibraryCollaborate<br>Test method: enable_Workroom_Access_To_Events_Library_Collaborate</td>
+<td></td>
+<td>10</td>
+<td>tests_settings.SetWorkroomAccessToEventsLibraryCollaborate@44a3ec6b</td></tr>
+<tr>
+<td title='tests_settings.ChangePasswordSettings.home_Page_Redirect()'><b>home_Page_Redirect</b><br>Test class: tests_settings.ChangePasswordSettings<br>Test method: home_Page_Redirect</td>
+<td></td>
+<td>43</td>
+<td>tests_settings.ChangePasswordSettings@371a67ec</td></tr>
+<tr>
+<td title='tests_settings.EnableDisableDisclaimer.home_Page_Redirect()'><b>home_Page_Redirect</b><br>Test class: tests_settings.EnableDisableDisclaimer<br>Test method: home_Page_Redirect</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.EnableDisableDisclaimer@1fc2b765</td></tr>
+<tr>
+<td title='tests_settings.UnlockProfile.home_Page_Redirect()'><b>home_Page_Redirect</b><br>Test class: tests_settings.UnlockProfile<br>Test method: home_Page_Redirect</td>
+<td></td>
+<td>14</td>
+<td>tests_settings.UnlockProfile@57f23557</td></tr>
+<tr>
+<td title='tests_settings.UnlockProfile.lockOutUser_Login()'><b>lockOutUser_Login</b><br>Test class: tests_settings.UnlockProfile<br>Test method: lockOutUser_Login</td>
+<td></td>
+<td>10</td>
+<td>tests_settings.UnlockProfile@57f23557</td></tr>
+<tr>
+<td title='tests_settings.UnlockProfile.lockoutuser_login_2nd_Time()'><b>lockoutuser_login_2nd_Time</b><br>Test class: tests_settings.UnlockProfile<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.UnlockProfile@57f23557</td></tr>
+<tr>
+<td title='tests_settings.ChangePasswordSettings.loginBE_SystemAdmin()'><b>loginBE_SystemAdmin</b><br>Test class: tests_settings.ChangePasswordSettings<br>Test method: Login AutoUser UserName Password.</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.ChangePasswordSettings@371a67ec</td></tr>
+<tr>
+<td title='tests_settings.EnableDisableDisclaimer.loginBE_SystemAdmin()'><b>loginBE_SystemAdmin</b><br>Test class: tests_settings.EnableDisableDisclaimer<br>Test method: Login AutoUser UserName Password.</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.EnableDisableDisclaimer@1fc2b765</td></tr>
+<tr>
+<td title='tests_settings.TermInfoWithEverythingSettings.loginBE_SystemAdmin()'><b>loginBE_SystemAdmin</b><br>Test class: tests_settings.TermInfoWithEverythingSettings<br>Test method: Login AutoUser UserName Password.</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.TermInfoWithEverythingSettings@6483f5ae</td></tr>
+<tr>
+<td title='tests_settings.ChangePasswordSettings.loginBE_SystemAdmin_()'><b>loginBE_SystemAdmin_</b><br>Test class: tests_settings.ChangePasswordSettings<br>Test method: Login AutoUser UserName Password.</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.ChangePasswordSettings@371a67ec</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomToViewOnlyBooks.make_Meeting_Book_2_Visible()'><b>make_Meeting_Book_2_Visible</b><br>Test class: tests_settings.SetWorkroomToViewOnlyBooks<br>Test method: make_Meeting_Book_2_Visible</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.SetWorkroomToViewOnlyBooks@4bb4de6a</td></tr>
+<tr>
+<td title='tests_settings.SetUserVisibleInWorkroom.make_Workroom_Admin_2_Visible()'><b>make_Workroom_Admin_2_Visible</b><br>Test class: tests_settings.SetUserVisibleInWorkroom<br>Test method: make_Workroom_Admin_2_Visible</td>
+<td></td>
+<td>11</td>
+<td>tests_settings.SetUserVisibleInWorkroom@587c290d</td></tr>
+<tr>
+<td title='tests_settings.SetUserHiddenInWorkroom.make_Workroom_Admin_Visible()'><b>make_Workroom_Admin_Visible</b><br>Test class: tests_settings.SetUserHiddenInWorkroom<br>Test method: make_Workroom_Admin_Visible</td>
+<td></td>
+<td>10</td>
+<td>tests_settings.SetUserHiddenInWorkroom@2e3fc542</td></tr>
+<tr>
+<td title='tests_settings.ChangePasswordSettings.modify_Password_For_Password_Settings_1()'><b>modify_Password_For_Password_Settings_1</b><br>Test class: tests_settings.ChangePasswordSettings<br>Test method: modify_Password_For_Password_Settings_1</td>
+<td></td>
+<td>11</td>
+<td>tests_settings.ChangePasswordSettings@371a67ec</td></tr>
+<tr>
+<td title='tests_settings.ChangePasswordSettings.modify_Password_For_Password_Settings_2()'><b>modify_Password_For_Password_Settings_2</b><br>Test class: tests_settings.ChangePasswordSettings<br>Test method: modify_Password_For_Password_Settings_2</td>
+<td></td>
+<td>11</td>
+<td>tests_settings.ChangePasswordSettings@371a67ec</td></tr>
+<tr>
+<td title='tests_settings.ChangePasswordSettings.modify_Password_Settings()'><b>modify_Password_Settings</b><br>Test class: tests_settings.ChangePasswordSettings<br>Test method: modify_Password_Settings</td>
+<td></td>
+<td>8</td>
+<td>tests_settings.ChangePasswordSettings@371a67ec</td></tr>
+<tr>
+<td title='tests_settings.SetUserHiddenInWorkroom.navigate_Back_To_Workroom_Members()'><b>navigate_Back_To_Workroom_Members</b><br>Test class: tests_settings.SetUserHiddenInWorkroom<br>Test method: navigate_Back_To_Workroom_Members</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.SetUserHiddenInWorkroom@2e3fc542</td></tr>
+<tr>
+<td title='tests_settings.SetUserVisibleInWorkroom.navigate_Back_To_Workroom_Members()'><b>navigate_Back_To_Workroom_Members</b><br>Test class: tests_settings.SetUserVisibleInWorkroom<br>Test method: navigate_Back_To_Workroom_Members</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.SetUserVisibleInWorkroom@587c290d</td></tr>
+<tr>
+<td title='tests_settings.SetUserHiddenInWorkroom.navigate_Back_To_Workroom_Members_Again()'><b>navigate_Back_To_Workroom_Members_Again</b><br>Test class: tests_settings.SetUserHiddenInWorkroom<br>Test method: navigate_Back_To_Workroom_Members_Again</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.SetUserHiddenInWorkroom@2e3fc542</td></tr>
+<tr>
+<td title='tests_settings.SetUserVisibleInWorkroom.navigate_Back_To_Workroom_Members_Again()'><b>navigate_Back_To_Workroom_Members_Again</b><br>Test class: tests_settings.SetUserVisibleInWorkroom<br>Test method: navigate_Back_To_Workroom_Members_Again</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.SetUserVisibleInWorkroom@587c290d</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteUserCategory.navigate_To_User_Catergories()'><b>navigate_To_User_Catergories</b><br>Test class: tests_settings.CreateEditDeleteUserCategory<br>Test method: navigate_To_User_Catergories</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.CreateEditDeleteUserCategory@7cbd213e</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteUserCategory.navigate_To_User_Catergories_2nd_Time()'><b>navigate_To_User_Catergories_2nd_Time</b><br>Test class: tests_settings.CreateEditDeleteUserCategory<br>Test method: navigate_To_User_Catergories_2nd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_settings.CreateEditDeleteUserCategory@7cbd213e</td></tr>
+<tr>
+<td title='tests_settings.RestrictWorkroomForUser.open_Auto_User_14_Profile_Click_Manage_Workrooms()'><b>open_Auto_User_14_Profile_Click_Manage_Workrooms</b><br>Test class: tests_settings.RestrictWorkroomForUser<br>Test method: open_Auto_User_14_Profile_Click_Manage_Workrooms</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.RestrictWorkroomForUser@2de8284b</td></tr>
+<tr>
+<td title='tests_settings.SetUserToViewOnlyBooks.open_Auto_User_20_Profile()'><b>open_Auto_User_20_Profile</b><br>Test class: tests_settings.SetUserToViewOnlyBooks<br>Test method: open_Auto_User_20_Profile</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.SetUserToViewOnlyBooks@17211155</td></tr>
+<tr>
+<td title='tests_settings.SetUserToViewOnlyBooks.open_Auto_User_20_Profile_2nd_Time()'><b>open_Auto_User_20_Profile_2nd_Time</b><br>Test class: tests_settings.SetUserToViewOnlyBooks<br>Test method: open_Auto_User_20_Profile_2nd_Time</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.SetUserToViewOnlyBooks@17211155</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomAccessToEventsLibraryCollaborate.open_DC_Workroom_Verify_Disabled_Access()'><b>open_DC_Workroom_Verify_Disabled_Access</b><br>Test class: tests_settings.SetWorkroomAccessToEventsLibraryCollaborate<br>Test method: open_DC_Workroom_Verify_Disabled_Access</td>
+<td></td>
+<td>20</td>
+<td>tests_settings.SetWorkroomAccessToEventsLibraryCollaborate@44a3ec6b</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomAccessToEventsLibraryCollaborate.open_DC_Workroom_Verify_Enabled_Access()'><b>open_DC_Workroom_Verify_Enabled_Access</b><br>Test class: tests_settings.SetWorkroomAccessToEventsLibraryCollaborate<br>Test method: open_DC_Workroom_Verify_Enabled_Access</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.SetWorkroomAccessToEventsLibraryCollaborate@44a3ec6b</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.open_Edit_User_Profile()'><b>open_Edit_User_Profile</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: open_Edit_User_Profile</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.open_Edit_User_Profile_2nd_Time()'><b>open_Edit_User_Profile_2nd_Time</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: open_Edit_User_Profile_2nd_Time</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteEventCategory.open_Event_Settings()'><b>open_Event_Settings</b><br>Test class: tests_settings.CreateEditDeleteEventCategory<br>Test method: open_Event_Settings</td>
+<td></td>
+<td>1</td>
+<td>tests_settings.CreateEditDeleteEventCategory@491cc5c9</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteEventCategory.open_Event_Settings_2nd_Time()'><b>open_Event_Settings_2nd_Time</b><br>Test class: tests_settings.CreateEditDeleteEventCategory<br>Test method: open_Event_Settings_2nd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_settings.CreateEditDeleteEventCategory@491cc5c9</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteEventCategory.open_Event_Settings_3rd_Time()'><b>open_Event_Settings_3rd_Time</b><br>Test class: tests_settings.CreateEditDeleteEventCategory<br>Test method: open_Event_Settings_3rd_Time</td>
+<td></td>
+<td>1</td>
+<td>tests_settings.CreateEditDeleteEventCategory@491cc5c9</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomToViewOnlyBooks.open_Library_Page_For_AutoUser22()'><b>open_Library_Page_For_AutoUser22</b><br>Test class: tests_settings.SetWorkroomToViewOnlyBooks<br>Test method: open_Library_Page_For_AutoUser22</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.SetWorkroomToViewOnlyBooks@4bb4de6a</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteUserCategory.open_Manage_Users()'><b>open_Manage_Users</b><br>Test class: tests_settings.CreateEditDeleteUserCategory<br>Test method: open_Manage_Users</td>
+<td></td>
+<td>1</td>
+<td>tests_settings.CreateEditDeleteUserCategory@7cbd213e</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteUserCategory.open_Manage_Users_2nd_Time()'><b>open_Manage_Users_2nd_Time</b><br>Test class: tests_settings.CreateEditDeleteUserCategory<br>Test method: open_Manage_Users_2nd_Time</td>
+<td></td>
+<td>1</td>
+<td>tests_settings.CreateEditDeleteUserCategory@7cbd213e</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteUserCategory.open_Manage_Users_3rd_Time()'><b>open_Manage_Users_3rd_Time</b><br>Test class: tests_settings.CreateEditDeleteUserCategory<br>Test method: open_Manage_Users_3rd_Time</td>
+<td></td>
+<td>1</td>
+<td>tests_settings.CreateEditDeleteUserCategory@7cbd213e</td></tr>
+<tr>
+<td title='tests_settings.SetUserToEnablePrivateDirectory.open_Profile_Auto_User_16_Disable_Private_Directory()'><b>open_Profile_Auto_User_16_Disable_Private_Directory</b><br>Test class: tests_settings.SetUserToEnablePrivateDirectory<br>Test method: open_Profile_Auto_User_16_Disable_Private_Directory</td>
+<td></td>
+<td>10</td>
+<td>tests_settings.SetUserToEnablePrivateDirectory@4d1b0d2a</td></tr>
+<tr>
+<td title='tests_settings.TermInfoWithEverythingSettings.open_Settings_Manage_Users()'><b>open_Settings_Manage_Users</b><br>Test class: tests_settings.TermInfoWithEverythingSettings<br>Test method: open_Settings_Manage_Users</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.TermInfoWithEverythingSettings@6483f5ae</td></tr>
+<tr>
+<td title='tests_settings.UnlockProfile.open_Settings_Manage_Users()'><b>open_Settings_Manage_Users</b><br>Test class: tests_settings.UnlockProfile<br>Test method: open_Settings_Manage_Users</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.UnlockProfile@57f23557</td></tr>
+<tr>
+<td title='tests_settings.AddEditDeleteOfficerRole.open_Settings_Manage_Users_2nd_Time()'><b>open_Settings_Manage_Users_2nd_Time</b><br>Test class: tests_settings.AddEditDeleteOfficerRole<br>Test method: open_Settings_Manage_Users_2nd_Time</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.AddEditDeleteOfficerRole@2a556333</td></tr>
+<tr>
+<td title='tests_settings.AddEditDeleteOfficerRole.open_Settings_Manage_Users_3rd_Time()'><b>open_Settings_Manage_Users_3rd_Time</b><br>Test class: tests_settings.AddEditDeleteOfficerRole<br>Test method: open_Settings_Manage_Users_3rd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.AddEditDeleteOfficerRole@2a556333</td></tr>
+<tr>
+<td title='tests_settings.AddEditDeleteOfficerRole.open_Settings_Manage_Users_4th_Time()'><b>open_Settings_Manage_Users_4th_Time</b><br>Test class: tests_settings.AddEditDeleteOfficerRole<br>Test method: open_Settings_Manage_Users_4th_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.AddEditDeleteOfficerRole@2a556333</td></tr>
+<tr>
+<td title='tests_settings.ChangePasswordSettings.open_Settings_Security_Summary()'><b>open_Settings_Security_Summary</b><br>Test class: tests_settings.ChangePasswordSettings<br>Test method: open_Settings_Security_Summary</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.ChangePasswordSettings@371a67ec</td></tr>
+<tr>
+<td title='tests_settings.EnableDisableDisclaimer.open_Settings_Security_Summary()'><b>open_Settings_Security_Summary</b><br>Test class: tests_settings.EnableDisableDisclaimer<br>Test method: open_Settings_Security_Summary</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.EnableDisableDisclaimer@1fc2b765</td></tr>
+<tr>
+<td title='tests_settings.EnableDisableDisclaimer.open_Settings_Security_Summary_2nd_Time()'><b>open_Settings_Security_Summary_2nd_Time</b><br>Test class: tests_settings.EnableDisableDisclaimer<br>Test method: open_Settings_Security_Summary_2nd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.EnableDisableDisclaimer@1fc2b765</td></tr>
+<tr>
+<td title='tests_settings.EnableDisableDisclaimer.open_Settings_Security_Summary_3rd_Time()'><b>open_Settings_Security_Summary_3rd_Time</b><br>Test class: tests_settings.EnableDisableDisclaimer<br>Test method: open_Settings_Security_Summary_3rd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.EnableDisableDisclaimer@1fc2b765</td></tr>
+<tr>
+<td title='tests_settings.ChangePasswordSettings.open_Settings_Security_Summary_Agian()'><b>open_Settings_Security_Summary_Agian</b><br>Test class: tests_settings.ChangePasswordSettings<br>Test method: open_Settings_Security_Summary_Agian</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.ChangePasswordSettings@371a67ec</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomToViewOnlyBooks.open_Settings_Then_Workroom_And_Group_Settings_Again()'><b>open_Settings_Then_Workroom_And_Group_Settings_Again</b><br>Test class: tests_settings.SetWorkroomToViewOnlyBooks<br>Test method: open_Settings_Then_Workroom_And_Group_Settings_Again</td>
+<td></td>
+<td>2</td>
+<td>tests_settings.SetWorkroomToViewOnlyBooks@4bb4de6a</td></tr>
+<tr>
+<td title='tests_settings.TermInfoWithEverythingSettings.open_Test_Reset_User_Profile()'><b>open_Test_Reset_User_Profile</b><br>Test class: tests_settings.TermInfoWithEverythingSettings<br>Test method: pen_Test_Reset_User_Profile</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.TermInfoWithEverythingSettings@6483f5ae</td></tr>
+<tr>
+<td title='tests_settings.SetUserToHidden.open_Test_User_Permisions_2nd_Time()'><b>open_Test_User_Permisions_2nd_Time</b><br>Test class: tests_settings.SetUserToHidden<br>Test method: Open_User_Profile_2nd_Time</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.SetUserToHidden@545997b1</td></tr>
+<tr>
+<td title='tests_settings.SetUserToVisible.open_Test_User_Permisions_2nd_Time()'><b>open_Test_User_Permisions_2nd_Time</b><br>Test class: tests_settings.SetUserToVisible<br>Test method: Open_User_Profile_2nd_Time</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.SetUserToVisible@52525845</td></tr>
+<tr>
+<td title='tests_settings.UpdateProfilesWithCustomFieldData.open_User_Profile_AutoDirector()'><b>open_User_Profile_AutoDirector</b><br>Test class: tests_settings.UpdateProfilesWithCustomFieldData<br>Test method: open_User_Profile_AutoDirector</td>
+<td></td>
+<td>9</td>
+<td>tests_settings.UpdateProfilesWithCustomFieldData@27fe3806</td></tr>
+<tr>
+<td title='tests_settings.UpdateProfilesWithCustomFieldData.open_User_Profile_AutoTester()'><b>open_User_Profile_AutoTester</b><br>Test class: tests_settings.UpdateProfilesWithCustomFieldData<br>Test method: open_User_Profile_AutoTester</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.UpdateProfilesWithCustomFieldData@27fe3806</td></tr>
+<tr>
+<td title='tests_settings.DeactivateResourcesForUser.open_User_Profile_Auto_User_13_Activate_Resource()'><b>open_User_Profile_Auto_User_13_Activate_Resource</b><br>Test class: tests_settings.DeactivateResourcesForUser<br>Test method: open_User_Profile_Auto_User_13_Activate_Resource</td>
+<td></td>
+<td>11</td>
+<td>tests_settings.DeactivateResourcesForUser@4e718207</td></tr>
+<tr>
+<td title='tests_settings.DeactivateResourcesForUser.open_User_Profile_Auto_User_13_Deactivate_Resource()'><b>open_User_Profile_Auto_User_13_Deactivate_Resource</b><br>Test class: tests_settings.DeactivateResourcesForUser<br>Test method: open_User_Profile_Auto_User_4_Deactivate_Resource</td>
+<td></td>
+<td>10</td>
+<td>tests_settings.DeactivateResourcesForUser@4e718207</td></tr>
+<tr>
+<td title='tests_settings.SetUserAccessToManageFiles.open_User_Profile_Auto_User_15_Set_Permissions()'><b>open_User_Profile_Auto_User_15_Set_Permissions</b><br>Test class: tests_settings.SetUserAccessToManageFiles<br>Test method: open_User_Profile_Auto_User_15_Set_Permissions</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.SetUserAccessToManageFiles@42607a4f</td></tr>
+<tr>
+<td title='tests_settings.SetUserAccessToManageFiles.open_User_Profile_Auto_User_15_Set_Permissions_2nd_Time()'><b>open_User_Profile_Auto_User_15_Set_Permissions_2nd_Time</b><br>Test class: tests_settings.SetUserAccessToManageFiles<br>Test method: open_User_Profile_Auto_User_15_Set_Permissions_2nd_Time</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.SetUserAccessToManageFiles@42607a4f</td></tr>
+<tr>
+<td title='tests_settings.SetUserToEnablePrivateDirectory.open_User_Profile_Auto_User_16_Disable_Private_Directory()'><b>open_User_Profile_Auto_User_16_Disable_Private_Directory</b><br>Test class: tests_settings.SetUserToEnablePrivateDirectory<br>Test method: open_User_Profile_Auto_User_16_Disable_Private_Directory</td>
+<td></td>
+<td>11</td>
+<td>tests_settings.SetUserToEnablePrivateDirectory@4d1b0d2a</td></tr>
+<tr>
+<td title='tests_settings.SetUserToEnablePrivateDirectory.open_User_Profile_Auto_User_16_Enable_Private_Directory()'><b>open_User_Profile_Auto_User_16_Enable_Private_Directory</b><br>Test class: tests_settings.SetUserToEnablePrivateDirectory<br>Test method: open_User_Profile_Enable_Private_Directory</td>
+<td></td>
+<td>10</td>
+<td>tests_settings.SetUserToEnablePrivateDirectory@4d1b0d2a</td></tr>
+<tr>
+<td title='tests_settings.SetUserToHidden.open_User_Profile_Auto_User_17()'><b>open_User_Profile_Auto_User_17</b><br>Test class: tests_settings.SetUserToHidden<br>Test method: open_User_Profile_Auto_User_17</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.SetUserToHidden@545997b1</td></tr>
+<tr>
+<td title='tests_settings.RestrictWorkroomForUser.open_User_Profile_Click_Manage_Workrooms_Again()'><b>open_User_Profile_Click_Manage_Workrooms_Again</b><br>Test class: tests_settings.RestrictWorkroomForUser<br>Test method: open_User_Profile_Click_Manage_Workrooms_Again</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.RestrictWorkroomForUser@2de8284b</td></tr>
+<tr>
+<td title='tests_settings.SetUserToDisablePrivateDirectory.open_User_Profile_Disable_Private_Directory()'><b>open_User_Profile_Disable_Private_Directory</b><br>Test class: tests_settings.SetUserToDisablePrivateDirectory<br>Test method: open_User_Profile_Disable_Private_Directory</td>
+<td></td>
+<td>18</td>
+<td>tests_settings.SetUserToDisablePrivateDirectory@2eda0940</td></tr>
+<tr>
+<td title='tests_settings.SetUserToDisablePrivateDirectory.open_User_Profile_Enable_Private_Directory()'><b>open_User_Profile_Enable_Private_Directory</b><br>Test class: tests_settings.SetUserToDisablePrivateDirectory<br>Test method: open_User_Profile_Enable_Private_Directory</td>
+<td></td>
+<td>12</td>
+<td>tests_settings.SetUserToDisablePrivateDirectory@2eda0940</td></tr>
+<tr>
+<td title='tests_settings.DeactivateMessagingForUser.open_User_Profile_Set_Permissions()'><b>open_User_Profile_Set_Permissions</b><br>Test class: tests_settings.DeactivateMessagingForUser<br>Test method: open_User_Profile_Set_Permissions</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.DeactivateMessagingForUser@7a30d1e6</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.open_View_User_Profile()'><b>open_View_User_Profile</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: open_View_User_Profile</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.remove_Auto_Director_2_From_A_Workroom()'><b>remove_Auto_Director_2_From_A_Workroom</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: remove_Auto_Director_2_From_A_Workroom</td>
+<td></td>
+<td>15</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.remove_Test_Reset_2_From_A_Workroom()'><b>remove_Test_Reset_2_From_A_Workroom</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: remove_Test_Reset_2_From_A_Workroom</td>
+<td></td>
+<td>15</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.RestrictWorkroomForUser.restrict_Workroom_Access()'><b>restrict_Workroom_Access</b><br>Test class: tests_settings.RestrictWorkroomForUser<br>Test method: restrict_Workroom_Access</td>
+<td></td>
+<td>10</td>
+<td>tests_settings.RestrictWorkroomForUser@2de8284b</td></tr>
+<tr>
+<td title='tests_settings.SetUserToHidden.set_Test_User_To_Hidden()'><b>set_Test_User_To_Hidden</b><br>Test class: tests_settings.SetUserToHidden<br>Test method: set_Test_User_To_Hidden</td>
+<td></td>
+<td>8</td>
+<td>tests_settings.SetUserToHidden@545997b1</td></tr>
+<tr>
+<td title='tests_settings.SetUserToVisible.set_Test_User_To_Visible()'><b>set_Test_User_To_Visible</b><br>Test class: tests_settings.SetUserToVisible<br>Test method: set_Test_User_To_Visible</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.SetUserToVisible@52525845</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomAccessToEventsLibraryCollaborate.systemAdmin_Can_Login()'><b>systemAdmin_Can_Login</b><br>Test class: tests_settings.SetWorkroomAccessToEventsLibraryCollaborate<br>Test method: systemAdmin_Can_Login</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.SetWorkroomAccessToEventsLibraryCollaborate@44a3ec6b</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomToViewOnlyBooks.systemAdmin_Can_Login()'><b>systemAdmin_Can_Login</b><br>Test class: tests_settings.SetWorkroomToViewOnlyBooks<br>Test method: systemAdmin_Can_Login</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.SetWorkroomToViewOnlyBooks@4bb4de6a</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomAccessToEventsLibraryCollaborate.systemAdmin_Can_Logout()'><b>systemAdmin_Can_Logout</b><br>Test class: tests_settings.SetWorkroomAccessToEventsLibraryCollaborate<br>Test method: systemAdmin_Can_Logout</td>
+<td></td>
+<td>10</td>
+<td>tests_settings.SetWorkroomAccessToEventsLibraryCollaborate@44a3ec6b</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomToViewOnlyBooks.systemAdmin_Can_Logout()'><b>systemAdmin_Can_Logout</b><br>Test class: tests_settings.SetWorkroomToViewOnlyBooks<br>Test method: systemAdmin_Can_Logout</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.SetWorkroomToViewOnlyBooks@4bb4de6a</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomAccessToEventsLibraryCollaborate.systemAdmin_Can_Logout_Again()'><b>systemAdmin_Can_Logout_Again</b><br>Test class: tests_settings.SetWorkroomAccessToEventsLibraryCollaborate<br>Test method: systemAdmin_Can_Logout_Again</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.SetWorkroomAccessToEventsLibraryCollaborate@44a3ec6b</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.systemAdmin_Disables_User_As_Workroom_Admin()'><b>systemAdmin_Disables_User_As_Workroom_Admin</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: systemAdmin_Disables_User_As_Workroom_Admin</td>
+<td></td>
+<td>12</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings()'><b>systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: user_Open_Settings_Then_Workroom_And_Group_Settings</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings()'><b>systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: user_Open_Settings_Then_Workroom_And_Group_Settings</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToAddFilesToWorkroom.systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings()'><b>systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings</b><br>Test class: tests_settings.AllowUserToAddFilesToWorkroom<br>Test method: user_Open_Settings_Then_Workroom_And_Group_Settings</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.AllowUserToAddFilesToWorkroom@cb51256</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_2nd_Time()'><b>systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_2nd_Time</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_2nd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_2nd_Time()'><b>systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_2nd_Time</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: user_Open_Settings_Then_Workroom_And_Group_Settings</td>
+<td></td>
+<td>2</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_3rd_Time()'><b>systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_3rd_Time</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_3rd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.SetUserHiddenInWorkroom.systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_3rd_Time()'><b>systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_3rd_Time</b><br>Test class: tests_settings.SetUserHiddenInWorkroom<br>Test method: systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_3rd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.SetUserHiddenInWorkroom@2e3fc542</td></tr>
+<tr>
+<td title='tests_settings.SetUserVisibleInWorkroom.systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_3rd_Time()'><b>systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_3rd_Time</b><br>Test class: tests_settings.SetUserVisibleInWorkroom<br>Test method: systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_3rd_Time</td>
+<td></td>
+<td>16</td>
+<td>tests_settings.SetUserVisibleInWorkroom@587c290d</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_4th_Time()'><b>systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_4th_Time</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_4th_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.systemAdmin_Set_User_As_Workroom_Admin()'><b>systemAdmin_Set_User_As_Workroom_Admin</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: systemAdmin_Set_User_As_Workroom_Admin</td>
+<td></td>
+<td>18</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.SetUserHiddenInWorkroom.systemAdmin_Set_User_To_Hidden()'><b>systemAdmin_Set_User_To_Hidden</b><br>Test class: tests_settings.SetUserHiddenInWorkroom<br>Test method: systemAdmin_Set_User_To_Hidden</td>
+<td></td>
+<td>13</td>
+<td>tests_settings.SetUserHiddenInWorkroom@2e3fc542</td></tr>
+<tr>
+<td title='tests_settings.SetUserVisibleInWorkroom.systemAdmin_Set_Workroom_Admin_2_To_Hidden()'><b>systemAdmin_Set_Workroom_Admin_2_To_Hidden</b><br>Test class: tests_settings.SetUserVisibleInWorkroom<br>Test method: systemAdmin_Set_Workroom_Admin_2_To_Hidden</td>
+<td></td>
+<td>12</td>
+<td>tests_settings.SetUserVisibleInWorkroom@587c290d</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFieldGroup.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_settings.CreateEditDeleteCustomFieldGroup<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>13</td>
+<td>tests_settings.CreateEditDeleteCustomFieldGroup@77f99a05</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFields.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_settings.CreateEditDeleteCustomFields<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>13</td>
+<td>tests_settings.CreateEditDeleteCustomFields@4eb7f003</td></tr>
+<tr>
+<td title='tests_settings.AddEditDeleteOfficerRole.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_settings.AddEditDeleteOfficerRole<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>16</td>
+<td>tests_settings.AddEditDeleteOfficerRole@2a556333</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteGroup.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_settings.CreateEditDeleteGroup<br>Test method: systemAdmin_login</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.CreateEditDeleteGroup@8646db9</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomToViewOnlyBooks.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_settings.SetWorkroomToViewOnlyBooks<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.SetWorkroomToViewOnlyBooks@4bb4de6a</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomAccessToEventsLibraryCollaborate.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_settings.SetWorkroomAccessToEventsLibraryCollaborate<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.SetWorkroomAccessToEventsLibraryCollaborate@44a3ec6b</td></tr>
+<tr>
+<td title='tests_settings.UpdateProfilesWithCustomFieldData.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_settings.UpdateProfilesWithCustomFieldData<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.UpdateProfilesWithCustomFieldData@27fe3806</td></tr>
+<tr>
+<td title='tests_settings.UnlockProfile.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_settings.UnlockProfile<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.UnlockProfile@57f23557</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.system_Admin_Can_Login()'><b>system_Admin_Can_Login</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: test_User_Can_Login</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToAddFilesToWorkroom.system_Admin_Can_Login()'><b>system_Admin_Can_Login</b><br>Test class: tests_settings.AllowUserToAddFilesToWorkroom<br>Test method: test_User_Can_Login</td>
+<td></td>
+<td>11</td>
+<td>tests_settings.AllowUserToAddFilesToWorkroom@cb51256</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToAddFilesToWorkroom.system_Admin_Can_Logout()'><b>system_Admin_Can_Logout</b><br>Test class: tests_settings.AllowUserToAddFilesToWorkroom<br>Test method: system_Admin</td>
+<td></td>
+<td>12</td>
+<td>tests_settings.AllowUserToAddFilesToWorkroom@cb51256</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteEventCategory.system_Admin_Login()'><b>system_Admin_Login</b><br>Test class: tests_settings.CreateEditDeleteEventCategory<br>Test method: system_Admin_Login.</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.CreateEditDeleteEventCategory@491cc5c9</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.system_Admin_Login()'><b>system_Admin_Login</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: system_Admin_Login.</td>
+<td></td>
+<td>18</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.system_Admin_Login()'><b>system_Admin_Login</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: system_Admin_Login.</td>
+<td></td>
+<td>18</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToAddFilesToWorkroom.system_Admin_Login()'><b>system_Admin_Login</b><br>Test class: tests_settings.AllowUserToAddFilesToWorkroom<br>Test method: system_Admin_Login.</td>
+<td></td>
+<td>11</td>
+<td>tests_settings.AllowUserToAddFilesToWorkroom@cb51256</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteUserCategory.system_Admin_Login()'><b>system_Admin_Login</b><br>Test class: tests_settings.CreateEditDeleteUserCategory<br>Test method: system_Admin_Login.</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.CreateEditDeleteUserCategory@7cbd213e</td></tr>
+<tr>
+<td title='tests_settings.DeactivateMessagingForUser.system_Admin_Login()'><b>system_Admin_Login</b><br>Test class: tests_settings.DeactivateMessagingForUser<br>Test method: system_Admin_Login.</td>
+<td></td>
+<td>10</td>
+<td>tests_settings.DeactivateMessagingForUser@7a30d1e6</td></tr>
+<tr>
+<td title='tests_settings.DeactivateResourcesForUser.system_Admin_Login()'><b>system_Admin_Login</b><br>Test class: tests_settings.DeactivateResourcesForUser<br>Test method: system_Admin_Login.</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.DeactivateResourcesForUser@4e718207</td></tr>
+<tr>
+<td title='tests_settings.RestrictWorkroomForUser.system_Admin_Login()'><b>system_Admin_Login</b><br>Test class: tests_settings.RestrictWorkroomForUser<br>Test method: system_Admin_Login.</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.RestrictWorkroomForUser@2de8284b</td></tr>
+<tr>
+<td title='tests_settings.SetUserAccessToManageFiles.system_Admin_Login()'><b>system_Admin_Login</b><br>Test class: tests_settings.SetUserAccessToManageFiles<br>Test method: system_Admin_Login.</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.SetUserAccessToManageFiles@42607a4f</td></tr>
+<tr>
+<td title='tests_settings.SetUserHiddenInWorkroom.system_Admin_Login()'><b>system_Admin_Login</b><br>Test class: tests_settings.SetUserHiddenInWorkroom<br>Test method: system_Admin_Login.</td>
+<td></td>
+<td>12</td>
+<td>tests_settings.SetUserHiddenInWorkroom@2e3fc542</td></tr>
+<tr>
+<td title='tests_settings.SetUserToDisablePrivateDirectory.system_Admin_Login()'><b>system_Admin_Login</b><br>Test class: tests_settings.SetUserToDisablePrivateDirectory<br>Test method: system_Admin_Login.</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.SetUserToDisablePrivateDirectory@2eda0940</td></tr>
+<tr>
+<td title='tests_settings.SetUserToEnablePrivateDirectory.system_Admin_Login()'><b>system_Admin_Login</b><br>Test class: tests_settings.SetUserToEnablePrivateDirectory<br>Test method: system_Admin_Login.</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.SetUserToEnablePrivateDirectory@4d1b0d2a</td></tr>
+<tr>
+<td title='tests_settings.SetUserToHidden.system_Admin_Login()'><b>system_Admin_Login</b><br>Test class: tests_settings.SetUserToHidden<br>Test method: system_Admin_Login.</td>
+<td></td>
+<td>9</td>
+<td>tests_settings.SetUserToHidden@545997b1</td></tr>
+<tr>
+<td title='tests_settings.SetUserToMobileOnly.system_Admin_Login()'><b>system_Admin_Login</b><br>Test class: tests_settings.SetUserToMobileOnly<br>Test method: system_Admin_Login.</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.SetUserToMobileOnly@df27fae</td></tr>
+<tr>
+<td title='tests_settings.SetUserToSystemAdministrator.system_Admin_Login()'><b>system_Admin_Login</b><br>Test class: tests_settings.SetUserToSystemAdministrator<br>Test method: system_Admin_Login.</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.SetUserToSystemAdministrator@31f924f5</td></tr>
+<tr>
+<td title='tests_settings.SetUserToViewOnlyBooks.system_Admin_Login()'><b>system_Admin_Login</b><br>Test class: tests_settings.SetUserToViewOnlyBooks<br>Test method: system_Admin_Login.</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.SetUserToViewOnlyBooks@17211155</td></tr>
+<tr>
+<td title='tests_settings.SetUserToVisible.system_Admin_Login()'><b>system_Admin_Login</b><br>Test class: tests_settings.SetUserToVisible<br>Test method: system_Admin_Login.</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.SetUserToVisible@52525845</td></tr>
+<tr>
+<td title='tests_settings.SetUserVisibleInWorkroom.system_Admin_Login()'><b>system_Admin_Login</b><br>Test class: tests_settings.SetUserVisibleInWorkroom<br>Test method: system_Admin_Login.</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.SetUserVisibleInWorkroom@587c290d</td></tr>
+<tr>
+<td title='tests_settings.DeactivateMessagingForUser.system_Admin_Login_2nd_Time()'><b>system_Admin_Login_2nd_Time</b><br>Test class: tests_settings.DeactivateMessagingForUser<br>Test method: system_Admin_Login_2nd_Time.</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.DeactivateMessagingForUser@7a30d1e6</td></tr>
+<tr>
+<td title='tests_settings.DeactivateResourcesForUser.system_Admin_Login_2nd_Time()'><b>system_Admin_Login_2nd_Time</b><br>Test class: tests_settings.DeactivateResourcesForUser<br>Test method: system_Admin_Login_2nd_Time.</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.DeactivateResourcesForUser@4e718207</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.system_Admin_Login_2nd_Time()'><b>system_Admin_Login_2nd_Time</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: system_Admin_Login_2nd_Time</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.SetUserAccessToManageFiles.system_Admin_Login_2nd_Time()'><b>system_Admin_Login_2nd_Time</b><br>Test class: tests_settings.SetUserAccessToManageFiles<br>Test method: system_Admin_Login_2nd_Time.</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.SetUserAccessToManageFiles@42607a4f</td></tr>
+<tr>
+<td title='tests_settings.RestrictWorkroomForUser.system_Admin_Login_2nd_Time()'><b>system_Admin_Login_2nd_Time</b><br>Test class: tests_settings.RestrictWorkroomForUser<br>Test method: system_Admin_Login_2nd_Time.</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.RestrictWorkroomForUser@2de8284b</td></tr>
+<tr>
+<td title='tests_settings.SetUserToDisablePrivateDirectory.system_Admin_Login_2nd_Time()'><b>system_Admin_Login_2nd_Time</b><br>Test class: tests_settings.SetUserToDisablePrivateDirectory<br>Test method: system_Admin_Login_2nd_Time.</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.SetUserToDisablePrivateDirectory@2eda0940</td></tr>
+<tr>
+<td title='tests_settings.SetUserHiddenInWorkroom.system_Admin_Login_2nd_Time()'><b>system_Admin_Login_2nd_Time</b><br>Test class: tests_settings.SetUserHiddenInWorkroom<br>Test method: system_Admin_Login_2nd_Time.</td>
+<td></td>
+<td>11</td>
+<td>tests_settings.SetUserHiddenInWorkroom@2e3fc542</td></tr>
+<tr>
+<td title='tests_settings.SetUserToEnablePrivateDirectory.system_Admin_Login_2nd_Time()'><b>system_Admin_Login_2nd_Time</b><br>Test class: tests_settings.SetUserToEnablePrivateDirectory<br>Test method: system_Admin_Login_2nd_Time.</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.SetUserToEnablePrivateDirectory@4d1b0d2a</td></tr>
+<tr>
+<td title='tests_settings.SetUserToMobileOnly.system_Admin_Login_2nd_Time()'><b>system_Admin_Login_2nd_Time</b><br>Test class: tests_settings.SetUserToMobileOnly<br>Test method: system_Admin_Login_2nd_Time.</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.SetUserToMobileOnly@df27fae</td></tr>
+<tr>
+<td title='tests_settings.SetUserToHidden.system_Admin_Login_2nd_Time()'><b>system_Admin_Login_2nd_Time</b><br>Test class: tests_settings.SetUserToHidden<br>Test method: system_Admin_Login_2nd_Time.</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.SetUserToHidden@545997b1</td></tr>
+<tr>
+<td title='tests_settings.SetUserToSystemAdministrator.system_Admin_Login_2nd_Time()'><b>system_Admin_Login_2nd_Time</b><br>Test class: tests_settings.SetUserToSystemAdministrator<br>Test method: system_Admin_Login_2nd_Time.</td>
+<td></td>
+<td>8</td>
+<td>tests_settings.SetUserToSystemAdministrator@31f924f5</td></tr>
+<tr>
+<td title='tests_settings.SetUserToVisible.system_Admin_Login_2nd_Time()'><b>system_Admin_Login_2nd_Time</b><br>Test class: tests_settings.SetUserToVisible<br>Test method: system_Admin_Login_2nd_Time.</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.SetUserToVisible@52525845</td></tr>
+<tr>
+<td title='tests_settings.SetUserVisibleInWorkroom.system_Admin_Login_2nd_Time()'><b>system_Admin_Login_2nd_Time</b><br>Test class: tests_settings.SetUserVisibleInWorkroom<br>Test method: system_Admin_Login_2nd_Time.</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.SetUserVisibleInWorkroom@587c290d</td></tr>
+<tr>
+<td title='tests_settings.SetUserToViewOnlyBooks.system_Admin_Login_2nd_Time()'><b>system_Admin_Login_2nd_Time</b><br>Test class: tests_settings.SetUserToViewOnlyBooks<br>Test method: system_Admin_Login_2nd_Time.</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.SetUserToViewOnlyBooks@17211155</td></tr>
+<tr>
+<td title='tests_settings.SetUserVisibleInWorkroom.system_Admin_Login_3rd_Time()'><b>system_Admin_Login_3rd_Time</b><br>Test class: tests_settings.SetUserVisibleInWorkroom<br>Test method: system_Admin_Login_3rd_Time.</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.SetUserVisibleInWorkroom@587c290d</td></tr>
+<tr>
+<td title='tests_settings.SetUserToHidden.system_Admin_Open_Directory_2nd_Time()'><b>system_Admin_Open_Directory_2nd_Time</b><br>Test class: tests_settings.SetUserToHidden<br>Test method: system_Admin_Open_Directory_2nd_Time</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.SetUserToHidden@545997b1</td></tr>
+<tr>
+<td title='tests_settings.SetUserToVisible.system_Admin_Open_Directory_2nd_Time()'><b>system_Admin_Open_Directory_2nd_Time</b><br>Test class: tests_settings.SetUserToVisible<br>Test method: system_Admin_Open_Directory_2nd_Time</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.SetUserToVisible@52525845</td></tr>
+<tr>
+<td title='tests_settings.SetUserToViewOnlyBooks.system_Admin_Open_Library_Page_For_Workroom_2nd_Time()'><b>system_Admin_Open_Library_Page_For_Workroom_2nd_Time</b><br>Test class: tests_settings.SetUserToViewOnlyBooks<br>Test method: system_Admin_Open_Library_Page_For_Workroom_2nd_Time</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.SetUserToViewOnlyBooks@17211155</td></tr>
+<tr>
+<td title='tests_settings.SetUserAccessToManageFiles.test_Reset_User_Can_Logout()'><b>test_Reset_User_Can_Logout</b><br>Test class: tests_settings.SetUserAccessToManageFiles<br>Test method: test_Reset_User_Can_Logout</td>
+<td></td>
+<td>9</td>
+<td>tests_settings.SetUserAccessToManageFiles@42607a4f</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.test_User_Can_Login()'><b>test_User_Can_Login</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: test_User_Can_Login</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.SetUserAccessToManageFiles.test_User_Can_Login()'><b>test_User_Can_Login</b><br>Test class: tests_settings.SetUserAccessToManageFiles<br>Test method: test_User_Can_Login</td>
+<td></td>
+<td>8</td>
+<td>tests_settings.SetUserAccessToManageFiles@42607a4f</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.test_User_Can_Logout()'><b>test_User_Can_Logout</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.test_User_Can_Logout()'><b>test_User_Can_Logout</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: test_User_Can_Logout</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.DeactivateMessagingForUser.test_User_Can_Logout()'><b>test_User_Can_Logout</b><br>Test class: tests_settings.DeactivateMessagingForUser<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.DeactivateMessagingForUser@7a30d1e6</td></tr>
+<tr>
+<td title='tests_settings.DeactivateResourcesForUser.test_User_Can_Logout()'><b>test_User_Can_Logout</b><br>Test class: tests_settings.DeactivateResourcesForUser<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>10</td>
+<td>tests_settings.DeactivateResourcesForUser@4e718207</td></tr>
+<tr>
+<td title='tests_settings.RestrictWorkroomForUser.test_User_Can_Logout()'><b>test_User_Can_Logout</b><br>Test class: tests_settings.RestrictWorkroomForUser<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>11</td>
+<td>tests_settings.RestrictWorkroomForUser@2de8284b</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.test_User_Login()'><b>test_User_Login</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: test_User_Login.</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.UnlockProfile.unlock_Locked_User_Profile()'><b>unlock_Locked_User_Profile</b><br>Test class: tests_settings.UnlockProfile<br>Test method: unlock_Locked_User_Profile</td>
+<td></td>
+<td>10</td>
+<td>tests_settings.UnlockProfile@57f23557</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomToViewOnlyBooks.user_Add_File_1_To_First_Catagory()'><b>user_Add_File_1_To_First_Catagory</b><br>Test class: tests_settings.SetWorkroomToViewOnlyBooks<br>Test method: user_Add_File_1_To_First_Catagory</td>
+<td></td>
+<td>16</td>
+<td>tests_settings.SetWorkroomToViewOnlyBooks@4bb4de6a</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomToViewOnlyBooks.user_Add_First_Catagory_To_Book()'><b>user_Add_First_Catagory_To_Book</b><br>Test class: tests_settings.SetWorkroomToViewOnlyBooks<br>Test method: user_Add_First_Catagory_To_Book</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.SetWorkroomToViewOnlyBooks@4bb4de6a</td></tr>
+<tr>
+<td title='tests_settings.SetUserToViewOnlyBooks.user_AutoUser20_Can_Login()'><b>user_AutoUser20_Can_Login</b><br>Test class: tests_settings.SetUserToViewOnlyBooks<br>Test method: user_Can_Login</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.SetUserToViewOnlyBooks@17211155</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomToViewOnlyBooks.user_Can_Add_Agenda()'><b>user_Can_Add_Agenda</b><br>Test class: tests_settings.SetWorkroomToViewOnlyBooks<br>Test method: user_Can_Add_Agenda</td>
+<td></td>
+<td>2</td>
+<td>tests_settings.SetWorkroomToViewOnlyBooks@4bb4de6a</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomToViewOnlyBooks.user_Can_Add_Cover_Page()'><b>user_Can_Add_Cover_Page</b><br>Test class: tests_settings.SetWorkroomToViewOnlyBooks<br>Test method: user_Can_Add_Cover_Page</td>
+<td></td>
+<td>9</td>
+<td>tests_settings.SetWorkroomToViewOnlyBooks@4bb4de6a</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToAddFilesToWorkroom.user_Can_Add_File_To_Workroom()'><b>user_Can_Add_File_To_Workroom</b><br>Test class: tests_settings.AllowUserToAddFilesToWorkroom<br>Test method: user_Can_Add_File_To_Workroom</td>
+<td></td>
+<td>10</td>
+<td>tests_settings.AllowUserToAddFilesToWorkroom@cb51256</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomToViewOnlyBooks.user_Can_Build_Book()'><b>user_Can_Build_Book</b><br>Test class: tests_settings.SetWorkroomToViewOnlyBooks<br>Test method: user_Can_Build_Book</td>
+<td></td>
+<td>16</td>
+<td>tests_settings.SetWorkroomToViewOnlyBooks@4bb4de6a</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomToViewOnlyBooks.user_Can_Create_New_Book()'><b>user_Can_Create_New_Book</b><br>Test class: tests_settings.SetWorkroomToViewOnlyBooks<br>Test method: user_Can_Create_New_Book</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.SetWorkroomToViewOnlyBooks@4bb4de6a</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteGroup.user_Can_Create_New_Group()'><b>user_Can_Create_New_Group</b><br>Test class: tests_settings.CreateEditDeleteGroup<br>Test method: user_Can_Create_New_Group</td>
+<td></td>
+<td>12</td>
+<td>tests_settings.CreateEditDeleteGroup@8646db9</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteGroup.user_Can_Delete_New_Group()'><b>user_Can_Delete_New_Group</b><br>Test class: tests_settings.CreateEditDeleteGroup<br>Test method: user_Can_Delete_New_Group</td>
+<td></td>
+<td>12</td>
+<td>tests_settings.CreateEditDeleteGroup@8646db9</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToAddFilesToWorkroom.user_Can_Delete_Word_Document()'><b>user_Can_Delete_Word_Document</b><br>Test class: tests_settings.AllowUserToAddFilesToWorkroom<br>Test method: user_Can_Delete_Word_Document</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.AllowUserToAddFilesToWorkroom@cb51256</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteGroup.user_Can_Edit_New_Group()'><b>user_Can_Edit_New_Group</b><br>Test class: tests_settings.CreateEditDeleteGroup<br>Test method: user_Can_Edit_New_Group</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.CreateEditDeleteGroup@8646db9</td></tr>
+<tr>
+<td title='tests_settings.ChangePasswordSettings.user_Can_Login()'><b>user_Can_Login</b><br>Test class: tests_settings.ChangePasswordSettings<br>Test method: user_Can_Login</td>
+<td></td>
+<td>10</td>
+<td>tests_settings.ChangePasswordSettings@371a67ec</td></tr>
+<tr>
+<td title='tests_settings.DeactivateMessagingForUser.user_Can_Login()'><b>user_Can_Login</b><br>Test class: tests_settings.DeactivateMessagingForUser<br>Test method: user_Can_Login</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.DeactivateMessagingForUser@7a30d1e6</td></tr>
+<tr>
+<td title='tests_settings.DeactivateResourcesForUser.user_Can_Login()'><b>user_Can_Login</b><br>Test class: tests_settings.DeactivateResourcesForUser<br>Test method: user_Can_Login</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.DeactivateResourcesForUser@4e718207</td></tr>
+<tr>
+<td title='tests_settings.EnableDisableDisclaimer.user_Can_Login()'><b>user_Can_Login</b><br>Test class: tests_settings.EnableDisableDisclaimer<br>Test method: user_Can_Login</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.EnableDisableDisclaimer@1fc2b765</td></tr>
+<tr>
+<td title='tests_settings.RestrictWorkroomForUser.user_Can_Login()'><b>user_Can_Login</b><br>Test class: tests_settings.RestrictWorkroomForUser<br>Test method: user_Can_Login</td>
+<td></td>
+<td>12</td>
+<td>tests_settings.RestrictWorkroomForUser@2de8284b</td></tr>
+<tr>
+<td title='tests_settings.SetUserToDisablePrivateDirectory.user_Can_Login()'><b>user_Can_Login</b><br>Test class: tests_settings.SetUserToDisablePrivateDirectory<br>Test method: user_Can_Login</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.SetUserToDisablePrivateDirectory@2eda0940</td></tr>
+<tr>
+<td title='tests_settings.SetUserToEnablePrivateDirectory.user_Can_Login()'><b>user_Can_Login</b><br>Test class: tests_settings.SetUserToEnablePrivateDirectory<br>Test method: user_Can_Login</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.SetUserToEnablePrivateDirectory@4d1b0d2a</td></tr>
+<tr>
+<td title='tests_settings.SetUserToHidden.user_Can_Login()'><b>user_Can_Login</b><br>Test class: tests_settings.SetUserToHidden<br>Test method: user_Can_Login</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.SetUserToHidden@545997b1</td></tr>
+<tr>
+<td title='tests_settings.SetUserToMobileOnly.user_Can_Login()'><b>user_Can_Login</b><br>Test class: tests_settings.SetUserToMobileOnly<br>Test method: user_Can_Login</td>
+<td></td>
+<td>11</td>
+<td>tests_settings.SetUserToMobileOnly@df27fae</td></tr>
+<tr>
+<td title='tests_settings.SetUserToSystemAdministrator.user_Can_Login()'><b>user_Can_Login</b><br>Test class: tests_settings.SetUserToSystemAdministrator<br>Test method: user_Can_Login</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.SetUserToSystemAdministrator@31f924f5</td></tr>
+<tr>
+<td title='tests_settings.SetUserToVisible.user_Can_Login()'><b>user_Can_Login</b><br>Test class: tests_settings.SetUserToVisible<br>Test method: user_Can_Login</td>
+<td></td>
+<td>8</td>
+<td>tests_settings.SetUserToVisible@52525845</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.user_Can_Logout()'><b>user_Can_Logout</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>10</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.user_Can_Logout()'><b>user_Can_Logout</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>15</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.ChangePasswordSettings.user_Can_Logout()'><b>user_Can_Logout</b><br>Test class: tests_settings.ChangePasswordSettings<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>9</td>
+<td>tests_settings.ChangePasswordSettings@371a67ec</td></tr>
+<tr>
+<td title='tests_settings.DeactivateMessagingForUser.user_Can_Logout()'><b>user_Can_Logout</b><br>Test class: tests_settings.DeactivateMessagingForUser<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.DeactivateMessagingForUser@7a30d1e6</td></tr>
+<tr>
+<td title='tests_settings.DeactivateResourcesForUser.user_Can_Logout()'><b>user_Can_Logout</b><br>Test class: tests_settings.DeactivateResourcesForUser<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.DeactivateResourcesForUser@4e718207</td></tr>
+<tr>
+<td title='tests_settings.EnableDisableDisclaimer.user_Can_Logout()'><b>user_Can_Logout</b><br>Test class: tests_settings.EnableDisableDisclaimer<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>14</td>
+<td>tests_settings.EnableDisableDisclaimer@1fc2b765</td></tr>
+<tr>
+<td title='tests_settings.RestrictWorkroomForUser.user_Can_Logout()'><b>user_Can_Logout</b><br>Test class: tests_settings.RestrictWorkroomForUser<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>13</td>
+<td>tests_settings.RestrictWorkroomForUser@2de8284b</td></tr>
+<tr>
+<td title='tests_settings.SetUserAccessToManageFiles.user_Can_Logout()'><b>user_Can_Logout</b><br>Test class: tests_settings.SetUserAccessToManageFiles<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>10</td>
+<td>tests_settings.SetUserAccessToManageFiles@42607a4f</td></tr>
+<tr>
+<td title='tests_settings.SetUserHiddenInWorkroom.user_Can_Logout()'><b>user_Can_Logout</b><br>Test class: tests_settings.SetUserHiddenInWorkroom<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>18</td>
+<td>tests_settings.SetUserHiddenInWorkroom@2e3fc542</td></tr>
+<tr>
+<td title='tests_settings.SetUserToEnablePrivateDirectory.user_Can_Logout()'><b>user_Can_Logout</b><br>Test class: tests_settings.SetUserToEnablePrivateDirectory<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.SetUserToEnablePrivateDirectory@4d1b0d2a</td></tr>
+<tr>
+<td title='tests_settings.SetUserToDisablePrivateDirectory.user_Can_Logout()'><b>user_Can_Logout</b><br>Test class: tests_settings.SetUserToDisablePrivateDirectory<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.SetUserToDisablePrivateDirectory@2eda0940</td></tr>
+<tr>
+<td title='tests_settings.SetUserToMobileOnly.user_Can_Logout()'><b>user_Can_Logout</b><br>Test class: tests_settings.SetUserToMobileOnly<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.SetUserToMobileOnly@df27fae</td></tr>
+<tr>
+<td title='tests_settings.SetUserToSystemAdministrator.user_Can_Logout()'><b>user_Can_Logout</b><br>Test class: tests_settings.SetUserToSystemAdministrator<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.SetUserToSystemAdministrator@31f924f5</td></tr>
+<tr>
+<td title='tests_settings.SetUserVisibleInWorkroom.user_Can_Logout()'><b>user_Can_Logout</b><br>Test class: tests_settings.SetUserVisibleInWorkroom<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>9</td>
+<td>tests_settings.SetUserVisibleInWorkroom@587c290d</td></tr>
+<tr>
+<td title='tests_settings.SetUserToViewOnlyBooks.user_Can_Logout()'><b>user_Can_Logout</b><br>Test class: tests_settings.SetUserToViewOnlyBooks<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>8</td>
+<td>tests_settings.SetUserToViewOnlyBooks@17211155</td></tr>
+<tr>
+<td title='tests_settings.UnlockProfile.user_Can_Logout()'><b>user_Can_Logout</b><br>Test class: tests_settings.UnlockProfile<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.UnlockProfile@57f23557</td></tr>
+<tr>
+<td title='tests_settings.SetUserHiddenInWorkroom.user_Can_Logout_2nd_Time()'><b>user_Can_Logout_2nd_Time</b><br>Test class: tests_settings.SetUserHiddenInWorkroom<br>Test method: user_Can_Logout_2nd_Time</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.SetUserHiddenInWorkroom@2e3fc542</td></tr>
+<tr>
+<td title='tests_settings.SetUserToSystemAdministrator.user_Can_Logout_2nd_Time()'><b>user_Can_Logout_2nd_Time</b><br>Test class: tests_settings.SetUserToSystemAdministrator<br>Test method: user_Can_Logout_2nd_Time</td>
+<td></td>
+<td>8</td>
+<td>tests_settings.SetUserToSystemAdministrator@31f924f5</td></tr>
+<tr>
+<td title='tests_settings.SetUserVisibleInWorkroom.user_Can_Logout_2nd_Time()'><b>user_Can_Logout_2nd_Time</b><br>Test class: tests_settings.SetUserVisibleInWorkroom<br>Test method: user_Can_Logout_2nd_Time</td>
+<td></td>
+<td>12</td>
+<td>tests_settings.SetUserVisibleInWorkroom@587c290d</td></tr>
+<tr>
+<td title='tests_settings.SetUserVisibleInWorkroom.user_Can_Logout_3rd_Time()'><b>user_Can_Logout_3rd_Time</b><br>Test class: tests_settings.SetUserVisibleInWorkroom<br>Test method: user_Can_Logout_3rd_Time</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.SetUserVisibleInWorkroom@587c290d</td></tr>
+<tr>
+<td title='tests_settings.ChangePasswordSettings.user_Can_Logout_Again()'><b>user_Can_Logout_Again</b><br>Test class: tests_settings.ChangePasswordSettings<br>Test method: user_Can_Logout_Again</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.ChangePasswordSettings@371a67ec</td></tr>
+<tr>
+<td title='tests_settings.SetUserToHidden.user_Can_Logout_Auto_Director()'><b>user_Can_Logout_Auto_Director</b><br>Test class: tests_settings.SetUserToHidden<br>Test method: user_Can_Logout_Auto_Director</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.SetUserToHidden@545997b1</td></tr>
+<tr>
+<td title='tests_settings.SetUserToVisible.user_Can_Logout_Auto_Director()'><b>user_Can_Logout_Auto_Director</b><br>Test class: tests_settings.SetUserToVisible<br>Test method: user_Can_Logout_Auto_Director</td>
+<td></td>
+<td>15</td>
+<td>tests_settings.SetUserToVisible@52525845</td></tr>
+<tr>
+<td title='tests_settings.SetUserToHidden.user_Can_Logout_System_Admin()'><b>user_Can_Logout_System_Admin</b><br>Test class: tests_settings.SetUserToHidden<br>Test method: user_Can_Logout_System_Admin</td>
+<td></td>
+<td>9</td>
+<td>tests_settings.SetUserToHidden@545997b1</td></tr>
+<tr>
+<td title='tests_settings.SetUserToVisible.user_Can_Logout_System_Admin()'><b>user_Can_Logout_System_Admin</b><br>Test class: tests_settings.SetUserToVisible<br>Test method: user_Can_Logout_System_Admin</td>
+<td></td>
+<td>20</td>
+<td>tests_settings.SetUserToVisible@52525845</td></tr>
+<tr>
+<td title='tests_settings.TermInfoWithEverythingSettings.user_Can_Open_Dirctory_Again()'><b>user_Can_Open_Dirctory_Again</b><br>Test class: tests_settings.TermInfoWithEverythingSettings<br>Test method: user_Can_Open_Directory</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.TermInfoWithEverythingSettings@6483f5ae</td></tr>
+<tr>
+<td title='tests_settings.DeactivateMessagingForUser.user_Can_Open_Directory()'><b>user_Can_Open_Directory</b><br>Test class: tests_settings.DeactivateMessagingForUser<br>Test method: user_Can_Open_Directory</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.DeactivateMessagingForUser@7a30d1e6</td></tr>
+<tr>
+<td title='tests_settings.DeactivateResourcesForUser.user_Can_Open_Directory()'><b>user_Can_Open_Directory</b><br>Test class: tests_settings.DeactivateResourcesForUser<br>Test method: user_Can_Open_Directory</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.DeactivateResourcesForUser@4e718207</td></tr>
+<tr>
+<td title='tests_settings.RestrictWorkroomForUser.user_Can_Open_Directory()'><b>user_Can_Open_Directory</b><br>Test class: tests_settings.RestrictWorkroomForUser<br>Test method: user_Can_Open_Directory</td>
+<td></td>
+<td>10</td>
+<td>tests_settings.RestrictWorkroomForUser@2de8284b</td></tr>
+<tr>
+<td title='tests_settings.SetUserAccessToManageFiles.user_Can_Open_Directory()'><b>user_Can_Open_Directory</b><br>Test class: tests_settings.SetUserAccessToManageFiles<br>Test method: user_Can_Open_Directory</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.SetUserAccessToManageFiles@42607a4f</td></tr>
+<tr>
+<td title='tests_settings.SetUserToDisablePrivateDirectory.user_Can_Open_Directory()'><b>user_Can_Open_Directory</b><br>Test class: tests_settings.SetUserToDisablePrivateDirectory<br>Test method: user_Can_Open_Directory</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.SetUserToDisablePrivateDirectory@2eda0940</td></tr>
+<tr>
+<td title='tests_settings.SetUserToEnablePrivateDirectory.user_Can_Open_Directory()'><b>user_Can_Open_Directory</b><br>Test class: tests_settings.SetUserToEnablePrivateDirectory<br>Test method: user_Can_Open_Directory</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.SetUserToEnablePrivateDirectory@4d1b0d2a</td></tr>
+<tr>
+<td title='tests_settings.SetUserToHidden.user_Can_Open_Directory()'><b>user_Can_Open_Directory</b><br>Test class: tests_settings.SetUserToHidden<br>Test method: user_Can_Open_Directory</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.SetUserToHidden@545997b1</td></tr>
+<tr>
+<td title='tests_settings.SetUserToMobileOnly.user_Can_Open_Directory()'><b>user_Can_Open_Directory</b><br>Test class: tests_settings.SetUserToMobileOnly<br>Test method: user_Can_Open_Directory</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.SetUserToMobileOnly@df27fae</td></tr>
+<tr>
+<td title='tests_settings.SetUserToSystemAdministrator.user_Can_Open_Directory()'><b>user_Can_Open_Directory</b><br>Test class: tests_settings.SetUserToSystemAdministrator<br>Test method: user_Can_Open_Directory</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.SetUserToSystemAdministrator@31f924f5</td></tr>
+<tr>
+<td title='tests_settings.SetUserToViewOnlyBooks.user_Can_Open_Directory()'><b>user_Can_Open_Directory</b><br>Test class: tests_settings.SetUserToViewOnlyBooks<br>Test method: user_Can_Open_Directory</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.SetUserToViewOnlyBooks@17211155</td></tr>
+<tr>
+<td title='tests_settings.SetUserToVisible.user_Can_Open_Directory()'><b>user_Can_Open_Directory</b><br>Test class: tests_settings.SetUserToVisible<br>Test method: user_Can_Open_Directory</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.SetUserToVisible@52525845</td></tr>
+<tr>
+<td title='tests_settings.UpdateProfilesWithCustomFieldData.user_Can_Open_Directory()'><b>user_Can_Open_Directory</b><br>Test class: tests_settings.UpdateProfilesWithCustomFieldData<br>Test method: user_Can_Open_Directory</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.UpdateProfilesWithCustomFieldData@27fe3806</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteEventCategory.user_Can_Open_Directory_2nd_Time()'><b>user_Can_Open_Directory_2nd_Time</b><br>Test class: tests_settings.CreateEditDeleteEventCategory<br>Test method: user_Can_Open_Settings</td>
+<td></td>
+<td>2</td>
+<td>tests_settings.CreateEditDeleteEventCategory@491cc5c9</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.user_Can_Open_Directory_2nd_Time()'><b>user_Can_Open_Directory_2nd_Time</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: user_Can_Open_Directory</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.DeactivateMessagingForUser.user_Can_Open_Directory_2nd_Time()'><b>user_Can_Open_Directory_2nd_Time</b><br>Test class: tests_settings.DeactivateMessagingForUser<br>Test method: user_Can_Open_Dirctory_2nd_Time</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.DeactivateMessagingForUser@7a30d1e6</td></tr>
+<tr>
+<td title='tests_settings.DeactivateResourcesForUser.user_Can_Open_Directory_2nd_Time()'><b>user_Can_Open_Directory_2nd_Time</b><br>Test class: tests_settings.DeactivateResourcesForUser<br>Test method: user_Can_Open_Dirctory_2nd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.DeactivateResourcesForUser@4e718207</td></tr>
+<tr>
+<td title='tests_settings.SetUserAccessToManageFiles.user_Can_Open_Directory_2nd_Time()'><b>user_Can_Open_Directory_2nd_Time</b><br>Test class: tests_settings.SetUserAccessToManageFiles<br>Test method: user_Can_Open_Dirctory_2nd_Time</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.SetUserAccessToManageFiles@42607a4f</td></tr>
+<tr>
+<td title='tests_settings.RestrictWorkroomForUser.user_Can_Open_Directory_2nd_Time()'><b>user_Can_Open_Directory_2nd_Time</b><br>Test class: tests_settings.RestrictWorkroomForUser<br>Test method: user_Can_Open_Dirctory_2nd_Time</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.RestrictWorkroomForUser@2de8284b</td></tr>
+<tr>
+<td title='tests_settings.SetUserToDisablePrivateDirectory.user_Can_Open_Directory_2nd_Time()'><b>user_Can_Open_Directory_2nd_Time</b><br>Test class: tests_settings.SetUserToDisablePrivateDirectory<br>Test method: user_Can_Open_Directory</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.SetUserToDisablePrivateDirectory@2eda0940</td></tr>
+<tr>
+<td title='tests_settings.SetUserToEnablePrivateDirectory.user_Can_Open_Directory_2nd_Time()'><b>user_Can_Open_Directory_2nd_Time</b><br>Test class: tests_settings.SetUserToEnablePrivateDirectory<br>Test method: user_Can_Open_Directory</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.SetUserToEnablePrivateDirectory@4d1b0d2a</td></tr>
+<tr>
+<td title='tests_settings.SetUserToMobileOnly.user_Can_Open_Directory_2nd_Time()'><b>user_Can_Open_Directory_2nd_Time</b><br>Test class: tests_settings.SetUserToMobileOnly<br>Test method: user_Can_Open_Dirctory_2nd_Time</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.SetUserToMobileOnly@df27fae</td></tr>
+<tr>
+<td title='tests_settings.SetUserToSystemAdministrator.user_Can_Open_Directory_2nd_Time()'><b>user_Can_Open_Directory_2nd_Time</b><br>Test class: tests_settings.SetUserToSystemAdministrator<br>Test method: user_Can_Open_Dirctory_2nd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.SetUserToSystemAdministrator@31f924f5</td></tr>
+<tr>
+<td title='tests_settings.SetUserToViewOnlyBooks.user_Can_Open_Directory_2nd_Time()'><b>user_Can_Open_Directory_2nd_Time</b><br>Test class: tests_settings.SetUserToViewOnlyBooks<br>Test method: user_Can_Open_Dirctory_2nd_Time</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.SetUserToViewOnlyBooks@17211155</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.user_Can_Open_Directory_2nd_Time_()'><b>user_Can_Open_Directory_2nd_Time_</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: user_Can_Open_Dirctory_2nd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.SetUserToDisablePrivateDirectory.user_Can_Open_Directory_2nd_Time_()'><b>user_Can_Open_Directory_2nd_Time_</b><br>Test class: tests_settings.SetUserToDisablePrivateDirectory<br>Test method: user_Can_Open_Dirctory_2nd_Time</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.SetUserToDisablePrivateDirectory@2eda0940</td></tr>
+<tr>
+<td title='tests_settings.SetUserToEnablePrivateDirectory.user_Can_Open_Directory_2nd_Time_()'><b>user_Can_Open_Directory_2nd_Time_</b><br>Test class: tests_settings.SetUserToEnablePrivateDirectory<br>Test method: user_Can_Open_Dirctory_2nd_Time</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.SetUserToEnablePrivateDirectory@4d1b0d2a</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteEventCategory.user_Can_Open_Directory_3rd_Time()'><b>user_Can_Open_Directory_3rd_Time</b><br>Test class: tests_settings.CreateEditDeleteEventCategory<br>Test method: user_Can_Open_Directory_3rd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_settings.CreateEditDeleteEventCategory@491cc5c9</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.user_Can_Open_Directory_3rd_Time()'><b>user_Can_Open_Directory_3rd_Time</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: user_Can_Open_Directory_3rd_Time</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.SetUserToDisablePrivateDirectory.user_Can_Open_Directory_3rd_Time_()'><b>user_Can_Open_Directory_3rd_Time_</b><br>Test class: tests_settings.SetUserToDisablePrivateDirectory<br>Test method: user_Can_Open_Directory_3rd_Time_</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.SetUserToDisablePrivateDirectory@2eda0940</td></tr>
+<tr>
+<td title='tests_settings.SetUserToEnablePrivateDirectory.user_Can_Open_Directory_3rd_Time_()'><b>user_Can_Open_Directory_3rd_Time_</b><br>Test class: tests_settings.SetUserToEnablePrivateDirectory<br>Test method: user_Can_Open_Directory_3rd_Time_</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.SetUserToEnablePrivateDirectory@4d1b0d2a</td></tr>
+<tr>
+<td title='tests_settings.UpdateProfilesWithCustomFieldData.user_Can_Open_Directory_Agian()'><b>user_Can_Open_Directory_Agian</b><br>Test class: tests_settings.UpdateProfilesWithCustomFieldData<br>Test method: user_Can_Open_Directory</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.UpdateProfilesWithCustomFieldData@27fe3806</td></tr>
+<tr>
+<td title='tests_settings.SetUserToHidden.user_Can_Open_Directory_Auto_Director()'><b>user_Can_Open_Directory_Auto_Director</b><br>Test class: tests_settings.SetUserToHidden<br>Test method: user_Can_Open_Directory_Auto_Director</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.SetUserToHidden@545997b1</td></tr>
+<tr>
+<td title='tests_settings.SetUserToVisible.user_Can_Open_Directory_Auto_Director()'><b>user_Can_Open_Directory_Auto_Director</b><br>Test class: tests_settings.SetUserToVisible<br>Test method: user_Can_Open_Directory_Auto_Director</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.SetUserToVisible@52525845</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomToViewOnlyBooks.user_Can_Open_Library_Page_For_Workroom()'><b>user_Can_Open_Library_Page_For_Workroom</b><br>Test class: tests_settings.SetWorkroomToViewOnlyBooks<br>Test method: user_Can_Open_Library_Page_For_Workroom</td>
+<td></td>
+<td>10</td>
+<td>tests_settings.SetWorkroomToViewOnlyBooks@4bb4de6a</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToAddFilesToWorkroom.user_Can_Open_Other_Files()'><b>user_Can_Open_Other_Files</b><br>Test class: tests_settings.AllowUserToAddFilesToWorkroom<br>Test method: user_Can_Open_Other_Files</td>
+<td></td>
+<td>22</td>
+<td>tests_settings.AllowUserToAddFilesToWorkroom@cb51256</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToAddFilesToWorkroom.user_Can_Open_Other_Files_2nd_time()'><b>user_Can_Open_Other_Files_2nd_time</b><br>Test class: tests_settings.AllowUserToAddFilesToWorkroom<br>Test method: user_Can_Open_Other_Files_2nd_time</td>
+<td></td>
+<td>10</td>
+<td>tests_settings.AllowUserToAddFilesToWorkroom@cb51256</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToAddFilesToWorkroom.user_Can_Open_Other_Files_3rd_time()'><b>user_Can_Open_Other_Files_3rd_time</b><br>Test class: tests_settings.AllowUserToAddFilesToWorkroom<br>Test method: user_Can_Open_Other_Files_3rd_time</td>
+<td></td>
+<td>9</td>
+<td>tests_settings.AllowUserToAddFilesToWorkroom@cb51256</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteEventCategory.user_Can_Open_Settings()'><b>user_Can_Open_Settings</b><br>Test class: tests_settings.CreateEditDeleteEventCategory<br>Test method: user_Can_Open_Settings</td>
+<td></td>
+<td>2</td>
+<td>tests_settings.CreateEditDeleteEventCategory@491cc5c9</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteUserCategory.user_Can_Open_Settings()'><b>user_Can_Open_Settings</b><br>Test class: tests_settings.CreateEditDeleteUserCategory<br>Test method: user_Can_Open_Settings</td>
+<td></td>
+<td>2</td>
+<td>tests_settings.CreateEditDeleteUserCategory@7cbd213e</td></tr>
+<tr>
+<td title='tests_settings.RestrictWorkroomForUser.user_Can_Open_Settings()'><b>user_Can_Open_Settings</b><br>Test class: tests_settings.RestrictWorkroomForUser<br>Test method: user_Can_Open_Dirctory_2nd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.RestrictWorkroomForUser@2de8284b</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteUserCategory.user_Can_Open_Settings_2nd_Time()'><b>user_Can_Open_Settings_2nd_Time</b><br>Test class: tests_settings.CreateEditDeleteUserCategory<br>Test method: user_Can_Open_Settings</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.CreateEditDeleteUserCategory@7cbd213e</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteUserCategory.user_Can_Open_Settings_3rd_Time()'><b>user_Can_Open_Settings_3rd_Time</b><br>Test class: tests_settings.CreateEditDeleteUserCategory<br>Test method: user_Can_Open_Settings_3rd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_settings.CreateEditDeleteUserCategory@7cbd213e</td></tr>
+<tr>
+<td title='tests_settings.SetUserAccessToManageFiles.user_Can_Open_Test_User_Libraries_Form()'><b>user_Can_Open_Test_User_Libraries_Form</b><br>Test class: tests_settings.SetUserAccessToManageFiles<br>Test method: user_Can_Open_Libraries_Form_2</td>
+<td></td>
+<td>2</td>
+<td>tests_settings.SetUserAccessToManageFiles@42607a4f</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomToViewOnlyBooks.user_Can_Save_Book_And_Continue()'><b>user_Can_Save_Book_And_Continue</b><br>Test class: tests_settings.SetWorkroomToViewOnlyBooks<br>Test method: user_Can_Add_Agenda</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.SetWorkroomToViewOnlyBooks@4bb4de6a</td></tr>
+<tr>
+<td title='tests_settings.SetUserToSystemAdministrator.user_Can_See_Settings_Option()'><b>user_Can_See_Settings_Option</b><br>Test class: tests_settings.SetUserToSystemAdministrator<br>Test method: user_Can_See_Settings_Option</td>
+<td></td>
+<td>0</td>
+<td>tests_settings.SetUserToSystemAdministrator@31f924f5</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToAddFilesToWorkroom.user_Can_Verify_File_Added()'><b>user_Can_Verify_File_Added</b><br>Test class: tests_settings.AllowUserToAddFilesToWorkroom<br>Test method: user_Can_Verify_File_Added</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.AllowUserToAddFilesToWorkroom@cb51256</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToAddFilesToWorkroom.user_Can_Verify_File_Deleted()'><b>user_Can_Verify_File_Deleted</b><br>Test class: tests_settings.AllowUserToAddFilesToWorkroom<br>Test method: user_Can_Verify_File_Deleted</td>
+<td></td>
+<td>12</td>
+<td>tests_settings.AllowUserToAddFilesToWorkroom@cb51256</td></tr>
+<tr>
+<td title='tests_settings.DeactivateMessagingForUser.user_Close_Directory_2nd_time()'><b>user_Close_Directory_2nd_time</b><br>Test class: tests_settings.DeactivateMessagingForUser<br>Test method: user_Close_Directory_2nd_time</td>
+<td></td>
+<td>2</td>
+<td>tests_settings.DeactivateMessagingForUser@7a30d1e6</td></tr>
+<tr>
+<td title='tests_settings.DeactivateResourcesForUser.user_Close_Directory_2nd_time()'><b>user_Close_Directory_2nd_time</b><br>Test class: tests_settings.DeactivateResourcesForUser<br>Test method: user_Close_Directory_2nd_time</td>
+<td></td>
+<td>1</td>
+<td>tests_settings.DeactivateResourcesForUser@4e718207</td></tr>
+<tr>
+<td title='tests_settings.SetUserAccessToManageFiles.user_Close_Directory_2nd_time()'><b>user_Close_Directory_2nd_time</b><br>Test class: tests_settings.SetUserAccessToManageFiles<br>Test method: user_Close_Directory_2nd_time</td>
+<td></td>
+<td>2</td>
+<td>tests_settings.SetUserAccessToManageFiles@42607a4f</td></tr>
+<tr>
+<td title='tests_settings.SetUserToHidden.user_Close_Directory_2nd_time()'><b>user_Close_Directory_2nd_time</b><br>Test class: tests_settings.SetUserToHidden<br>Test method: user_Close_Directory_2nd_time</td>
+<td></td>
+<td>2</td>
+<td>tests_settings.SetUserToHidden@545997b1</td></tr>
+<tr>
+<td title='tests_settings.SetUserToMobileOnly.user_Close_Directory_2nd_time()'><b>user_Close_Directory_2nd_time</b><br>Test class: tests_settings.SetUserToMobileOnly<br>Test method: user_Close_Directory_2nd_time</td>
+<td></td>
+<td>2</td>
+<td>tests_settings.SetUserToMobileOnly@df27fae</td></tr>
+<tr>
+<td title='tests_settings.SetUserToSystemAdministrator.user_Close_Directory_2nd_time()'><b>user_Close_Directory_2nd_time</b><br>Test class: tests_settings.SetUserToSystemAdministrator<br>Test method: user_Close_Directory_2nd_time</td>
+<td></td>
+<td>2</td>
+<td>tests_settings.SetUserToSystemAdministrator@31f924f5</td></tr>
+<tr>
+<td title='tests_settings.SetUserToVisible.user_Close_Directory_2nd_time()'><b>user_Close_Directory_2nd_time</b><br>Test class: tests_settings.SetUserToVisible<br>Test method: user_Close_Directory_2nd_time</td>
+<td></td>
+<td>1</td>
+<td>tests_settings.SetUserToVisible@52525845</td></tr>
+<tr>
+<td title='tests_settings.SetUserToViewOnlyBooks.user_Create_Book()'><b>user_Create_Book</b><br>Test class: tests_settings.SetUserToViewOnlyBooks<br>Test method: user_Create_Book</td>
+<td></td>
+<td>70</td>
+<td>tests_settings.SetUserToViewOnlyBooks@17211155</td></tr>
+<tr>
+<td title='tests_settings.SetUserToMobileOnly.user_Login_Should_Fail()'><b>user_Login_Should_Fail</b><br>Test class: tests_settings.SetUserToMobileOnly<br>Test method: user_Can_See_Settings_Option</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.SetUserToMobileOnly@df27fae</td></tr>
+<tr>
+<td title='tests_settings.SetUserToViewOnlyBooks.user_Open_Library_Page_For_Workroom()'><b>user_Open_Library_Page_For_Workroom</b><br>Test class: tests_settings.SetUserToViewOnlyBooks<br>Test method: user_Open_Library_Page_For_Workroom</td>
+<td></td>
+<td>10</td>
+<td>tests_settings.SetUserToViewOnlyBooks@17211155</td></tr>
+<tr>
+<td title='tests_settings.UpdateProfilesWithCustomFieldData.user_Opens_Settings_Opens_Custom_Fields()'><b>user_Opens_Settings_Opens_Custom_Fields</b><br>Test class: tests_settings.UpdateProfilesWithCustomFieldData<br>Test method: user_Opens_Settings_Opens_Custom_Fields</td>
+<td></td>
+<td>2</td>
+<td>tests_settings.UpdateProfilesWithCustomFieldData@27fe3806</td></tr>
+<tr>
+<td title='tests_settings.UpdateProfilesWithCustomFieldData.user_Opens_Settings_Opens_Custom_Fields_Again()'><b>user_Opens_Settings_Opens_Custom_Fields_Again</b><br>Test class: tests_settings.UpdateProfilesWithCustomFieldData<br>Test method: user_Opens_Settings_Opens_Custom_Fields_Again</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.UpdateProfilesWithCustomFieldData@27fe3806</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFieldGroup.user_Opens_Settings_Opens_Workroom_And_Group_Settings()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings</b><br>Test class: tests_settings.CreateEditDeleteCustomFieldGroup<br>Test method: user opens setting form and open workroom & group settings</td>
+<td></td>
+<td>2</td>
+<td>tests_settings.CreateEditDeleteCustomFieldGroup@77f99a05</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFields.user_Opens_Settings_Opens_Workroom_And_Group_Settings()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings</b><br>Test class: tests_settings.CreateEditDeleteCustomFields<br>Test method: user opens setting form and open workroom & group settings</td>
+<td></td>
+<td>2</td>
+<td>tests_settings.CreateEditDeleteCustomFields@4eb7f003</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteGroup.user_Opens_Settings_Opens_Workroom_And_Group_Settings()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings</b><br>Test class: tests_settings.CreateEditDeleteGroup<br>Test method: user_Opens_Settings_Opens_Workroom_And_Group_Settings</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.CreateEditDeleteGroup@8646db9</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomToViewOnlyBooks.user_Opens_Settings_Opens_Workroom_And_Group_Settings()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings</b><br>Test class: tests_settings.SetWorkroomToViewOnlyBooks<br>Test method: user opens setting form and open workroom & group settings</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.SetWorkroomToViewOnlyBooks@4bb4de6a</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomAccessToEventsLibraryCollaborate.user_Opens_Settings_Opens_Workroom_And_Group_Settings()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings</b><br>Test class: tests_settings.SetWorkroomAccessToEventsLibraryCollaborate<br>Test method: user opens setting form and open workroom & group settings</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.SetWorkroomAccessToEventsLibraryCollaborate@44a3ec6b</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFieldGroup.user_Opens_Settings_Opens_Workroom_And_Group_Settings_2nd_Time()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings_2nd_Time</b><br>Test class: tests_settings.CreateEditDeleteCustomFieldGroup<br>Test method: user_Opens_Settings_Opens_Workroom_And_Group_Settings_2nd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.CreateEditDeleteCustomFieldGroup@77f99a05</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFields.user_Opens_Settings_Opens_Workroom_And_Group_Settings_2nd_Time()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings_2nd_Time</b><br>Test class: tests_settings.CreateEditDeleteCustomFields<br>Test method: user_Opens_Settings_Opens_Workroom_And_Group_Settings_2nd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.CreateEditDeleteCustomFields@4eb7f003</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomAccessToEventsLibraryCollaborate.user_Opens_Settings_Opens_Workroom_And_Group_Settings_2nd_Time()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings_2nd_Time</b><br>Test class: tests_settings.SetWorkroomAccessToEventsLibraryCollaborate<br>Test method: user_Opens_Settings_Opens_Workroom_And_Group_Settings_2nd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.SetWorkroomAccessToEventsLibraryCollaborate@44a3ec6b</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomToViewOnlyBooks.user_Opens_Settings_Opens_Workroom_And_Group_Settings_2nd_Time()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings_2nd_Time</b><br>Test class: tests_settings.SetWorkroomToViewOnlyBooks<br>Test method: user_Opens_Settings_Opens_Workroom_And_Group_Settings_2nd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_settings.SetWorkroomToViewOnlyBooks@4bb4de6a</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFieldGroup.user_Opens_Settings_Opens_Workroom_And_Group_Settings_3rd_Time()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings_3rd_Time</b><br>Test class: tests_settings.CreateEditDeleteCustomFieldGroup<br>Test method: user_Opens_Settings_Opens_Workroom_And_Group_Settings_3rd_Time</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.CreateEditDeleteCustomFieldGroup@77f99a05</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFields.user_Opens_Settings_Opens_Workroom_And_Group_Settings_3rd_Time()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings_3rd_Time</b><br>Test class: tests_settings.CreateEditDeleteCustomFields<br>Test method: user_Opens_Settings_Opens_Workroom_And_Group_Settings_3rd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_settings.CreateEditDeleteCustomFields@4eb7f003</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFieldGroup.user_Opens_Settings_Opens_Workroom_And_Group_Settings_4th_Time()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings_4th_Time</b><br>Test class: tests_settings.CreateEditDeleteCustomFieldGroup<br>Test method: user_Opens_Settings_Opens_Workroom_And_Group_Settings_4th_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.CreateEditDeleteCustomFieldGroup@77f99a05</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFields.user_Opens_Settings_Opens_Workroom_And_Group_Settings_4th_Time()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings_4th_Time</b><br>Test class: tests_settings.CreateEditDeleteCustomFields<br>Test method: user_Opens_Settings_Opens_Workroom_And_Group_Settings_4th_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_settings.CreateEditDeleteCustomFields@4eb7f003</td></tr>
+<tr>
+<td title='tests_settings.UpdateProfilesWithCustomFieldData.user_Opens_Settings_Opens_Workroom_And_Group_Settings_4th_Time()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings_4th_Time</b><br>Test class: tests_settings.UpdateProfilesWithCustomFieldData<br>Test method: user_Opens_Settings_Opens_Workroom_And_Group_Settings_4th_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.UpdateProfilesWithCustomFieldData@27fe3806</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteGroup.user_Opens_Settings_Opens_Workroom_And_Group_Settings_Again()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings_Again</b><br>Test class: tests_settings.CreateEditDeleteGroup<br>Test method: user_Opens_Settings_Opens_Workroom_And_Group_Settings_Again</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.CreateEditDeleteGroup@8646db9</td></tr>
+<tr>
+<td title='tests_settings.UnlockProfile.user_Opens_Settings_Opens_Workroom_And_Group_Settings_Again()'><b>user_Opens_Settings_Opens_Workroom_And_Group_Settings_Again</b><br>Test class: tests_settings.UnlockProfile<br>Test method: user_Opens_Settings_Opens_Workroom_And_Group_Settings_Again</td>
+<td></td>
+<td>0</td>
+<td>tests_settings.UnlockProfile@57f23557</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.user_Verify_Comics_Workroom()'><b>user_Verify_Comics_Workroom</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: user_Verify_Comics_Workroom</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.AddExistingUsersToAWorkroom.user_Verify_Comics_Workroom_Again()'><b>user_Verify_Comics_Workroom_Again</b><br>Test class: tests_settings.AddExistingUsersToAWorkroom<br>Test method: user_Verify_Comics_Workroom_Again</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.AddExistingUsersToAWorkroom@1500955a</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToAddFilesToWorkroom.verify_Add_Files_Disable_For_Workroom_For_User()'><b>verify_Add_Files_Disable_For_Workroom_For_User</b><br>Test class: tests_settings.AllowUserToAddFilesToWorkroom<br>Test method: verify_Add_Files_Disable_For_Workroom_For_User</td>
+<td></td>
+<td>16</td>
+<td>tests_settings.AllowUserToAddFilesToWorkroom@cb51256</td></tr>
+<tr>
+<td title='tests_settings.RestrictWorkroomForUser.verify_AutoAttend_Workroom_Deactivated()'><b>verify_AutoAttend_Workroom_Deactivated</b><br>Test class: tests_settings.RestrictWorkroomForUser<br>Test method: verify_AutoAttend_Workroom_Deactivated</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.RestrictWorkroomForUser@2de8284b</td></tr>
+<tr>
+<td title='tests_settings.SetUserToHidden.verify_Auto_User_17_Not_In_List()'><b>verify_Auto_User_17_Not_In_List</b><br>Test class: tests_settings.SetUserToHidden<br>Test method: verify_Auto_User_17_Not_In_List</td>
+<td></td>
+<td>9</td>
+<td>tests_settings.SetUserToHidden@545997b1</td></tr>
+<tr>
+<td title='tests_settings.SetUserToVisible.verify_Auto_User_21_In_List()'><b>verify_Auto_User_21_In_List</b><br>Test class: tests_settings.SetUserToVisible<br>Test method: verify_Auto_User_21_In_List</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.SetUserToVisible@52525845</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomToViewOnlyBooks.verify_Book_Meeting_Book2_Download_Btn_Not_Present()'><b>verify_Book_Meeting_Book2_Download_Btn_Not_Present</b><br>Test class: tests_settings.SetWorkroomToViewOnlyBooks<br>Test method: verify_Book_Download_Btn_Not_Present</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.SetWorkroomToViewOnlyBooks@4bb4de6a</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteUserCategory.verify_Category_Created_Edit_Category()'><b>verify_Category_Created_Edit_Category</b><br>Test class: tests_settings.CreateEditDeleteUserCategory<br>Test method: verify_Category_Created_Edit_Category</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.CreateEditDeleteUserCategory@7cbd213e</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteEventCategory.verify_Category_Not_Present()'><b>verify_Category_Not_Present</b><br>Test class: tests_settings.CreateEditDeleteEventCategory<br>Test method: verify_Category_Not_Present</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.CreateEditDeleteEventCategory@491cc5c9</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteUserCategory.verify_Category_Two_Not_Present()'><b>verify_Category_Two_Not_Present</b><br>Test class: tests_settings.CreateEditDeleteUserCategory<br>Test method: verify_Category_Two_Not_Present</td>
+<td></td>
+<td>10</td>
+<td>tests_settings.CreateEditDeleteUserCategory@7cbd213e</td></tr>
+<tr>
+<td title='tests_settings.UpdateProfilesWithCustomFieldData.verify_Custom_Field_Created()'><b>verify_Custom_Field_Created</b><br>Test class: tests_settings.UpdateProfilesWithCustomFieldData<br>Test method: verify_Custom_Field_Created</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.UpdateProfilesWithCustomFieldData@27fe3806</td></tr>
+<tr>
+<td title='tests_settings.UpdateProfilesWithCustomFieldData.verify_Custom_Field_Created_Again()'><b>verify_Custom_Field_Created_Again</b><br>Test class: tests_settings.UpdateProfilesWithCustomFieldData<br>Test method: verify_Custom_Field_Created_Again</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.UpdateProfilesWithCustomFieldData@27fe3806</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFieldGroup.verify_Custom_Field_Group_Deleted()'><b>verify_Custom_Field_Group_Deleted</b><br>Test class: tests_settings.CreateEditDeleteCustomFieldGroup<br>Test method: verify_Custom_Field_Group_Deleted</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.CreateEditDeleteCustomFieldGroup@77f99a05</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteCustomFields.verify_Custom_Field_Group_Deleted()'><b>verify_Custom_Field_Group_Deleted</b><br>Test class: tests_settings.CreateEditDeleteCustomFields<br>Test method: verify_Custom_Field_Group_Deleted</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.CreateEditDeleteCustomFields@4eb7f003</td></tr>
+<tr>
+<td title='tests_settings.UpdateProfilesWithCustomFieldData.verify_Custom_Field_Group_Deleted()'><b>verify_Custom_Field_Group_Deleted</b><br>Test class: tests_settings.UpdateProfilesWithCustomFieldData<br>Test method: verify_Custom_Field_Group_Deleted</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.UpdateProfilesWithCustomFieldData@27fe3806</td></tr>
+<tr>
+<td title='tests_settings.TermInfoWithEverythingSettings.verify_Delete_TermInfo()'><b>verify_Delete_TermInfo</b><br>Test class: tests_settings.TermInfoWithEverythingSettings<br>Test method: verify_Delete_TermInfo</td>
+<td></td>
+<td>10</td>
+<td>tests_settings.TermInfoWithEverythingSettings@6483f5ae</td></tr>
+<tr>
+<td title='tests_settings.EnableDisableDisclaimer.verify_Disclaimer_And_Login()'><b>verify_Disclaimer_And_Login</b><br>Test class: tests_settings.EnableDisableDisclaimer<br>Test method: verify_Disclaimer_And_Login</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.EnableDisableDisclaimer@1fc2b765</td></tr>
+<tr>
+<td title='tests_settings.EnableDisableDisclaimer.verify_Disclaimer_Disabled()'><b>verify_Disclaimer_Disabled</b><br>Test class: tests_settings.EnableDisableDisclaimer<br>Test method: verify_Disclaimer_Disabled</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.EnableDisableDisclaimer@1fc2b765</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteUserCategory.verify_Edited_User_Category_And_Delete()'><b>verify_Edited_User_Category_And_Delete</b><br>Test class: tests_settings.CreateEditDeleteUserCategory<br>Test method: verify_Edited_User_Category_And_Delete</td>
+<td></td>
+<td>8</td>
+<td>tests_settings.CreateEditDeleteUserCategory@7cbd213e</td></tr>
+<tr>
+<td title='tests_settings.SetUserToDisablePrivateDirectory.verify_Everyone_Visible()'><b>verify_Everyone_Visible</b><br>Test class: tests_settings.SetUserToDisablePrivateDirectory<br>Test method: verify_Everyone_Visible</td>
+<td></td>
+<td>1</td>
+<td>tests_settings.SetUserToDisablePrivateDirectory@2eda0940</td></tr>
+<tr>
+<td title='tests_settings.CreateEditDeleteGroup.verify_Group_Deleted()'><b>verify_Group_Deleted</b><br>Test class: tests_settings.CreateEditDeleteGroup<br>Test method: verify_Group_Deleted</td>
+<td></td>
+<td>12</td>
+<td>tests_settings.CreateEditDeleteGroup@8646db9</td></tr>
+<tr>
+<td title='tests_settings.SetUserToViewOnlyBooks.verify_Meeting_Book_1_Deleted()'><b>verify_Meeting_Book_1_Deleted</b><br>Test class: tests_settings.SetUserToViewOnlyBooks<br>Test method: verify_Meeting_Book_1_Deleted</td>
+<td></td>
+<td>7</td>
+<td>tests_settings.SetUserToViewOnlyBooks@17211155</td></tr>
+<tr>
+<td title='tests_settings.SetUserToViewOnlyBooks.verify_Meeting_Book_1_Meeting_Book_Viewer_Shown()'><b>verify_Meeting_Book_1_Meeting_Book_Viewer_Shown</b><br>Test class: tests_settings.SetUserToViewOnlyBooks<br>Test method: verify_Meeting_Book_1_Meeting_Book_Viewer_Shown</td>
+<td></td>
+<td>18</td>
+<td>tests_settings.SetUserToViewOnlyBooks@17211155</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomToViewOnlyBooks.verify_Meeting_Book_2_NOT_VISIBLE()'><b>verify_Meeting_Book_2_NOT_VISIBLE</b><br>Test class: tests_settings.SetWorkroomToViewOnlyBooks<br>Test method: verify_Meeting_Book_2_NOT_VISIBLE</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.SetWorkroomToViewOnlyBooks@4bb4de6a</td></tr>
+<tr>
+<td title='tests_settings.DeactivateMessagingForUser.verify_Message_Users_Disabled()'><b>verify_Message_Users_Disabled</b><br>Test class: tests_settings.DeactivateMessagingForUser<br>Test method: verify_Message_Users_Disabled</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.DeactivateMessagingForUser@7a30d1e6</td></tr>
+<tr>
+<td title='tests_settings.SetUserAccessToManageFiles.verify_New_Folder_Present_And_Close()'><b>verify_New_Folder_Present_And_Close</b><br>Test class: tests_settings.SetUserAccessToManageFiles<br>Test method: verify_New_Folder_Present_And_Close</td>
+<td></td>
+<td>1</td>
+<td>tests_settings.SetUserAccessToManageFiles@42607a4f</td></tr>
+<tr>
+<td title='tests_settings.AddEditDeleteOfficerRole.verify_New_Role_Deleted()'><b>verify_New_Role_Deleted</b><br>Test class: tests_settings.AddEditDeleteOfficerRole<br>Test method: verify_New_Role_Deleted</td>
+<td></td>
+<td>8</td>
+<td>tests_settings.AddEditDeleteOfficerRole@2a556333</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.verify_Old_Contact_Info_Auto_User_2_Saved()'><b>verify_Old_Contact_Info_Auto_User_2_Saved</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: verify_Old_Contact_Info_Auto_User_2_Saved</td>
+<td></td>
+<td>2</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.SetUserToEnablePrivateDirectory.verify_Only_Auto_User_16_Visible()'><b>verify_Only_Auto_User_16_Visible</b><br>Test class: tests_settings.SetUserToEnablePrivateDirectory<br>Test method: verify_Only_Auto_User_16_Visible</td>
+<td></td>
+<td>17</td>
+<td>tests_settings.SetUserToEnablePrivateDirectory@4d1b0d2a</td></tr>
+<tr>
+<td title='tests_settings.SetUserToDisablePrivateDirectory.verify_Profile_Enable_Private_Directory()'><b>verify_Profile_Enable_Private_Directory</b><br>Test class: tests_settings.SetUserToDisablePrivateDirectory<br>Test method: verify_Profile_Enable_Private_Directory</td>
+<td></td>
+<td>11</td>
+<td>tests_settings.SetUserToDisablePrivateDirectory@2eda0940</td></tr>
+<tr>
+<td title='tests_settings.DeactivateResourcesForUser.verify_Resource_Library_Hidden()'><b>verify_Resource_Library_Hidden</b><br>Test class: tests_settings.DeactivateResourcesForUser<br>Test method: verify_Resource_Library_Hidden</td>
+<td></td>
+<td>5</td>
+<td>tests_settings.DeactivateResourcesForUser@4e718207</td></tr>
+<tr>
+<td title='tests_settings.SetUserToVisible.verify_Set_User_To_Visible()'><b>verify_Set_User_To_Visible</b><br>Test class: tests_settings.SetUserToVisible<br>Test method: Set-Permissions >> Set-User-To-Visible</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.SetUserToVisible@52525845</td></tr>
+<tr>
+<td title='tests_settings.TermInfoWithEverythingSettings.verify_TermInfo_Deleted()'><b>verify_TermInfo_Deleted</b><br>Test class: tests_settings.TermInfoWithEverythingSettings<br>Test method: verify_TermInfo_Deleted</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.TermInfoWithEverythingSettings@6483f5ae</td></tr>
+<tr>
+<td title='tests_settings.SetUserHiddenInWorkroom.verify_User_Hidden_Icon_Not_Present()'><b>verify_User_Hidden_Icon_Not_Present</b><br>Test class: tests_settings.SetUserHiddenInWorkroom<br>Test method: verify_User_Hidden_Icon_Not_Present</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.SetUserHiddenInWorkroom@2e3fc542</td></tr>
+<tr>
+<td title='tests_settings.SetUserToHidden.verify_User_Set_Back_To_Visible()'><b>verify_User_Set_Back_To_Visible</b><br>Test class: tests_settings.SetUserToHidden<br>Test method: verify_User_Set_Back_To_Visible</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.SetUserToHidden@545997b1</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomToViewOnlyBooks.verify_View_Only_Books_Not_Checked()'><b>verify_View_Only_Books_Not_Checked</b><br>Test class: tests_settings.SetWorkroomToViewOnlyBooks<br>Test method: verify_View_Only_Books_Not_Checked</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.SetWorkroomToViewOnlyBooks@4bb4de6a</td></tr>
+<tr>
+<td title='tests_settings.RestrictWorkroomForUser.verify_Workroom_Access_Enabled()'><b>verify_Workroom_Access_Enabled</b><br>Test class: tests_settings.RestrictWorkroomForUser<br>Test method: verify_Workroom_Access_Enabled</td>
+<td></td>
+<td>3</td>
+<td>tests_settings.RestrictWorkroomForUser@2de8284b</td></tr>
+<tr>
+<td title='tests_settings.SetUserVisibleInWorkroom.verify_Workroom_Admin_2_Hidden()'><b>verify_Workroom_Admin_2_Hidden</b><br>Test class: tests_settings.SetUserVisibleInWorkroom<br>Test method: verify_Workroom_Admin_2_Hidden</td>
+<td></td>
+<td>12</td>
+<td>tests_settings.SetUserVisibleInWorkroom@587c290d</td></tr>
+<tr>
+<td title='tests_settings.SetUserVisibleInWorkroom.verify_Workroom_Admin_2_Hidden_Icon_Not_Present()'><b>verify_Workroom_Admin_2_Hidden_Icon_Not_Present</b><br>Test class: tests_settings.SetUserVisibleInWorkroom<br>Test method: verify_Workroom_Admin_2_Hidden_Icon_Not_Present</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.SetUserVisibleInWorkroom@587c290d</td></tr>
+<tr>
+<td title='tests_settings.SetUserHiddenInWorkroom.verify_Workroom_Admin_Hidden()'><b>verify_Workroom_Admin_Hidden</b><br>Test class: tests_settings.SetUserHiddenInWorkroom<br>Test method: verify_Workroom_Admin_Hidden</td>
+<td></td>
+<td>15</td>
+<td>tests_settings.SetUserHiddenInWorkroom@2e3fc542</td></tr>
+<tr>
+<td title='tests_settings.SetUserVisibleInWorkroom.verify_Workroom_Admin_Visible()'><b>verify_Workroom_Admin_Visible</b><br>Test class: tests_settings.SetUserVisibleInWorkroom<br>Test method: verify_Workroom_Admin_Visible</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.SetUserVisibleInWorkroom@587c290d</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.workroom_Admin_Can_Login()'><b>workroom_Admin_Can_Login</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: workroom_Admin_Can_Login</td>
+<td></td>
+<td>13</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.workroom_Admin_Can_Login_2nd_Time()'><b>workroom_Admin_Can_Login_2nd_Time</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: workroom_Admin_Can_Login_2nd_Time</td>
+<td></td>
+<td>4</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.workroom_Admin_Can_Logout()'><b>workroom_Admin_Can_Logout</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: workroom_Admin_Can_Logout</td>
+<td></td>
+<td>12</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.AllowUserToEditProfileContactInfo.workroom_Admin_Can_Logout_3rd_Time()'><b>workroom_Admin_Can_Logout_3rd_Time</b><br>Test class: tests_settings.AllowUserToEditProfileContactInfo<br>Test method: workroom_Admin_Can_Logout_3rd_Time</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.AllowUserToEditProfileContactInfo@670b40af</td></tr>
+<tr>
+<td title='tests_settings.SetWorkroomToViewOnlyBooks.workroom_Member_Open_Comics_Workroom_Library_Page()'><b>workroom_Member_Open_Comics_Workroom_Library_Page</b><br>Test class: tests_settings.SetWorkroomToViewOnlyBooks<br>Test method: workroom_Member_Open_Comics_Workroom_Library_Page</td>
+<td></td>
+<td>6</td>
+<td>tests_settings.SetWorkroomToViewOnlyBooks@4bb4de6a</td></tr>
+</table><p>
+</body>
+</html>

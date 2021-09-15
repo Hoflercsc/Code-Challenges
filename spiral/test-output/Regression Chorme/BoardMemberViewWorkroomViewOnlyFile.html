@@ -1,0 +1,794 @@
+<html>
+<head>
+<title>TestNG:  BoardMemberViewWorkroomViewOnlyFile</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>BoardMemberViewWorkroomViewOnlyFile</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>18/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jun 09 14:48:23 EDT 2021</td>
+</tr>
+<tr><td>Total time:</td><td>98 seconds (98212 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCanAddFilesToWorkroom.add_File_To_Attach_Folder()'><b>add_File_To_Attach_Folder</b><br>Test class: tests_boardmember_access.BoardMemberCanAddFilesToWorkroom<br>Test method: add_File_To_Attach_Folder</td>
+<td></td>
+<td>6</td>
+<td>tests_boardmember_access.BoardMemberCanAddFilesToWorkroom@371a67ec</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberAddFileToPrivateFolder.add_File_To_Private_Folder()'><b>add_File_To_Private_Folder</b><br>Test class: tests_boardmember_access.BoardMemberAddFileToPrivateFolder<br>Test method: Board-Member-Access >> Add-File-To-Private-Folder</td>
+<td></td>
+<td>9</td>
+<td>tests_boardmember_access.BoardMemberAddFileToPrivateFolder@670b40af</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData.add_Poll_Respondents()'><b>add_Poll_Respondents</b><br>Test class: tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData<br>Test method: add_Poll_Respondents</td>
+<td></td>
+<td>10</td>
+<td>tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.add_Security_BoardMember_Folder()'><b>add_Security_BoardMember_Folder</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: add_Security_BoardMember_Folder</td>
+<td></td>
+<td>11</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@491cc5c9</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.add_Security_To_File_Board_member()'><b>add_Security_To_File_Board_member</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: add_Security_To_File_Board_member</td>
+<td></td>
+<td>8</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@4eb7f003</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData.add_Survey_Respondents()'><b>add_Survey_Respondents</b><br>Test class: tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData<br>Test method: add_Survey_Respondents</td>
+<td></td>
+<td>10</td>
+<td>tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData@cb51256</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.autoDirector_Login()'><b>autoDirector_Login</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: autoDirector_Login</td>
+<td></td>
+<td>5</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@4eb7f003</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.autoUser1Staging_Login()'><b>autoUser1Staging_Login</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: autoUser1Stagingr_Login</td>
+<td></td>
+<td>4</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@491cc5c9</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData.autoUser_login()'><b>autoUser_login</b><br>Test class: tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData<br>Test method: Scenario Login AutoUser UserName Password.</td>
+<td></td>
+<td>7</td>
+<td>tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData.autoUser_login()'><b>autoUser_login</b><br>Test class: tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData<br>Test method: Scenario Login AutoUser UserName Password.</td>
+<td></td>
+<td>6</td>
+<td>tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData.autoUser_login()'><b>autoUser_login</b><br>Test class: tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData<br>Test method: Scenario Login AutoUser UserName Password.</td>
+<td></td>
+<td>7</td>
+<td>tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData@cb51256</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile.auto_Director_Can_Login()'><b>auto_Director_Can_Login</b><br>Test class: tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile<br>Test method: auto_Director_Can_Login</td>
+<td></td>
+<td>4</td>
+<td>tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile@7a30d1e6</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile.auto_Director_Can_Logout()'><b>auto_Director_Can_Logout</b><br>Test class: tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile<br>Test method: auto_Director_Can_Logout</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile@7a30d1e6</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile.boardmember_Opens_Meeting_Book_Viewer_And_Scroll()'><b>boardmember_Opens_Meeting_Book_Viewer_And_Scroll</b><br>Test class: tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile<br>Test method: boardmember_Meeting_Book_Viewer_And_Scroll</td>
+<td></td>
+<td>10</td>
+<td>tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile@7a30d1e6</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData.build_Poll_Make_Visible()'><b>build_Poll_Make_Visible</b><br>Test class: tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData<br>Test method: Scenario - Build Poll and Make Visible.</td>
+<td></td>
+<td>8</td>
+<td>tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData.build_Survey_Make_Visible_On_Staging_1()'><b>build_Survey_Make_Visible_On_Staging_1</b><br>Test class: tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData<br>Test method: build_Survey_Make_Visible_On_Staging_1</td>
+<td></td>
+<td>12</td>
+<td>tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData@cb51256</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile.can_Add_File_View_Only_Folder()'><b>can_Add_File_View_Only_Folder</b><br>Test class: tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile<br>Test method: can_Add_File_View_Only_Folder</td>
+<td></td>
+<td>19</td>
+<td>tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile@7a30d1e6</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData.create_CheckBox_Question()'><b>create_CheckBox_Question</b><br>Test class: tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData<br>Test method: create_CheckBox_Question</td>
+<td></td>
+<td>14</td>
+<td>tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData@cb51256</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData.create_New_Event_On_JH_Staging()'><b>create_New_Event_On_JH_Staging</b><br>Test class: tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData<br>Test method: create_New_Event_On_JH_Staging</td>
+<td></td>
+<td>24</td>
+<td>tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData.create_Poll_Question()'><b>create_Poll_Question</b><br>Test class: tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData<br>Test method: Scenario - Create Workroom Poll Question.</td>
+<td></td>
+<td>8</td>
+<td>tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData.create_TextField_Question()'><b>create_TextField_Question</b><br>Test class: tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData<br>Test method: create_TextField_Question</td>
+<td></td>
+<td>8</td>
+<td>tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData@cb51256</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile.create_View_Only_New_Resource_Library_Folder()'><b>create_View_Only_New_Resource_Library_Folder</b><br>Test class: tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile<br>Test method: create_View_Only_New_Resource_Library_Folder</td>
+<td></td>
+<td>7</td>
+<td>tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile@7a30d1e6</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData.creating_Poll_For_Event()'><b>creating_Poll_For_Event</b><br>Test class: tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData<br>Test method: creating_Poll_For_Event</td>
+<td></td>
+<td>6</td>
+<td>tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData.creating_Survey_For_Event()'><b>creating_Survey_For_Event</b><br>Test class: tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData<br>Test method: creating_Survey_For_Event</td>
+<td></td>
+<td>5</td>
+<td>tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData@cb51256</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData.delete_Book_On_Staging_Board_Member_Access_1()'><b>delete_Book_On_Staging_Board_Member_Access_1</b><br>Test class: tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData<br>Test method: delete_Book_On_Staging_Board_Member_Access_1</td>
+<td></td>
+<td>12</td>
+<td>tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData.delete_Event_Title_On_Staging_1()'><b>delete_Event_Title_On_Staging_1</b><br>Test class: tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData<br>Test method: delete_Event_Title_On_Staging_1</td>
+<td></td>
+<td>10</td>
+<td>tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData.delete_Event_Title_On_Staging_2()'><b>delete_Event_Title_On_Staging_2</b><br>Test class: tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData<br>Test method: delete_Event_Title_On_Staging_2</td>
+<td></td>
+<td>10</td>
+<td>tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData.delete_Event_Title_On_Staging_3()'><b>delete_Event_Title_On_Staging_3</b><br>Test class: tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData<br>Test method: delete_Event_Title_On_Staging_3</td>
+<td></td>
+<td>10</td>
+<td>tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData@cb51256</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData.delete_Poll_On_Staging_Board_Member_Access_1()'><b>delete_Poll_On_Staging_Board_Member_Access_1</b><br>Test class: tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData<br>Test method: delete_Poll_On_Staging_Board_Member_Access_1</td>
+<td></td>
+<td>8</td>
+<td>tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.delete_Resource_Library_Folder_2()'><b>delete_Resource_Library_Folder_2</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: delete_Resource_Library_Folder_2</td>
+<td></td>
+<td>5</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@4eb7f003</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData.delete_Survey_Board_Member_Access_1()'><b>delete_Survey_Board_Member_Access_1</b><br>Test class: tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData<br>Test method: delete_Survey_Board_Member_Access_1</td>
+<td></td>
+<td>10</td>
+<td>tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData@cb51256</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData.home_Page_Redirect()'><b>home_Page_Redirect</b><br>Test class: tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData<br>Test method: home_Page_Redirect</td>
+<td></td>
+<td>5</td>
+<td>tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData.home_Page_Redirect()'><b>home_Page_Redirect</b><br>Test class: tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData<br>Test method: home_Page_Redirect</td>
+<td></td>
+<td>3</td>
+<td>tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData@cb51256</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData.home_Page_Redirect()'><b>home_Page_Redirect</b><br>Test class: tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData<br>Test method: home_Page_Redirect</td>
+<td></td>
+<td>3</td>
+<td>tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberAddFileToPrivateFolder.home_Page_Redirect()'><b>home_Page_Redirect</b><br>Test class: tests_boardmember_access.BoardMemberAddFileToPrivateFolder<br>Test method: home_Page_Redirect</td>
+<td></td>
+<td>3</td>
+<td>tests_boardmember_access.BoardMemberAddFileToPrivateFolder@670b40af</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCanAddFilesToWorkroom.home_Page_Redirect()'><b>home_Page_Redirect</b><br>Test class: tests_boardmember_access.BoardMemberCanAddFilesToWorkroom<br>Test method: home_Page_Redirect</td>
+<td></td>
+<td>3</td>
+<td>tests_boardmember_access.BoardMemberCanAddFilesToWorkroom@371a67ec</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCanSeeFilesByAdmin.home_Page_Redirect()'><b>home_Page_Redirect</b><br>Test class: tests_boardmember_access.BoardMemberCanSeeFilesByAdmin<br>Test method: home_Page_Redirect</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberCanSeeFilesByAdmin@77f99a05</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.home_Page_Redirect()'><b>home_Page_Redirect</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: home_Page_Redirect</td>
+<td></td>
+<td>3</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@4eb7f003</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.home_Page_Redirect()'><b>home_Page_Redirect</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: home_Page_Redirect</td>
+<td></td>
+<td>1</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@491cc5c9</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCanViewMinutes.home_Page_Redirect()'><b>home_Page_Redirect</b><br>Test class: tests_boardmember_access.BoardMemberCanViewMinutes<br>Test method: home_Page_Redirect</td>
+<td></td>
+<td>1</td>
+<td>tests_boardmember_access.BoardMemberCanViewMinutes@8646db9</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberNaviagteToMinutesManager.home_Page_Redirect()'><b>home_Page_Redirect</b><br>Test class: tests_boardmember_access.BoardMemberNaviagteToMinutesManager<br>Test method: home_Page_Redirect</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberNaviagteToMinutesManager@7cbd213e</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile.home_Page_Redirect()'><b>home_Page_Redirect</b><br>Test class: tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile<br>Test method: home_Page_Redirect</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile@7a30d1e6</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData.make_Book_Board_Member_Access_1_Visible()'><b>make_Book_Board_Member_Access_1_Visible</b><br>Test class: tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData<br>Test method: make_Book_Board_Member_Access_1_Visible</td>
+<td></td>
+<td>6</td>
+<td>tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.navigate_Back_To_Workroom()'><b>navigate_Back_To_Workroom</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: navigate_Back_To_Workroom</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@4eb7f003</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.navigate_Back_To_Workroom()'><b>navigate_Back_To_Workroom</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: navigate_Back_To_Workroom</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@491cc5c9</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile.navigate_Back_To_Workroom()'><b>navigate_Back_To_Workroom</b><br>Test class: tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile<br>Test method: navigate_Back_To_Workroom</td>
+<td></td>
+<td>3</td>
+<td>tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile@7a30d1e6</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.navigate_Back_To_Workroom_BoardMember()'><b>navigate_Back_To_Workroom_BoardMember</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: navigate_Back_To_Workroom_BoardMember</td>
+<td></td>
+<td>3</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@4eb7f003</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile.navigate_To_Boardmember_Workroom()'><b>navigate_To_Boardmember_Workroom</b><br>Test class: tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile<br>Test method: navigate_Back_To_Workroom</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile@7a30d1e6</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile.navigate_To_Boardmember_Workroom_2nd_Time()'><b>navigate_To_Boardmember_Workroom_2nd_Time</b><br>Test class: tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile<br>Test method: navigate_To_Boardmember_Workroom_2nd_Time</td>
+<td></td>
+<td>4</td>
+<td>tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile@7a30d1e6</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile.navigate_To_Boardmember_Workroom_3rd_Time()'><b>navigate_To_Boardmember_Workroom_3rd_Time</b><br>Test class: tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile<br>Test method: navigate_To_Boardmember_Workroom_3rd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile@7a30d1e6</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberNaviagteToMinutesManager.navigate_To_Minutes_Through_Workroom_Library()'><b>navigate_To_Minutes_Through_Workroom_Library</b><br>Test class: tests_boardmember_access.BoardMemberNaviagteToMinutesManager<br>Test method: navigate_To_Minutes_Through_Workroom_Library</td>
+<td></td>
+<td>10</td>
+<td>tests_boardmember_access.BoardMemberNaviagteToMinutesManager@7cbd213e</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCanViewMinutes.navigate_To_Workroom_Library()'><b>navigate_To_Workroom_Library</b><br>Test class: tests_boardmember_access.BoardMemberCanViewMinutes<br>Test method: navigate_To_Workroom_Library</td>
+<td></td>
+<td>8</td>
+<td>tests_boardmember_access.BoardMemberCanViewMinutes@8646db9</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberNaviagteToMinutesManager.navigate_To_Workroom_Library()'><b>navigate_To_Workroom_Library</b><br>Test class: tests_boardmember_access.BoardMemberNaviagteToMinutesManager<br>Test method: navigate_To_Workroom_Library</td>
+<td></td>
+<td>8</td>
+<td>tests_boardmember_access.BoardMemberNaviagteToMinutesManager@7cbd213e</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCanViewMinutes.open_Book_Verify_Take_Minutes_Not_Present()'><b>open_Book_Verify_Take_Minutes_Not_Present</b><br>Test class: tests_boardmember_access.BoardMemberCanViewMinutes<br>Test method: open_Book_Verify_Take_Minutes_Not_Present</td>
+<td></td>
+<td>20</td>
+<td>tests_boardmember_access.BoardMemberCanViewMinutes@8646db9</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberNaviagteToMinutesManager.open_Book_Verify_Take_Minutes_Not_Present()'><b>open_Book_Verify_Take_Minutes_Not_Present</b><br>Test class: tests_boardmember_access.BoardMemberNaviagteToMinutesManager<br>Test method: open_Book_Verify_Take_Minutes_Not_Present</td>
+<td></td>
+<td>10</td>
+<td>tests_boardmember_access.BoardMemberNaviagteToMinutesManager@7cbd213e</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData.switch_To_Create_Survey_For_Event_Title_On_Staging_3()'><b>switch_To_Create_Survey_For_Event_Title_On_Staging_3</b><br>Test class: tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData<br>Test method: switch_To_Create_Survey_For_Event_Title_On_Staging_3</td>
+<td></td>
+<td>9</td>
+<td>tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData@cb51256</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData.switch_To_Creating_Book()'><b>switch_To_Creating_Book</b><br>Test class: tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData<br>Test method: switch_To_Creating_Book</td>
+<td></td>
+<td>9</td>
+<td>tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData.switch_To_Creating_Poll()'><b>switch_To_Creating_Poll</b><br>Test class: tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData<br>Test method: switch_To_Creating_Poll</td>
+<td></td>
+<td>10</td>
+<td>tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberNaviagteToMinutesManager.switch_To_Minutes_Manager_Page()'><b>switch_To_Minutes_Manager_Page</b><br>Test class: tests_boardmember_access.BoardMemberNaviagteToMinutesManager<br>Test method: switch_To_Minutes_Manager_Page</td>
+<td></td>
+<td>10</td>
+<td>tests_boardmember_access.BoardMemberNaviagteToMinutesManager@7cbd213e</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCanViewMinutes.systemAdmin_Login()'><b>systemAdmin_Login</b><br>Test class: tests_boardmember_access.BoardMemberCanViewMinutes<br>Test method: Login UserName Password.</td>
+<td></td>
+<td>7</td>
+<td>tests_boardmember_access.BoardMemberCanViewMinutes@8646db9</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberNaviagteToMinutesManager.systemAdmin_Login()'><b>systemAdmin_Login</b><br>Test class: tests_boardmember_access.BoardMemberNaviagteToMinutesManager<br>Test method: Login UserName Password.</td>
+<td></td>
+<td>9</td>
+<td>tests_boardmember_access.BoardMemberNaviagteToMinutesManager@7cbd213e</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.systemAdmin_Login()'><b>systemAdmin_Login</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: systemAdmin_Login</td>
+<td></td>
+<td>4</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@4eb7f003</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.systemAdmin_Login()'><b>systemAdmin_Login</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: systemAdmin_Login</td>
+<td></td>
+<td>4</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@491cc5c9</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberAddFileToPrivateFolder.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_boardmember_access.BoardMemberAddFileToPrivateFolder<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>6</td>
+<td>tests_boardmember_access.BoardMemberAddFileToPrivateFolder@670b40af</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCanAddFilesToWorkroom.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_boardmember_access.BoardMemberCanAddFilesToWorkroom<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>5</td>
+<td>tests_boardmember_access.BoardMemberCanAddFilesToWorkroom@371a67ec</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCanSeeFilesByAdmin.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_boardmember_access.BoardMemberCanSeeFilesByAdmin<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>5</td>
+<td>tests_boardmember_access.BoardMemberCanSeeFilesByAdmin@77f99a05</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>5</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@4eb7f003</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>5</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@491cc5c9</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>5</td>
+<td>tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile@7a30d1e6</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile.system_Admin_Can_Login()'><b>system_Admin_Can_Login</b><br>Test class: tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile<br>Test method: system_Admin_Can_Login</td>
+<td></td>
+<td>4</td>
+<td>tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile@7a30d1e6</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile.system_Admin_Can_Logout()'><b>system_Admin_Can_Logout</b><br>Test class: tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile<br>Test method: system_Admin_Can_Logout</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile@7a30d1e6</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData.user_Add_File_1_To_First_Catagory()'><b>user_Add_File_1_To_First_Catagory</b><br>Test class: tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData<br>Test method: user_Add_File_1_To_First_Catagory</td>
+<td></td>
+<td>14</td>
+<td>tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData.user_Add_First_Catagory_To_Book()'><b>user_Add_First_Catagory_To_Book</b><br>Test class: tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData<br>Test method: user_Add_First_Catagory_To_Book</td>
+<td></td>
+<td>7</td>
+<td>tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData.user_Can_Add_Agenda()'><b>user_Can_Add_Agenda</b><br>Test class: tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData<br>Test method: user_Can_Add_Agenda</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData.user_Can_Add_Cover_Page()'><b>user_Can_Add_Cover_Page</b><br>Test class: tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData<br>Test method: user_Can_Add_Cover_Page</td>
+<td></td>
+<td>6</td>
+<td>tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.user_Can_Add_File_To_Library_Folder_2()'><b>user_Can_Add_File_To_Library_Folder_2</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: user_Can_Add_File_To_Library_Folder_2</td>
+<td></td>
+<td>9</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@4eb7f003</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData.user_Can_Build_Book()'><b>user_Can_Build_Book</b><br>Test class: tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData<br>Test method: user_Can_Build_Book</td>
+<td></td>
+<td>15</td>
+<td>tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.user_Can_Create_2nd_Resource_Library_Folder()'><b>user_Can_Create_2nd_Resource_Library_Folder</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: user_Can_Create_2nd_Resource_Library_Folder</td>
+<td></td>
+<td>5</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@4eb7f003</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.user_Can_Create_2nd_Resource_Library_Folder()'><b>user_Can_Create_2nd_Resource_Library_Folder</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: user_Can_Create_2nd_Resource_Library_Folder</td>
+<td></td>
+<td>5</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@491cc5c9</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData.user_Can_Create_Book_And_Add_Title()'><b>user_Can_Create_Book_And_Add_Title</b><br>Test class: tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData<br>Test method: user_Can_Create_Book_And_Add_Title</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData.user_Can_Create_New_Event()'><b>user_Can_Create_New_Event</b><br>Test class: tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData<br>Test method: user_Can_Create_New_Event_RSVPS</td>
+<td></td>
+<td>25</td>
+<td>tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData@cb51256</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData.user_Can_Create_New_Event()'><b>user_Can_Create_New_Event</b><br>Test class: tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData<br>Test method: user_Can_Create_New_Event_RSVPS</td>
+<td></td>
+<td>24</td>
+<td>tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile.user_Can_Delete_Boardmember_View_Only_Folder()'><b>user_Can_Delete_Boardmember_View_Only_Folder</b><br>Test class: tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile<br>Test method: user_Can_Delete_Boardmember_View_Only_Folder</td>
+<td></td>
+<td>5</td>
+<td>tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile@7a30d1e6</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberAddFileToPrivateFolder.user_Can_Delete_Private_Folder_File()'><b>user_Can_Delete_Private_Folder_File</b><br>Test class: tests_boardmember_access.BoardMemberAddFileToPrivateFolder<br>Test method: user_Can_Delete_Private_Folder_File</td>
+<td></td>
+<td>8</td>
+<td>tests_boardmember_access.BoardMemberAddFileToPrivateFolder@670b40af</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.user_Can_Logout()'><b>user_Can_Logout</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>3</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@4eb7f003</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.user_Can_Logout()'><b>user_Can_Logout</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>4</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@491cc5c9</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.user_Can_Logout_()'><b>user_Can_Logout_</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>5</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@4eb7f003</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.user_Can_Logout_()'><b>user_Can_Logout_</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@491cc5c9</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCanSeeFilesByAdmin.user_Can_Open_Libraries_Form()'><b>user_Can_Open_Libraries_Form</b><br>Test class: tests_boardmember_access.BoardMemberCanSeeFilesByAdmin<br>Test method: user_Can_Open_Libraries_Form</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberCanSeeFilesByAdmin@77f99a05</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.user_Can_Open_Libraries_Form()'><b>user_Can_Open_Libraries_Form</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: user_Can_Open_Libraries_Form</td>
+<td></td>
+<td>3</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@4eb7f003</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.user_Can_Open_Libraries_Form()'><b>user_Can_Open_Libraries_Form</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: user_Can_Open_Libraries_Form</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@491cc5c9</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile.user_Can_Open_Libraries_Form()'><b>user_Can_Open_Libraries_Form</b><br>Test class: tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile<br>Test method: user_Can_Open_Libraries_Form</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile@7a30d1e6</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberAddFileToPrivateFolder.user_Can_Open_Libraries_Form_2nd_Time()'><b>user_Can_Open_Libraries_Form_2nd_Time</b><br>Test class: tests_boardmember_access.BoardMemberAddFileToPrivateFolder<br>Test method: user_Can_Open_Libraries_Form_2nd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberAddFileToPrivateFolder@670b40af</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.user_Can_Open_Libraries_Form_2nd_Time()'><b>user_Can_Open_Libraries_Form_2nd_Time</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: user_Can_Open_Libraries_Form_2nd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@491cc5c9</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberAddFileToPrivateFolder.user_Can_Open_Libraries_Form_3rd_Time()'><b>user_Can_Open_Libraries_Form_3rd_Time</b><br>Test class: tests_boardmember_access.BoardMemberAddFileToPrivateFolder<br>Test method: user_Can_Open_Libraries_Form_3rd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberAddFileToPrivateFolder@670b40af</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCanAddFilesToWorkroom.user_Can_Open_Libraries_Form_3rd_Time()'><b>user_Can_Open_Libraries_Form_3rd_Time</b><br>Test class: tests_boardmember_access.BoardMemberCanAddFilesToWorkroom<br>Test method: user_Can_Open_Libraries_Form_3rd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberCanAddFilesToWorkroom@371a67ec</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.user_Can_Open_Libraries_Form_3rd_Time()'><b>user_Can_Open_Libraries_Form_3rd_Time</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: user_Can_Open_Libraries_Form_3rd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@4eb7f003</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.user_Can_Open_Libraries_Form_3rd_Time()'><b>user_Can_Open_Libraries_Form_3rd_Time</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: user_Can_Open_Libraries_Form_3rd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@491cc5c9</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.user_Can_Open_Libraries_Form_4th_Time()'><b>user_Can_Open_Libraries_Form_4th_Time</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: user_Can_Open_Libraries_Form_4th_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@4eb7f003</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.user_Can_Open_Libraries_Form_4th_Time()'><b>user_Can_Open_Libraries_Form_4th_Time</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: user_Can_Open_Libraries_Form_4th_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@491cc5c9</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCanAddFilesToWorkroom.user_Can_Open_Libraries_Form_Again()'><b>user_Can_Open_Libraries_Form_Again</b><br>Test class: tests_boardmember_access.BoardMemberCanAddFilesToWorkroom<br>Test method: user_Can_Open_Libraries_Form_Again</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberCanAddFilesToWorkroom@371a67ec</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCanSeeFilesByAdmin.user_Can_Open_Libraries_Form_Again()'><b>user_Can_Open_Libraries_Form_Again</b><br>Test class: tests_boardmember_access.BoardMemberCanSeeFilesByAdmin<br>Test method: user_Can_Open_Libraries_Form_Again</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberCanSeeFilesByAdmin@77f99a05</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberAddFileToPrivateFolder.user_Can_Open_Library_Page_For_Workroom()'><b>user_Can_Open_Library_Page_For_Workroom</b><br>Test class: tests_boardmember_access.BoardMemberAddFileToPrivateFolder<br>Test method: user_Can_Open_Library_Page_For_Workroom</td>
+<td></td>
+<td>1</td>
+<td>tests_boardmember_access.BoardMemberAddFileToPrivateFolder@670b40af</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData.user_Can_Open_Library_Page_For_Workroom()'><b>user_Can_Open_Library_Page_For_Workroom</b><br>Test class: tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData<br>Test method: user_Can_Open_Library_Page_For_Workroom</td>
+<td></td>
+<td>7</td>
+<td>tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData.user_Can_Open_Library_Page_For_Workroom()'><b>user_Can_Open_Library_Page_For_Workroom</b><br>Test class: tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData<br>Test method: user_Can_Open_Library_Page_For_Workroom</td>
+<td></td>
+<td>7</td>
+<td>tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData@cb51256</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData.user_Can_Open_Library_Page_For_Workroom()'><b>user_Can_Open_Library_Page_For_Workroom</b><br>Test class: tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData<br>Test method: user_Can_Open_Library_Page_For_Workroom</td>
+<td></td>
+<td>8</td>
+<td>tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCanAddFilesToWorkroom.user_Can_Open_Library_Page_For_Workroom()'><b>user_Can_Open_Library_Page_For_Workroom</b><br>Test class: tests_boardmember_access.BoardMemberCanAddFilesToWorkroom<br>Test method: user_Can_Open_Library_Page_For_Workroom</td>
+<td></td>
+<td>2</td>
+<td>tests_boardmember_access.BoardMemberCanAddFilesToWorkroom@371a67ec</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData.user_Can_Save_Book_And_Continue()'><b>user_Can_Save_Book_And_Continue</b><br>Test class: tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData<br>Test method: user_Can_Add_Agenda</td>
+<td></td>
+<td>3</td>
+<td>tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberAddFileToPrivateFolder.user_Close_Library_Folder()'><b>user_Close_Library_Folder</b><br>Test class: tests_boardmember_access.BoardMemberAddFileToPrivateFolder<br>Test method: user_Close_Library_Folder</td>
+<td></td>
+<td>0</td>
+<td>tests_boardmember_access.BoardMemberAddFileToPrivateFolder@670b40af</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberAddFileToPrivateFolder.user_Close_Library_Folder_2nd_Time()'><b>user_Close_Library_Folder_2nd_Time</b><br>Test class: tests_boardmember_access.BoardMemberAddFileToPrivateFolder<br>Test method: user_Close_Library_Folder_2nd_Time</td>
+<td></td>
+<td>0</td>
+<td>tests_boardmember_access.BoardMemberAddFileToPrivateFolder@670b40af</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.user_Delete_Resource_Library_Folder_3()'><b>user_Delete_Resource_Library_Folder_3</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: user_Delete_Resource_Library_Folder_3</td>
+<td></td>
+<td>7</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@491cc5c9</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData.user_navigates_To_Book()'><b>user_navigates_To_Book</b><br>Test class: tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData<br>Test method: user_navigates_To_Book</td>
+<td></td>
+<td>5</td>
+<td>tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData.user_navigates_To_Poll()'><b>user_navigates_To_Poll</b><br>Test class: tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData<br>Test method: user_navigates_To_Poll</td>
+<td></td>
+<td>5</td>
+<td>tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData.user_navigates_To_Survey()'><b>user_navigates_To_Survey</b><br>Test class: tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData<br>Test method: user_navigates_To_Survey</td>
+<td></td>
+<td>6</td>
+<td>tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData@cb51256</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCanSeeFilesByAdmin.verify_Attach_Folder_Files_Present()'><b>verify_Attach_Folder_Files_Present</b><br>Test class: tests_boardmember_access.BoardMemberCanSeeFilesByAdmin<br>Test method: verify_Attach_Folder_Files_Present</td>
+<td></td>
+<td>3</td>
+<td>tests_boardmember_access.BoardMemberCanSeeFilesByAdmin@77f99a05</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCanAddFilesToWorkroom.verify_BoardMember_Folders_Present()'><b>verify_BoardMember_Folders_Present</b><br>Test class: tests_boardmember_access.BoardMemberCanAddFilesToWorkroom<br>Test method: verify_BoardMember_Folders_Present</td>
+<td></td>
+<td>0</td>
+<td>tests_boardmember_access.BoardMemberCanAddFilesToWorkroom@371a67ec</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCanSeeFilesByAdmin.verify_BoardMember_Folders_Present()'><b>verify_BoardMember_Folders_Present</b><br>Test class: tests_boardmember_access.BoardMemberCanSeeFilesByAdmin<br>Test method: verify_BoardMember_Folders_Present</td>
+<td></td>
+<td>0</td>
+<td>tests_boardmember_access.BoardMemberCanSeeFilesByAdmin@77f99a05</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.verify_BoardMember_Folders_Present()'><b>verify_BoardMember_Folders_Present</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: verify_BoardMember_Folders_Present</td>
+<td></td>
+<td>0</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@4eb7f003</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.verify_BoardMember_Folders_Present()'><b>verify_BoardMember_Folders_Present</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: verify_BoardMember_Folders_Present</td>
+<td></td>
+<td>1</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@491cc5c9</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile.verify_BoardMember_Folders_Present()'><b>verify_BoardMember_Folders_Present</b><br>Test class: tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile<br>Test method: verify_BoardMember_Folders_Present</td>
+<td></td>
+<td>0</td>
+<td>tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile@7a30d1e6</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.verify_BoardMember_Folders_Present_2nd_Time()'><b>verify_BoardMember_Folders_Present_2nd_Time</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: verify_BoardMember_Folders_Present_2nd_Time</td>
+<td></td>
+<td>1</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@491cc5c9</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCanAddFilesToWorkroom.verify_BoardMember_Folders_Present_3rd_Time()'><b>verify_BoardMember_Folders_Present_3rd_Time</b><br>Test class: tests_boardmember_access.BoardMemberCanAddFilesToWorkroom<br>Test method: verify_BoardMember_Folders_Present_3rd_Time</td>
+<td></td>
+<td>0</td>
+<td>tests_boardmember_access.BoardMemberCanAddFilesToWorkroom@371a67ec</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCanAddFilesToWorkroom.verify_BoardMember_Folders_Present_Again()'><b>verify_BoardMember_Folders_Present_Again</b><br>Test class: tests_boardmember_access.BoardMemberCanAddFilesToWorkroom<br>Test method: verify_BoardMember_Folders_Present_Again</td>
+<td></td>
+<td>0</td>
+<td>tests_boardmember_access.BoardMemberCanAddFilesToWorkroom@371a67ec</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCanSeeFilesByAdmin.verify_BoardMember_Folders_Present_Again()'><b>verify_BoardMember_Folders_Present_Again</b><br>Test class: tests_boardmember_access.BoardMemberCanSeeFilesByAdmin<br>Test method: verify_BoardMember_Folders_Present_Again</td>
+<td></td>
+<td>0</td>
+<td>tests_boardmember_access.BoardMemberCanSeeFilesByAdmin@77f99a05</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile.verify_Boardmember_View_Only_Permissions()'><b>verify_Boardmember_View_Only_Permissions</b><br>Test class: tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile<br>Test method: verify_Boardmember_View_Only_Permissions</td>
+<td></td>
+<td>4</td>
+<td>tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile@7a30d1e6</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData.verify_Book_Added_To_Event_Staging_1()'><b>verify_Book_Added_To_Event_Staging_1</b><br>Test class: tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData<br>Test method: verify_Book_Added_To_Event_Staging_1</td>
+<td></td>
+<td>18</td>
+<td>tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData.verify_Book_Title_On_Staging_1_NOT_VISIBLE()'><b>verify_Book_Title_On_Staging_1_NOT_VISIBLE</b><br>Test class: tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData<br>Test method: verify_Book_Title_On_Staging_1_NOT_VISIBLE</td>
+<td></td>
+<td>5</td>
+<td>tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCanAddFilesToWorkroom.verify_Created_File_And_Delete_Created_File()'><b>verify_Created_File_And_Delete_Created_File</b><br>Test class: tests_boardmember_access.BoardMemberCanAddFilesToWorkroom<br>Test method: verify_Created_File_And_Delete_Created_File</td>
+<td></td>
+<td>9</td>
+<td>tests_boardmember_access.BoardMemberCanAddFilesToWorkroom@371a67ec</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData.verify_Event_Deleted_2()'><b>verify_Event_Deleted_2</b><br>Test class: tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData<br>Test method: verify_Event_Deleted_2</td>
+<td></td>
+<td>5</td>
+<td>tests_boardmember_access.AttachCreateNewBookToEventExistingSiteData@2a556333</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData.verify_Event_Title_On_Staging_2_Deleted()'><b>verify_Event_Title_On_Staging_2_Deleted</b><br>Test class: tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData<br>Test method: verify_Event_Title_On_Staging_2_Deleted</td>
+<td></td>
+<td>5</td>
+<td>tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData.verify_Event_Title_On_Staging_3_Deleted()'><b>verify_Event_Title_On_Staging_3_Deleted</b><br>Test class: tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData<br>Test method: verify_Event_Title_On_Staging_3_Deleted</td>
+<td></td>
+<td>5</td>
+<td>tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData@cb51256</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCanAddFilesToWorkroom.verify_File_Deleted()'><b>verify_File_Deleted</b><br>Test class: tests_boardmember_access.BoardMemberCanAddFilesToWorkroom<br>Test method: verify_File_Deleted</td>
+<td></td>
+<td>6</td>
+<td>tests_boardmember_access.BoardMemberCanAddFilesToWorkroom@371a67ec</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.verify_File_Not_In_New_Library_Folder_2()'><b>verify_File_Not_In_New_Library_Folder_2</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: verify_File_Not_In_New_Library_Folder_2</td>
+<td></td>
+<td>9</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@4eb7f003</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberAddFileToPrivateFolder.verify_File_Not_Present()'><b>verify_File_Not_Present</b><br>Test class: tests_boardmember_access.BoardMemberAddFileToPrivateFolder<br>Test method: verify_File_Not_Present</td>
+<td></td>
+<td>7</td>
+<td>tests_boardmember_access.BoardMemberAddFileToPrivateFolder@670b40af</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile.verify_Folder_Deleted()'><b>verify_Folder_Deleted</b><br>Test class: tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile<br>Test method: verify_Folder_Deleted</td>
+<td></td>
+<td>7</td>
+<td>tests_boardmember_access.BoardMemberViewWorkroomViewOnlyFile@7a30d1e6</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCanSeeFilesByAdmin.verify_Large_Book_Folder_Files_Present()'><b>verify_Large_Book_Folder_Files_Present</b><br>Test class: tests_boardmember_access.BoardMemberCanSeeFilesByAdmin<br>Test method: verify_Large_Book_Folder_Files_Present</td>
+<td></td>
+<td>3</td>
+<td>tests_boardmember_access.BoardMemberCanSeeFilesByAdmin@77f99a05</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData.verify_Poll_Added_To_Event_On_Staging_2()'><b>verify_Poll_Added_To_Event_On_Staging_2</b><br>Test class: tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData<br>Test method: verify_Poll_Added_To_Event_On_Staging_2</td>
+<td></td>
+<td>19</td>
+<td>tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData.verify_Poll_Board_Member_Access_1_NOT_EXIST()'><b>verify_Poll_Board_Member_Access_1_NOT_EXIST</b><br>Test class: tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData<br>Test method: verify_Poll_Board_Member_Access_1_NOT_EXIST</td>
+<td></td>
+<td>6</td>
+<td>tests_boardmember_access.AttachCreateNewPolltoEventExistingSiteData@1500955a</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFile.verify_Resource_Library_Folder_2_NOT_Present()'><b>verify_Resource_Library_Folder_2_NOT_Present</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFile<br>Test method: verify_Resource_Library_Folder_2_NOT_Present</td>
+<td></td>
+<td>5</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFile@4eb7f003</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.verify_Resource_Library_Folder_3_NOT_Present()'><b>verify_Resource_Library_Folder_3_NOT_Present</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: verify_Resource_Library_Folder_3_NOT_Present</td>
+<td></td>
+<td>5</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@491cc5c9</td></tr>
+<tr>
+<td title='tests_boardmember_access.BoardMemberCantSeeSecuredFolder.verify_Secured_Folder_Not_Present()'><b>verify_Secured_Folder_Not_Present</b><br>Test class: tests_boardmember_access.BoardMemberCantSeeSecuredFolder<br>Test method: verify_Secured_Folder_Not_Present</td>
+<td></td>
+<td>5</td>
+<td>tests_boardmember_access.BoardMemberCantSeeSecuredFolder@491cc5c9</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData.verify_Survey_Added_To_Event_Title_On_Staging_3()'><b>verify_Survey_Added_To_Event_Title_On_Staging_3</b><br>Test class: tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData<br>Test method: verify_Survey_Added_To_Event_Title_On_Staging_3</td>
+<td></td>
+<td>19</td>
+<td>tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData@cb51256</td></tr>
+<tr>
+<td title='tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData.verify_Survey_Deleted()'><b>verify_Survey_Deleted</b><br>Test class: tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData<br>Test method: verify_Survey_Deleted</td>
+<td></td>
+<td>5</td>
+<td>tests_boardmember_access.AttachCreateNewSurveytoEventExistingSiteData@cb51256</td></tr>
+</table><p>
+</body>
+</html>

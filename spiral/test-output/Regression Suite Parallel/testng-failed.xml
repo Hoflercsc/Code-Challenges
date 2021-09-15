@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="9" guice-stage="DEVELOPMENT" name="Failed suite [Regression suite Parallel]" parallel="tests">
+  <test thread-count="9" name="ValidateUserRolePermissions(failed)" parallel="tests">
+    <classes>
+      <class name="tests_settings.ValidateUserRolePermissions">
+        <methods>
+          <include name="catureStatus"/>
+          <include name="Auto_Admin3_Verify_All_Users_In_Directory"/>
+          <include name="register"/>
+          <include name="setUp"/>
+          <include name="autoAdmin1_Can_Logout"/>
+          <include name="user_Can_Open_Directory"/>
+          <include name="verify_Group1_Galaxy"/>
+          <include name="autoAdmin3_Can_Login"/>
+          <include name="verify_Group1_Nebula"/>
+          <include name="verify_AutoBE_User_Accounts_Visible"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests_settings.ValidateUserRolePermissions -->
+    </classes>
+  </test> <!-- ValidateUserRolePermissions(failed) -->
+  <test thread-count="9" name="SetWorkroomToViewOnlyBooks(failed)" parallel="tests">
+    <classes>
+      <class name="tests_settings.SetWorkroomToViewOnlyBooks">
+        <methods>
+          <include name="catureStatus"/>
+          <include name="register"/>
+          <include name="setUp"/>
+          <include name="user_Add_First_Catagory_To_Book"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests_settings.SetWorkroomToViewOnlyBooks -->
+    </classes>
+  </test> <!-- SetWorkroomToViewOnlyBooks(failed) -->
+</suite> <!-- Failed suite [Regression suite Parallel] -->

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="9" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Smoke]" parallel="tests">
+  <test thread-count="9" verbose="0" name="Test 10(failed)" parallel="tests">
+    <classes>
+      <class name="tests_critical_scenarios.CreateMessageWorkroom">
+        <methods>
+          <include name="register"/>
+          <include name="catureStatus"/>
+          <include name="verify_Email_Sent_Verification_Messages"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests_critical_scenarios.CreateMessageWorkroom -->
+    </classes>
+  </test> <!-- Test 10(failed) -->
+  <test thread-count="9" verbose="0" name="Test 11(failed)" parallel="tests">
+    <classes>
+      <class name="tests_critical_scenarios.CreateBookSecuredCategory">
+        <methods>
+          <include name="workroomAdmin_Close_And_Logout"/>
+          <include name="workroom_Member_Secured_Category_Not_Displayed"/>
+          <include name="make_Book_Visible"/>
+          <include name="workroom_Member_Open_Library_Page_For_Workroom_2nd_Time"/>
+          <include name="user_Can_Build_Book"/>
+          <include name="loginBE_WorkroomAdmin"/>
+          <include name="workroomAdmin_Close_And_Logout_2nd_Time"/>
+          <include name="workroom_Member_Open_Library_Page_For_Workroom_3rd_Time"/>
+          <include name="tearDown"/>
+          <include name="workroom_Member_NewCatagory_And_NewCatagory2_Is_Displayed"/>
+          <include name="register"/>
+          <include name="autoDirector_Close_And_Logout"/>
+          <include name="catureStatus"/>
+          <include name="user_Can_Delete_Book"/>
+          <include name="workroom_Member_Login_To_BoardEffect"/>
+          <include name="workroom_Member_Open_Workroom_AutoBE_Library_Page"/>
+          <include name="workroom_Member_Sees_New_Category_2_Present"/>
+          <include name="verify_Book_Deleted"/>
+          <include name="autoUser_login_2nd_Time"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- tests_critical_scenarios.CreateBookSecuredCategory -->
+    </classes>
+  </test> <!-- Test 11(failed) -->
+</suite> <!-- Failed suite [Smoke] -->

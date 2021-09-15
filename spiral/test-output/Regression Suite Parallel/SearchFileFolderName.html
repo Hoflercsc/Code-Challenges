@@ -1,0 +1,1049 @@
+<html>
+<head>
+<title>TestNG:  SearchFileFolderName</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>SearchFileFolderName</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>12/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jun 21 12:10:58 EDT 2021</td>
+</tr>
+<tr><td>Total time:</td><td>113 seconds (113891 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests_resource_library.CopyLinkOnFileFromViewOnlyFolder.add_File_To_Folder_Copy_Link_Folder_2_View_Only()'><b>add_File_To_Folder_Copy_Link_Folder_2_View_Only</b><br>Test class: tests_resource_library.CopyLinkOnFileFromViewOnlyFolder<br>Test method: add_File_To_Folder_Copy_Link_Folder_2_View_Only</td>
+<td></td>
+<td>10</td>
+<td>tests_resource_library.CopyLinkOnFileFromViewOnlyFolder@491cc5c9</td></tr>
+<tr>
+<td title='tests_resource_library.AddFileToPrivateFolder.add_File_To_Private_Folder()'><b>add_File_To_Private_Folder</b><br>Test class: tests_resource_library.AddFileToPrivateFolder<br>Test method: Resource-Library >> Add-File-To-Private-Folder</td>
+<td></td>
+<td>15</td>
+<td>tests_resource_library.AddFileToPrivateFolder@1500955a</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.autoDirector_login()'><b>autoDirector_login</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: autodirector_login</td>
+<td></td>
+<td>12</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFolder.autoDirector_login()'><b>autoDirector_login</b><br>Test class: tests_resource_library.AddSecurityToFolder<br>Test method: autodirector_login</td>
+<td></td>
+<td>8</td>
+<td>tests_resource_library.AddSecurityToFolder@371a67ec</td></tr>
+<tr>
+<td title='tests_resource_library.EditExistingFolderToViewOnly.auto_Director_Can_Login()'><b>auto_Director_Can_Login</b><br>Test class: tests_resource_library.EditExistingFolderToViewOnly<br>Test method: auto_Director_Can_Login</td>
+<td></td>
+<td>7</td>
+<td>tests_resource_library.EditExistingFolderToViewOnly@7a30d1e6</td></tr>
+<tr>
+<td title='tests_resource_library.EditExistingFolderToViewOnly.auto_Director_Can_Logout()'><b>auto_Director_Can_Logout</b><br>Test class: tests_resource_library.EditExistingFolderToViewOnly<br>Test method: auto_Director_Can_Logout</td>
+<td></td>
+<td>10</td>
+<td>tests_resource_library.EditExistingFolderToViewOnly@7a30d1e6</td></tr>
+<tr>
+<td title='tests_resource_library.CopyLinkOnFileFromViewOnlyFolder.copy_File_Link_In_Copy_File_View_Only_Folder_2()'><b>copy_File_Link_In_Copy_File_View_Only_Folder_2</b><br>Test class: tests_resource_library.CopyLinkOnFileFromViewOnlyFolder<br>Test method: copy_File_Link_In_Copy_File_View_Only_Folder_2</td>
+<td></td>
+<td>8</td>
+<td>tests_resource_library.CopyLinkOnFileFromViewOnlyFolder@491cc5c9</td></tr>
+<tr>
+<td title='tests_resource_library.CopyFileLink.copy_File_Link_Non_View_Only_Folder()'><b>copy_File_Link_Non_View_Only_Folder</b><br>Test class: tests_resource_library.CopyFileLink<br>Test method: copy_File_Link_Non_View_Only_Folder</td>
+<td></td>
+<td>6</td>
+<td>tests_resource_library.CopyFileLink@4eb7f003</td></tr>
+<tr>
+<td title='tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder.create_Non_View_Only_Resource_Library_Folder_14()'><b>create_Non_View_Only_Resource_Library_Folder_14</b><br>Test class: tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder<br>Test method: create_Non_View_Only_Resource_Library_Folder_14</td>
+<td></td>
+<td>7</td>
+<td>tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder@2de8284b</td></tr>
+<tr>
+<td title='tests_resource_library.CopyFileLink.create_Resource_Library_Folder_Copy_File_Link_Folder()'><b>create_Resource_Library_Folder_Copy_File_Link_Folder</b><br>Test class: tests_resource_library.CopyFileLink<br>Test method: user_Can_Create_2nd_Resource_Library_Folder</td>
+<td></td>
+<td>11</td>
+<td>tests_resource_library.CopyFileLink@4eb7f003</td></tr>
+<tr>
+<td title='tests_resource_library.AttemptToEditFileInViewOnlyFolder.create_View_Only_Resource_Library_Folder2()'><b>create_View_Only_Resource_Library_Folder2</b><br>Test class: tests_resource_library.AttemptToEditFileInViewOnlyFolder<br>Test method: create_View_Only_Resource_Library_Folder2</td>
+<td></td>
+<td>8</td>
+<td>tests_resource_library.AttemptToEditFileInViewOnlyFolder@77f99a05</td></tr>
+<tr>
+<td title='tests_resource_library.CopyLinkOnFileFromViewOnlyFolder.create_View_Only_Resource_Library_Folder_Copy_File_Link_Folder_2()'><b>create_View_Only_Resource_Library_Folder_Copy_File_Link_Folder_2</b><br>Test class: tests_resource_library.CopyLinkOnFileFromViewOnlyFolder<br>Test method: create_View_Only_Resource_Library_Folder_Copy_File_Link_Folder_2</td>
+<td></td>
+<td>10</td>
+<td>tests_resource_library.CopyLinkOnFileFromViewOnlyFolder@491cc5c9</td></tr>
+<tr>
+<td title='tests_resource_library.CreateSubFoldersInViewOnlyFolder.create_View_Only_Resource_Library_SubFolders_In_View_Only_Folder()'><b>create_View_Only_Resource_Library_SubFolders_In_View_Only_Folder</b><br>Test class: tests_resource_library.CreateSubFoldersInViewOnlyFolder<br>Test method: create_View_Only_Resource_Library_SubFolders_In_View_Only_Folder</td>
+<td></td>
+<td>10</td>
+<td>tests_resource_library.CreateSubFoldersInViewOnlyFolder@7cbd213e</td></tr>
+<tr>
+<td title='tests_resource_library.CreateDeleteFolder.delete_Resource_Library_Folder_8()'><b>delete_Resource_Library_Folder_8</b><br>Test class: tests_resource_library.CreateDeleteFolder<br>Test method: delete_Resource_Library_Folder_8</td>
+<td></td>
+<td>7</td>
+<td>tests_resource_library.CreateDeleteFolder@8646db9</td></tr>
+<tr>
+<td title='tests_resource_library.CopyFileLink.delete_Resource_Library_Folder_Copy_File_Link()'><b>delete_Resource_Library_Folder_Copy_File_Link</b><br>Test class: tests_resource_library.CopyFileLink<br>Test method: user_Delete_Folder_2</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.CopyFileLink@4eb7f003</td></tr>
+<tr>
+<td title='tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder.move_File_From_View_Only_Folder_13_To_Non_View_Only_Folder_14()'><b>move_File_From_View_Only_Folder_13_To_Non_View_Only_Folder_14</b><br>Test class: tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder<br>Test method: move_File_From_View_Only_Folder_13_To_Non_View_Only_Folder_14</td>
+<td></td>
+<td>12</td>
+<td>tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder@2de8284b</td></tr>
+<tr>
+<td title='tests_resource_library.CopyFileLink.open_File_Link()'><b>open_File_Link</b><br>Test class: tests_resource_library.CopyFileLink<br>Test method: open_File_Link</td>
+<td></td>
+<td>4</td>
+<td>tests_resource_library.CopyFileLink@4eb7f003</td></tr>
+<tr>
+<td title='tests_resource_library.CopyLinkOnFileFromViewOnlyFolder.open_File_Link()'><b>open_File_Link</b><br>Test class: tests_resource_library.CopyLinkOnFileFromViewOnlyFolder<br>Test method: open_File_Link</td>
+<td></td>
+<td>2</td>
+<td>tests_resource_library.CopyLinkOnFileFromViewOnlyFolder@491cc5c9</td></tr>
+<tr>
+<td title='tests_resource_library.EditExistingFolderToViewOnly.open_Resource_Library_Marvel_WR_Form_4th_Time()'><b>open_Resource_Library_Marvel_WR_Form_4th_Time</b><br>Test class: tests_resource_library.EditExistingFolderToViewOnly<br>Test method: workroom_Member_Open_Resource_Library_Marvel_WR</td>
+<td></td>
+<td>2</td>
+<td>tests_resource_library.EditExistingFolderToViewOnly@7a30d1e6</td></tr>
+<tr>
+<td title='tests_resource_library.CopyLinkOnFileFromViewOnlyFolder.switch_Tab_Verify_Viewer_Element()'><b>switch_Tab_Verify_Viewer_Element</b><br>Test class: tests_resource_library.CopyLinkOnFileFromViewOnlyFolder<br>Test method: switch_Tab_Verify_Viewer_Element</td>
+<td></td>
+<td>9</td>
+<td>tests_resource_library.CopyLinkOnFileFromViewOnlyFolder@491cc5c9</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.systemAdmin_Login_Again()'><b>systemAdmin_Login_Again</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: systemAdmin_Login_Again</td>
+<td></td>
+<td>14</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFolder.systemAdmin_Login_Again()'><b>systemAdmin_Login_Again</b><br>Test class: tests_resource_library.AddSecurityToFolder<br>Test method: systemAdmin_Login_Again</td>
+<td></td>
+<td>7</td>
+<td>tests_resource_library.AddSecurityToFolder@371a67ec</td></tr>
+<tr>
+<td title='tests_resource_library.EditExistingFolderToViewOnly.systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings()'><b>systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings</b><br>Test class: tests_resource_library.EditExistingFolderToViewOnly<br>Test method: user_Open_Settings_Then_Workroom_And_Group_Settings</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.EditExistingFolderToViewOnly@7a30d1e6</td></tr>
+<tr>
+<td title='tests_resource_library.CreateSubFoldersInViewOnlyFolder.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_resource_library.CreateSubFoldersInViewOnlyFolder<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>8</td>
+<td>tests_resource_library.CreateSubFoldersInViewOnlyFolder@7cbd213e</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>7</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+<tr>
+<td title='tests_resource_library.CopyFileLink.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_resource_library.CopyFileLink<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>10</td>
+<td>tests_resource_library.CopyFileLink@4eb7f003</td></tr>
+<tr>
+<td title='tests_resource_library.AddNewFilesViaUpload.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_resource_library.AddNewFilesViaUpload<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>15</td>
+<td>tests_resource_library.AddNewFilesViaUpload@cb51256</td></tr>
+<tr>
+<td title='tests_resource_library.CreateDeleteFolder.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_resource_library.CreateDeleteFolder<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>15</td>
+<td>tests_resource_library.CreateDeleteFolder@8646db9</td></tr>
+<tr>
+<td title='tests_resource_library.AddApproversToFile.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_resource_library.AddApproversToFile<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>16</td>
+<td>tests_resource_library.AddApproversToFile@2a556333</td></tr>
+<tr>
+<td title='tests_resource_library.AttemptToEditFileInViewOnlyFolder.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_resource_library.AttemptToEditFileInViewOnlyFolder<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>12</td>
+<td>tests_resource_library.AttemptToEditFileInViewOnlyFolder@77f99a05</td></tr>
+<tr>
+<td title='tests_resource_library.CopyLinkOnFileFromViewOnlyFolder.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_resource_library.CopyLinkOnFileFromViewOnlyFolder<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>16</td>
+<td>tests_resource_library.CopyLinkOnFileFromViewOnlyFolder@491cc5c9</td></tr>
+<tr>
+<td title='tests_resource_library.AddFileToPrivateFolder.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_resource_library.AddFileToPrivateFolder<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>15</td>
+<td>tests_resource_library.AddFileToPrivateFolder@1500955a</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFolder.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_resource_library.AddSecurityToFolder<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>6</td>
+<td>tests_resource_library.AddSecurityToFolder@371a67ec</td></tr>
+<tr>
+<td title='tests_resource_library.EditExistingFolderToViewOnly.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_resource_library.EditExistingFolderToViewOnly<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>7</td>
+<td>tests_resource_library.EditExistingFolderToViewOnly@7a30d1e6</td></tr>
+<tr>
+<td title='tests_resource_library.EditResourceFolder.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_resource_library.EditResourceFolder<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>10</td>
+<td>tests_resource_library.EditResourceFolder@4e718207</td></tr>
+<tr>
+<td title='tests_resource_library.MoveEditDeleteFile.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_resource_library.MoveEditDeleteFile<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>8</td>
+<td>tests_resource_library.MoveEditDeleteFile@1fc2b765</td></tr>
+<tr>
+<td title='tests_resource_library.MoveResourceFolder.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_resource_library.MoveResourceFolder<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>9</td>
+<td>tests_resource_library.MoveResourceFolder@42607a4f</td></tr>
+<tr>
+<td title='tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder<br>Test method: systemAdmin_login</td>
+<td></td>
+<td>10</td>
+<td>tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder@2de8284b</td></tr>
+<tr>
+<td title='tests_resource_library.SearchFileFolderName.systemAdmin_login()'><b>systemAdmin_login</b><br>Test class: tests_resource_library.SearchFileFolderName<br>Test method: Login System Admin UserName Password.</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.SearchFileFolderName@2e3fc542</td></tr>
+<tr>
+<td title='tests_resource_library.EditExistingFolderToViewOnly.system_Admin_Can_Login()'><b>system_Admin_Can_Login</b><br>Test class: tests_resource_library.EditExistingFolderToViewOnly<br>Test method: system_Admin_Can_Login</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.EditExistingFolderToViewOnly@7a30d1e6</td></tr>
+<tr>
+<td title='tests_resource_library.EditExistingFolderToViewOnly.system_Admin_Can_Logout()'><b>system_Admin_Can_Logout</b><br>Test class: tests_resource_library.EditExistingFolderToViewOnly<br>Test method: system_Admin_Can_Logout</td>
+<td></td>
+<td>28</td>
+<td>tests_resource_library.EditExistingFolderToViewOnly@7a30d1e6</td></tr>
+<tr>
+<td title='tests_resource_library.EditResourceFolder.user_Actually_Edits_Library_Folder_10()'><b>user_Actually_Edits_Library_Folder_10</b><br>Test class: tests_resource_library.EditResourceFolder<br>Test method: user_Actually_Edits_Library_Folder_10</td>
+<td></td>
+<td>17</td>
+<td>tests_resource_library.EditResourceFolder@4e718207</td></tr>
+<tr>
+<td title='tests_resource_library.EditResourceFolder.user_Attempts_Edit_Resource_Library_Folder_10()'><b>user_Attempts_Edit_Resource_Library_Folder_10</b><br>Test class: tests_resource_library.EditResourceFolder<br>Test method: user_Attempts_Edit_Resource_Library_Folder_10</td>
+<td></td>
+<td>12</td>
+<td>tests_resource_library.EditResourceFolder@4e718207</td></tr>
+<tr>
+<td title='tests_resource_library.MoveEditDeleteFile.user_Can_Add_File_Folder_12()'><b>user_Can_Add_File_Folder_12</b><br>Test class: tests_resource_library.MoveEditDeleteFile<br>Test method: user_Can_Add_File_Folder_12</td>
+<td></td>
+<td>11</td>
+<td>tests_resource_library.MoveEditDeleteFile@1fc2b765</td></tr>
+<tr>
+<td title='tests_resource_library.AddApproversToFile.user_Can_Add_File_Folder_4()'><b>user_Can_Add_File_Folder_4</b><br>Test class: tests_resource_library.AddApproversToFile<br>Test method: user_Can_Add_File_Folder_4</td>
+<td></td>
+<td>9</td>
+<td>tests_resource_library.AddApproversToFile@2a556333</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.user_Can_Add_File_Folder_6()'><b>user_Can_Add_File_Folder_6</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: user_Can_Add_File_Folder_6</td>
+<td></td>
+<td>11</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+<tr>
+<td title='tests_resource_library.SearchFileFolderName.user_Can_Add_File_To_Folder_16()'><b>user_Can_Add_File_To_Folder_16</b><br>Test class: tests_resource_library.SearchFileFolderName<br>Test method: user_Can_Add_File_To_Folder_16</td>
+<td></td>
+<td>9</td>
+<td>tests_resource_library.SearchFileFolderName@2e3fc542</td></tr>
+<tr>
+<td title='tests_resource_library.CopyFileLink.user_Can_Add_File_To_Folder_Copy_File_Link_Non_View_Only()'><b>user_Can_Add_File_To_Folder_Copy_File_Link_Non_View_Only</b><br>Test class: tests_resource_library.CopyFileLink<br>Test method: user_Can_Add_File_To_Folder_Copy_File_Link_Non_View_Only</td>
+<td></td>
+<td>9</td>
+<td>tests_resource_library.CopyFileLink@4eb7f003</td></tr>
+<tr>
+<td title='tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder.user_Can_Add_File_To_View_Only_Folder_13()'><b>user_Can_Add_File_To_View_Only_Folder_13</b><br>Test class: tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder<br>Test method: user_Can_Add_File_To_View_Only_Folder_13</td>
+<td></td>
+<td>10</td>
+<td>tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder@2de8284b</td></tr>
+<tr>
+<td title='tests_resource_library.AttemptToEditFileInViewOnlyFolder.user_Can_Add_File_View_Only_Folder_2()'><b>user_Can_Add_File_View_Only_Folder_2</b><br>Test class: tests_resource_library.AttemptToEditFileInViewOnlyFolder<br>Test method: user_Can_Add_File_View_Only_Folder_2</td>
+<td></td>
+<td>8</td>
+<td>tests_resource_library.AttemptToEditFileInViewOnlyFolder@77f99a05</td></tr>
+<tr>
+<td title='tests_resource_library.EditExistingFolderToViewOnly.user_Can_Add_File_View_Only_Folder_9()'><b>user_Can_Add_File_View_Only_Folder_9</b><br>Test class: tests_resource_library.EditExistingFolderToViewOnly<br>Test method: user_Can_Add_File_View_Only_Folder_9</td>
+<td></td>
+<td>12</td>
+<td>tests_resource_library.EditExistingFolderToViewOnly@7a30d1e6</td></tr>
+<tr>
+<td title='tests_resource_library.AddNewFilesViaUpload.user_Can_Add_Multiple_Files_To_Folder_5()'><b>user_Can_Add_Multiple_Files_To_Folder_5</b><br>Test class: tests_resource_library.AddNewFilesViaUpload<br>Test method: user_Can_Add_Multiple_Files_To_Folder_5</td>
+<td></td>
+<td>26</td>
+<td>tests_resource_library.AddNewFilesViaUpload@cb51256</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.user_Can_Add_Security_To_File()'><b>user_Can_Add_Security_To_File</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: user_Can_Add_Security_To_File</td>
+<td></td>
+<td>8</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+<tr>
+<td title='tests_resource_library.AddApproversToFile.user_Can_Add_Security_To_File()'><b>user_Can_Add_Security_To_File</b><br>Test class: tests_resource_library.AddApproversToFile<br>Test method: user_Can_Add_Security_To_File</td>
+<td></td>
+<td>15</td>
+<td>tests_resource_library.AddApproversToFile@2a556333</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFolder.user_Can_Add_Security_To_Folder_7()'><b>user_Can_Add_Security_To_Folder_7</b><br>Test class: tests_resource_library.AddSecurityToFolder<br>Test method: user_Can_Add_Security_To_Folder_7</td>
+<td></td>
+<td>7</td>
+<td>tests_resource_library.AddSecurityToFolder@371a67ec</td></tr>
+<tr>
+<td title='tests_resource_library.AddApproversToFile.user_Can_Create_2nd_Resource_Library_Folder()'><b>user_Can_Create_2nd_Resource_Library_Folder</b><br>Test class: tests_resource_library.AddApproversToFile<br>Test method: user_Can_Create_2nd_Resource_Library_Folder</td>
+<td></td>
+<td>6</td>
+<td>tests_resource_library.AddApproversToFile@2a556333</td></tr>
+<tr>
+<td title='tests_resource_library.MoveEditDeleteFile.user_Can_Create_2nd_Resource_Library_Folder()'><b>user_Can_Create_2nd_Resource_Library_Folder</b><br>Test class: tests_resource_library.MoveEditDeleteFile<br>Test method: user_Can_Create_2nd_Resource_Library_Folder</td>
+<td></td>
+<td>4</td>
+<td>tests_resource_library.MoveEditDeleteFile@1fc2b765</td></tr>
+<tr>
+<td title='tests_resource_library.AddNewFilesViaUpload.user_Can_Create_New_Resource_Library_Folder()'><b>user_Can_Create_New_Resource_Library_Folder</b><br>Test class: tests_resource_library.AddNewFilesViaUpload<br>Test method: user_Can_Create_New_Resource_Library_Folder</td>
+<td></td>
+<td>8</td>
+<td>tests_resource_library.AddNewFilesViaUpload@cb51256</td></tr>
+<tr>
+<td title='tests_resource_library.EditResourceFolder.user_Can_Create_New_Resource_Library_Folder()'><b>user_Can_Create_New_Resource_Library_Folder</b><br>Test class: tests_resource_library.EditResourceFolder<br>Test method: user_Can_Create_New_Resource_Library_Folder</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.EditResourceFolder@4e718207</td></tr>
+<tr>
+<td title='tests_resource_library.SearchFileFolderName.user_Can_Create_New_Resource_Library_Folder()'><b>user_Can_Create_New_Resource_Library_Folder</b><br>Test class: tests_resource_library.SearchFileFolderName<br>Test method: user_Can_Create_2nd_Resource_Library_Folder</td>
+<td></td>
+<td>6</td>
+<td>tests_resource_library.SearchFileFolderName@2e3fc542</td></tr>
+<tr>
+<td title='tests_resource_library.CreateSubFoldersInViewOnlyFolder.user_Can_Create_SubFolder1_In_Folder()'><b>user_Can_Create_SubFolder1_In_Folder</b><br>Test class: tests_resource_library.CreateSubFoldersInViewOnlyFolder<br>Test method: user_Can_Create_SubFolder1_In_Folder</td>
+<td></td>
+<td>6</td>
+<td>tests_resource_library.CreateSubFoldersInViewOnlyFolder@7cbd213e</td></tr>
+<tr>
+<td title='tests_resource_library.CreateSubFoldersInViewOnlyFolder.user_Can_Create_SubFolder2_In_Folder()'><b>user_Can_Create_SubFolder2_In_Folder</b><br>Test class: tests_resource_library.CreateSubFoldersInViewOnlyFolder<br>Test method: user_Can_Create_SubFolder2_In_Folder</td>
+<td></td>
+<td>4</td>
+<td>tests_resource_library.CreateSubFoldersInViewOnlyFolder@7cbd213e</td></tr>
+<tr>
+<td title='tests_resource_library.EditResourceFolder.user_Can_Delete_Edited_Folder_10()'><b>user_Can_Delete_Edited_Folder_10</b><br>Test class: tests_resource_library.EditResourceFolder<br>Test method: user_Can_Delete_Edited_Folder_10</td>
+<td></td>
+<td>9</td>
+<td>tests_resource_library.EditResourceFolder@4e718207</td></tr>
+<tr>
+<td title='tests_resource_library.MoveEditDeleteFile.user_Can_Delete_File()'><b>user_Can_Delete_File</b><br>Test class: tests_resource_library.MoveEditDeleteFile<br>Test method: user_Can_Delete_File</td>
+<td></td>
+<td>7</td>
+<td>tests_resource_library.MoveEditDeleteFile@1fc2b765</td></tr>
+<tr>
+<td title='tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder.user_Can_Delete_Library_Folder_14()'><b>user_Can_Delete_Library_Folder_14</b><br>Test class: tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder<br>Test method: user_Can_Delete_Library_Folder_14</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder@2de8284b</td></tr>
+<tr>
+<td title='tests_resource_library.AddFileToPrivateFolder.user_Can_Delete_Private_Folder_File()'><b>user_Can_Delete_Private_Folder_File</b><br>Test class: tests_resource_library.AddFileToPrivateFolder<br>Test method: user_Can_Delete_Private_Folder_File</td>
+<td></td>
+<td>11</td>
+<td>tests_resource_library.AddFileToPrivateFolder@1500955a</td></tr>
+<tr>
+<td title='tests_resource_library.AddNewFilesViaUpload.user_Can_Delete_Resource_Library_Folder_5()'><b>user_Can_Delete_Resource_Library_Folder_5</b><br>Test class: tests_resource_library.AddNewFilesViaUpload<br>Test method: user_Can_Delete_Resource_Library_Folder_5</td>
+<td></td>
+<td>8</td>
+<td>tests_resource_library.AddNewFilesViaUpload@cb51256</td></tr>
+<tr>
+<td title='tests_resource_library.CreateSubFoldersInViewOnlyFolder.user_Can_Delete_View_Only_Folder()'><b>user_Can_Delete_View_Only_Folder</b><br>Test class: tests_resource_library.CreateSubFoldersInViewOnlyFolder<br>Test method: user_Can_Delete_View_Only_Folder</td>
+<td></td>
+<td>7</td>
+<td>tests_resource_library.CreateSubFoldersInViewOnlyFolder@7cbd213e</td></tr>
+<tr>
+<td title='tests_resource_library.AttemptToEditFileInViewOnlyFolder.user_Can_Delete_View_Only_Folder_2()'><b>user_Can_Delete_View_Only_Folder_2</b><br>Test class: tests_resource_library.AttemptToEditFileInViewOnlyFolder<br>Test method: user_Can_Delete_View_Only_Folder</td>
+<td></td>
+<td>8</td>
+<td>tests_resource_library.AttemptToEditFileInViewOnlyFolder@77f99a05</td></tr>
+<tr>
+<td title='tests_resource_library.CopyLinkOnFileFromViewOnlyFolder.user_Can_Delete_View_Only_Folder_2()'><b>user_Can_Delete_View_Only_Folder_2</b><br>Test class: tests_resource_library.CopyLinkOnFileFromViewOnlyFolder<br>Test method: user_Can_Delete_View_Only_Folder</td>
+<td></td>
+<td>8</td>
+<td>tests_resource_library.CopyLinkOnFileFromViewOnlyFolder@491cc5c9</td></tr>
+<tr>
+<td title='tests_resource_library.EditExistingFolderToViewOnly.user_Can_Delete_View_Only_Folder_9()'><b>user_Can_Delete_View_Only_Folder_9</b><br>Test class: tests_resource_library.EditExistingFolderToViewOnly<br>Test method: user_Can_Delete_View_Only_Folder_9</td>
+<td></td>
+<td>8</td>
+<td>tests_resource_library.EditExistingFolderToViewOnly@7a30d1e6</td></tr>
+<tr>
+<td title='tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder.user_Can_Delete_View_Only_Library_Folder_13()'><b>user_Can_Delete_View_Only_Library_Folder_13</b><br>Test class: tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder<br>Test method: user_Can_Delete_View_Only_Library_Folder_13</td>
+<td></td>
+<td>7</td>
+<td>tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder@2de8284b</td></tr>
+<tr>
+<td title='tests_resource_library.AttemptToEditFileInViewOnlyFolder.user_Can_Edit_File()'><b>user_Can_Edit_File</b><br>Test class: tests_resource_library.AttemptToEditFileInViewOnlyFolder<br>Test method: user_Can_Edit_File</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.AttemptToEditFileInViewOnlyFolder@77f99a05</td></tr>
+<tr>
+<td title='tests_resource_library.MoveEditDeleteFile.user_Can_Edit_File_In_Folder_11()'><b>user_Can_Edit_File_In_Folder_11</b><br>Test class: tests_resource_library.MoveEditDeleteFile<br>Test method: user_Can_Edit_File_In_Folder_11</td>
+<td></td>
+<td>6</td>
+<td>tests_resource_library.MoveEditDeleteFile@1fc2b765</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.user_Can_Logout()'><b>user_Can_Logout</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>16</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFolder.user_Can_Logout()'><b>user_Can_Logout</b><br>Test class: tests_resource_library.AddSecurityToFolder<br>Test method: user_Can_Logout</td>
+<td></td>
+<td>7</td>
+<td>tests_resource_library.AddSecurityToFolder@371a67ec</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.user_Can_Logout_AutoDirector()'><b>user_Can_Logout_AutoDirector</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: user_Can_Logout_AutoDirector</td>
+<td></td>
+<td>9</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFolder.user_Can_Logout_AutoDirector()'><b>user_Can_Logout_AutoDirector</b><br>Test class: tests_resource_library.AddSecurityToFolder<br>Test method: user_Can_Logout_AutoDirector</td>
+<td></td>
+<td>26</td>
+<td>tests_resource_library.AddSecurityToFolder@371a67ec</td></tr>
+<tr>
+<td title='tests_resource_library.MoveEditDeleteFile.user_Can_Move_File_Folder_11()'><b>user_Can_Move_File_Folder_11</b><br>Test class: tests_resource_library.MoveEditDeleteFile<br>Test method: user_Can_Move_File_Folder_11</td>
+<td></td>
+<td>9</td>
+<td>tests_resource_library.MoveEditDeleteFile@1fc2b765</td></tr>
+<tr>
+<td title='tests_resource_library.CreateSubFoldersInViewOnlyFolder.user_Can_Open_Libraries_Form()'><b>user_Can_Open_Libraries_Form</b><br>Test class: tests_resource_library.CreateSubFoldersInViewOnlyFolder<br>Test method: user_Can_Open_Libraries_Form</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.CreateSubFoldersInViewOnlyFolder@7cbd213e</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.user_Can_Open_Libraries_Form()'><b>user_Can_Open_Libraries_Form</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: user_Can_Open_Libraries_Form</td>
+<td></td>
+<td>9</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+<tr>
+<td title='tests_resource_library.CopyFileLink.user_Can_Open_Libraries_Form()'><b>user_Can_Open_Libraries_Form</b><br>Test class: tests_resource_library.CopyFileLink<br>Test method: user_Can_Open_Libraries_Form</td>
+<td></td>
+<td>6</td>
+<td>tests_resource_library.CopyFileLink@4eb7f003</td></tr>
+<tr>
+<td title='tests_resource_library.AddNewFilesViaUpload.user_Can_Open_Libraries_Form()'><b>user_Can_Open_Libraries_Form</b><br>Test class: tests_resource_library.AddNewFilesViaUpload<br>Test method: user_Can_Open_Libraries_Form</td>
+<td></td>
+<td>6</td>
+<td>tests_resource_library.AddNewFilesViaUpload@cb51256</td></tr>
+<tr>
+<td title='tests_resource_library.CreateDeleteFolder.user_Can_Open_Libraries_Form()'><b>user_Can_Open_Libraries_Form</b><br>Test class: tests_resource_library.CreateDeleteFolder<br>Test method: user_Can_Open_Libraries_Form</td>
+<td></td>
+<td>6</td>
+<td>tests_resource_library.CreateDeleteFolder@8646db9</td></tr>
+<tr>
+<td title='tests_resource_library.AddApproversToFile.user_Can_Open_Libraries_Form()'><b>user_Can_Open_Libraries_Form</b><br>Test class: tests_resource_library.AddApproversToFile<br>Test method: user_Can_Open_Libraries_Form</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.AddApproversToFile@2a556333</td></tr>
+<tr>
+<td title='tests_resource_library.CopyLinkOnFileFromViewOnlyFolder.user_Can_Open_Libraries_Form()'><b>user_Can_Open_Libraries_Form</b><br>Test class: tests_resource_library.CopyLinkOnFileFromViewOnlyFolder<br>Test method: user opens setting form and open workroom & group settings</td>
+<td></td>
+<td>4</td>
+<td>tests_resource_library.CopyLinkOnFileFromViewOnlyFolder@491cc5c9</td></tr>
+<tr>
+<td title='tests_resource_library.AttemptToEditFileInViewOnlyFolder.user_Can_Open_Libraries_Form()'><b>user_Can_Open_Libraries_Form</b><br>Test class: tests_resource_library.AttemptToEditFileInViewOnlyFolder<br>Test method: user_Can_Open_Libraries_Form</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.AttemptToEditFileInViewOnlyFolder@77f99a05</td></tr>
+<tr>
+<td title='tests_resource_library.AddFileToPrivateFolder.user_Can_Open_Libraries_Form()'><b>user_Can_Open_Libraries_Form</b><br>Test class: tests_resource_library.AddFileToPrivateFolder<br>Test method: user_Can_Open_Libraries_Form</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.AddFileToPrivateFolder@1500955a</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFolder.user_Can_Open_Libraries_Form()'><b>user_Can_Open_Libraries_Form</b><br>Test class: tests_resource_library.AddSecurityToFolder<br>Test method: user_Can_Open_Libraries_Form</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.AddSecurityToFolder@371a67ec</td></tr>
+<tr>
+<td title='tests_resource_library.EditResourceFolder.user_Can_Open_Libraries_Form()'><b>user_Can_Open_Libraries_Form</b><br>Test class: tests_resource_library.EditResourceFolder<br>Test method: user opens setting form and open workroom & group settings</td>
+<td></td>
+<td>4</td>
+<td>tests_resource_library.EditResourceFolder@4e718207</td></tr>
+<tr>
+<td title='tests_resource_library.MoveEditDeleteFile.user_Can_Open_Libraries_Form()'><b>user_Can_Open_Libraries_Form</b><br>Test class: tests_resource_library.MoveEditDeleteFile<br>Test method: user_Can_Open_Libraries_Form</td>
+<td></td>
+<td>2</td>
+<td>tests_resource_library.MoveEditDeleteFile@1fc2b765</td></tr>
+<tr>
+<td title='tests_resource_library.EditExistingFolderToViewOnly.user_Can_Open_Libraries_Form()'><b>user_Can_Open_Libraries_Form</b><br>Test class: tests_resource_library.EditExistingFolderToViewOnly<br>Test method: user opens setting form and open workroom & group settings</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.EditExistingFolderToViewOnly@7a30d1e6</td></tr>
+<tr>
+<td title='tests_resource_library.SearchFileFolderName.user_Can_Open_Libraries_Form()'><b>user_Can_Open_Libraries_Form</b><br>Test class: tests_resource_library.SearchFileFolderName<br>Test method: user_Can_Open_Libraries_Form</td>
+<td></td>
+<td>4</td>
+<td>tests_resource_library.SearchFileFolderName@2e3fc542</td></tr>
+<tr>
+<td title='tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder.user_Can_Open_Libraries_Form_()'><b>user_Can_Open_Libraries_Form_</b><br>Test class: tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder<br>Test method: user_Can_Open_Libraries_Form_4th_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder@2de8284b</td></tr>
+<tr>
+<td title='tests_resource_library.CreateSubFoldersInViewOnlyFolder.user_Can_Open_Libraries_Form_2nd_Time()'><b>user_Can_Open_Libraries_Form_2nd_Time</b><br>Test class: tests_resource_library.CreateSubFoldersInViewOnlyFolder<br>Test method: user_Can_Open_Libraries_Form_2nd_Time</td>
+<td></td>
+<td>4</td>
+<td>tests_resource_library.CreateSubFoldersInViewOnlyFolder@7cbd213e</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.user_Can_Open_Libraries_Form_2nd_Time()'><b>user_Can_Open_Libraries_Form_2nd_Time</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: user_Can_Open_Libraries_Form_2nd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+<tr>
+<td title='tests_resource_library.CreateDeleteFolder.user_Can_Open_Libraries_Form_2nd_Time()'><b>user_Can_Open_Libraries_Form_2nd_Time</b><br>Test class: tests_resource_library.CreateDeleteFolder<br>Test method: user_Can_Open_Libraries_Form_2nd_Time</td>
+<td></td>
+<td>4</td>
+<td>tests_resource_library.CreateDeleteFolder@8646db9</td></tr>
+<tr>
+<td title='tests_resource_library.AddApproversToFile.user_Can_Open_Libraries_Form_2nd_Time()'><b>user_Can_Open_Libraries_Form_2nd_Time</b><br>Test class: tests_resource_library.AddApproversToFile<br>Test method: user_Can_Open_Libraries_Form_2nd_Time</td>
+<td></td>
+<td>4</td>
+<td>tests_resource_library.AddApproversToFile@2a556333</td></tr>
+<tr>
+<td title='tests_resource_library.AddNewFilesViaUpload.user_Can_Open_Libraries_Form_2nd_Time()'><b>user_Can_Open_Libraries_Form_2nd_Time</b><br>Test class: tests_resource_library.AddNewFilesViaUpload<br>Test method: user_Can_Open_Libraries_Form_2nd_Time</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.AddNewFilesViaUpload@cb51256</td></tr>
+<tr>
+<td title='tests_resource_library.CopyFileLink.user_Can_Open_Libraries_Form_2nd_Time()'><b>user_Can_Open_Libraries_Form_2nd_Time</b><br>Test class: tests_resource_library.CopyFileLink<br>Test method: user_Can_Open_Libraries_Form_2nd_Time</td>
+<td></td>
+<td>4</td>
+<td>tests_resource_library.CopyFileLink@4eb7f003</td></tr>
+<tr>
+<td title='tests_resource_library.AttemptToEditFileInViewOnlyFolder.user_Can_Open_Libraries_Form_2nd_Time()'><b>user_Can_Open_Libraries_Form_2nd_Time</b><br>Test class: tests_resource_library.AttemptToEditFileInViewOnlyFolder<br>Test method: user_Can_Open_Libraries_Form_2nd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.AttemptToEditFileInViewOnlyFolder@77f99a05</td></tr>
+<tr>
+<td title='tests_resource_library.CopyLinkOnFileFromViewOnlyFolder.user_Can_Open_Libraries_Form_2nd_Time()'><b>user_Can_Open_Libraries_Form_2nd_Time</b><br>Test class: tests_resource_library.CopyLinkOnFileFromViewOnlyFolder<br>Test method: user_Can_Open_Libraries_Form_2nd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.CopyLinkOnFileFromViewOnlyFolder@491cc5c9</td></tr>
+<tr>
+<td title='tests_resource_library.AddFileToPrivateFolder.user_Can_Open_Libraries_Form_2nd_Time()'><b>user_Can_Open_Libraries_Form_2nd_Time</b><br>Test class: tests_resource_library.AddFileToPrivateFolder<br>Test method: user_Can_Open_Libraries_Form_2nd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.AddFileToPrivateFolder@1500955a</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFolder.user_Can_Open_Libraries_Form_2nd_Time()'><b>user_Can_Open_Libraries_Form_2nd_Time</b><br>Test class: tests_resource_library.AddSecurityToFolder<br>Test method: user_Can_Open_Libraries_Form_2nd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_resource_library.AddSecurityToFolder@371a67ec</td></tr>
+<tr>
+<td title='tests_resource_library.MoveEditDeleteFile.user_Can_Open_Libraries_Form_2nd_Time()'><b>user_Can_Open_Libraries_Form_2nd_Time</b><br>Test class: tests_resource_library.MoveEditDeleteFile<br>Test method: user_Can_Open_Libraries_Form_2nd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.MoveEditDeleteFile@1fc2b765</td></tr>
+<tr>
+<td title='tests_resource_library.EditResourceFolder.user_Can_Open_Libraries_Form_2nd_Time()'><b>user_Can_Open_Libraries_Form_2nd_Time</b><br>Test class: tests_resource_library.EditResourceFolder<br>Test method: user opens setting form and open workroom & group settings</td>
+<td></td>
+<td>2</td>
+<td>tests_resource_library.EditResourceFolder@4e718207</td></tr>
+<tr>
+<td title='tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder.user_Can_Open_Libraries_Form_2nd_Time()'><b>user_Can_Open_Libraries_Form_2nd_Time</b><br>Test class: tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder<br>Test method: user_Can_Open_Libraries_Form_2nd_Time</td>
+<td></td>
+<td>1</td>
+<td>tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder@2de8284b</td></tr>
+<tr>
+<td title='tests_resource_library.MoveResourceFolder.user_Can_Open_Libraries_Form_2nd_Time()'><b>user_Can_Open_Libraries_Form_2nd_Time</b><br>Test class: tests_resource_library.MoveResourceFolder<br>Test method: user opens setting form and open workroom & group settings</td>
+<td></td>
+<td>4</td>
+<td>tests_resource_library.MoveResourceFolder@42607a4f</td></tr>
+<tr>
+<td title='tests_resource_library.SearchFileFolderName.user_Can_Open_Libraries_Form_2nd_Time()'><b>user_Can_Open_Libraries_Form_2nd_Time</b><br>Test class: tests_resource_library.SearchFileFolderName<br>Test method: user_Can_Open_Libraries_Form_2nd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.SearchFileFolderName@2e3fc542</td></tr>
+<tr>
+<td title='tests_resource_library.CreateDeleteFolder.user_Can_Open_Libraries_Form_3rd_Time()'><b>user_Can_Open_Libraries_Form_3rd_Time</b><br>Test class: tests_resource_library.CreateDeleteFolder<br>Test method: user_Can_Open_Libraries_Form_3rd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_resource_library.CreateDeleteFolder@8646db9</td></tr>
+<tr>
+<td title='tests_resource_library.CopyLinkOnFileFromViewOnlyFolder.user_Can_Open_Libraries_Form_3rd_Time()'><b>user_Can_Open_Libraries_Form_3rd_Time</b><br>Test class: tests_resource_library.CopyLinkOnFileFromViewOnlyFolder<br>Test method: user_Can_Open_Libraries_Form_3rd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_resource_library.CopyLinkOnFileFromViewOnlyFolder@491cc5c9</td></tr>
+<tr>
+<td title='tests_resource_library.AddFileToPrivateFolder.user_Can_Open_Libraries_Form_3rd_Time()'><b>user_Can_Open_Libraries_Form_3rd_Time</b><br>Test class: tests_resource_library.AddFileToPrivateFolder<br>Test method: user_Can_Open_Libraries_Form_3rd_Time</td>
+<td></td>
+<td>4</td>
+<td>tests_resource_library.AddFileToPrivateFolder@1500955a</td></tr>
+<tr>
+<td title='tests_resource_library.AddApproversToFile.user_Can_Open_Libraries_Form_3rd_Time()'><b>user_Can_Open_Libraries_Form_3rd_Time</b><br>Test class: tests_resource_library.AddApproversToFile<br>Test method: user_Can_Open_Libraries_Form_3rd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_resource_library.AddApproversToFile@2a556333</td></tr>
+<tr>
+<td title='tests_resource_library.CopyFileLink.user_Can_Open_Libraries_Form_3rd_Time()'><b>user_Can_Open_Libraries_Form_3rd_Time</b><br>Test class: tests_resource_library.CopyFileLink<br>Test method: user_Can_Open_Libraries_Form_3rd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.CopyFileLink@4eb7f003</td></tr>
+<tr>
+<td title='tests_resource_library.AddNewFilesViaUpload.user_Can_Open_Libraries_Form_3rd_Time()'><b>user_Can_Open_Libraries_Form_3rd_Time</b><br>Test class: tests_resource_library.AddNewFilesViaUpload<br>Test method: user_Can_Open_Libraries_Form_3rd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.AddNewFilesViaUpload@cb51256</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.user_Can_Open_Libraries_Form_3rd_Time()'><b>user_Can_Open_Libraries_Form_3rd_Time</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: user_Can_Open_Libraries_Form_3rd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+<tr>
+<td title='tests_resource_library.EditResourceFolder.user_Can_Open_Libraries_Form_3rd_Time()'><b>user_Can_Open_Libraries_Form_3rd_Time</b><br>Test class: tests_resource_library.EditResourceFolder<br>Test method: user opens setting form and open workroom & group settings</td>
+<td></td>
+<td>2</td>
+<td>tests_resource_library.EditResourceFolder@4e718207</td></tr>
+<tr>
+<td title='tests_resource_library.MoveEditDeleteFile.user_Can_Open_Libraries_Form_3rd_Time()'><b>user_Can_Open_Libraries_Form_3rd_Time</b><br>Test class: tests_resource_library.MoveEditDeleteFile<br>Test method: user_Can_Open_Libraries_Form_3rd_Time</td>
+<td></td>
+<td>1</td>
+<td>tests_resource_library.MoveEditDeleteFile@1fc2b765</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFolder.user_Can_Open_Libraries_Form_3rd_Time()'><b>user_Can_Open_Libraries_Form_3rd_Time</b><br>Test class: tests_resource_library.AddSecurityToFolder<br>Test method: user_Can_Open_Libraries_Form_3rd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.AddSecurityToFolder@371a67ec</td></tr>
+<tr>
+<td title='tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder.user_Can_Open_Libraries_Form_3rd_Time()'><b>user_Can_Open_Libraries_Form_3rd_Time</b><br>Test class: tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder<br>Test method: user_Can_Open_Libraries_Form_3rd_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder@2de8284b</td></tr>
+<tr>
+<td title='tests_resource_library.MoveResourceFolder.user_Can_Open_Libraries_Form_3rd_Time()'><b>user_Can_Open_Libraries_Form_3rd_Time</b><br>Test class: tests_resource_library.MoveResourceFolder<br>Test method: user opens setting form and open workroom & group settings</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.MoveResourceFolder@42607a4f</td></tr>
+<tr>
+<td title='tests_resource_library.SearchFileFolderName.user_Can_Open_Libraries_Form_3rd_Time()'><b>user_Can_Open_Libraries_Form_3rd_Time</b><br>Test class: tests_resource_library.SearchFileFolderName<br>Test method: user_Can_Open_Libraries_Form_3rd_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_resource_library.SearchFileFolderName@2e3fc542</td></tr>
+<tr>
+<td title='tests_resource_library.CopyLinkOnFileFromViewOnlyFolder.user_Can_Open_Libraries_Form_4th_Time()'><b>user_Can_Open_Libraries_Form_4th_Time</b><br>Test class: tests_resource_library.CopyLinkOnFileFromViewOnlyFolder<br>Test method: user_Can_Open_Libraries_Form_4th_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.CopyLinkOnFileFromViewOnlyFolder@491cc5c9</td></tr>
+<tr>
+<td title='tests_resource_library.CopyFileLink.user_Can_Open_Libraries_Form_4th_Time()'><b>user_Can_Open_Libraries_Form_4th_Time</b><br>Test class: tests_resource_library.CopyFileLink<br>Test method: user_Can_Open_Libraries_Form_4th_Time</td>
+<td></td>
+<td>6</td>
+<td>tests_resource_library.CopyFileLink@4eb7f003</td></tr>
+<tr>
+<td title='tests_resource_library.AddApproversToFile.user_Can_Open_Libraries_Form_4th_Time()'><b>user_Can_Open_Libraries_Form_4th_Time</b><br>Test class: tests_resource_library.AddApproversToFile<br>Test method: user_Can_Open_Libraries_Form_4th_Time</td>
+<td></td>
+<td>6</td>
+<td>tests_resource_library.AddApproversToFile@2a556333</td></tr>
+<tr>
+<td title='tests_resource_library.AddNewFilesViaUpload.user_Can_Open_Libraries_Form_4th_Time()'><b>user_Can_Open_Libraries_Form_4th_Time</b><br>Test class: tests_resource_library.AddNewFilesViaUpload<br>Test method: user_Can_Open_Libraries_Form_4th_Time</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.AddNewFilesViaUpload@cb51256</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.user_Can_Open_Libraries_Form_4th_Time()'><b>user_Can_Open_Libraries_Form_4th_Time</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: user_Can_Open_Libraries_Form_4th_Time</td>
+<td></td>
+<td>4</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+<tr>
+<td title='tests_resource_library.EditResourceFolder.user_Can_Open_Libraries_Form_4th_Time()'><b>user_Can_Open_Libraries_Form_4th_Time</b><br>Test class: tests_resource_library.EditResourceFolder<br>Test method: user_Can_Open_Libraries_Form_4th_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.EditResourceFolder@4e718207</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFolder.user_Can_Open_Libraries_Form_4th_Time()'><b>user_Can_Open_Libraries_Form_4th_Time</b><br>Test class: tests_resource_library.AddSecurityToFolder<br>Test method: user_Can_Open_Libraries_Form_4th_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.AddSecurityToFolder@371a67ec</td></tr>
+<tr>
+<td title='tests_resource_library.MoveEditDeleteFile.user_Can_Open_Libraries_Form_4th_Time()'><b>user_Can_Open_Libraries_Form_4th_Time</b><br>Test class: tests_resource_library.MoveEditDeleteFile<br>Test method: user_Can_Open_Libraries_Form_4th_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.MoveEditDeleteFile@1fc2b765</td></tr>
+<tr>
+<td title='tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder.user_Can_Open_Libraries_Form_4th_Time()'><b>user_Can_Open_Libraries_Form_4th_Time</b><br>Test class: tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder<br>Test method: user_Can_Open_Libraries_Form_4th_Time</td>
+<td></td>
+<td>1</td>
+<td>tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder@2de8284b</td></tr>
+<tr>
+<td title='tests_resource_library.SearchFileFolderName.user_Can_Open_Libraries_Form_4th_Time()'><b>user_Can_Open_Libraries_Form_4th_Time</b><br>Test class: tests_resource_library.SearchFileFolderName<br>Test method: user_Can_Open_Libraries_Form_4th_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.SearchFileFolderName@2e3fc542</td></tr>
+<tr>
+<td title='tests_resource_library.CreateSubFoldersInViewOnlyFolder.user_Can_Open_Libraries_Form_5th_Time()'><b>user_Can_Open_Libraries_Form_5th_Time</b><br>Test class: tests_resource_library.CreateSubFoldersInViewOnlyFolder<br>Test method: user_Can_Open_Libraries_Form_5th_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_resource_library.CreateSubFoldersInViewOnlyFolder@7cbd213e</td></tr>
+<tr>
+<td title='tests_resource_library.AttemptToEditFileInViewOnlyFolder.user_Can_Open_Libraries_Form_5th_Time()'><b>user_Can_Open_Libraries_Form_5th_Time</b><br>Test class: tests_resource_library.AttemptToEditFileInViewOnlyFolder<br>Test method: user_Can_Open_Libraries_Form_5th_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.AttemptToEditFileInViewOnlyFolder@77f99a05</td></tr>
+<tr>
+<td title='tests_resource_library.AddApproversToFile.user_Can_Open_Libraries_Form_5th_Time()'><b>user_Can_Open_Libraries_Form_5th_Time</b><br>Test class: tests_resource_library.AddApproversToFile<br>Test method: user_Can_Open_Libraries_Form_5th_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_resource_library.AddApproversToFile@2a556333</td></tr>
+<tr>
+<td title='tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder.user_Can_Open_Libraries_Form_5th_Time()'><b>user_Can_Open_Libraries_Form_5th_Time</b><br>Test class: tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder<br>Test method: user_Can_Open_Libraries_Form_4th_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder@2de8284b</td></tr>
+<tr>
+<td title='tests_resource_library.MoveEditDeleteFile.user_Can_Open_Libraries_Form_5th_Time()'><b>user_Can_Open_Libraries_Form_5th_Time</b><br>Test class: tests_resource_library.MoveEditDeleteFile<br>Test method: user_Can_Open_Libraries_Form_5th_Time</td>
+<td></td>
+<td>1</td>
+<td>tests_resource_library.MoveEditDeleteFile@1fc2b765</td></tr>
+<tr>
+<td title='tests_resource_library.EditExistingFolderToViewOnly.user_Can_Open_Libraries_Form_5th_Time()'><b>user_Can_Open_Libraries_Form_5th_Time</b><br>Test class: tests_resource_library.EditExistingFolderToViewOnly<br>Test method: user_Can_Open_Libraries_Form_5th_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_resource_library.EditExistingFolderToViewOnly@7a30d1e6</td></tr>
+<tr>
+<td title='tests_resource_library.SearchFileFolderName.user_Can_Open_Libraries_Form_5th_Time()'><b>user_Can_Open_Libraries_Form_5th_Time</b><br>Test class: tests_resource_library.SearchFileFolderName<br>Test method: user_Can_Open_Libraries_Form_5th_Time</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.SearchFileFolderName@2e3fc542</td></tr>
+<tr>
+<td title='tests_resource_library.CreateSubFoldersInViewOnlyFolder.user_Can_Open_Libraries_Form_6th_Time()'><b>user_Can_Open_Libraries_Form_6th_Time</b><br>Test class: tests_resource_library.CreateSubFoldersInViewOnlyFolder<br>Test method: user_Can_Open_Libraries_Form_6th_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_resource_library.CreateSubFoldersInViewOnlyFolder@7cbd213e</td></tr>
+<tr>
+<td title='tests_resource_library.AttemptToEditFileInViewOnlyFolder.user_Can_Open_Libraries_Form_6th_Time()'><b>user_Can_Open_Libraries_Form_6th_Time</b><br>Test class: tests_resource_library.AttemptToEditFileInViewOnlyFolder<br>Test method: user_Can_Open_Libraries_Form_5th_Time</td>
+<td></td>
+<td>4</td>
+<td>tests_resource_library.AttemptToEditFileInViewOnlyFolder@77f99a05</td></tr>
+<tr>
+<td title='tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder.user_Can_Open_Libraries_Form_6th_Time()'><b>user_Can_Open_Libraries_Form_6th_Time</b><br>Test class: tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder<br>Test method: user_Can_Open_Libraries_Form_5th_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder@2de8284b</td></tr>
+<tr>
+<td title='tests_resource_library.EditExistingFolderToViewOnly.user_Can_Open_Libraries_Form_6th_Time()'><b>user_Can_Open_Libraries_Form_6th_Time</b><br>Test class: tests_resource_library.EditExistingFolderToViewOnly<br>Test method: user_Can_Open_Libraries_Form_6th_Time</td>
+<td></td>
+<td>1</td>
+<td>tests_resource_library.EditExistingFolderToViewOnly@7a30d1e6</td></tr>
+<tr>
+<td title='tests_resource_library.AttemptToEditFileInViewOnlyFolder.user_Can_Open_Libraries_Form_7th_Time()'><b>user_Can_Open_Libraries_Form_7th_Time</b><br>Test class: tests_resource_library.AttemptToEditFileInViewOnlyFolder<br>Test method: user_Can_Open_Libraries_Form_6th_Time</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.AttemptToEditFileInViewOnlyFolder@77f99a05</td></tr>
+<tr>
+<td title='tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder.user_Can_Open_Libraries_Form_7th_Time()'><b>user_Can_Open_Libraries_Form_7th_Time</b><br>Test class: tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder<br>Test method: user_Can_Open_Libraries_Form_6th_Time</td>
+<td></td>
+<td>2</td>
+<td>tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder@2de8284b</td></tr>
+<tr>
+<td title='tests_resource_library.CopyFileLink.user_Can_Open_Libraries_Form_Again()'><b>user_Can_Open_Libraries_Form_Again</b><br>Test class: tests_resource_library.CopyFileLink<br>Test method: user_Can_Open_Libraries_Form_Again</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.CopyFileLink@4eb7f003</td></tr>
+<tr>
+<td title='tests_resource_library.MoveResourceFolder.user_Can_Open_Settings_Form()'><b>user_Can_Open_Settings_Form</b><br>Test class: tests_resource_library.MoveResourceFolder<br>Test method: user opens setting form and open workroom & group settings</td>
+<td></td>
+<td>4</td>
+<td>tests_resource_library.MoveResourceFolder@42607a4f</td></tr>
+<tr>
+<td title='tests_resource_library.SearchFileFolderName.user_Can_Search_For_File()'><b>user_Can_Search_For_File</b><br>Test class: tests_resource_library.SearchFileFolderName<br>Test method: user_Can_Search_For_File</td>
+<td></td>
+<td>6</td>
+<td>tests_resource_library.SearchFileFolderName@2e3fc542</td></tr>
+<tr>
+<td title='tests_resource_library.SearchFileFolderName.user_Can_Search_For_Folder()'><b>user_Can_Search_For_Folder</b><br>Test class: tests_resource_library.SearchFileFolderName<br>Test method: user_Can_Search_For_Folder</td>
+<td></td>
+<td>7</td>
+<td>tests_resource_library.SearchFileFolderName@2e3fc542</td></tr>
+<tr>
+<td title='tests_resource_library.AddApproversToFile.user_Can_Verify_Approvers_Added_To_New_Folder_4()'><b>user_Can_Verify_Approvers_Added_To_New_Folder_4</b><br>Test class: tests_resource_library.AddApproversToFile<br>Test method: user_Can_Verify_Approvers_Added_To_New_Folder_4</td>
+<td></td>
+<td>6</td>
+<td>tests_resource_library.AddApproversToFile@2a556333</td></tr>
+<tr>
+<td title='tests_resource_library.MoveEditDeleteFile.user_Create_Resource_Library_Folder_11()'><b>user_Create_Resource_Library_Folder_11</b><br>Test class: tests_resource_library.MoveEditDeleteFile<br>Test method: user_Create_Resource_Library_Folder_11</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.MoveEditDeleteFile@1fc2b765</td></tr>
+<tr>
+<td title='tests_resource_library.MoveResourceFolder.user_Create_Resource_Library_Folder_15()'><b>user_Create_Resource_Library_Folder_15</b><br>Test class: tests_resource_library.MoveResourceFolder<br>Test method: user_Create_Resource_Library_Folder_15</td>
+<td></td>
+<td>6</td>
+<td>tests_resource_library.MoveResourceFolder@42607a4f</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.user_Create_Resource_Library_Folder_6()'><b>user_Create_Resource_Library_Folder_6</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: user_Create_Resource_Library_Folder_6</td>
+<td></td>
+<td>9</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFolder.user_Create_Resource_Library_Folder_7()'><b>user_Create_Resource_Library_Folder_7</b><br>Test class: tests_resource_library.AddSecurityToFolder<br>Test method: user_Create_Resource_Library_Folder_7</td>
+<td></td>
+<td>8</td>
+<td>tests_resource_library.AddSecurityToFolder@371a67ec</td></tr>
+<tr>
+<td title='tests_resource_library.CreateDeleteFolder.user_Create_Resource_Library_Folder_8()'><b>user_Create_Resource_Library_Folder_8</b><br>Test class: tests_resource_library.CreateDeleteFolder<br>Test method: user_Create_Resource_Library_Folder_8</td>
+<td></td>
+<td>6</td>
+<td>tests_resource_library.CreateDeleteFolder@8646db9</td></tr>
+<tr>
+<td title='tests_resource_library.EditExistingFolderToViewOnly.user_Create_Resource_Library_Folder_9()'><b>user_Create_Resource_Library_Folder_9</b><br>Test class: tests_resource_library.EditExistingFolderToViewOnly<br>Test method: user_Create_Resource_Library_Folder_9</td>
+<td></td>
+<td>6</td>
+<td>tests_resource_library.EditExistingFolderToViewOnly@7a30d1e6</td></tr>
+<tr>
+<td title='tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder.user_Create_View_Only_Resource_Library_Folder_13()'><b>user_Create_View_Only_Resource_Library_Folder_13</b><br>Test class: tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder<br>Test method: user_Create_View_Only_Resource_Library_Folder_13</td>
+<td></td>
+<td>8</td>
+<td>tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder@2de8284b</td></tr>
+<tr>
+<td title='tests_resource_library.AddApproversToFile.user_Delete_Folder_2()'><b>user_Delete_Folder_2</b><br>Test class: tests_resource_library.AddApproversToFile<br>Test method: user_Delete_Folder_4</td>
+<td></td>
+<td>7</td>
+<td>tests_resource_library.AddApproversToFile@2a556333</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFolder.user_Delete_Folder_2()'><b>user_Delete_Folder_2</b><br>Test class: tests_resource_library.AddSecurityToFolder<br>Test method: user_Delete_Folder_2</td>
+<td></td>
+<td>7</td>
+<td>tests_resource_library.AddSecurityToFolder@371a67ec</td></tr>
+<tr>
+<td title='tests_resource_library.MoveEditDeleteFile.user_Delete_Folders_11_And_12()'><b>user_Delete_Folders_11_And_12</b><br>Test class: tests_resource_library.MoveEditDeleteFile<br>Test method: user_Delete_Folders_11_And_12</td>
+<td></td>
+<td>22</td>
+<td>tests_resource_library.MoveEditDeleteFile@1fc2b765</td></tr>
+<tr>
+<td title='tests_resource_library.MoveResourceFolder.user_Delete_Resource_Library_Folder_15()'><b>user_Delete_Resource_Library_Folder_15</b><br>Test class: tests_resource_library.MoveResourceFolder<br>Test method: user_Delete_Resource_Library_Folder_15</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.MoveResourceFolder@42607a4f</td></tr>
+<tr>
+<td title='tests_resource_library.SearchFileFolderName.user_Delete_Resource_Library_Folder_16()'><b>user_Delete_Resource_Library_Folder_16</b><br>Test class: tests_resource_library.SearchFileFolderName<br>Test method: user_Delete_Resource_Library_Folder_16</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.SearchFileFolderName@2e3fc542</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.user_Delete_Resource_Library_Folder_6()'><b>user_Delete_Resource_Library_Folder_6</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: user_Delete_Resource_Library_Folder_6</td>
+<td></td>
+<td>6</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+<tr>
+<td title='tests_resource_library.MoveResourceFolder.user_Moves_Folder_15_To_AutoBE_Workroom()'><b>user_Moves_Folder_15_To_AutoBE_Workroom</b><br>Test class: tests_resource_library.MoveResourceFolder<br>Test method: user_Moves_Folder_15_To_AutoBE_Workroom</td>
+<td></td>
+<td>13</td>
+<td>tests_resource_library.MoveResourceFolder@42607a4f</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.user_Open_Resource_Library_Verify_Search_Field()'><b>user_Open_Resource_Library_Verify_Search_Field</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: user_Open_Resource_Library_Verify_Search_Field</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFolder.user_Open_Resource_Library_Verify_Search_Field()'><b>user_Open_Resource_Library_Verify_Search_Field</b><br>Test class: tests_resource_library.AddSecurityToFolder<br>Test method: user_Open_Resource_Library_Verify_Search_Field</td>
+<td></td>
+<td>2</td>
+<td>tests_resource_library.AddSecurityToFolder@371a67ec</td></tr>
+<tr>
+<td title='tests_resource_library.EditExistingFolderToViewOnly.verify_Add_Files_Disable_For_Workroom_For_User()'><b>verify_Add_Files_Disable_For_Workroom_For_User</b><br>Test class: tests_resource_library.EditExistingFolderToViewOnly<br>Test method: verify_Add_Files_Disable_For_Workroom_For_User</td>
+<td></td>
+<td>16</td>
+<td>tests_resource_library.EditExistingFolderToViewOnly@7a30d1e6</td></tr>
+<tr>
+<td title='tests_resource_library.CopyLinkOnFileFromViewOnlyFolder.verify_Copy_Link_Folder_2_NOT_Present()'><b>verify_Copy_Link_Folder_2_NOT_Present</b><br>Test class: tests_resource_library.CopyLinkOnFileFromViewOnlyFolder<br>Test method: verify_Copy_Link_Folder_2_NOT_Present</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.CopyLinkOnFileFromViewOnlyFolder@491cc5c9</td></tr>
+<tr>
+<td title='tests_resource_library.CopyFileLink.verify_Copy_Link_Folder_NOT_Present()'><b>verify_Copy_Link_Folder_NOT_Present</b><br>Test class: tests_resource_library.CopyFileLink<br>Test method: verify_Copy_Link_Folder_NOT_Present</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.CopyFileLink@4eb7f003</td></tr>
+<tr>
+<td title='tests_resource_library.EditResourceFolder.verify_Edited_Folder_10()'><b>verify_Edited_Folder_10</b><br>Test class: tests_resource_library.EditResourceFolder<br>Test method: verify_Edited_Folder_Name</td>
+<td></td>
+<td>0</td>
+<td>tests_resource_library.EditResourceFolder@4e718207</td></tr>
+<tr>
+<td title='tests_resource_library.EditResourceFolder.verify_Edited_Folder_10_NOT_Present()'><b>verify_Edited_Folder_10_NOT_Present</b><br>Test class: tests_resource_library.EditResourceFolder<br>Test method: verify_Edited_Folder_10_NOT_Present</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.EditResourceFolder@4e718207</td></tr>
+<tr>
+<td title='tests_resource_library.MoveEditDeleteFile.verify_File_Moved_To_Folder_11()'><b>verify_File_Moved_To_Folder_11</b><br>Test class: tests_resource_library.MoveEditDeleteFile<br>Test method: verify_File_Moved_To_Folder_11</td>
+<td></td>
+<td>2</td>
+<td>tests_resource_library.MoveEditDeleteFile@1fc2b765</td></tr>
+<tr>
+<td title='tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder.verify_File_Moved_To_Library_Folder_14()'><b>verify_File_Moved_To_Library_Folder_14</b><br>Test class: tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder<br>Test method: verify_File_Moved_To_Library_Folder_14</td>
+<td></td>
+<td>4</td>
+<td>tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder@2de8284b</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.verify_File_Not_In_Library_Folder_6()'><b>verify_File_Not_In_Library_Folder_6</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: verify_File_Not_In_Library_Folder_6</td>
+<td></td>
+<td>8</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+<tr>
+<td title='tests_resource_library.AddFileToPrivateFolder.verify_File_Not_Present()'><b>verify_File_Not_Present</b><br>Test class: tests_resource_library.AddFileToPrivateFolder<br>Test method: verify_File_Not_Present</td>
+<td></td>
+<td>7</td>
+<td>tests_resource_library.AddFileToPrivateFolder@1500955a</td></tr>
+<tr>
+<td title='tests_resource_library.AddApproversToFile.verify_Folder_Deleted()'><b>verify_Folder_Deleted</b><br>Test class: tests_resource_library.AddApproversToFile<br>Test method: verify_Folder_Deleted</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.AddApproversToFile@2a556333</td></tr>
+<tr>
+<td title='tests_resource_library.MoveResourceFolder.verify_Folder_Deleted()'><b>verify_Folder_Deleted</b><br>Test class: tests_resource_library.MoveResourceFolder<br>Test method: verify_Folder_Deleted</td>
+<td></td>
+<td>6</td>
+<td>tests_resource_library.MoveResourceFolder@42607a4f</td></tr>
+<tr>
+<td title='tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder.verify_Folder_Deleted()'><b>verify_Folder_Deleted</b><br>Test class: tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder<br>Test method: verify_Folder_Deleted</td>
+<td></td>
+<td>11</td>
+<td>tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder@2de8284b</td></tr>
+<tr>
+<td title='tests_resource_library.CreateSubFoldersInViewOnlyFolder.verify_Folder_Sub_Folders_In_View_Only_NOT_Present()'><b>verify_Folder_Sub_Folders_In_View_Only_NOT_Present</b><br>Test class: tests_resource_library.CreateSubFoldersInViewOnlyFolder<br>Test method: verify_Folder_Sub_Folders_In_View_Only_NOT_Present</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.CreateSubFoldersInViewOnlyFolder@7cbd213e</td></tr>
+<tr>
+<td title='tests_resource_library.MoveEditDeleteFile.verify_Folders_11_And_12_Deleted()'><b>verify_Folders_11_And_12_Deleted</b><br>Test class: tests_resource_library.MoveEditDeleteFile<br>Test method: verify_Folders_11_And_12_Deleted</td>
+<td></td>
+<td>12</td>
+<td>tests_resource_library.MoveEditDeleteFile@1fc2b765</td></tr>
+<tr>
+<td title='tests_resource_library.EditExistingFolderToViewOnly.verify_New_View_Only_Folder_9_NOT_Present()'><b>verify_New_View_Only_Folder_9_NOT_Present</b><br>Test class: tests_resource_library.EditExistingFolderToViewOnly<br>Test method: verify_New_View_Only_Folder_9_NOT_Present</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.EditExistingFolderToViewOnly@7a30d1e6</td></tr>
+<tr>
+<td title='tests_resource_library.AttemptToEditFileInViewOnlyFolder.verify_Resource_File_Edited()'><b>verify_Resource_File_Edited</b><br>Test class: tests_resource_library.AttemptToEditFileInViewOnlyFolder<br>Test method: verify_Resource_File_Edited</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.AttemptToEditFileInViewOnlyFolder@77f99a05</td></tr>
+<tr>
+<td title='tests_resource_library.SearchFileFolderName.verify_Resource_Library_Folder_16_NOT_Present()'><b>verify_Resource_Library_Folder_16_NOT_Present</b><br>Test class: tests_resource_library.SearchFileFolderName<br>Test method: verify_Folder_Deleted</td>
+<td></td>
+<td>6</td>
+<td>tests_resource_library.SearchFileFolderName@2e3fc542</td></tr>
+<tr>
+<td title='tests_resource_library.AddNewFilesViaUpload.verify_Resource_Library_Folder_5_NOT_Present()'><b>verify_Resource_Library_Folder_5_NOT_Present</b><br>Test class: tests_resource_library.AddNewFilesViaUpload<br>Test method: verify_Resource_Library_Folder_5_NOT_Present</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.AddNewFilesViaUpload@cb51256</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFile.verify_Resource_Library_Folder_6_NOT_Present()'><b>verify_Resource_Library_Folder_6_NOT_Present</b><br>Test class: tests_resource_library.AddSecurityToFile<br>Test method: verify_Resource_Library_Folder_6_NOT_Present</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.AddSecurityToFile@670b40af</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFolder.verify_Resource_Library_Folder_7_NOT_Present()'><b>verify_Resource_Library_Folder_7_NOT_Present</b><br>Test class: tests_resource_library.AddSecurityToFolder<br>Test method: verify_Folder_Not_Present</td>
+<td></td>
+<td>6</td>
+<td>tests_resource_library.AddSecurityToFolder@371a67ec</td></tr>
+<tr>
+<td title='tests_resource_library.AddSecurityToFolder.verify_Resource_Library_Folder_7_NOT_Present_Again()'><b>verify_Resource_Library_Folder_7_NOT_Present_Again</b><br>Test class: tests_resource_library.AddSecurityToFolder<br>Test method: verify_Resource_Library_Folder_7_NOT_Present_Again</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.AddSecurityToFolder@371a67ec</td></tr>
+<tr>
+<td title='tests_resource_library.CreateDeleteFolder.verify_Resource_Library_Folder_8_NOT_Present()'><b>verify_Resource_Library_Folder_8_NOT_Present</b><br>Test class: tests_resource_library.CreateDeleteFolder<br>Test method: verify_Resource_Library_Folder_8_NOT_Present</td>
+<td></td>
+<td>5</td>
+<td>tests_resource_library.CreateDeleteFolder@8646db9</td></tr>
+<tr>
+<td title='tests_resource_library.CreateSubFoldersInViewOnlyFolder.verify_Sub_Folder1_Created()'><b>verify_Sub_Folder1_Created</b><br>Test class: tests_resource_library.CreateSubFoldersInViewOnlyFolder<br>Test method: verify_Sub_Folder_Created</td>
+<td></td>
+<td>1</td>
+<td>tests_resource_library.CreateSubFoldersInViewOnlyFolder@7cbd213e</td></tr>
+<tr>
+<td title='tests_resource_library.CreateSubFoldersInViewOnlyFolder.verify_Sub_Folder2_Created()'><b>verify_Sub_Folder2_Created</b><br>Test class: tests_resource_library.CreateSubFoldersInViewOnlyFolder<br>Test method: verify_Sub_Folder2_Created</td>
+<td></td>
+<td>1</td>
+<td>tests_resource_library.CreateSubFoldersInViewOnlyFolder@7cbd213e</td></tr>
+<tr>
+<td title='tests_resource_library.AttemptToEditFileInViewOnlyFolder.verify_View_Only_Folder_2_Deleted()'><b>verify_View_Only_Folder_2_Deleted</b><br>Test class: tests_resource_library.AttemptToEditFileInViewOnlyFolder<br>Test method: verify_View_Only_Folder_2_Deleted</td>
+<td></td>
+<td>8</td>
+<td>tests_resource_library.AttemptToEditFileInViewOnlyFolder@77f99a05</td></tr>
+<tr>
+<td title='tests_resource_library.EditExistingFolderToViewOnly.verify_View_Only_Permissions_Folder_9()'><b>verify_View_Only_Permissions_Folder_9</b><br>Test class: tests_resource_library.EditExistingFolderToViewOnly<br>Test method: verify_View_Only_Permissions_Folder_9</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.EditExistingFolderToViewOnly@7a30d1e6</td></tr>
+<tr>
+<td title='tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder.workroom_Member_Open_Resource_Library_DC()'><b>workroom_Member_Open_Resource_Library_DC</b><br>Test class: tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder<br>Test method: workroom_Member_Open_Resource_Library_DC</td>
+<td></td>
+<td>3</td>
+<td>tests_resource_library.MoveFileFromViewOnlyToNonViewOnlyFolder@2de8284b</td></tr>
+<tr>
+<td title='tests_resource_library.EditExistingFolderToViewOnly.workroom_Member_Open_Resource_Library_Marvel_WR()'><b>workroom_Member_Open_Resource_Library_Marvel_WR</b><br>Test class: tests_resource_library.EditExistingFolderToViewOnly<br>Test method: workroom_Member_Open_Resource_Library_Marvel_WR</td>
+<td></td>
+<td>4</td>
+<td>tests_resource_library.EditExistingFolderToViewOnly@7a30d1e6</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,1549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="499.045" tests="279" errors="0" skipped="0" failures="17">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\jhofler\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\jhofler\eclipse-workspace\regression_parallel2\target\test-classes;C:\Users\jhofler\eclipse-workspace\regression_parallel2\target\classes;C:\Users\jhofler\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\jhofler\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\jhofler\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\jhofler\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\jhofler\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\jhofler\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\jhofler\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\jhofler\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\jhofler\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\jhofler\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\jhofler\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\jhofler\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\jhofler\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\jhofler\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\jhofler\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\jhofler\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\jhofler\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\jhofler\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\jhofler\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\jhofler\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\jhofler\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\jhofler\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\jhofler\.m2\repository\com\aventstack\extentreports\3.1.5\extentreports-3.1.5.jar;C:\Users\jhofler\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\jhofler\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\jhofler\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\jhofler\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\jhofler\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\jhofler\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\jhofler\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\jhofler\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\jhofler\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\jhofler\.m2\repository\org\jsoup\jsoup\1.9.2\jsoup-1.9.2.jar;C:\Users\jhofler\.m2\repository\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar;C:\Users\jhofler\.m2\repository\org\apache\maven\plugins\maven-compiler-plugin\3.8.1\maven-compiler-plugin-3.8.1.jar;C:\Users\jhofler\.m2\repository\org\apache\maven\maven-plugin-api\3.0\maven-plugin-api-3.0.jar;C:\Users\jhofler\.m2\repository\org\apache\maven\maven-model\3.0\maven-model-3.0.jar;C:\Users\jhofler\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\1.4.2\sisu-inject-plexus-1.4.2.jar;C:\Users\jhofler\.m2\repository\org\sonatype\sisu\sisu-inject-bean\1.4.2\sisu-inject-bean-1.4.2.jar;C:\Users\jhofler\.m2\repository\org\sonatype\sisu\sisu-guice\2.1.7\sisu-guice-2.1.7-noaop.jar;C:\Users\jhofler\.m2\repository\org\apache\maven\maven-artifact\3.0\maven-artifact-3.0.jar;C:\Users\jhofler\.m2\repository\org\codehaus\plexus\plexus-utils\2.0.4\plexus-utils-2.0.4.jar;C:\Users\jhofler\.m2\repository\org\apache\maven\maven-core\3.0\maven-core-3.0.jar;C:\Users\jhofler\.m2\repository\org\apache\maven\maven-settings\3.0\maven-settings-3.0.jar;C:\Users\jhofler\.m2\repository\org\apache\maven\maven-settings-builder\3.0\maven-settings-builder-3.0.jar;C:\Users\jhofler\.m2\repository\org\apache\maven\maven-repository-metadata\3.0\maven-repository-metadata-3.0.jar;C:\Users\jhofler\.m2\repository\org\apache\maven\maven-model-builder\3.0\maven-model-builder-3.0.jar;C:\Users\jhofler\.m2\repository\org\apache\maven\maven-aether-provider\3.0\maven-aether-provider-3.0.jar;C:\Users\jhofler\.m2\repository\org\sonatype\aether\aether-impl\1.7\aether-impl-1.7.jar;C:\Users\jhofler\.m2\repository\org\sonatype\aether\aether-spi\1.7\aether-spi-1.7.jar;C:\Users\jhofler\.m2\repository\org\sonatype\aether\aether-api\1.7\aether-api-1.7.jar;C:\Users\jhofler\.m2\repository\org\sonatype\aether\aether-util\1.7\aether-util-1.7.jar;C:\Users\jhofler\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.14\plexus-interpolation-1.14.jar;C:\Users\jhofler\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.3\plexus-classworlds-2.2.3.jar;C:\Users\jhofler\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\jhofler\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar;C:\Users\jhofler\.m2\repository\org\sonatype\plexus\plexus-cipher\1.4\plexus-cipher-1.4.jar;C:\Users\jhofler\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.2.1\maven-shared-utils-3.2.1.jar;C:\Users\jhofler\.m2\repository\org\apache\maven\shared\maven-shared-incremental\1.1\maven-shared-incremental-1.1.jar;C:\Users\jhofler\.m2\repository\org\codehaus\plexus\plexus-java\0.9.10\plexus-java-0.9.10.jar;C:\Users\jhofler\.m2\repository\org\ow2\asm\asm\6.2\asm-6.2.jar;C:\Users\jhofler\.m2\repository\com\thoughtworks\qdox\qdox\2.0-M8\qdox-2.0-M8.jar;C:\Users\jhofler\.m2\repository\org\codehaus\plexus\plexus-compiler-api\2.8.4\plexus-compiler-api-2.8.4.jar;C:\Users\jhofler\.m2\repository\org\codehaus\plexus\plexus-compiler-manager\2.8.4\plexus-compiler-manager-2.8.4.jar;C:\Users\jhofler\.m2\repository\org\codehaus\plexus\plexus-compiler-javac\2.8.4\plexus-compiler-javac-2.8.4.jar;C:\Users\jhofler\.m2\repository\org\slf4j\slf4j-simple\1.7.30\slf4j-simple-1.7.30.jar;C:\Users\jhofler\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\jhofler\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\jhofler\.m2\repository\io\github\bonigarcia\webdrivermanager\4.4.1\webdrivermanager-4.4.1.jar;C:\Users\jhofler\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\jhofler\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\jhofler\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\jhofler\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\jhofler\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0.2\httpcore5-h2-5.0.2.jar;C:\Users\jhofler\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\jhofler\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_211\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\jhofler\AppData\Local\Temp\surefire7850338810708617038\surefirebooter1345219775614044687.jar C:\Users\jhofler\AppData\Local\Temp\surefire7850338810708617038 2021-06-28T14-12-32_096-jvmRun1 surefire4116977280893649975tmp surefire_0584587598579085029tmp"/>
+    <property name="surefire.test.class.path" value="C:\Users\jhofler\eclipse-workspace\regression_parallel2\target\test-classes;C:\Users\jhofler\eclipse-workspace\regression_parallel2\target\classes;C:\Users\jhofler\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\jhofler\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\jhofler\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\jhofler\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\jhofler\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\jhofler\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\jhofler\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\jhofler\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\jhofler\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\jhofler\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\jhofler\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\jhofler\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\jhofler\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\jhofler\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\jhofler\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\jhofler\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\jhofler\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\jhofler\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\jhofler\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\jhofler\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\jhofler\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\jhofler\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\jhofler\.m2\repository\com\aventstack\extentreports\3.1.5\extentreports-3.1.5.jar;C:\Users\jhofler\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\jhofler\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\jhofler\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\jhofler\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\jhofler\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\jhofler\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\jhofler\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\jhofler\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\jhofler\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\jhofler\.m2\repository\org\jsoup\jsoup\1.9.2\jsoup-1.9.2.jar;C:\Users\jhofler\.m2\repository\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar;C:\Users\jhofler\.m2\repository\org\apache\maven\plugins\maven-compiler-plugin\3.8.1\maven-compiler-plugin-3.8.1.jar;C:\Users\jhofler\.m2\repository\org\apache\maven\maven-plugin-api\3.0\maven-plugin-api-3.0.jar;C:\Users\jhofler\.m2\repository\org\apache\maven\maven-model\3.0\maven-model-3.0.jar;C:\Users\jhofler\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\1.4.2\sisu-inject-plexus-1.4.2.jar;C:\Users\jhofler\.m2\repository\org\sonatype\sisu\sisu-inject-bean\1.4.2\sisu-inject-bean-1.4.2.jar;C:\Users\jhofler\.m2\repository\org\sonatype\sisu\sisu-guice\2.1.7\sisu-guice-2.1.7-noaop.jar;C:\Users\jhofler\.m2\repository\org\apache\maven\maven-artifact\3.0\maven-artifact-3.0.jar;C:\Users\jhofler\.m2\repository\org\codehaus\plexus\plexus-utils\2.0.4\plexus-utils-2.0.4.jar;C:\Users\jhofler\.m2\repository\org\apache\maven\maven-core\3.0\maven-core-3.0.jar;C:\Users\jhofler\.m2\repository\org\apache\maven\maven-settings\3.0\maven-settings-3.0.jar;C:\Users\jhofler\.m2\repository\org\apache\maven\maven-settings-builder\3.0\maven-settings-builder-3.0.jar;C:\Users\jhofler\.m2\repository\org\apache\maven\maven-repository-metadata\3.0\maven-repository-metadata-3.0.jar;C:\Users\jhofler\.m2\repository\org\apache\maven\maven-model-builder\3.0\maven-model-builder-3.0.jar;C:\Users\jhofler\.m2\repository\org\apache\maven\maven-aether-provider\3.0\maven-aether-provider-3.0.jar;C:\Users\jhofler\.m2\repository\org\sonatype\aether\aether-impl\1.7\aether-impl-1.7.jar;C:\Users\jhofler\.m2\repository\org\sonatype\aether\aether-spi\1.7\aether-spi-1.7.jar;C:\Users\jhofler\.m2\repository\org\sonatype\aether\aether-api\1.7\aether-api-1.7.jar;C:\Users\jhofler\.m2\repository\org\sonatype\aether\aether-util\1.7\aether-util-1.7.jar;C:\Users\jhofler\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.14\plexus-interpolation-1.14.jar;C:\Users\jhofler\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.3\plexus-classworlds-2.2.3.jar;C:\Users\jhofler\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\jhofler\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar;C:\Users\jhofler\.m2\repository\org\sonatype\plexus\plexus-cipher\1.4\plexus-cipher-1.4.jar;C:\Users\jhofler\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.2.1\maven-shared-utils-3.2.1.jar;C:\Users\jhofler\.m2\repository\org\apache\maven\shared\maven-shared-incremental\1.1\maven-shared-incremental-1.1.jar;C:\Users\jhofler\.m2\repository\org\codehaus\plexus\plexus-java\0.9.10\plexus-java-0.9.10.jar;C:\Users\jhofler\.m2\repository\org\ow2\asm\asm\6.2\asm-6.2.jar;C:\Users\jhofler\.m2\repository\com\thoughtworks\qdox\qdox\2.0-M8\qdox-2.0-M8.jar;C:\Users\jhofler\.m2\repository\org\codehaus\plexus\plexus-compiler-api\2.8.4\plexus-compiler-api-2.8.4.jar;C:\Users\jhofler\.m2\repository\org\codehaus\plexus\plexus-compiler-manager\2.8.4\plexus-compiler-manager-2.8.4.jar;C:\Users\jhofler\.m2\repository\org\codehaus\plexus\plexus-compiler-javac\2.8.4\plexus-compiler-javac-2.8.4.jar;C:\Users\jhofler\.m2\repository\org\slf4j\slf4j-simple\1.7.30\slf4j-simple-1.7.30.jar;C:\Users\jhofler\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\jhofler\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\jhofler\.m2\repository\io\github\bonigarcia\webdrivermanager\4.4.1\webdrivermanager-4.4.1.jar;C:\Users\jhofler\.m2\repository\commons-io\commons-io\2.8.0\commons-io-2.8.0.jar;C:\Users\jhofler\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\jhofler\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\jhofler\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\jhofler\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.0.2\httpcore5-h2-5.0.2.jar;C:\Users\jhofler\.m2\repository\org\rauschig\jarchivelib\1.1.0\jarchivelib-1.1.0.jar;C:\Users\jhofler\.m2\repository\org\apache\commons\commons-compress\1.20\commons-compress-1.20.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\jhofler"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_211\jre"/>
+    <property name="basedir" value="C:\Users\jhofler\eclipse-workspace\regression_parallel2"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\jhofler\AppData\Local\Temp\surefire7850338810708617038\surefirebooter1345219775614044687.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_211\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_211\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_211\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_211-b12"/>
+    <property name="user.name" value="jhofler"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_211\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\jhofler\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\jhofler\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_211"/>
+    <property name="user.dir" value="C:\Users\jhofler\eclipse-workspace\regression_parallel2"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_211\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Sennheiser\SoftphoneSDK\;C:\Windows\CCM;C:\Users\jhofler\AppData\Local\Microsoft\WindowsApps;C:\Python27;C:\Users\jhofler\BoardEffectUIAutomation\node_modules\mocha\node_modules;C:\Users\jhofler\BoardEffectUIAutomation;C:\Users\jhofler\AppData\Local\Programs\Git\cmd;C:\Program Files\Java\jdk1.8.0_211;C:\apache-maven-3.6.1\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\jhofler\AppData\Roaming\npm\node_modules\chromedriver\lib\chromedriver\chromedriver.exe;C:\GRID;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files (x86)\Webex\Plugins;C:\Program Files\Java\jre1.8.0_211;C:\Program Files\k6\;C:\Program Files\k6;C:\Users\jhofler\AppData\Local\Microsoft\WindowsApps;C:\Users\jhofler\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jhofler\AppData\Local\Programs\Git\cmd;C:\Users\jhofler\AppData\Local\GitHubDesktop\bin;C:\Users\jhofler\AppData\Local\atom\bin;C:\Users\jhofler\AppData\Roaming\npm;C:\Users\jhofler\AppData\Local\Yarn\bin;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.211-b12"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_211\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="login" classname="tests_critical_scenarios.CreateDiscussionSenarios1" time="2.871">
+    <system-out><![CDATA[[TestNGContentHandler] [WARN] It is strongly recommended to add "<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >" at the top of your file, otherwise TestNG may fail or not work as expected.
+null
+null
+null
+null
+null
+null
+null
+null
+null
+------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+    <system-err><![CDATA[[TestNG-tests-3] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 91.0.4472.101 (resolved driver for Chrome 91)
+[TestNG-tests-3] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jhofler\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+[TestNG-tests-7] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 91.0.4472.101 (resolved driver for Chrome 91)
+[TestNG-tests-7] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jhofler\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+Jun 28, 2021 2:12:38 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jun 28, 2021 2:12:38 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[TestNG-tests-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 91.0.4472.101 (resolved driver for Chrome 91)
+[TestNG-tests-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jhofler\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+Jun 28, 2021 2:12:38 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 91.0.4472.101 (resolved driver for Chrome 91)
+[TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jhofler\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+Jun 28, 2021 2:12:38 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[TestNG-tests-5] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 91.0.4472.101 (resolved driver for Chrome 91)
+[TestNG-tests-5] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jhofler\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+Jun 28, 2021 2:12:38 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[TestNG-tests-6] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 91.0.4472.101 (resolved driver for Chrome 91)
+[TestNG-tests-6] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jhofler\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+Jun 28, 2021 2:12:38 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[TestNG-tests-4] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 91.0.4472.101 (resolved driver for Chrome 91)
+[TestNG-tests-4] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jhofler\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+Jun 28, 2021 2:12:38 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[TestNG-tests-8] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 91.0.4472.101 (resolved driver for Chrome 91)
+[TestNG-tests-8] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jhofler\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+Jun 28, 2021 2:12:38 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[TestNG-tests-9] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 91.0.4472.101 (resolved driver for Chrome 91)
+[TestNG-tests-9] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jhofler\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+Jun 28, 2021 2:12:38 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jun 28, 2021 2:12:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jun 28, 2021 2:12:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jun 28, 2021 2:12:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jun 28, 2021 2:12:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jun 28, 2021 2:12:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jun 28, 2021 2:12:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jun 28, 2021 2:12:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jun 28, 2021 2:12:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jun 28, 2021 2:12:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Workroom_Admin_Can_Open_Library_Page_For_Workroom" classname="tests_critical_scenarios.CreateDiscussionSenarios1" time="1.417">
+    <system-out><![CDATA[------- Completed --> admin_Open_Workroom_AutoBE_Collaborate() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="create_Upcoming_Discussion_Future_Date" classname="tests_critical_scenarios.CreateDiscussionSenarios1" time="0.06">
+    <system-out><![CDATA[------- Completed --> Create_Discussion_Future_Date-----------
+]]></system-out>
+  </testcase>
+  <testcase name="create_Open_Discussion_Current_Date_AssignUsers" classname="tests_critical_scenarios.CreateDiscussionSenarios1" time="0.851">
+    <system-out><![CDATA[------- Completed --> Create_Open_Discussion_AssignUsers()-----------
+]]></system-out>
+  </testcase>
+  <testcase name="create_Discussion_MainTopic" classname="tests_critical_scenarios.CreateDiscussionSenarios1" time="0.794">
+    <system-out><![CDATA[------- Completed --> Create_Discussion_MainTopic()-----------
+]]></system-out>
+  </testcase>
+  <testcase name="create_Topic_Reply_And_Attachment" classname="tests_critical_scenarios.CreateDiscussionSenarios1" time="0.02">
+    <system-out><![CDATA[------- Completed --> Create_Topic_Reply_And_Attachment()-----------
+]]></system-out>
+  </testcase>
+  <testcase name="discussion_Search_4_Reply" classname="tests_critical_scenarios.CreateDiscussionSenarios1" time="1.901">
+    <system-out><![CDATA[null
+-------Completed --> Discussion_Search_4_Reply()-----------
+]]></system-out>
+    <system-err><![CDATA[[TestNG-tests-6] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 91.0.4472.101 (resolved driver for Chrome 91)
+[TestNG-tests-6] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jhofler\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+Jun 28, 2021 2:15:23 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="edit_Discussion_Topic" classname="tests_critical_scenarios.CreateDiscussionSenarios1" time="2.395">
+    <system-out><![CDATA[--------Completed --> Edit_Discussion_Topic()--------
+]]></system-out>
+  </testcase>
+  <testcase name="edit_Discussion_Topic_Reply" classname="tests_critical_scenarios.CreateDiscussionSenarios1" time="1.514">
+    <system-out><![CDATA[-------Completed--> Edit_Discussion_Topic_Reply()-----------
+]]></system-out>
+  </testcase>
+  <testcase name="delete_Reply_To_Discussion_Topic" classname="tests_critical_scenarios.CreateDiscussionSenarios1" time="1.275">
+    <system-out><![CDATA[null
+------- Completed--> Delete_Reply_To_Discussion_Topic -----------
+]]></system-out>
+    <system-err><![CDATA[[TestNG-tests-4] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 91.0.4472.101 (resolved driver for Chrome 91)
+[TestNG-tests-4] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jhofler\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+Jun 28, 2021 2:16:25 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="delete_Discussion_Topic" classname="tests_critical_scenarios.CreateDiscussionSenarios1" time="5.457">
+    <system-out><![CDATA[--------we are here1--------
+--------we are here2--------
+--------Completed --> Delete_Discussion_Topic()--------
+]]></system-out>
+  </testcase>
+  <testcase name="archive_Discussion" classname="tests_critical_scenarios.CreateDiscussionSenarios1" time="2.309">
+    <system-out><![CDATA[------- Completed--> Archive_Discussion -----------
+]]></system-out>
+  </testcase>
+  <testcase name="restore_Archived_Discussion" classname="tests_critical_scenarios.CreateDiscussionSenarios1" time="0.414">
+    <system-out><![CDATA[------- Completed--> restore_Archived_Discussion -----------
+]]></system-out>
+  </testcase>
+  <testcase name="verify_restored_Archived_Discussion" classname="tests_critical_scenarios.CreateDiscussionSenarios1" time="0.401">
+    <system-out><![CDATA[------- Completed--> verify_restored_Archived_Discussion -----------
+]]></system-out>
+  </testcase>
+  <testcase name="close_Open_Upcoming_Discussions" classname="tests_critical_scenarios.CreateDiscussionSenarios1" time="6.15">
+    <system-out><![CDATA[------- Completed --> admin_Open_Workroom_AutoBE_Events() -----------
+------- Completed--> close_Open_Upcoming_And_Closed_Discussions -----------
+]]></system-out>
+    <system-err><![CDATA[Jun 28, 2021 2:17:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jun 28, 2021 2:17:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="systemAdmin_login" classname="tests_critical_scenarios.CreateDeleteWorkgroup" time="0.799">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Opens_Settings_Opens_Workroom_And_Group_Settings" classname="tests_critical_scenarios.CreateDeleteWorkgroup" time="0.896">
+    <system-out><![CDATA[------- Completed --> admin_Opens_Site_Settings_Workrooms_And_Groups() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Create_New_Group" classname="tests_critical_scenarios.CreateDeleteWorkgroup" time="0.426">
+    <system-out><![CDATA[------- Completed --> user_Can_Create_New_Group() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Delete_New_Group" classname="tests_critical_scenarios.CreateDeleteWorkgroup" time="1.641">
+    <system-out><![CDATA[------- Completed --> user_Can_Delete_New_Group() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Opens_Settings_Opens_Workroom_And_Group_Settings_Again" classname="tests_critical_scenarios.CreateDeleteWorkgroup" time="2.687">
+    <system-out><![CDATA[06/28/2021
+06/28/2021
+------- Completed --> admin_Opens_Site_Settings_Workrooms_And_Groups() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="navigate_To_Workgroups_Tab" classname="tests_critical_scenarios.CreateDeleteWorkgroup" time="0.099">
+    <system-out><![CDATA[------- Completed --> user_Can_Create_New_Group() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="verify_Group_Deleted" classname="tests_critical_scenarios.CreateDeleteWorkgroup" time="0.808"/>
+  <testcase name="systemAdmin_login" classname="tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission" time="0.454">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings" classname="tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission" time="1.863">
+    <system-out><![CDATA[30-06-2021
+30-06-2021
+03-07-2021
+03-07-2021
+------- Completed --> admin_Opens_Site_Settings_Workrooms_And_Groups() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="systemAdmin_Restrict_User_Access_From_Events" classname="tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission" time="0.498">
+    <system-out><![CDATA[------- Completed --> systemAdmin_Restrict_User_Access_From_Events() -----------
+------- Completed --> systemAdmin_Restrict_User_Access_From_Events() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="systemAdmin_Close_And_Logout" classname="tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission" time="1.35">
+    <system-out><![CDATA[------- Completed -->  user_Can_Sign_Out() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="workroom_Member_Login_To_BoardEffect" classname="tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission" time="0.353">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="workroom_Admin_Not_See_Event_Due_To_Permissions" classname="tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission" time="1.119">
+    <system-out><![CDATA[------- Completed --> workroom_Admin_Not_See_Event_Due_To_Permissions() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="workroom_Member_Can_Logout" classname="tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission" time="3.389">
+    <system-out><![CDATA[------- Completed -->  user_Can_Sign_Out() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="systemAdmin_Can_Login_To_BoardEffect_2nd_Time" classname="tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission" time="4.041">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+    <system-err><![CDATA[Jun 28, 2021 2:15:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_2nd_Time" classname="tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission" time="4.519">
+    <system-out><![CDATA[------- Completed --> admin_Opens_Site_Settings_Workrooms_And_Groups() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="systemAdmin_Enable_Events_For_Workroom_Member" classname="tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission" time="0.655"/>
+  <testcase name="systemAdmin_Close_And_Logout_2nd_Time" classname="tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission" time="1.865">
+    <system-out><![CDATA[------- Completed --> workroom_Member_Open_Workroom_AutoBE() -----------
+------- Completed -->  user_Can_Sign_Out() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="workroom_Member_Login_To_BoardEffect_2nd_Time" classname="tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission" time="4.696">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="workroom_Member_Sees_Event_Due_To_Permissions" classname="tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission" time="1.834">
+    <system-out><![CDATA[------- Completed --> workroom_Admin_Not_See_Event_Due_To_Permissions() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="workroom_Member_Can_Logout_2nd_Time" classname="tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission" time="1.535">
+    <system-out><![CDATA[null
+------- Completed -->  user_Can_Sign_Out() -----------
+]]></system-out>
+    <system-err><![CDATA[[TestNG-tests-6] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 91.0.4472.101 (resolved driver for Chrome 91)
+[TestNG-tests-6] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jhofler\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+Jun 28, 2021 2:16:50 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="systemAdmin_Can_Login_To_BoardEffect_3rd_Time" classname="tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission" time="0.028">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_3rd_Time" classname="tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission" time="3.253">
+    <system-out><![CDATA[------- Completed --> admin_Opens_Site_Settings_Workrooms_And_Groups() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="systemAdmin_Set_User_As_Workroom_Admin" classname="tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission" time="3.549"/>
+  <testcase name="systemAdmin_Close_And_Logout_Agian_2nd_Time" classname="tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission" time="3.388">
+    <system-out><![CDATA[null
+null
+------- Completed -->  user_Can_Sign_Out() -----------
+]]></system-out>
+    <system-err><![CDATA[[TestNG-tests-9] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 91.0.4472.101 (resolved driver for Chrome 91)
+[TestNG-tests-9] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jhofler\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+Jun 28, 2021 2:17:28 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[TestNG-tests-7] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 91.0.4472.101 (resolved driver for Chrome 91)
+[TestNG-tests-7] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jhofler\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+Jun 28, 2021 2:17:29 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="workroom_Member_Login_To_BoardEffect_3rd_Time" classname="tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission" time="1.941">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="workroom_Member_Open_Library_For_Workroom_Has_New_Book_Button" classname="tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission" time="0.347"/>
+  <testcase name="workroom_Member_Can_Logout_3rd_Time" classname="tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission" time="0.122">
+    <system-out><![CDATA[------- Completed -->  user_Can_Sign_Out() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="systemAdmin_Can_Login_To_BoardEffect_4th_Time" classname="tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission" time="0.526">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="systemAdmin_Open_Settings_Then_Workroom_And_Group_Settings_4th_Time" classname="tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission" time="0.173">
+    <system-out><![CDATA[------- Completed --> admin_Opens_Site_Settings_Workrooms_And_Groups() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="systemAdmin_Set_User_As_Workroom_Member" classname="tests_critical_scenarios.SetUserWorkroomMemberNoEventPermission" time="2.733">
+    <system-out><![CDATA[------- Completed --> systemAdmin_Set_User_As_Workroom_Member() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="autoUser_login" classname="tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource" time="0.915">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Open_Library_Page_For_Workroom" classname="tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource" time="0.552">
+    <system-out><![CDATA[------- Completed --> open_Workroom_AutoBE_Library_Page() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="create_Book_Add_Title_A" classname="tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource" time="1.808">
+    <system-out><![CDATA[------- Completed --> user_Can_Create_New_Book_And_Add_Title() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Add_Cover_Page" classname="tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource" time="0.965">
+    <system-out><![CDATA[------- Completed --> user_Can_Add_Cover_Page() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Add_Agenda" classname="tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource" time="1.226">
+    <system-out><![CDATA[------- Completed --> user_Can_Add_Agenda() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Save_Book_And_Continue" classname="tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource" time="1.259">
+    <system-out><![CDATA[------- Completed --> user_Can_Save_Book_And_Continue() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Add_First_Catagory_To_Book" classname="tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource" time="2.438">
+    <system-out><![CDATA[------- Completed --> user_Add_First_Catagory_To_Book_Template -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Add_File_To_First_Catagory" classname="tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource" time="3.749">
+    <system-out><![CDATA[------- Completed --> user_Add_File_To_First_Catagory()  -----------
+]]></system-out>
+    <system-err><![CDATA[Jun 28, 2021 2:14:37 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="user_Can_Build_Book" classname="tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource" time="0.324">
+    <system-out><![CDATA[------- Completed --> user_Can_Build_Book()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="make_Book_Visible" classname="tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource" time="0.75">
+    <system-out><![CDATA[------- Completed --> make_Book_Visible()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="create_New_Event_A" classname="tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource" time="4.316">
+    <system-out><![CDATA[null
+------- Completed --> user_Can_Create_New_Event()  -----------
+]]></system-out>
+    <system-err><![CDATA[[TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 91.0.4472.101 (resolved driver for Chrome 91)
+[TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jhofler\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+Jun 28, 2021 2:15:39 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="user_Click_Attach_Create_And_Click_Resource_Tab" classname="tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource" time="0.873">
+    <system-out><![CDATA[------- Completed --> user_Can_Attach_Resource_To_Tab()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Attach_Resource_To_Event_And_Save" classname="tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource" time="0.093">
+    <system-out><![CDATA[------- Completed --> user_Can_Attach_Resource_To_Event_And_Save()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Attach_Book_To_Event" classname="tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource" time="2.073">
+    <system-out><![CDATA[------- Completed --> user_Can_Attach_Book_To_Event()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="verify_Book_And_Resource_Tabs_Appear_On_Event_Card" classname="tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource" time="0.519">
+    <system-out><![CDATA[------- Completed --> verify_Book_And_Resource_Tabs_Appear_On_Event_Card()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="verify_Book_And_Resource_Tabs_Appear_On_Event_Details" classname="tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource" time="0.491">
+    <system-out><![CDATA[------- Completed --> verify_Book_And_Resource_Tabs_Appear_On_Event_Details()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="delete_Event_Verify_Deleted" classname="tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource" time="0.007">
+    <system-out><![CDATA[------- Completed --> delete_Event()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="delete_Book" classname="tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource" time="0.216">
+    <system-out><![CDATA[------- Completed --> delete_Book()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="verify_Book_A_Deleted" classname="tests_critical_scenarios.CreateBookCreateEventAttachBookAttachResource" time="0.113">
+    <system-out><![CDATA[------- Completed --> verify_Book_Deleted()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="systemAdmin_login" classname="tests_critical_scenarios.CreateEditDeleteBookScannedPDF" time="0.141">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Open_Library_Page_For_Workroom" classname="tests_critical_scenarios.CreateEditDeleteBookScannedPDF" time="1.095">
+    <system-out><![CDATA[------- Completed --> admin_Open_Workroom_Constellation_Library_Page() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Create_New_Book_Add_Title" classname="tests_critical_scenarios.CreateEditDeleteBookScannedPDF" time="3.2">
+    <system-out><![CDATA[06/28/2021
+------- Completed --> user_Can_Create_New_Book_Add_Title -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Add_CoverPage" classname="tests_critical_scenarios.CreateEditDeleteBookScannedPDF" time="0.763">
+    <system-out><![CDATA[06/28/2021
+------- Completed --> user_Can_Add_CoverPage -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Add_Agenda_To_Template" classname="tests_critical_scenarios.CreateEditDeleteBookScannedPDF" time="0.499">
+    <system-out><![CDATA[------- Completed --> user_Add_Agenda_To_Template() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Save_Scanned_Book" classname="tests_critical_scenarios.CreateEditDeleteBookScannedPDF" time="0.54">
+    <system-out><![CDATA[------- Completed --> user_Can_Save_Scanned_Book() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Add_First_Catagory_To_Scanned_Book" classname="tests_critical_scenarios.CreateEditDeleteBookScannedPDF" time="0.503">
+    <system-out><![CDATA[null
+------- Completed --> user_Add_First_Catagory_To_Scanned_Book -----------
+]]></system-out>
+    <system-err><![CDATA[Jun 28, 2021 2:14:34 PM com.aventstack.extentreports.utils.Writer write
+SEVERE: target\surefire-reports\Extent.html
+java.io.FileNotFoundException: target\surefire-reports\Extent.html (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at java.io.FileWriter.<init>(FileWriter.java:90)
+	at com.aventstack.extentreports.utils.Writer.write(Writer.java:22)
+	at com.aventstack.extentreports.reporter.ExtentHtmlReporter.flush(ExtentHtmlReporter.java:151)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.aventstack.extentreports.Report.notifyReporters(Report.java:263)
+	at com.aventstack.extentreports.Report.flush(Report.java:185)
+	at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:281)
+	at tests_critical_scenarios.BaseTestCriticalScenarios.tearDown(BaseTestCriticalScenarios.java:127)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:214)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 91.0.4472.101 (resolved driver for Chrome 91)
+[TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jhofler\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+Jun 28, 2021 2:14:34 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="user_Add_Scanned_Book_To_New_Catagory" classname="tests_critical_scenarios.CreateEditDeleteBookScannedPDF" time="0.481">
+    <system-out><![CDATA[------- Completed --> user_Add_Scanned_Book_To_New_Catagory()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Build_Book" classname="tests_critical_scenarios.CreateEditDeleteBookScannedPDF" time="3.982">
+    <system-out><![CDATA[------- Completed --> build_Scanned_Book()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="make_Scanned_Book_Visible" classname="tests_critical_scenarios.CreateEditDeleteBookScannedPDF" time="0.448">
+    <system-out><![CDATA[------- Completed --> make_Scanned_Book_Visible()  -----------
+]]></system-out>
+    <system-err><![CDATA[Jun 28, 2021 2:15:14 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="edit_Scanned_Book" classname="tests_critical_scenarios.CreateEditDeleteBookScannedPDF" time="0.644">
+    <system-out><![CDATA[------- Completed --> edit_Scanned_Book()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Opens_Meeting_Book_Viewer_And_Scroll" classname="tests_critical_scenarios.CreateEditDeleteBookScannedPDF" time="0.92">
+    <system-out><![CDATA[------- Completed --> admin_Open_Workroom_AutoBE_Collaborate() -----------
+------- Completed --> user_Opens_Meeting_Book_Viewer() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="delete_Edited_Scanned_Book" classname="tests_critical_scenarios.CreateEditDeleteBookScannedPDF" time="1.473">
+    <system-out><![CDATA[------- Completed --> delete_Edited_Scanned_Book()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="verify_Edited_Scanned_Book_Deleted" classname="tests_critical_scenarios.CreateEditDeleteBookScannedPDF" time="2.834">
+    <system-out><![CDATA[------- Completed --> systemAdmin_Set_User_As_Workroom_Admin() -----------
+------- Completed --> verify_Edited_Scanned_Book_Deleted()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="autoUser_login" classname="tests_critical_scenarios.CreateEditCopyDeleteEvent" time="0.092">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="admin_Open_Workroom_AutoBE_Events" classname="tests_critical_scenarios.CreateEditCopyDeleteEvent" time="2.547">
+    <system-out><![CDATA[------- Completed --> admin_Open_Workroom_AutoBE_Events() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Create_New_Event" classname="tests_critical_scenarios.CreateEditCopyDeleteEvent" time="0.056">
+    <system-out><![CDATA[------- Completed --> user_Can_Create_New_Event() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Edit_Event" classname="tests_critical_scenarios.CreateEditCopyDeleteEvent" time="2.308">
+    <system-out><![CDATA[------- Completed --> user_Can_Edit_Event() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Copy_Event" classname="tests_critical_scenarios.CreateEditCopyDeleteEvent" time="0.477">
+    <system-out><![CDATA[------- Completed --> user_Can_Copy_Event() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Delete_Copied_Event" classname="tests_critical_scenarios.CreateEditCopyDeleteEvent" time="1.265">
+    <system-out><![CDATA[------- Completed --> user_Can_Delete_Copied_Event() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Delete_Event" classname="tests_critical_scenarios.CreateEditCopyDeleteEvent" time="0.076">
+    <system-out><![CDATA[------- Completed --> user_Delete_Event_And_Verify_Deleted() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="autoUser_login" classname="tests_critical_scenarios.CreateEditDeleteBookTemplate" time="3.236">
+    <system-out><![CDATA[30-06-2021
+30-06-2021
+03-07-2021
+03-07-2021
+------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="open_Library_Page_for_Workroom" classname="tests_critical_scenarios.CreateEditDeleteBookTemplate" time="3.763">
+    <system-out><![CDATA[------- Completed --> workroom_Member_Open_Workroom_AutoBE() -----------
+------- Completed --> open_Workroom_AutoBE_Library_Page() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Create_New_BookTemplate" classname="tests_critical_scenarios.CreateEditDeleteBookTemplate" time="1.355">
+    <system-out><![CDATA[------- Completed --> user_Create_New_BookTemplate() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Add_Coverpage_To_Book_Template" classname="tests_critical_scenarios.CreateEditDeleteBookTemplate" time="2.124">
+    <system-out><![CDATA[2021-06-28
+2021-06-28
+2021-06-30
+2021-06-30
+------- Completed --> user_Add_Coverpage_To_Book_Template() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Add_Agenda_To_Template" classname="tests_critical_scenarios.CreateEditDeleteBookTemplate" time="0.481">
+    <system-out><![CDATA[------- Completed --> user_Add_Agenda_To_Template() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Save_Book_Template" classname="tests_critical_scenarios.CreateEditDeleteBookTemplate" time="0.246">
+    <system-out><![CDATA[------- Completed --> user_Save_Book_Template -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Add_First_Catagory_To_Book_Template" classname="tests_critical_scenarios.CreateEditDeleteBookTemplate" time="0.51">
+    <system-out><![CDATA[------- Completed --> user_Add_First_Catagory_To_Book_Template -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Add_File_To_First_Catagory" classname="tests_critical_scenarios.CreateEditDeleteBookTemplate" time="1.661">
+    <system-out><![CDATA[------- Completed --> user_Add_File_To_First_Catagory()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Add_Second_Catagory_To_Handbook" classname="tests_critical_scenarios.CreateEditDeleteBookTemplate" time="0.365">
+    <system-out><![CDATA[------- Completed --> user_Add_Second_Catagory()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="add_File_To_Second_Catagory" classname="tests_critical_scenarios.CreateEditDeleteBookTemplate" time="1.42">
+    <system-out><![CDATA[------- Completed --> add_File_To_Second_Catagory()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="open_Book_From_Templates_Page" classname="tests_critical_scenarios.CreateEditDeleteBookTemplate" time="2.711">
+    <system-out><![CDATA[------- Completed --> open_Book_From_Templates_Page()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="edit_Book_Template" classname="tests_critical_scenarios.CreateEditDeleteBookTemplate" time="2.572">
+    <system-out><![CDATA[------- Completed --> edit_Book_Template()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="delete_Edited_Book_Template" classname="tests_critical_scenarios.CreateEditDeleteBookTemplate" time="1.556">
+    <system-out><![CDATA[------- Completed --> delete_Edited_Book_Template()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="verify_Edited_Book_Template_Deleted" classname="tests_critical_scenarios.CreateEditDeleteBookTemplate" time="0.587">
+    <system-out><![CDATA[------- Completed --> verify_Book_Template_Deleted()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="login" classname="tests_critical_scenarios.CreatePollQuestionAndDelete" time="3.074">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="create_Poll" classname="tests_critical_scenarios.CreatePollQuestionAndDelete" time="0.523">
+    <system-out><![CDATA[------- Completed --> create_Poll() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="create_Poll_Question" classname="tests_critical_scenarios.CreatePollQuestionAndDelete" time="0.674">
+    <system-out><![CDATA[------- Completed --> create_Poll_Question() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="add_Poll_Respondents" classname="tests_critical_scenarios.CreatePollQuestionAndDelete" time="0.38"/>
+  <testcase name="build_Poll_Make_Visible" classname="tests_critical_scenarios.CreatePollQuestionAndDelete" time="0.833">
+    <system-out><![CDATA[------- Completed --> build_Poll_Make_Visible() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="delete_Poll" classname="tests_critical_scenarios.CreatePollQuestionAndDelete" time="0.647">
+    <system-out><![CDATA[------- Completed --> delete_Poll() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="autoUser_login" classname="tests_critical_scenarios.CreateEditDeleteHandbook" time="1.876">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Opens_Library_Page_For_Workroom" classname="tests_critical_scenarios.CreateEditDeleteHandbook" time="2.606">
+    <system-out><![CDATA[------- Completed --> admin_Open_Workroom_Constellation_Library_Page() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Create_New_Handbook" classname="tests_critical_scenarios.CreateEditDeleteHandbook" time="0.04">
+    <system-out><![CDATA[------- Completed --> user_Create_New_Handbook() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Add_CoverPage_To_HandBook" classname="tests_critical_scenarios.CreateEditDeleteHandbook" time="1.843">
+    <system-out><![CDATA[------- Completed --> user_Add_CoverPage_To_HandBook -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Add_Agenda_To_HandBook" classname="tests_critical_scenarios.CreateEditDeleteHandbook" time="1.439">
+    <system-out><![CDATA[------- Completed --> user_Add_Agenda_To_HandBook -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Save_HandBook" classname="tests_critical_scenarios.CreateEditDeleteHandbook" time="3.266">
+    <system-out><![CDATA[------- Completed --> user_Save_HandBook -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Add_First_Catagory_To_HandBook" classname="tests_critical_scenarios.CreateEditDeleteHandbook" time="0.93">
+    <system-out><![CDATA[------- Completed --> user_Can_Add_First_Catagory()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Add_File_To_First_Catagory" classname="tests_critical_scenarios.CreateEditDeleteHandbook" time="0.548">
+    <system-out><![CDATA[------- Completed --> user_Add_File_To_First_Catagory()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Add_Second_Catagory_To_Handbook" classname="tests_critical_scenarios.CreateEditDeleteHandbook" time="1.084">
+    <system-out><![CDATA[------- Completed --> user_Add_Second_Catagory()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="add_File_To_Second_Catagory" classname="tests_critical_scenarios.CreateEditDeleteHandbook" time="1.178">
+    <system-out><![CDATA[------- Completed --> add_File_To_Second_Catagory()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="build_Handbook" classname="tests_critical_scenarios.CreateEditDeleteHandbook" time="0.016">
+    <system-out><![CDATA[------- Completed --> build_Handbook()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="make_Handbook_Visible" classname="tests_critical_scenarios.CreateEditDeleteHandbook" time="0.509">
+    <system-out><![CDATA[------- Completed --> systemAdmin_Enable_Events_For_Workroom_Member() -----------
+------- Completed --> make_handbook_Visible()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="edit_Handbook" classname="tests_critical_scenarios.CreateEditDeleteHandbook" time="4.474">
+    <system-out><![CDATA[------- Completed --> edit_Handbook()  -----------
+]]></system-out>
+    <system-err><![CDATA[Jun 28, 2021 2:16:53 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="delete_Edited_Handbook" classname="tests_critical_scenarios.CreateEditDeleteHandbook" time="3.003">
+    <system-out><![CDATA[------- Completed --> delete_Handbook()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="verify_Handbook_Deleted" classname="tests_critical_scenarios.CreateEditDeleteHandbook" time="0.091">
+    <system-out><![CDATA[------- Completed --> verify_Handbook_Deleted()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="autoUser_login" classname="tests_critical_scenarios.CreateMessageWorkroom" time="5.668">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Open_Workroom" classname="tests_critical_scenarios.CreateMessageWorkroom" time="3.412">
+    <system-out><![CDATA[------- Completed --> open_Workroom_AutoBE_Library_Page() -----------
+------- Completed --> workroom_Member_Open_Workroom_AutoBE() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Open_Message_Workroom_Window" classname="tests_critical_scenarios.CreateMessageWorkroom" time="1.969">
+    <system-out><![CDATA[------- Completed --> user_Open_Message_Workroom_Window() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Remove_User_From_List" classname="tests_critical_scenarios.CreateMessageWorkroom" time="0.459">
+    <system-out><![CDATA[------- Completed --> user_Can_Remove_User_From_List() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Add_Manual_Email_To_List" classname="tests_critical_scenarios.CreateMessageWorkroom" time="1.654">
+    <system-out><![CDATA[null
+------- Completed --> user_Can_Add_Manual_Email_To_List() -----------
+]]></system-out>
+    <system-err><![CDATA[[TestNG-tests-8] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 91.0.4472.101 (resolved driver for Chrome 91)
+[TestNG-tests-8] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jhofler\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+Jun 28, 2021 2:15:11 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="user_Populate_Email_Form_Send_Message" classname="tests_critical_scenarios.CreateMessageWorkroom" time="1.161">
+    <system-out><![CDATA[------- Completed --> user_Populate_Email_Form_Send_Message() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="verify_Email_Sent_Verification_Messages" classname="tests_critical_scenarios.CreateMessageWorkroom" time="0.403">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[contains(text(),&apos;This message was sent to the following recipients:&apos;)]&quot;}&#10;  (Session info: chrome=91.0.4472.114)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.39&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55824}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: aaa17de57cace841d22d7b8a20d...}&#10;Session ID: aaa17de57cace841d22d7b8a20da18eb&#10;*** Element info: {Using=xpath, value=//p[contains(text(),&apos;This message was sent to the following recipients:&apos;)]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'This message was sent to the following recipients:')]"}
+  (Session info: chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CLT-WIN-11717', ip: '172.23.74.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55824}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: aaa17de57cace841d22d7b8a20d...}
+Session ID: aaa17de57cace841d22d7b8a20da18eb
+*** Element info: {Using=xpath, value=//p[contains(text(),'This message was sent to the following recipients:')]}
+	at tests_critical_scenarios.CreateMessageWorkroom.verify_Email_Sent_Verification_Messages(CreateMessageWorkroom.java:65)
+]]></failure>
+  </testcase>
+  <testcase name="autoUser_login" classname="tests_critical_scenarios.CreateBookSecuredCategory" time="1.715">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="Workroom_Admin_Can_Open_Library_Page_For_Workroom" classname="tests_critical_scenarios.CreateBookSecuredCategory" time="0.989">
+    <system-out><![CDATA[------- Completed --> open_Workroom_AutoBE_Library_Page() -----------
+]]></system-out>
+    <system-err><![CDATA[Jun 28, 2021 2:15:44 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="Workroom_Admin_Can_Create_New_Book_And_Add_Title" classname="tests_critical_scenarios.CreateBookSecuredCategory" time="0.931">
+    <system-out><![CDATA[------- Completed --> user_Can_Create_New_Book_And_Add_Title() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="Workroom_Admin_Can_Add_Agenda" classname="tests_critical_scenarios.CreateBookSecuredCategory" time="0.69">
+    <system-out><![CDATA[------- Completed --> user_Can_Add_Agenda() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="Workroom_Admin_Click_Save_Continue_Btn" classname="tests_critical_scenarios.CreateBookSecuredCategory" time="5.996"/>
+  <testcase name="Workroom_Admin_Add_First_Catagory_To_Book" classname="tests_critical_scenarios.CreateBookSecuredCategory" time="0.405">
+    <system-out><![CDATA[------- Completed --> user_Add_First_Catagory_To_Book -----------
+]]></system-out>
+  </testcase>
+  <testcase name="Workroom_Admin_Add_File_To_First_Catagory" classname="tests_critical_scenarios.CreateBookSecuredCategory" time="3.516">
+    <system-out><![CDATA[------- Completed --> workroom_Member_Open_Resource_Library() -----------
+------- Completed --> user_Add_File_To_First_Catagory()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="Workroom_Admin_Can_Open_Secured_Category" classname="tests_critical_scenarios.CreateBookSecuredCategory" time="0.992">
+    <system-out><![CDATA[------- Completed --> user_Can_Open_Secured_Category()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="Workroom_Admin_2_Can_Add_User_As_Secured_Category_User" classname="tests_critical_scenarios.CreateBookSecuredCategory" time="2.571">
+    <system-out><![CDATA[------- Completed --> Workroom_Admin_2_Can_Add_User_As_Secured_Category_User()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="Workroom_Admin_Add_Second_Catagory_To_Book" classname="tests_critical_scenarios.CreateBookSecuredCategory" time="0.634">
+    <system-out><![CDATA[------- Completed --> user_Add_First_Catagory_To_Book -----------
+]]></system-out>
+  </testcase>
+  <testcase name="Workroom_Admin_add_File_To_Second_Catagory" classname="tests_critical_scenarios.CreateBookSecuredCategory" time="0.55">
+    <system-out><![CDATA[------- Completed --> add_File_To_Second_Catagory()  -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Build_Book" classname="tests_critical_scenarios.CreateBookSecuredCategory" time="2.268">
+    <failure message="Expected condition failed: waiting for at least one condition to be valid: element to be clickable: By.xpath: //button[contains(text(),&apos;Done&apos;)] (tried for 20 second(s) with 600 milliseconds interval)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.39&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for at least one condition to be valid: element to be clickable: By.xpath: //button[contains(text(),'Done')] (tried for 20 second(s) with 600 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CLT-WIN-11717', ip: '172.23.74.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: unknown
+	at tests_critical_scenarios.CreateBookSecuredCategory.user_Can_Build_Book(CreateBookSecuredCategory.java:120)
+]]></failure>
+  </testcase>
+  <testcase name="make_Book_Visible" classname="tests_critical_scenarios.CreateBookSecuredCategory" time="1.982">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&apos;primary-action-btn btn-sidebar be-blue&apos;][contains(text(),&apos;Edit Book&apos;)]&quot;}&#10;  (Session info: chrome=91.0.4472.114)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.39&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}&#10;Session ID: 1bd51b21327d49a31b8d0d6de5ec5024&#10;*** Element info: {Using=xpath, value=//a[@class=&apos;primary-action-btn btn-sidebar be-blue&apos;][contains(text(),&apos;Edit Book&apos;)]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='primary-action-btn btn-sidebar be-blue'][contains(text(),'Edit Book')]"}
+  (Session info: chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CLT-WIN-11717', ip: '172.23.74.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}
+Session ID: 1bd51b21327d49a31b8d0d6de5ec5024
+*** Element info: {Using=xpath, value=//a[@class='primary-action-btn btn-sidebar be-blue'][contains(text(),'Edit Book')]}
+	at tests_critical_scenarios.CreateBookSecuredCategory.make_Book_Visible(CreateBookSecuredCategory.java:129)
+]]></failure>
+  </testcase>
+  <testcase name="workroomAdmin_Close_And_Logout" classname="tests_critical_scenarios.CreateBookSecuredCategory" time="0.28">
+    <failure message="element click intercepted: Element &lt;a title=&quot;Sign Out&quot; href=&quot;/logout&quot;&gt;...&lt;/a&gt; is not clickable at point (128, 503). Other element would receive the click: &lt;div class=&quot;modal fade no-clear in&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; id=&quot;publishing&quot; style=&quot;z-index: 1051; display: block; padding-right: 17px;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=91.0.4472.114)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.39&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}&#10;Session ID: 1bd51b21327d49a31b8d0d6de5ec5024" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a title="Sign Out" href="/logout">...</a> is not clickable at point (128, 503). Other element would receive the click: <div class="modal fade no-clear in" data-backdrop="static" data-keyboard="false" id="publishing" style="z-index: 1051; display: block; padding-right: 17px;">...</div>
+  (Session info: chrome=91.0.4472.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CLT-WIN-11717', ip: '172.23.74.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}
+Session ID: 1bd51b21327d49a31b8d0d6de5ec5024
+	at tests_critical_scenarios.CreateBookSecuredCategory.workroomAdmin_Close_And_Logout(CreateBookSecuredCategory.java:138)
+]]></failure>
+  </testcase>
+  <testcase name="workroom_Member_Login_To_BoardEffect" classname="tests_critical_scenarios.CreateBookSecuredCategory" time="1.269">
+    <failure message="Expected condition failed: waiting for at least one condition to be valid: element to be clickable: By.xpath: id(&quot;login_login&quot;) (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for at least one condition to be valid: element to be clickable: By.xpath: id("login_login") (tried for 10 second(s) with 500 milliseconds interval)
+	at tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Login_To_BoardEffect(CreateBookSecuredCategory.java:147)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"id("login_login")"}
+  (Session info: chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CLT-WIN-11717', ip: '172.23.74.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}
+Session ID: 1bd51b21327d49a31b8d0d6de5ec5024
+*** Element info: {Using=xpath, value=id("login_login")}
+	at tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Login_To_BoardEffect(CreateBookSecuredCategory.java:147)
+]]></failure>
+  </testcase>
+  <testcase name="workroom_Member_Open_Workroom_AutoBE_Library_Page" classname="tests_critical_scenarios.CreateBookSecuredCategory" time="1.583">
+    <failure message="element click intercepted: Element &lt;li class=&quot;active collapsed&quot; id=&quot;workroom-leftnav-toggle&quot;&gt;...&lt;/li&gt; is not clickable at point (125, 170). Other element would receive the click: &lt;div class=&quot;modal fade no-clear in&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; id=&quot;publishing&quot; style=&quot;z-index: 1051; display: block; padding-right: 17px;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=91.0.4472.114)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.39&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}&#10;Session ID: 1bd51b21327d49a31b8d0d6de5ec5024" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <li class="active collapsed" id="workroom-leftnav-toggle">...</li> is not clickable at point (125, 170). Other element would receive the click: <div class="modal fade no-clear in" data-backdrop="static" data-keyboard="false" id="publishing" style="z-index: 1051; display: block; padding-right: 17px;">...</div>
+  (Session info: chrome=91.0.4472.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CLT-WIN-11717', ip: '172.23.74.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}
+Session ID: 1bd51b21327d49a31b8d0d6de5ec5024
+	at tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Open_Workroom_AutoBE_Library_Page(CreateBookSecuredCategory.java:156)
+]]></failure>
+  </testcase>
+  <testcase name="workroom_Member_Secured_Category_Not_Displayed" classname="tests_critical_scenarios.CreateBookSecuredCategory" time="1.543">
+    <failure message="element click intercepted: Element &lt;li class=&quot;active&quot;&gt;...&lt;/li&gt; is not clickable at point (699, 163). Other element would receive the click: &lt;div class=&quot;modal-body center&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=91.0.4472.114)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.39&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}&#10;Session ID: 1bd51b21327d49a31b8d0d6de5ec5024" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <li class="active">...</li> is not clickable at point (699, 163). Other element would receive the click: <div class="modal-body center">...</div>
+  (Session info: chrome=91.0.4472.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CLT-WIN-11717', ip: '172.23.74.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}
+Session ID: 1bd51b21327d49a31b8d0d6de5ec5024
+	at tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Secured_Category_Not_Displayed(CreateBookSecuredCategory.java:165)
+]]></failure>
+  </testcase>
+  <testcase name="workroom_Member_Sees_New_Category_2_Present" classname="tests_critical_scenarios.CreateBookSecuredCategory" time="0.129">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Sees_New_Category_2_Present(CreateBookSecuredCategory.java:174)
+]]></failure>
+  </testcase>
+  <testcase name="autoDirector_Close_And_Logout" classname="tests_critical_scenarios.CreateBookSecuredCategory" time="0.12">
+    <failure message="element click intercepted: Element &lt;a title=&quot;Sign Out&quot; href=&quot;/logout&quot;&gt;...&lt;/a&gt; is not clickable at point (128, 503). Other element would receive the click: &lt;div class=&quot;modal fade no-clear in&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; id=&quot;publishing&quot; style=&quot;z-index: 1051; display: block; padding-right: 17px;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=91.0.4472.114)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.39&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}&#10;Session ID: 1bd51b21327d49a31b8d0d6de5ec5024" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a title="Sign Out" href="/logout">...</a> is not clickable at point (128, 503). Other element would receive the click: <div class="modal fade no-clear in" data-backdrop="static" data-keyboard="false" id="publishing" style="z-index: 1051; display: block; padding-right: 17px;">...</div>
+  (Session info: chrome=91.0.4472.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CLT-WIN-11717', ip: '172.23.74.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}
+Session ID: 1bd51b21327d49a31b8d0d6de5ec5024
+	at tests_critical_scenarios.CreateBookSecuredCategory.autoDirector_Close_And_Logout(CreateBookSecuredCategory.java:183)
+]]></failure>
+  </testcase>
+  <testcase name="loginBE_WorkroomAdmin" classname="tests_critical_scenarios.CreateBookSecuredCategory" time="2.756">
+    <failure message="Expected condition failed: waiting for at least one condition to be valid: element to be clickable: By.xpath: id(&quot;login_login&quot;) (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for at least one condition to be valid: element to be clickable: By.xpath: id("login_login") (tried for 10 second(s) with 500 milliseconds interval)
+	at tests_critical_scenarios.CreateBookSecuredCategory.loginBE_WorkroomAdmin(CreateBookSecuredCategory.java:192)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"id("login_login")"}
+  (Session info: chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CLT-WIN-11717', ip: '172.23.74.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}
+Session ID: 1bd51b21327d49a31b8d0d6de5ec5024
+*** Element info: {Using=xpath, value=id("login_login")}
+	at tests_critical_scenarios.CreateBookSecuredCategory.loginBE_WorkroomAdmin(CreateBookSecuredCategory.java:192)
+]]></failure>
+  </testcase>
+  <testcase name="workroom_Member_Open_Library_Page_For_Workroom_2nd_Time" classname="tests_critical_scenarios.CreateBookSecuredCategory" time="1.196">
+    <failure message="element click intercepted: Element &lt;li class=&quot;active collapsed&quot; id=&quot;workroom-leftnav-toggle&quot;&gt;...&lt;/li&gt; is not clickable at point (125, 170). Other element would receive the click: &lt;div class=&quot;modal fade no-clear in&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; id=&quot;publishing&quot; style=&quot;z-index: 1051; display: block; padding-right: 17px;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=91.0.4472.114)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.39&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}&#10;Session ID: 1bd51b21327d49a31b8d0d6de5ec5024" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <li class="active collapsed" id="workroom-leftnav-toggle">...</li> is not clickable at point (125, 170). Other element would receive the click: <div class="modal fade no-clear in" data-backdrop="static" data-keyboard="false" id="publishing" style="z-index: 1051; display: block; padding-right: 17px;">...</div>
+  (Session info: chrome=91.0.4472.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CLT-WIN-11717', ip: '172.23.74.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}
+Session ID: 1bd51b21327d49a31b8d0d6de5ec5024
+	at tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Open_Library_Page_For_Workroom_2nd_Time(CreateBookSecuredCategory.java:201)
+]]></failure>
+    <system-out><![CDATA[null
+null
+]]></system-out>
+    <system-err><![CDATA[[TestNG-tests-9] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 91.0.4472.101 (resolved driver for Chrome 91)
+[TestNG-tests-9] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jhofler\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+Jun 28, 2021 2:18:29 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[TestNG-tests-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 91.0.4472.101 (resolved driver for Chrome 91)
+[TestNG-tests-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jhofler\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+Jun 28, 2021 2:18:29 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="workroom_Member_NewCatagory_And_NewCatagory2_Is_Displayed" classname="tests_critical_scenarios.CreateBookSecuredCategory" time="4.729">
+    <failure message="element click intercepted: Element &lt;li class=&quot;active&quot;&gt;...&lt;/li&gt; is not clickable at point (699, 163). Other element would receive the click: &lt;div class=&quot;modal-body center&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=91.0.4472.114)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.39&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}&#10;Session ID: 1bd51b21327d49a31b8d0d6de5ec5024" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <li class="active">...</li> is not clickable at point (699, 163). Other element would receive the click: <div class="modal-body center">...</div>
+  (Session info: chrome=91.0.4472.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CLT-WIN-11717', ip: '172.23.74.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}
+Session ID: 1bd51b21327d49a31b8d0d6de5ec5024
+	at tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_NewCatagory_And_NewCatagory2_Is_Displayed(CreateBookSecuredCategory.java:210)
+]]></failure>
+    <system-err><![CDATA[Jun 28, 2021 2:18:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="workroomAdmin_Close_And_Logout_2nd_Time" classname="tests_critical_scenarios.CreateBookSecuredCategory" time="0.446">
+    <failure message="element click intercepted: Element &lt;a title=&quot;Sign Out&quot; href=&quot;/logout&quot;&gt;...&lt;/a&gt; is not clickable at point (128, 503). Other element would receive the click: &lt;div class=&quot;modal fade no-clear in&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; id=&quot;publishing&quot; style=&quot;z-index: 1051; display: block; padding-right: 17px;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=91.0.4472.114)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.39&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}&#10;Session ID: 1bd51b21327d49a31b8d0d6de5ec5024" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a title="Sign Out" href="/logout">...</a> is not clickable at point (128, 503). Other element would receive the click: <div class="modal fade no-clear in" data-backdrop="static" data-keyboard="false" id="publishing" style="z-index: 1051; display: block; padding-right: 17px;">...</div>
+  (Session info: chrome=91.0.4472.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CLT-WIN-11717', ip: '172.23.74.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}
+Session ID: 1bd51b21327d49a31b8d0d6de5ec5024
+	at tests_critical_scenarios.CreateBookSecuredCategory.workroomAdmin_Close_And_Logout_2nd_Time(CreateBookSecuredCategory.java:219)
+]]></failure>
+  </testcase>
+  <testcase name="autoUser_login_2nd_Time" classname="tests_critical_scenarios.CreateBookSecuredCategory" time="0.356">
+    <failure message="Expected condition failed: waiting for at least one condition to be valid: element to be clickable: By.xpath: id(&quot;login_login&quot;) (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for at least one condition to be valid: element to be clickable: By.xpath: id("login_login") (tried for 10 second(s) with 500 milliseconds interval)
+	at tests_critical_scenarios.CreateBookSecuredCategory.autoUser_login_2nd_Time(CreateBookSecuredCategory.java:228)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"id("login_login")"}
+  (Session info: chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CLT-WIN-11717', ip: '172.23.74.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}
+Session ID: 1bd51b21327d49a31b8d0d6de5ec5024
+*** Element info: {Using=xpath, value=id("login_login")}
+	at tests_critical_scenarios.CreateBookSecuredCategory.autoUser_login_2nd_Time(CreateBookSecuredCategory.java:228)
+]]></failure>
+  </testcase>
+  <testcase name="workroom_Member_Open_Library_Page_For_Workroom_3rd_Time" classname="tests_critical_scenarios.CreateBookSecuredCategory" time="1.118">
+    <failure message="element click intercepted: Element &lt;li class=&quot;active collapsed&quot; id=&quot;workroom-leftnav-toggle&quot;&gt;...&lt;/li&gt; is not clickable at point (125, 170). Other element would receive the click: &lt;div class=&quot;modal fade no-clear in&quot; data-backdrop=&quot;static&quot; data-keyboard=&quot;false&quot; id=&quot;publishing&quot; style=&quot;z-index: 1051; display: block; padding-right: 17px;&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=91.0.4472.114)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.39&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}&#10;Session ID: 1bd51b21327d49a31b8d0d6de5ec5024" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <li class="active collapsed" id="workroom-leftnav-toggle">...</li> is not clickable at point (125, 170). Other element would receive the click: <div class="modal fade no-clear in" data-backdrop="static" data-keyboard="false" id="publishing" style="z-index: 1051; display: block; padding-right: 17px;">...</div>
+  (Session info: chrome=91.0.4472.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CLT-WIN-11717', ip: '172.23.74.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}
+Session ID: 1bd51b21327d49a31b8d0d6de5ec5024
+	at tests_critical_scenarios.CreateBookSecuredCategory.workroom_Member_Open_Library_Page_For_Workroom_3rd_Time(CreateBookSecuredCategory.java:237)
+]]></failure>
+  </testcase>
+  <testcase name="user_Can_Delete_Book" classname="tests_critical_scenarios.CreateBookSecuredCategory" time="2.905">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(text(),&apos;Book Secured Category&apos;)]/following::div[@class=&apos;dropdown header-actions&apos;]&quot;}&#10;  (Session info: chrome=91.0.4472.114)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;CLT-WIN-11717&apos;, ip: &apos;172.23.74.39&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}&#10;Session ID: 1bd51b21327d49a31b8d0d6de5ec5024&#10;*** Element info: {Using=xpath, value=//*[contains(text(),&apos;Book Secured Category&apos;)]/following::div[@class=&apos;dropdown header-actions&apos;]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Book Secured Category')]/following::div[@class='dropdown header-actions']"}
+  (Session info: chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CLT-WIN-11717', ip: '172.23.74.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\QATEST~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53274}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 1bd51b21327d49a31b8d0d6de5e...}
+Session ID: 1bd51b21327d49a31b8d0d6de5ec5024
+*** Element info: {Using=xpath, value=//*[contains(text(),'Book Secured Category')]/following::div[@class='dropdown header-actions']}
+	at tests_critical_scenarios.CreateBookSecuredCategory.user_Can_Delete_Book(CreateBookSecuredCategory.java:246)
+]]></failure>
+  </testcase>
+  <testcase name="verify_Book_Deleted" classname="tests_critical_scenarios.CreateBookSecuredCategory" time="3.564">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at tests_critical_scenarios.CreateBookSecuredCategory.verify_Book_Deleted(CreateBookSecuredCategory.java:255)
+]]></failure>
+    <system-out><![CDATA[null
+null
+]]></system-out>
+    <system-err><![CDATA[[TestNG-tests-5] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 91.0.4472.101 (resolved driver for Chrome 91)
+[TestNG-tests-5] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jhofler\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+Jun 28, 2021 2:19:00 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[TestNG-tests-4] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 91.0.4472.101 (resolved driver for Chrome 91)
+[TestNG-tests-4] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jhofler\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+Jun 28, 2021 2:19:01 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="systemAdmin_login" classname="tests_critical_scenarios.CreateResourceLibraryFolderAddFile" time="2.018">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Open_Libraries_Form" classname="tests_critical_scenarios.CreateResourceLibraryFolderAddFile" time="1.088">
+    <system-out><![CDATA[------- Completed --> workroom_Member_Open_Resource_Library() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Create_New_Resource_Library_Folder" classname="tests_critical_scenarios.CreateResourceLibraryFolderAddFile" time="0.433">
+    <system-out><![CDATA[------- Completed --> user_Can_Create_New_Resource_Library_Folder() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Open_Resource_Library_Folder" classname="tests_critical_scenarios.CreateResourceLibraryFolderAddFile" time="1.536">
+    <system-out><![CDATA[------- Completed --> user_Can_Open_Resource_Library_Folder() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Add_Resource_File_To_Folder" classname="tests_critical_scenarios.CreateResourceLibraryFolderAddFile" time="1.722">
+    <system-out><![CDATA[------- Completed --> user_Can_Add_Resource_File_To_Folder() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Delete_File" classname="tests_critical_scenarios.CreateResourceLibraryFolderAddFile" time="2.978">
+    <system-out><![CDATA[------- Completed --> user_Can_Delete_File() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Delete_Folder" classname="tests_critical_scenarios.CreateResourceLibraryFolderAddFile" time="2.45">
+    <system-out><![CDATA[------- Completed --> open_Workroom_AutoBE_Library_Page() -----------
+------- Completed --> user_Can_Delete_Folder() -----------
+]]></system-out>
+    <system-err><![CDATA[Jun 28, 2021 2:16:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="verify_Folder_Deleted" classname="tests_critical_scenarios.CreateResourceLibraryFolderAddFile" time="2.296">
+    <system-out><![CDATA[------- Completed --> verify_Folder_Deleted() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="login" classname="tests_critical_scenarios.CreateSurveyQuestionsAndDelete" time="0.254">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="create_Survey" classname="tests_critical_scenarios.CreateSurveyQuestionsAndDelete" time="1.651">
+    <system-out><![CDATA[------- Completed --> create_Survey() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="create_TextField_Question" classname="tests_critical_scenarios.CreateSurveyQuestionsAndDelete" time="3.191">
+    <system-out><![CDATA[------- Completed --> create_TextField_Question() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="create_CheckBox_Question" classname="tests_critical_scenarios.CreateSurveyQuestionsAndDelete" time="0.272">
+    <system-out><![CDATA[------- Completed --> create_CheckBox_Question() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="create_DropdownList_Question" classname="tests_critical_scenarios.CreateSurveyQuestionsAndDelete" time="0.954">
+    <system-out><![CDATA[------- Completed --> create_Dropdown_List_Question() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="create_RadioButtons_Question" classname="tests_critical_scenarios.CreateSurveyQuestionsAndDelete" time="0.486">
+    <system-out><![CDATA[------- Completed --> systemAdmin_Update_User_Password() -----------
+------- Completed --> create_RadioButtons_Question() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="create_Paragraph_Question" classname="tests_critical_scenarios.CreateSurveyQuestionsAndDelete" time="1.105">
+    <system-out><![CDATA[------- Completed --> create_Paragraph_Question() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="create_Heading_Question" classname="tests_critical_scenarios.CreateSurveyQuestionsAndDelete" time="0.244">
+    <system-out><![CDATA[------- Completed --> create_Heading_Question() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="create_Linear_Scale" classname="tests_critical_scenarios.CreateSurveyQuestionsAndDelete" time="0.083">
+    <system-out><![CDATA[------- Completed --> create_Linear_Scale() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="add_Survey_Respondents" classname="tests_critical_scenarios.CreateSurveyQuestionsAndDelete" time="0.077">
+    <system-out><![CDATA[------- Completed --> manage_Respondents() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="build_Survey_Make_Visible" classname="tests_critical_scenarios.CreateSurveyQuestionsAndDelete" time="2.236">
+    <system-out><![CDATA[------- Completed --> build_Survey_Make_Visible() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="delete_Survey" classname="tests_critical_scenarios.CreateSurveyQuestionsAndDelete" time="3.887">
+    <system-out><![CDATA[------- Completed --> delete_Survey() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="login" classname="tests_critical_scenarios.CreateTaskAndTaskGroup" time="2.173">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="add_Task_Group" classname="tests_critical_scenarios.CreateTaskAndTaskGroup" time="3.751">
+    <system-out><![CDATA[null
+------- Completed -->  add_Task_Group() -----------
+]]></system-out>
+    <system-err><![CDATA[[TestNG-tests-3] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 91.0.4472.101 (resolved driver for Chrome 91)
+[TestNG-tests-3] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jhofler\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+Jun 28, 2021 2:17:11 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="create_Task_FillForm" classname="tests_critical_scenarios.CreateTaskAndTaskGroup" time="1.015">
+    <system-out><![CDATA[------- Completed --> create_Task_FillForm() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="create_Task_AttachFile" classname="tests_critical_scenarios.CreateTaskAndTaskGroup" time="0.312">
+    <system-out><![CDATA[------- Completed --> create_Task_AttachFile() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="create_Task_LinkGroup" classname="tests_critical_scenarios.CreateTaskAndTaskGroup" time="0.281">
+    <system-out><![CDATA[------- Completed --> create_Task_LinkGroup() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="create_Task_Add_Users" classname="tests_critical_scenarios.CreateTaskAndTaskGroup" time="1.245">
+    <system-out><![CDATA[------- Completed --> create_Task_Add_Users() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="verify_Task_Group_And_Task_Created" classname="tests_critical_scenarios.CreateTaskAndTaskGroup" time="0.877">
+    <system-out><![CDATA[------- Completed --> verify_Task_Group_And_Task_Created() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="edit_Task" classname="tests_critical_scenarios.CreateTaskAndTaskGroup" time="0.386">
+    <system-out><![CDATA[------- Completed --> edit_Task() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="delete_Task" classname="tests_critical_scenarios.CreateTaskAndTaskGroup" time="3.986">
+    <system-out><![CDATA[------- Completed --> admin_Open_Directory_With_Refresh() -----------
+------- Completed --> delete_Task() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="delete_Group" classname="tests_critical_scenarios.CreateTaskAndTaskGroup" time="0.046">
+    <system-out><![CDATA[------- Completed --> delete_Group() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="systemAdmin_login" classname="tests_critical_scenarios.LoginEnglishWorkroomAdminEng2" time="2.777">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="admin_Opens_Site_Settings_Workrooms_And_Groups" classname="tests_critical_scenarios.LoginEnglishWorkroomAdminEng2" time="0.313">
+    <system-out><![CDATA[------- Completed --> admin_Opens_Site_Settings_Workrooms_And_Groups() -----------
+------- Completed --> admin_Opens_Site_Settings_Workrooms_And_Groups() -----------
+]]></system-out>
+    <system-err><![CDATA[Jun 28, 2021 2:17:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="systemAdmin_Set_User_As_Workroom_Admin" classname="tests_critical_scenarios.LoginEnglishWorkroomAdminEng2" time="0.802"/>
+  <testcase name="system_Admin_Logout_2nd_Time" classname="tests_critical_scenarios.LoginEnglishWorkroomAdminEng2" time="1.575">
+    <system-out><![CDATA[------- Completed -->  user_Can_Sign_Out() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="workroomAdminEng_Login" classname="tests_critical_scenarios.LoginEnglishWorkroomAdminEng2" time="0.339">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Open_Directory" classname="tests_critical_scenarios.LoginEnglishWorkroomAdminEng2" time="2.771">
+    <system-out><![CDATA[------- Completed --> admin_Open_Workroom_AutoBE_Events() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="open_User_Profile_Workroom_Admin_Eng_2" classname="tests_critical_scenarios.LoginEnglishWorkroomAdminEng2" time="0.13">
+    <system-out><![CDATA[------- Completed --> open_User_Profile_Workroom_Admin -----------
+]]></system-out>
+  </testcase>
+  <testcase name="navigate_To_English_Language" classname="tests_critical_scenarios.LoginEnglishWorkroomAdminEng2" time="0.112"/>
+  <testcase name="system_Admin_Logout" classname="tests_critical_scenarios.LoginEnglishWorkroomAdminEng2" time="2.381">
+    <system-out><![CDATA[------- Completed -->  user_Can_Sign_Out() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="automation_Tester_Login_English" classname="tests_critical_scenarios.LoginEnglishWorkroomAdminEng2" time="1.424">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="admin_Opens_Site_Settings_Workrooms_And_Groups_Agian" classname="tests_critical_scenarios.LoginEnglishWorkroomAdminEng2" time="1.342">
+    <system-out><![CDATA[------- Completed --> navigate_To_English_Language() -----------
+------- Completed --> admin_Opens_Site_Settings_Workrooms_And_Groups() -----------
+]]></system-out>
+    <system-err><![CDATA[Jun 28, 2021 2:18:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="systemAdmin_Set_User_WorkroomAdminEng2_As_Workroom_Member" classname="tests_critical_scenarios.LoginEnglishWorkroomAdminEng2" time="0.093">
+    <system-out><![CDATA[------- Completed --> systemAdmin_Set_User_WorkroomAdminEng2_As_Workroom_Member() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="systemAdmin_login" classname="tests_critical_scenarios.ResetUserPassword" time="0.427">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="systemAdmin_Opens_Directory_Search_For_User" classname="tests_critical_scenarios.ResetUserPassword" time="7.208">
+    <system-out><![CDATA[------- Completed --> systemAdmin_Set_User_As_Workroom_Admin() -----------
+------- Completed --> systemAdmin_Opens_Directory_Search_For_User() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="systemAdmin_Update_User_Password" classname="tests_critical_scenarios.ResetUserPassword" time="0.36"/>
+  <testcase name="systemAdmin_Close_Profile_And_Logout" classname="tests_critical_scenarios.ResetUserPassword" time="0.412">
+    <system-out><![CDATA[null
+------- Completed -->  user_Can_Sign_Out() -----------
+]]></system-out>
+    <system-err><![CDATA[[TestNG-tests-5] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 91.0.4472.101 (resolved driver for Chrome 91)
+[TestNG-tests-5] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jhofler\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+Jun 28, 2021 2:17:54 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="workroom_Member_Login_To_BoardEffect" classname="tests_critical_scenarios.ResetUserPassword" time="1.018">
+    <system-out><![CDATA[------- Completed --> workroom_Member_Login_To_BoardEffect() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="workroom_Member_Close_Profile_And_Logout" classname="tests_critical_scenarios.ResetUserPassword" time="0.974">
+    <system-out><![CDATA[------- Completed -->  user_Can_Sign_Out() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="systemAdmin_Login_2nd_Time" classname="tests_critical_scenarios.ResetUserPassword" time="1.347">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="systemAdmin_Update_User_Password_Back_To_Original" classname="tests_critical_scenarios.ResetUserPassword" time="0.769"/>
+  <testcase name="systemAdmin_Can_Sign_Out" classname="tests_critical_scenarios.ResetUserPassword" time="3.664">
+    <system-out><![CDATA[------- Completed -->  user_Can_Sign_Out() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="workroom_Member_Login_To_BoardEffect_Orginal_Password" classname="tests_critical_scenarios.ResetUserPassword" time="1.679">
+    <system-out><![CDATA[null
+------- Completed --> workroom_Member_Login_To_BoardEffect_Orginal_Password() -----------
+]]></system-out>
+    <system-err><![CDATA[[TestNG-tests-7] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 91.0.4472.101 (resolved driver for Chrome 91)
+[TestNG-tests-7] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\jhofler\.cache\selenium\chromedriver\win32\91.0.4472.101\chromedriver.exe
+Jun 28, 2021 2:18:47 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+]]></system-err>
+  </testcase>
+  <testcase name="workroom_Member_Login_With_Updated_Password" classname="tests_critical_scenarios.ResetUserPassword" time="0.438"/>
+  <testcase name="systemAdmin_login" classname="tests_critical_scenarios.RunAttendanceReport" time="0.715">
+    <system-out><![CDATA[------- Completed --> open_Workroom_AutoBE_Library_Page() -----------
+------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Opens_Settings_Form_Open_Reports" classname="tests_critical_scenarios.RunAttendanceReport" time="0.437">
+    <system-out><![CDATA[------- Completed --> admin_Opens_Site_Settings() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Open_Attendance_Menu" classname="tests_critical_scenarios.RunAttendanceReport" time="2.836">
+    <system-out><![CDATA[------- Completed --> user_Can_Run_Attendance_Reports() -----------
+]]></system-out>
+    <system-err><![CDATA[Jun 28, 2021 2:17:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="user_Can_Configure_Attendence_Report" classname="tests_critical_scenarios.RunAttendanceReport" time="1.503">
+    <system-out><![CDATA[------- Completed --> user_Can_Configure_Attendence_Report() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Verify_Filter_Change" classname="tests_critical_scenarios.RunAttendanceReport" time="0.019">
+    <system-out><![CDATA[------- Completed --> user_Can_Verify_Filter_Change() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Generate_And_Download_PDF_Report" classname="tests_critical_scenarios.RunAttendanceReport" time="2.079">
+    <system-out><![CDATA[------- Completed --> navigate_To_English_Language() -----------
+------- Completed --> user_Generate_And_Download_PDF_Report() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Generate_And_Download_Excel_Report" classname="tests_critical_scenarios.RunAttendanceReport" time="2.486">
+    <system-out><![CDATA[------- Completed --> user_Generate_And_Download_Excel_Report() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="systemAdmin_login" classname="tests_critical_scenarios.CreateDeleteWorkroom" time="0.594">
+    <system-out><![CDATA[------- Completed --> workroom_Member_Open_Library_For_Workroom_Has_New_Book_Button() -----------
+------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Opens_Settings_Opens_Workroom_And_Group_Settings" classname="tests_critical_scenarios.CreateDeleteWorkroom" time="0.191">
+    <system-out><![CDATA[------- Completed --> admin_Opens_Site_Settings_Workrooms_And_Groups() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Create_New_Workroom" classname="tests_critical_scenarios.CreateDeleteWorkroom" time="0.703">
+    <system-out><![CDATA[------- Completed --> user_Can_Create_New_Workroom() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Deactivate_Workroom" classname="tests_critical_scenarios.CreateDeleteWorkroom" time="1.635">
+    <system-out><![CDATA[------- Completed --> user_Can_Deactivate_Workroom() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Opens_Settings_Opens_Workroom_And_Group_Settings_Again" classname="tests_critical_scenarios.CreateDeleteWorkroom" time="0.606">
+    <system-out><![CDATA[------- Completed --> admin_Opens_Site_Settings_Workrooms_And_Groups() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Delete_Workroom" classname="tests_critical_scenarios.CreateDeleteWorkroom" time="0.444">
+    <system-out><![CDATA[------- Completed --> user_Can_Delete_Workroom() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="verify_Workroom_Deleted" classname="tests_critical_scenarios.CreateDeleteWorkroom" time="0.335">
+    <system-out><![CDATA[------- Completed --> systemAdmin_Update_User_Password_Back_To_Original() -----------
+------- Completed --> verify_Workroom_Deleted() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="systemAdmin_login" classname="tests_critical_scenarios.LoginEnglishNonAdmin" time="0.119">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Open_Directory" classname="tests_critical_scenarios.LoginEnglishNonAdmin" time="0.138">
+    <system-out><![CDATA[------- Completed --> admin_Open_Workroom_AutoBE_Events() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="open_User_Profile_Non_Admin_Auto_User_1_Profile" classname="tests_critical_scenarios.LoginEnglishNonAdmin" time="3.348">
+    <system-out><![CDATA[------- Completed --> open_User_Profile_Non_Admin_Auto_User_1_Profile() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="select_Foreign_Language_English" classname="tests_critical_scenarios.LoginEnglishNonAdmin" time="0.513"/>
+  <testcase name="system_Admin_Logout" classname="tests_critical_scenarios.LoginEnglishNonAdmin" time="3.617">
+    <system-out><![CDATA[------- Completed -->  user_Can_Sign_Out() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="systemAdmin_login" classname="tests_critical_scenarios.CreateWorkgroupAttachWorkroom" time="0.964">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Opens_Settings_Opens_Workroom_And_Group_Settings" classname="tests_critical_scenarios.CreateWorkgroupAttachWorkroom" time="0.452">
+    <system-out><![CDATA[------- Completed --> admin_Opens_Site_Settings_Workrooms_And_Groups() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Create_New_Group" classname="tests_critical_scenarios.CreateWorkgroupAttachWorkroom" time="7.709">
+    <system-out><![CDATA[------- Completed --> user_Can_Create_New_Group() -----------
+]]></system-out>
+    <system-err><![CDATA[Jun 28, 2021 2:19:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jun 28, 2021 2:19:05 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="user_attach_workgroup_to_workroom" classname="tests_critical_scenarios.CreateWorkgroupAttachWorkroom" time="1.058">
+    <system-out><![CDATA[------- Completed --> user_attach_workgroup_to_workroom() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="verify_Workroom_Attached" classname="tests_critical_scenarios.CreateWorkgroupAttachWorkroom" time="3.507">
+    <system-out><![CDATA[------- Completed --> verify_Workroom_Attached() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="deactivate_Workgroup" classname="tests_critical_scenarios.CreateWorkgroupAttachWorkroom" time="1.705">
+    <system-out><![CDATA[------- Completed --> deactivate_Workgroup()-----------
+]]></system-out>
+  </testcase>
+  <testcase name="delete_Workroom" classname="tests_critical_scenarios.CreateWorkgroupAttachWorkroom" time="0.563">
+    <system-out><![CDATA[------- Completed --> enable_Hide_User_From_Directory() -----------
+------- Completed --> delete_Workgroup()-----------
+]]></system-out>
+  </testcase>
+  <testcase name="verify_Group_Deleted" classname="tests_critical_scenarios.CreateWorkgroupAttachWorkroom" time="1.024">
+    <system-out><![CDATA[------- Completed --> verify_Group_Deleted() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="systemAdmin_login" classname="tests_critical_scenarios.LoginEnglishSystemAdmin" time="0.589">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Open_Directory" classname="tests_critical_scenarios.LoginEnglishSystemAdmin" time="1.755">
+    <system-out><![CDATA[------- Completed --> admin_Open_Workroom_AutoBE_Events() -----------
+]]></system-out>
+    <system-err><![CDATA[Jun 28, 2021 2:18:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="open_User_Profile_SystemAdminEng" classname="tests_critical_scenarios.LoginEnglishSystemAdmin" time="1.519">
+    <system-out><![CDATA[------- Completed --> open_User_Profile_SystemAdminEng() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="navigate_To_English_Language" classname="tests_critical_scenarios.LoginEnglishSystemAdmin" time="1.252">
+    <system-out><![CDATA[------- Completed --> navigate_To_English_Language() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="system_Admin_Logout" classname="tests_critical_scenarios.LoginEnglishSystemAdmin" time="0.75">
+    <system-out><![CDATA[------- Completed -->  user_Can_Sign_Out() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="systemAdmin_login" classname="tests_critical_scenarios.LoginForeignLanguageNonAdmin" time="3.996">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Open_Directory" classname="tests_critical_scenarios.LoginForeignLanguageNonAdmin" time="2.014">
+    <system-out><![CDATA[------- Completed --> admin_Open_Workroom_AutoBE_Events() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="open_User_Profile_NonAdmin" classname="tests_critical_scenarios.LoginForeignLanguageNonAdmin" time="2.285">
+    <system-out><![CDATA[------- Completed --> open_User_Profile_NonAdmin() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="select_Foreign_Language_Spanish" classname="tests_critical_scenarios.LoginForeignLanguageNonAdmin" time="6.877">
+    <system-out><![CDATA[------- Completed --> admin_Opens_Site_Settings_Workrooms_And_Groups() -----------
+------- Completed --> enable_Hide_User_From_Directory() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="system_Admin_Logout" classname="tests_critical_scenarios.LoginForeignLanguageNonAdmin" time="1.148">
+    <system-out><![CDATA[------- Completed --> systemAdmin_Set_User_As_Workroom_Admin() -----------
+------- Completed -->  user_Can_Sign_Out() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="systemAdmin_Login_Spanish" classname="tests_critical_scenarios.LoginForeignLanguageNonAdmin" time="0.042">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Open_Directory_Spanish" classname="tests_critical_scenarios.LoginForeignLanguageNonAdmin" time="2.548">
+    <system-out><![CDATA[------- Completed --> admin_Open_Workroom_AutoBE_Events() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="open_User_Profile_NonAdmin_Spanish" classname="tests_critical_scenarios.LoginForeignLanguageNonAdmin" time="4.097">
+    <system-out><![CDATA[------- Completed --> open_User_Profile_Automation_Tester_Spanish() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="select_Foreign_Language_English" classname="tests_critical_scenarios.LoginForeignLanguageNonAdmin" time="0.844">
+    <system-out><![CDATA[------- Completed --> enable_Hide_User_From_Directory() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="steve_System_Logout_Spanish" classname="tests_critical_scenarios.LoginForeignLanguageNonAdmin" time="0.72">
+    <system-out><![CDATA[------- Completed -->  user_Can_Sign_Out() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="systemAdmin_Login_English" classname="tests_critical_scenarios.LoginForeignLanguageNonAdmin" time="2.096">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="verify_English_Welcome_Message" classname="tests_critical_scenarios.LoginForeignLanguageNonAdmin" time="0.176">
+    <system-out><![CDATA[------- Completed --> verify_Atlas_Left_Nav() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="systemAdmin_login" classname="tests_critical_scenarios.LoginForeignLanguageSystemAdmin" time="0.873">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Open_Directory" classname="tests_critical_scenarios.LoginForeignLanguageSystemAdmin" time="0.733">
+    <system-out><![CDATA[------- Completed --> admin_Open_Workroom_AutoBE_Events() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="open_Admin_Profile_AutoAdminUserGS11" classname="tests_critical_scenarios.LoginForeignLanguageSystemAdmin" time="1.491">
+    <system-out><![CDATA[------- Completed --> open_User_Profile_SystemAdmin() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="select_Foreign_Language_Spanish" classname="tests_critical_scenarios.LoginForeignLanguageSystemAdmin" time="1.148"/>
+  <testcase name="system_Admin_Logout" classname="tests_critical_scenarios.LoginForeignLanguageSystemAdmin" time="1.589">
+    <system-out><![CDATA[------- Completed -->  user_Can_Sign_Out() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="systemAdmin_Login_Spanish" classname="tests_critical_scenarios.LoginForeignLanguageSystemAdmin" time="1.504">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Open_Directory_Spanish" classname="tests_critical_scenarios.LoginForeignLanguageSystemAdmin" time="0.702">
+    <system-out><![CDATA[------- Completed --> admin_Open_Workroom_AutoBE_Events() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="open_Admin_Profile_AutoAdminUserGS11_Spanish" classname="tests_critical_scenarios.LoginForeignLanguageSystemAdmin" time="2.437">
+    <system-out><![CDATA[------- Completed --> open_User_Profile_SystemAdmin_Spanish() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="select_Foreign_Language_English" classname="tests_critical_scenarios.LoginForeignLanguageSystemAdmin" time="2.08">
+    <system-out><![CDATA[------- Completed --> enable_Hide_User_From_Directory() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="steve_System_Logout_Spanish" classname="tests_critical_scenarios.LoginForeignLanguageSystemAdmin" time="0.991">
+    <system-out><![CDATA[------- Completed -->  user_Can_Sign_Out() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="systemAdmin_Login_English" classname="tests_critical_scenarios.LoginForeignLanguageSystemAdmin" time="1.852">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="verify_Atlas_Left_Nav_Bar" classname="tests_critical_scenarios.LoginForeignLanguageSystemAdmin" time="0.238">
+    <system-out><![CDATA[------- Completed --> verify_Atlas_Left_Nav() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="systemAdmin_login" classname="tests_critical_scenarios.LoginForeignLanguageWorkroomAdminEng" time="0.574">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="admin_Opens_Site_Settings_Workrooms_And_Groups" classname="tests_critical_scenarios.LoginForeignLanguageWorkroomAdminEng" time="0.038">
+    <system-out><![CDATA[------- Completed --> admin_Opens_Site_Settings_Workrooms_And_Groups() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="systemAdmin_Set_User_As_Workroom_Admin" classname="tests_critical_scenarios.LoginForeignLanguageWorkroomAdminEng" time="0.246"/>
+  <testcase name="user_Can_Open_Directory" classname="tests_critical_scenarios.LoginForeignLanguageWorkroomAdminEng" time="2.622">
+    <system-out><![CDATA[------- Completed --> admin_Open_Workroom_AutoBE_Events() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="open_User_Profile_WorkroomAdmin" classname="tests_critical_scenarios.LoginForeignLanguageWorkroomAdminEng" time="1.612">
+    <system-out><![CDATA[------- Completed --> open_User_Profile_Workroom_Admin -----------
+]]></system-out>
+  </testcase>
+  <testcase name="select_Foreign_Language_Spanish" classname="tests_critical_scenarios.LoginForeignLanguageWorkroomAdminEng" time="3.785">
+    <system-out><![CDATA[------- Completed --> enable_Hide_User_From_Directory() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="system_Admin_Logout" classname="tests_critical_scenarios.LoginForeignLanguageWorkroomAdminEng" time="2.776">
+    <system-out><![CDATA[------- Completed -->  user_Can_Sign_Out() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="workroomAdmin_Login_Spanish" classname="tests_critical_scenarios.LoginForeignLanguageWorkroomAdminEng" time="1.178">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="user_Can_Open_Directory_Spanish" classname="tests_critical_scenarios.LoginForeignLanguageWorkroomAdminEng" time="2.951">
+    <system-out><![CDATA[------- Completed --> admin_Open_Workroom_AutoBE_Events() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="open_User_Profile_WorkroomAdmin_Spanish" classname="tests_critical_scenarios.LoginForeignLanguageWorkroomAdminEng" time="2.426">
+    <system-out><![CDATA[------- Completed --> open_User_Profile_Workroom_Admin_Spanish() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="select_Foreign_Language_English" classname="tests_critical_scenarios.LoginForeignLanguageWorkroomAdminEng" time="9.702">
+    <system-out><![CDATA[------- Completed --> enable_Hide_User_From_Directory() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="steve_System_Logout_Spanish" classname="tests_critical_scenarios.LoginForeignLanguageWorkroomAdminEng" time="3.25">
+    <system-out><![CDATA[------- Completed -->  user_Can_Sign_Out() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="automation_Tester_Login_English" classname="tests_critical_scenarios.LoginForeignLanguageWorkroomAdminEng" time="5.116">
+    <system-out><![CDATA[------- Completed -->  User_Can_Login() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="admin_Opens_Site_Settings_Workrooms_And_Groups_Agian" classname="tests_critical_scenarios.LoginForeignLanguageWorkroomAdminEng" time="2.671">
+    <system-out><![CDATA[------- Completed --> admin_Opens_Site_Settings_Workrooms_And_Groups() -----------
+]]></system-out>
+  </testcase>
+  <testcase name="set_User_Back_As_Workroom_Member" classname="tests_critical_scenarios.LoginForeignLanguageWorkroomAdminEng" time="12.477">
+    <system-out><![CDATA[------- Completed --> systemAdmin_Set_User_As_Workroom_Member() -----------
+]]></system-out>
+  </testcase>
+</testsuite>

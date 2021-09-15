@@ -1,0 +1,254 @@
+<html>
+<head>
+<title>TestNG:  add_multiple_users</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>add_multiple_users</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jun 14 10:19:27 EDT 2021</td>
+</tr>
+<tr><td>Total time:</td><td>104 seconds (104726 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests_directory.AddRemoveProfilePhoto.add_Photo_To_Profile()'><b>add_Photo_To_Profile</b><br>Test class: tests_directory.AddRemoveProfilePhoto<br>Test method: add_Photo_To_Profile</td>
+<td></td>
+<td>10</td>
+<td>tests_directory.AddRemoveProfilePhoto@29b5cd00</td></tr>
+<tr>
+<td title='tests_directory.AddRemoveProfileResume.add_Resume_To_Profile()'><b>add_Resume_To_Profile</b><br>Test class: tests_directory.AddRemoveProfileResume<br>Test method: add_Photo_To_Profile</td>
+<td></td>
+<td>5</td>
+<td>tests_directory.AddRemoveProfileResume@5bfbf16f</td></tr>
+<tr>
+<td title='tests_directory.AddMultipleUsers.deactivate_Angela_Moore()'><b>deactivate_Angela_Moore</b><br>Test class: tests_directory.AddMultipleUsers<br>Test method: deactivate_Angela_Moore</td>
+<td></td>
+<td>8</td>
+<td>tests_directory.AddMultipleUsers@2a742aa2</td></tr>
+<tr>
+<td title='tests_directory.AddMultipleUsers.deactivate_Angela_Morgan()'><b>deactivate_Angela_Morgan</b><br>Test class: tests_directory.AddMultipleUsers<br>Test method: deactivate_Angela_Morgan</td>
+<td></td>
+<td>6</td>
+<td>tests_directory.AddMultipleUsers@2a742aa2</td></tr>
+<tr>
+<td title='tests_directory.AddMultipleUsers.delete_Angel_Morgan()'><b>delete_Angel_Morgan</b><br>Test class: tests_directory.AddMultipleUsers<br>Test method: delete_Angel_Morgan</td>
+<td></td>
+<td>9</td>
+<td>tests_directory.AddMultipleUsers@2a742aa2</td></tr>
+<tr>
+<td title='tests_directory.AddRemoveProfilePhoto.delete_Photo()'><b>delete_Photo</b><br>Test class: tests_directory.AddRemoveProfilePhoto<br>Test method: delete_Photo</td>
+<td></td>
+<td>10</td>
+<td>tests_directory.AddRemoveProfilePhoto@29b5cd00</td></tr>
+<tr>
+<td title='tests_directory.AddRemoveProfileResume.delete_Resume()'><b>delete_Resume</b><br>Test class: tests_directory.AddRemoveProfileResume<br>Test method: delete_Photo</td>
+<td></td>
+<td>6</td>
+<td>tests_directory.AddRemoveProfileResume@5bfbf16f</td></tr>
+<tr>
+<td title='tests_directory.AddMultipleUsers.delete_User_Angela_Moore()'><b>delete_User_Angela_Moore</b><br>Test class: tests_directory.AddMultipleUsers<br>Test method: delete_User_Angela_Moore</td>
+<td></td>
+<td>9</td>
+<td>tests_directory.AddMultipleUsers@2a742aa2</td></tr>
+<tr>
+<td title='tests_directory.AddMultipleUsers.fill_Multiple_User_Form()'><b>fill_Multiple_User_Form</b><br>Test class: tests_directory.AddMultipleUsers<br>Test method: fill_Multiple_User_Form</td>
+<td></td>
+<td>10</td>
+<td>tests_directory.AddMultipleUsers@2a742aa2</td></tr>
+<tr>
+<td title='tests_directory.AddMultipleUsers.loginBE_SystemAdmin()'><b>loginBE_SystemAdmin</b><br>Test class: tests_directory.AddMultipleUsers<br>Test method: Login systemAdmin UserName Password.</td>
+<td></td>
+<td>6</td>
+<td>tests_directory.AddMultipleUsers@2a742aa2</td></tr>
+<tr>
+<td title='tests_directory.AddRemoveProfilePhoto.login_BE_SystemAdmin()'><b>login_BE_SystemAdmin</b><br>Test class: tests_directory.AddRemoveProfilePhoto<br>Test method: Login systemAdmin UserName Password.</td>
+<td></td>
+<td>6</td>
+<td>tests_directory.AddRemoveProfilePhoto@29b5cd00</td></tr>
+<tr>
+<td title='tests_directory.AddRemoveProfileResume.login_BE_SystemAdmin()'><b>login_BE_SystemAdmin</b><br>Test class: tests_directory.AddRemoveProfileResume<br>Test method: Login systemAdmin UserName Password.</td>
+<td></td>
+<td>6</td>
+<td>tests_directory.AddRemoveProfileResume@5bfbf16f</td></tr>
+<tr>
+<td title='tests_directory.AddRemoveProfilePhoto.open_Auto_User_1_Profile()'><b>open_Auto_User_1_Profile</b><br>Test class: tests_directory.AddRemoveProfilePhoto<br>Test method: open_Auto_User_1_Profile</td>
+<td></td>
+<td>5</td>
+<td>tests_directory.AddRemoveProfilePhoto@29b5cd00</td></tr>
+<tr>
+<td title='tests_directory.AddRemoveProfilePhoto.open_Auto_User_1_Profile_3rd_Time()'><b>open_Auto_User_1_Profile_3rd_Time</b><br>Test class: tests_directory.AddRemoveProfilePhoto<br>Test method: open_Auto_User_1_Profile_3rd_Time</td>
+<td></td>
+<td>5</td>
+<td>tests_directory.AddRemoveProfilePhoto@29b5cd00</td></tr>
+<tr>
+<td title='tests_directory.AddRemoveProfilePhoto.open_Auto_User_1_Profile_Again()'><b>open_Auto_User_1_Profile_Again</b><br>Test class: tests_directory.AddRemoveProfilePhoto<br>Test method: open_Auto_User_1_Profile_Again</td>
+<td></td>
+<td>5</td>
+<td>tests_directory.AddRemoveProfilePhoto@29b5cd00</td></tr>
+<tr>
+<td title='tests_directory.AddRemoveProfileResume.open_Auto_User_2_Profile()'><b>open_Auto_User_2_Profile</b><br>Test class: tests_directory.AddRemoveProfileResume<br>Test method: open_Auto_User_2_Profile</td>
+<td></td>
+<td>5</td>
+<td>tests_directory.AddRemoveProfileResume@5bfbf16f</td></tr>
+<tr>
+<td title='tests_directory.AddRemoveProfileResume.open_Auto_User_2_Profile_3rd_Time()'><b>open_Auto_User_2_Profile_3rd_Time</b><br>Test class: tests_directory.AddRemoveProfileResume<br>Test method: open_Auto_User_2_Profile_3rd_Time</td>
+<td></td>
+<td>4</td>
+<td>tests_directory.AddRemoveProfileResume@5bfbf16f</td></tr>
+<tr>
+<td title='tests_directory.AddMultipleUsers.open_Multiple_User_Form()'><b>open_Multiple_User_Form</b><br>Test class: tests_directory.AddMultipleUsers<br>Test method: open_Multiple_User_Form</td>
+<td></td>
+<td>4</td>
+<td>tests_directory.AddMultipleUsers@2a742aa2</td></tr>
+<tr>
+<td title='tests_directory.AddRemoveProfileResume.open_User_Profile()'><b>open_User_Profile</b><br>Test class: tests_directory.AddRemoveProfileResume<br>Test method: open_User_Profile</td>
+<td></td>
+<td>5</td>
+<td>tests_directory.AddRemoveProfileResume@5bfbf16f</td></tr>
+<tr>
+<td title='tests_directory.AddRemoveProfilePhoto.user_Can_Open_Dirctory()'><b>user_Can_Open_Dirctory</b><br>Test class: tests_directory.AddRemoveProfilePhoto<br>Test method: user_Can_Open_Directory</td>
+<td></td>
+<td>2</td>
+<td>tests_directory.AddRemoveProfilePhoto@29b5cd00</td></tr>
+<tr>
+<td title='tests_directory.AddRemoveProfileResume.user_Can_Open_Dirctory()'><b>user_Can_Open_Dirctory</b><br>Test class: tests_directory.AddRemoveProfileResume<br>Test method: user_Can_Open_Directory</td>
+<td></td>
+<td>2</td>
+<td>tests_directory.AddRemoveProfileResume@5bfbf16f</td></tr>
+<tr>
+<td title='tests_directory.AddRemoveProfileResume.user_Can_Open_Dirctory_3rd_Time()'><b>user_Can_Open_Dirctory_3rd_Time</b><br>Test class: tests_directory.AddRemoveProfileResume<br>Test method: user_Can_Open_Dirctory_3rd_Time</td>
+<td></td>
+<td>1</td>
+<td>tests_directory.AddRemoveProfileResume@5bfbf16f</td></tr>
+<tr>
+<td title='tests_directory.AddRemoveProfilePhoto.user_Can_Open_Dirctory_3rd_Time()'><b>user_Can_Open_Dirctory_3rd_Time</b><br>Test class: tests_directory.AddRemoveProfilePhoto<br>Test method: user_Can_Open_Dirctory_Again</td>
+<td></td>
+<td>2</td>
+<td>tests_directory.AddRemoveProfilePhoto@29b5cd00</td></tr>
+<tr>
+<td title='tests_directory.AddRemoveProfileResume.user_Can_Open_Dirctory_Again()'><b>user_Can_Open_Dirctory_Again</b><br>Test class: tests_directory.AddRemoveProfileResume<br>Test method: user_Can_Open_Dirctory_Again</td>
+<td></td>
+<td>1</td>
+<td>tests_directory.AddRemoveProfileResume@5bfbf16f</td></tr>
+<tr>
+<td title='tests_directory.AddRemoveProfilePhoto.user_Can_Open_Dirctory_Again()'><b>user_Can_Open_Dirctory_Again</b><br>Test class: tests_directory.AddRemoveProfilePhoto<br>Test method: user_Can_Open_Dirctory_Again</td>
+<td></td>
+<td>1</td>
+<td>tests_directory.AddRemoveProfilePhoto@29b5cd00</td></tr>
+<tr>
+<td title='tests_directory.AddMultipleUsers.user_Can_Open_Directory()'><b>user_Can_Open_Directory</b><br>Test class: tests_directory.AddMultipleUsers<br>Test method: user_Can_Open_Directory</td>
+<td></td>
+<td>2</td>
+<td>tests_directory.AddMultipleUsers@2a742aa2</td></tr>
+<tr>
+<td title='tests_directory.AddMultipleUsers.user_Can_Open_Directory_3rd_time()'><b>user_Can_Open_Directory_3rd_time</b><br>Test class: tests_directory.AddMultipleUsers<br>Test method: user_Can_Open_Directory_3rd_time</td>
+<td></td>
+<td>1</td>
+<td>tests_directory.AddMultipleUsers@2a742aa2</td></tr>
+<tr>
+<td title='tests_directory.AddMultipleUsers.user_Can_Open_Directory_4th_time()'><b>user_Can_Open_Directory_4th_time</b><br>Test class: tests_directory.AddMultipleUsers<br>Test method: user_Can_Open_Directory_3rd_time</td>
+<td></td>
+<td>2</td>
+<td>tests_directory.AddMultipleUsers@2a742aa2</td></tr>
+<tr>
+<td title='tests_directory.AddMultipleUsers.user_Can_Open_Directory_Agian()'><b>user_Can_Open_Directory_Agian</b><br>Test class: tests_directory.AddMultipleUsers<br>Test method: user_Can_Open_Directory_Agian</td>
+<td></td>
+<td>1</td>
+<td>tests_directory.AddMultipleUsers@2a742aa2</td></tr>
+<tr>
+<td title='tests_directory.AddMultipleUsers.user_Can_Open_Settings()'><b>user_Can_Open_Settings</b><br>Test class: tests_directory.AddMultipleUsers<br>Test method: user_Can_Open_Settings</td>
+<td></td>
+<td>1</td>
+<td>tests_directory.AddMultipleUsers@2a742aa2</td></tr>
+<tr>
+<td title='tests_directory.AddMultipleUsers.user_Can_Open_Settings_Agian()'><b>user_Can_Open_Settings_Agian</b><br>Test class: tests_directory.AddMultipleUsers<br>Test method: user_Can_Open_Settings_Agian</td>
+<td></td>
+<td>2</td>
+<td>tests_directory.AddMultipleUsers@2a742aa2</td></tr>
+<tr>
+<td title='tests_directory.AddMultipleUsers.verify_Multiple_Users_Created()'><b>verify_Multiple_Users_Created</b><br>Test class: tests_directory.AddMultipleUsers<br>Test method: verify_Multiple_Users_Created</td>
+<td></td>
+<td>0</td>
+<td>tests_directory.AddMultipleUsers@2a742aa2</td></tr>
+<tr>
+<td title='tests_directory.AddRemoveProfilePhoto.verify_Photo_Deleted()'><b>verify_Photo_Deleted</b><br>Test class: tests_directory.AddRemoveProfilePhoto<br>Test method: delete_Photo</td>
+<td></td>
+<td>10</td>
+<td>tests_directory.AddRemoveProfilePhoto@29b5cd00</td></tr>
+<tr>
+<td title='tests_directory.AddRemoveProfileResume.verify_Resume_Deleted()'><b>verify_Resume_Deleted</b><br>Test class: tests_directory.AddRemoveProfileResume<br>Test method: verify_Resume_Deleted</td>
+<td></td>
+<td>8</td>
+<td>tests_directory.AddRemoveProfileResume@5bfbf16f</td></tr>
+<tr>
+<td title='tests_directory.AddMultipleUsers.verify_Users_Moore_Morgan_Deleted()'><b>verify_Users_Moore_Morgan_Deleted</b><br>Test class: tests_directory.AddMultipleUsers<br>Test method: verify_Users_Moore_Morgan_Deleted</td>
+<td></td>
+<td>10</td>
+<td>tests_directory.AddMultipleUsers@2a742aa2</td></tr>
+</table><p>
+</body>
+</html>
